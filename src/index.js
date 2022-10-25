@@ -1,1 +1,1 @@
-console.log("Ich bins Tim")
+console.log("Ich bins Tim, aber auch Pandaa");
