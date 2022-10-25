@@ -2,6 +2,7 @@ local ESX      	 = nil
 local holstered  = true
 local blocked	 = false
 local PlayerData = {}
+------------------------
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -61,7 +62,6 @@ RegisterNetEvent('esx:setJob')
 							holstered = true
 						end
 					end
-					
 				else
 					SetCurrentPedWeapon(ped, GetHashKey("WEAPON_UNARMED"), true)
 				end
@@ -116,12 +116,11 @@ Citizen.CreateThread(function()
 			DisableControlAction(1, 141, true)
 			DisableControlAction(1, 142, true)
 			DisableControlAction(1, 23, true)
-			DisableControlAction(1, 37, true)
-			DisablePlayerFiring(ped, true)
+			DisableControlAction(1, 37, true) -- Disables INPUT_SELECT_WEAPON (TAB)
+			DisablePlayerFiring(ped, true) -- Disable weapon firing
 		end
 	end
 end)
-
 
 function CheckWeapon(ped)
 	--[[if IsPedArmed(ped, 4) then
@@ -131,7 +130,7 @@ function CheckWeapon(ped)
 		blocked = false
 			return false
 		else
-			for i = 1, #Config.Weapons do
+			for i = 2, #Config.Weapons do
 				if GetHashKey(Config.Weapons[i]) == GetSelectedPedWeapon(ped) then
 					return true
 				end

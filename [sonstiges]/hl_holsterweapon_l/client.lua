@@ -37,12 +37,11 @@ RegisterNetEvent('esx:setJob')
 						if holstered then
 							blocked   = true
 								SetPedCurrentWeaponVisible(ped, 0, 1, 1, 1)
-								TaskPlayAnim(ped, "reaction@intimidation@cop@unarmed", "intro", 8.0, 2.0, -1, 50, 2.0, 0, 0, 0 ) -- Change 50 to 30 if you want to stand still when removing weapon
-								--TaskPlayAnim(ped, "reaction@intimidation@cop@unarmed", "intro", 8.0, 2.0, -1, 30, 2.0, 0, 0, 0 ) Use this line if you want to stand still when removing weapon
-									Citizen.Wait(Config.CooldownPolice)
+								TaskPlayAnim(ped, "reaction@intimidation@1h", "intro", 5.0, 1.0, -1, 50, 0, 0, 0, 0 )
+								--TaskPlayAnim(ped, "reaction@intimidation@1h", "intro", 5.0, 1.0, -1, 30, 0, 0, 0, 0 ) Use this line if you want to stand still when removing weapon
+									Citizen.Wait(1250)
 								SetPedCurrentWeaponVisible(ped, 1, 1, 1, 1)
-								TaskPlayAnim(ped, "rcmjosh4", "josh_leadout_cop2", 8.0, 2.0, -1, 48, 10, 0, 0, 0 )
-									Citizen.Wait(400)
+									Citizen.Wait(Config.cooldown)
 								ClearPedTasks(ped)
 							holstered = false
 						else
@@ -51,12 +50,9 @@ RegisterNetEvent('esx:setJob')
 					else
 					--elseif not IsPedArmed(ped, 4) then
 						if not holstered then
-					
-								TaskPlayAnim(ped, "rcmjosh4", "josh_leadout_cop2", 8.0, 2.0, -1, 48, 10, 0, 0, 0 )
-									Citizen.Wait(500)
-								TaskPlayAnim(ped, "reaction@intimidation@cop@unarmed", "outro", 8.0, 2.0, -1, 50, 2.0, 0, 0, 0 ) -- Change 50 to 30 if you want to stand still when holstering weapon
-								--TaskPlayAnim(ped, "reaction@intimidation@cop@unarmed", "outro", 8.0, 2.0, -1, 30, 2.0, 0, 0, 0 ) Use this line if you want to stand still when holstering weapon
-									Citizen.Wait(60)
+								TaskPlayAnim(ped, "reaction@intimidation@1h", "outro", 8.0, 3.0, -1, 50, 0, 0, 0.125, 0 ) -- Change 50 to 30 if you want to stand still when holstering weapon
+								--TaskPlayAnim(ped, "reaction@intimidation@1h", "outro", 8.0, 3.0, -1, 30, 0, 0, 0.125, 0 ) Use this line if you want to stand still when holstering weapon
+									Citizen.Wait(1700)
 								ClearPedTasks(ped)
 							holstered = true
 						end

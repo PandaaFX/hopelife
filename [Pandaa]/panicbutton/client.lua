@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
 	Citizen.CreateThread(function()
 		while true do
 			if IsControlPressed(1, 21) and IsControlPressed(1, 19) and IsControlJustPressed(1, 194) then -- Shift + LALT + Backspace
-				if ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'fib' or ESX.PlayerData.job.name == 'lssd' or ESX.PlayerData.job.name == 'ambulance' then
+				if ESX.PlayerData.job.name == 'police' or ESX.PlayerData.job.name == 'fib' or ESX.PlayerData.job.name == 'lssd' or ESX.PlayerData.job.name == 'ambulance' or ESX.PlayerData.job.name == 'doj' then
 					if Panic.Cooling == 0 then
 						local Officer = {}
 						Officer.Ped = PlayerPedId()
