@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bVNT/q70N7jbqUKQ90fdhv1MiATPxvQ5Dt130xZFsPmnTSbNdD3FxCvO2u+NmkblNGSLynH3A8JHe8fB4AymTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moric\\OneDrive\\Desktop\\saltychat\\SaltyServer\\SaltyServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moric\\.nuget\\packages\\citizenfx.core.server\\1.0.3563\\citizenfx.core.server.1.0.3563.nupkg.sha512",
+    "C:\\Users\\moric\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\moric\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\moric\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
