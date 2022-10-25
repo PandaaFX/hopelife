@@ -1,0 +1,28 @@
+.clickable {
+    cursor: pointer;
+}
+
+#not-allowed-container {
+    background-color: #222;
+
+    color: white;
+
+    width: 50%;
+
+    top: 30%;
+    left: 25%;
+
+    position: absolute;
+
+    display: none;
+}
+
+#robbery-creator-label {
+    color: #ff0000;
+}
+
+.thick-hr {
+    height: 3px !important;
+    color: black;
+    opacity: 1;
+}
