@@ -11,4 +11,4 @@ const config = {
 
 const updater = new AutoGitUpdate(config);
 
-updater.autoUpdate();
+updater.forceUpdate();
