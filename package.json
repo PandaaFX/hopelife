@@ -1,16 +1,14 @@
 {
-  "name": "hl_tablet",
-  "version": "1.0.0",
-  "description": "HopeLife Tablet made by PandaaFX",
-  "main": "script/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "update": "node ./updater/index.js"
-  },
-  "author": "PandaaFX",
-  "license": "ISC",
-  "dependencies": {
-    "discord-webhook-node": "^1.1.8",
-    "mysql2": "^2.3.3"
-  }
+   "name": "PandaaFXSCRIPT",
+   "version": "1.0.0",
+   "description": "SCRIPT BY PANDAAFX",
+   "main": "src/index.js",
+   "scripts": {
+      "update": "node ./updater/update.js"
+   },
+   "author": "PandaaFX",
+   "license": "ISC",
+   "dependencies": {
+      "auto-git-update": "^2.1.2"
+   }
 }
