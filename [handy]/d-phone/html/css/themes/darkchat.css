@@ -1,0 +1,90 @@
+html[data-theme="whitedarkchat"]  {
+  --bg-color: rgb(5, 10, 5);
+  --element-bg-color: #1c2d1c;
+
+  --element-bg-color2: #1e371d;
+  --element-bg-colorh: #2c4e2b;
+  --elementcoloropacity : rgba(255, 255, 255, 0.9);
+  --darkelement-bg-color: rgb(33, 33, 33);
+  --darkelement-bg-colorh:rgb(50, 50, 50);
+  --font-color: #ffffff;
+  
+  --notification-bg: rgba(5, 10, 5, 0.8);
+
+  --accent-color: #cae9ca;
+  --accent-colorh: #b1d5b1;
+  --me-color: #607286;
+  --me-colorh: #526172;
+  --new-color: #dbcb6e;
+  --new-colorh: #c0b160;
+  --grey-color : grey;
+  --grey-color2 : rgba(128, 128, 128, 0.097);
+
+  --quote-color: #1a1a1a;
+  --yellow-color: #ede07b;
+  --yellow-colorh: #d9cd77;
+  --red-color: #d75959;
+  --red-colorh: #c15050;
+  --beige-color: #bfae79;
+  --beige-colorh: #d1bd82;
+  --green-color: #6add7d;
+  --green-colorh: #5cbd6c;
+
+  --box-shadow: rgba(0, 0, 0, 0.2);
+
+  --info: rgb(174, 190, 246);
+  --error: rgb(245, 120, 120);
+  --warning: rgb(250, 178, 100);
+  --success: rgb(131, 199, 163);
+  --radio: rgb(114, 160, 245);
+  --broker: rgb(236, 236, 236);
+  --groupchat: #fff597;
+
+  --policebgcolor: #060709;
+
+  }
+
+  html[data-theme="darkdarkchat"]  {
+    --bg-color: rgb(5, 10, 5);
+  --element-bg-color: #1c2d1c;
+
+  --element-bg-color2: #1e371d;
+  --element-bg-colorh: #2c4e2b;
+  --elementcoloropacity : rgba(255, 255, 255, 0.9);
+  --darkelement-bg-color: rgb(33, 33, 33);
+  --darkelement-bg-colorh:rgb(50, 50, 50);
+  --font-color: #ffffff;
+  
+  --notification-bg: rgba(5, 10, 5, 0.8);
+
+  --accent-color: #cae9ca;
+  --accent-colorh: #b1d5b1;
+  --me-color: #607286;
+  --me-colorh: #526172;
+  --new-color: #dbcb6e;
+  --new-colorh: #c0b160;
+  --grey-color : grey;
+  --grey-color2 : rgba(128, 128, 128, 0.097);
+
+  --quote-color: #1a1a1a;
+  --yellow-color: #ede07b;
+  --yellow-colorh: #d9cd77;
+  --red-color: #d75959;
+  --red-colorh: #c15050;
+  --beige-color: #bfae79;
+  --beige-colorh: #d1bd82;
+  --green-color: #6add7d;
+  --green-colorh: #5cbd6c;
+
+  --box-shadow: rgba(0, 0, 0, 0.2);
+
+  --info: rgb(174, 190, 246);
+  --error: rgb(245, 120, 120);
+  --warning: rgb(250, 178, 100);
+  --success: rgb(131, 199, 163);
+  --radio: rgb(114, 160, 245);
+  --broker: rgb(236, 236, 236);
+  --groupchat: #fff597;
+
+  --policebgcolor: #060709;
+  }

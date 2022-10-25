@@ -1,0 +1,34 @@
+
+[15:16:09] Configuration loaded successfully...
+[15:16:09] Loaded language ^0[^3eng^0]
+[15:16:12] ChocoHax [^31.5.4b^0] is starting, Please wait...
+[15:16:12] Successfully connected to the authentication server
+[15:16:12] Connected to: ^0[^3lynxcollective.ltd #1 1.5.4b^0]
+[15:16:12] Current account: ^0[^3alexandar.lazarevski006@gmail.com^0]
+[15:16:12] Current server IP: ^0[^3193.42.12.47^0]
+[15:16:12] ^5MOTD: ^0This ChocoHax version is outdated, We recommend updating to the latest ChocoHax version as soon as possible^0
+[15:16:12] ^0[^3runcode^0] is a dangerous resources that can be exploited, we recommend removing it from the server as fast as possible...
+[15:16:13] Sending Heartbeat to `^3ChocoHax^0` servers
+[15:16:13] ChocoHax Global Ban List updated successfully...
+[15:16:34] ^0[^4Player Connect^0] ^0[^3Samu^0] connecting...
+[15:16:45] ^0[^4Player Connect^0] ^0[^3Samu^0] connecting...
+[15:16:50] ^0[^4Player Connect^0] ^0[^3PandaaFX^0] connecting...
+[15:18:33] [DEBUG] ^2Entity Spawning: Entity: [131073] Spawned By Player: [yes / 0 1] MODEL [225514697] TYPE [ped]
+[15:18:39] [DEBUG] ^2Entity Spawning: Entity: [132354] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[15:18:39] [DEBUG] ^2Entity Spawning: Entity: [132610] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[15:18:41] ^0[^31^0] ^0[^3PandaaFX^0] authentificated as ChocoHax Admin/Moderator
+[15:18:43] ^0[^4Player Connect^0] ^0[^3JohnWilliams^0] connecting...
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [131331] Spawned By Player: [yes / 0 1] MODEL [1089807209] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [131587] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [131843] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [132099] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [132866] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [133122] Spawned By Player: [yes / 0 1] MODEL [1171655821] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [133379] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:18:48] [DEBUG] ^2Entity Spawning: Entity: [133634] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:18:49] [DEBUG] ^2Entity Spawning: Entity: [133890] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:18:49] [DEBUG] ^2Entity Spawning: Entity: [134146] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[15:18:49] [DEBUG] ^2Entity Spawning: Entity: [134402] Spawned By Player: [yes / 0 1] MODEL [-1251197000] TYPE [object]
+[15:18:49] [DEBUG] ^2Entity Spawning: Entity: [134658] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[15:19:17] ^0[^4Player Connect^0] ^0[^3etienne.b^0] connecting...
+[15:22:07] ^0[^4Player Disconnect^0] PandaaFX disconnected... (^3Exiting^0)

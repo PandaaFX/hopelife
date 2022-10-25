@@ -1,0 +1,35 @@
+
+
+.colorWhite {
+	color:#FFFFFF !important; 
+}
+.container-custom{    
+	margin-top: 10% !important;
+	border-radius: 2vh;
+	box-shadow: 0px 0px 50px 0px #000;
+	padding-bottom:1rem
+}
+
+.centered{
+	text-align:center !important;
+}
+
+.p1{
+	padding:1% !important;
+}
+
+.tbody-white{
+	background-color: #FFFFFF !important;
+	color: #000 !important;
+}
+
+.closeButton{
+	float:right;
+}
+
+.table-rounded{	
+    border-collapse: collapse !important;
+    border-radius: .7rem !important;
+    overflow: hidden;
+	/*text-align:center;*/
+}

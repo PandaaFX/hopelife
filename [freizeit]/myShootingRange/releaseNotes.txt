@@ -1,0 +1,21 @@
+1.3.2
+- Removed the manual sql-Import
+- SQL-Table will be created by script
+- Collations of Table and Columns will match the users-table automatically
+
+1.3.1
+- Just a debug Version -> not Published at all
+
+1.3.0
+- Config.AllowRentWeapon finally works 😉
+- Fixed a glitch, which allowed to steal a weapon
+- Targets aren't visible anymore for other players
+
+1.2.0
+- Added Support for old MySQL Versions - Config.UseOldMySQL
+
+1.1.0
+- Fixed issues with ESX 1.1
+
+1.0.0
+- initial Release

@@ -1,0 +1,31 @@
+#settings {
+    /* left: 0%!important; */
+} 
+
+#settings-home {
+    margin-right: 0%;
+    /* grid-column: 2/3; */
+    grid-row: 2/4;
+}
+
+#viewbackground, #viewcase, #viewringtone, #viewcustomringtone {
+    font-size: 1em;
+    color: var(--beige-color);
+    transition: 0.5s;
+}
+
+#viewbackground, #viewcase, #viewringtone, #viewcustomringtone:hover {
+    color: var(--beige-colorh);
+    transition: 0.5s;
+}
+
+#setbackground, #setcase, #setringtone, #customringtone {
+    font-size: 1.2em;
+    transition: 0.5s;
+    color: var(--green-color);
+}
+
+#setbackground, #setcase, #setringtone, #customringtone:hover {
+    color: var(--green-colorh);
+    transition: 0.5s;
+}

@@ -1,0 +1,152 @@
+const tableHeader = [
+	"placement"
+	,"_name"
+	,"weaponname"
+	,"difficulty_points"
+	,"score"
+	,"scorecreated"
+];
+
+const fadingTime = 500;
+
+var pagelocale = 'en'
+
+
+
+
+
+// on show $("#tableheader").find("tr").remove()
+// on show $("#tablebody").find("tr").remove()
+
+// $("#closepage").fires close
+
+
+
+$(function() {
+	window.addEventListener('message', function(event) {
+	
+		if (event.data.action == "show") {
+			pagelocale = event.data.locale
+
+			console.log(event.data);
+
+			showNUI(event.data.tabledata, event.data.owndata)
+		}
+	});
+
+});
+
+$('#closepage').click(function() {
+	hideNUI();
+});
+
+document.addEventListener('keyup', function (data) {
+	if (data.code == "Escape") {
+		hideNUI();
+	}
+});
+
+
+function showNUI(tabledata, owndata){
+	$("#page_headline").html(Translations[pagelocale]["headline"])
+	$("#tableheader").find("tr").remove();
+	$("#tablebody").find("tr").remove();
+
+	createTable(tabledata);
+
+	
+	createOwnData(owndata)
+	
+	
+	$("#pagecontent").fadeIn(fadingTime);
+}
+
+function createTable(data){
+	let thRow = document.createElement("tr");
+
+	for (let i = 0; i < tableHeader.length; i++){
+		let th = document.createElement("th")
+		th.innerHTML = Translations[pagelocale][tableHeader[i]]
+
+		thRow.appendChild(th)
+	}
+	$("#tableheader").append(thRow);
+
+	if(data.length > 0){
+		for(let j = 0; j < data.length; j++){
+			let tr = document.createElement("tr");
+			for(let k=0; k < tableHeader.length; k++){
+
+				let displaytext = data[j][tableHeader[k]];
+				
+				
+				if (tableHeader[k] == "difficulty_points"){
+					let count = displaytext;
+					displaytext = "";
+
+					for(let y=0;y < count; y++ ){
+						displaytext += "&#9679";
+					}
+
+				}
+
+				
+
+
+				let td = document.createElement("td")
+				td.innerHTML = displaytext
+				tr.appendChild(td);
+			}
+			$("#tablebody").append(tr)
+		}
+	}
+	else{
+		let tr = document.createElement("tr");
+		let td = document.createElement("td");
+
+		td.setAttribute("colspan", tableHeader.length);
+		td.innerHTML = Translations[pagelocale]["nodata"];
+		tr.appendChild(td);
+
+
+
+
+
+
+		$("#tablebody").append(tr)
+	}
+
+}
+
+function createOwnData(mydata){
+	if(mydata !== undefined){
+		if (mydata.placement !== undefined ){
+			let text = Translations[pagelocale].owndata
+
+			text = text.replace(/@@pos@@/, mydata.placement)
+			text = text.replace(/@@score@@/g, mydata.score)
+			//text = text.replace(/@@createddate@@/g, mydata.scorecreated)
+
+
+			$("#id_my_data").html(text);
+		}
+		else{
+			$("#id_my_data").html(Translations[pagelocale]["noowndata"]);
+		}
+	}
+	else{
+		$("#id_my_data").html(Translations[pagelocale]["noowndata"]);
+	}
+
+	
+	
+}
+
+
+function hideNUI(){
+	$("#pagecontent").fadeOut(fadingTime);
+	$.post(
+		'https://'+ GetParentResourceName() +'/close'
+		, JSON.stringify({})
+	) 
+}

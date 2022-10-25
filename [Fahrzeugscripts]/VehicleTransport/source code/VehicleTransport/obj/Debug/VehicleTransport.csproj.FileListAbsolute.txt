@@ -1,0 +1,17 @@
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\CitizenFX.Core.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\System.Reflection.Metadata.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\System.Collections.Immutable.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\MsgPack.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\CitizenFX.Core.pdb
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\CitizenFX.Core.xml
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\MsgPack.xml
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\obj\Debug\VehicleTransport.csprojAssemblyReference.cache
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\obj\Debug\VehicleTransport.csproj.CoreCompileInputs.cache
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\obj\Debug\VehicleTransport.csproj.CopyComplete
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\Newtonsoft.Json.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\Kiminaze_FiveM_FileHandler.net.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\Kiminaze_FiveM_FileHandler.net.pdb
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\Kiminaze_VehicleTransport_Client.net.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\bin\Debug\Kiminaze_VehicleTransport_Client.net.pdb
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\obj\Debug\Kiminaze_VehicleTransport_Client.net.dll
+D:\GTARP\Custom Projects\VehicleTransport\VehicleTransport\obj\Debug\Kiminaze_VehicleTransport_Client.net.pdb

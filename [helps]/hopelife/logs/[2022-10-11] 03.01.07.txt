@@ -1,0 +1,1133 @@
+
+[03:01:07] Configuration loaded successfully...
+[03:01:07] Loaded language ^0[^3eng^0]
+[03:01:10] ChocoHax [^31.5.4b^0] is starting, Please wait...
+[03:01:11] Successfully connected to the authentication server
+[03:01:11] Connected to: ^0[^3lynxcollective.ltd #1 1.5.4b^0]
+[03:01:11] Current account: ^0[^3alexandar.lazarevski006@gmail.com^0]
+[03:01:11] Current server IP: ^0[^3193.42.12.47^0]
+[03:01:11] ^5MOTD: ^0This ChocoHax version is outdated, We recommend updating to the latest ChocoHax version as soon as possible^0
+[03:01:11] ^0[^3runcode^0] is a dangerous resources that can be exploited, we recommend removing it from the server as fast as possible...
+[03:01:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[03:01:11] ChocoHax Global Ban List updated successfully...
+[03:01:15] ^0[^4Player Connect^0] ^0[^3mayn.str^0] connecting...
+[03:01:23] ^0[^4Player Connect^0] ^0[^3Scholz^0] connecting...
+[03:01:24] ^0[^4Player Connect^0] ^0[^367 Hustler^0] connecting...
+[03:01:33] ^0[^4Player Connect^0] ^0[^3StrikeFa1ld_tv^0] connecting...
+[03:01:50] ^0[^4Player Connect^0] ^0[^3Sucuk mit ei^0] connecting...
+[03:01:55] ^0[^4Player Connect^0] ^0[^3SliceOnFiveM^0] connecting...
+[03:01:58] ^0[^4Player Connect^0] ^0[^3Peter Griffin^0] connecting...
+[03:02:00] ^0[^4Player Connect^0] ^0[^3Dave Sanchez^0] connecting...
+[03:02:02] ^0[^4Player Connect^0] ^0[^3G^0] connecting...
+[03:02:05] ^0[^4Player Connect^0] ^0[^3gobboking^0] connecting...
+[03:02:06] ^0[^4Player Connect^0] ^0[^3Juniorr^0] connecting...
+[03:02:09] ^0[^4Player Connect^0] ^0[^3rkort^0] connecting...
+[03:02:10] ^0[^4Player Connect^0] ^0[^3Increase_Live^0] connecting...
+[03:02:12] ^0[^4Player Connect^0] ^0[^3DeF_Toshi-sama^0] connecting...
+[03:02:25] ^0[^4Player Connect^0] ^0[^3Eliass^0] connecting...
+[03:02:26] [DEBUG] ^2Entity Spawning: Entity: [131073] Spawned By Player: [yes / 0 3] MODEL [225514697] TYPE [ped]
+[03:02:26] ^0[^4Player Connect^0] ^0[^3PV-MaXi^0] connecting...
+[03:02:29] ^0[^4Player Connect^0] ^0[^3Ayleen^0] connecting...
+[03:02:32] [DEBUG] ^2Entity Spawning: Entity: [131329] Spawned By Player: [yes / 0 1] MODEL [225514697] TYPE [ped]
+[03:02:32] [DEBUG] ^2Entity Spawning: Entity: [131585] Spawned By Player: [yes / 0 3] MODEL [1760825203] TYPE [object]
+[03:02:32] [DEBUG] ^2Entity Spawning: Entity: [131841] Spawned By Player: [yes / 0 3] MODEL [1760825203] TYPE [object]
+[03:02:39] [DEBUG] ^2Entity Spawning: Entity: [132097] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[03:02:39] [DEBUG] ^2Entity Spawning: Entity: [132353] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[03:02:41] ^0[^4Player Connect^0] ^0[^3HL |  Juls MS^0] connecting...
+[03:02:41] [DEBUG] ^2Entity Spawning: Entity: [132609] Spawned By Player: [yes / 0 1] MODEL [1089807209] TYPE [object]
+[03:02:41] [DEBUG] ^2Entity Spawning: Entity: [132865] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [133121] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [133377] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [133633] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [133889] Spawned By Player: [yes / 0 1] MODEL [1171655821] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [134145] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [134401] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [134657] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:42] [DEBUG] ^2Entity Spawning: Entity: [134913] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[03:02:43] [DEBUG] ^2Entity Spawning: Entity: [135169] Spawned By Player: [yes / 0 1] MODEL [-1251197000] TYPE [object]
+[03:02:43] [DEBUG] ^2Entity Spawning: Entity: [135425] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[03:02:45] ^0[^4Player Connect^0] ^0[^3Yiana Summer^0] connecting...
+[03:02:48] [DEBUG] ^2Entity Spawning: Entity: [135681] Spawned By Player: [yes / 0 2] MODEL [225514697] TYPE [ped]
+[03:02:48] [DEBUG] ^2Entity Spawning: Entity: [135937] Spawned By Player: [yes / 0 8] MODEL [225514697] TYPE [ped]
+[03:02:49] [DEBUG] ^2Entity Spawning: Entity: [136961] Spawned By Player: [yes / 0 5] MODEL [225514697] TYPE [ped]
+[03:02:51] [DEBUG] Explosion: 
+[03:02:51] [DEBUG] ^2Entity Spawning: Entity: [140033] Spawned By Player: [yes / 0 10] MODEL [225514697] TYPE [ped]
+[03:02:52] [DEBUG] Explosion: 
+[03:02:52] [DEBUG] ^2Entity Spawning: Entity: [140289] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:02:52] [DEBUG] Explosion: 
+[03:02:53] [DEBUG] Explosion: 
+[03:02:53] [DEBUG] Explosion: 
+[03:02:54] [DEBUG] ^2Entity Spawning: Entity: [136194] Spawned By Player: [yes / 0 8] MODEL [1760825203] TYPE [object]
+[03:02:54] [DEBUG] ^2Entity Spawning: Entity: [136450] Spawned By Player: [yes / 0 8] MODEL [1760825203] TYPE [object]
+[03:02:54] [DEBUG] ^2Entity Spawning: Entity: [137218] Spawned By Player: [yes / 0 5] MODEL [1760825203] TYPE [object]
+[03:02:54] [DEBUG] ^2Entity Spawning: Entity: [137986] Spawned By Player: [yes / 0 5] MODEL [1760825203] TYPE [object]
+[03:02:54] [DEBUG] Explosion: 
+[03:02:55] ^0[^4Player Disconnect^0] Juniorr disconnected... (^3Game crashed: An exception occurred (c0000005 at 0x14160bc81) during execution of the INIT_SESSION function for CExtraContentWrapper. The game will be terminated.^0)
+[03:02:55] [DEBUG] Explosion: 
+[03:02:56] [DEBUG] Explosion: 
+[03:02:56] [DEBUG] Explosion: 
+[03:02:57] [DEBUG] Explosion: 
+[03:02:58] [DEBUG] ^2Entity Spawning: Entity: [136707] Spawned By Player: [yes / 0 10] MODEL [1760825203] TYPE [object]
+[03:02:58] [DEBUG] ^2Entity Spawning: Entity: [137476] Spawned By Player: [yes / 0 10] MODEL [1760825203] TYPE [object]
+[03:02:58] [DEBUG] Explosion: 
+[03:03:02] ^0[^4Player Connect^0] ^0[^3𝒜𝓊f 𝒮üzz | Latif^0] connecting...
+[03:03:02] [DEBUG] ^2Entity Spawning: Entity: [137731] Spawned By Player: [yes / 0 8] MODEL [1365216886] TYPE [object]
+[03:03:05] [DEBUG] Explosion: 
+[03:03:05] [DEBUG] ^2Entity Spawning: Entity: [138242] Spawned By Player: [yes / 0 12] MODEL [225514697] TYPE [ped]
+[03:03:06] [DEBUG] ^2Entity Spawning: Entity: [138498] Spawned By Player: [yes / 0 6] MODEL [225514697] TYPE [ped]
+[03:03:06] [DEBUG] ^2Entity Spawning: Entity: [138754] Spawned By Player: [yes / 0 7] MODEL [225514697] TYPE [ped]
+[03:03:06] [DEBUG] Explosion: 
+[03:03:07] [DEBUG] ^2Entity Spawning: Entity: [141570] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[03:03:07] [DEBUG] ^2Entity Spawning: Entity: [141826] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[03:03:09] ^0[^4Player Connect^0] ^0[^3Xander^0] connecting...
+[03:03:10] [DEBUG] ^2Entity Spawning: Entity: [139011] Spawned By Player: [yes / 0 5] MODEL [1365216886] TYPE [object]
+[03:03:11] ^0[^4Player Connect^0] ^0[^3HL | Jibbo^0] connecting...
+[03:03:11] [DEBUG] ^2Entity Spawning: Entity: [139523] Spawned By Player: [yes / 0 7] MODEL [1760825203] TYPE [object]
+[03:03:11] [DEBUG] ^2Entity Spawning: Entity: [141315] Spawned By Player: [yes / 0 7] MODEL [1760825203] TYPE [object]
+[03:03:12] [DEBUG] ^2Entity Spawning: Entity: [139779] Spawned By Player: [yes / 0 11] MODEL [225514697] TYPE [ped]
+[03:03:12] [DEBUG] ^2Entity Spawning: Entity: [140547] Spawned By Player: [yes / 0 12] MODEL [1760825203] TYPE [object]
+[03:03:12] [DEBUG] ^2Entity Spawning: Entity: [140803] Spawned By Player: [yes / 0 12] MODEL [1760825203] TYPE [object]
+[03:03:12] [DEBUG] ^2Entity Spawning: Entity: [142083] Spawned By Player: [yes / 0 6] MODEL [1760825203] TYPE [object]
+[03:03:12] [DEBUG] ^2Entity Spawning: Entity: [142594] Spawned By Player: [yes / 0 6] MODEL [1760825203] TYPE [object]
+[03:03:12] [DEBUG] Explosion: 
+[03:03:18] ^0[^4Player Connect^0] ^0[^3marab^0] connecting...
+[03:03:18] ^0[^4Player Connect^0] ^0[^3Ricky_Rage^0] connecting...
+[03:03:19] [DEBUG] ^2Entity Spawning: Entity: [137733] Spawned By Player: [yes / 0 11] MODEL [1760825203] TYPE [object]
+[03:03:19] [DEBUG] ^2Entity Spawning: Entity: [139268] Spawned By Player: [yes / 0 11] MODEL [1760825203] TYPE [object]
+[03:03:24] [DEBUG] ^2Entity Spawning: Entity: [134658] Spawned By Player: [yes / 0 15] MODEL [225514697] TYPE [ped]
+[03:03:24] [DEBUG] ^2Entity Spawning: Entity: [134914] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:03:25] [DEBUG] ^2Entity Spawning: Entity: [139012] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:03:28] [DEBUG] ^2Entity Spawning: Entity: [143619] Spawned By Player: [yes / 0 4] MODEL [225514697] TYPE [ped]
+[03:03:29] [DEBUG] ^2Entity Spawning: Entity: [147969] Spawned By Player: [yes / 0 11] MODEL [148511758] TYPE [object]
+[03:03:29] [DEBUG] ^2Entity Spawning: Entity: [142851] Spawned By Player: [yes / 0 15] MODEL [1760825203] TYPE [object]
+[03:03:29] [DEBUG] ^2Entity Spawning: Entity: [143107] Spawned By Player: [yes / 0 15] MODEL [1760825203] TYPE [object]
+[03:03:31] [DEBUG] ^2Entity Spawning: Entity: [141062] Spawned By Player: [yes / 0 11] MODEL [1365216886] TYPE [object]
+[03:03:32] [DEBUG] ^2Entity Spawning: Entity: [145666] Spawned By Player: [yes / 0 14] MODEL [225514697] TYPE [ped]
+[03:03:32] [DEBUG] ^2Entity Spawning: Entity: [146690] Spawned By Player: [yes / 0 18] MODEL [225514697] TYPE [ped]
+[03:03:34] ^0[^4Player Connect^0] ^0[^3Juniorr^0] connecting...
+[03:03:35] [DEBUG] ^2Entity Spawning: Entity: [145411] Spawned By Player: [yes / 7 2] MODEL [-1168952148] TYPE [vehicle]
+[03:03:35] [DEBUG] ^2Entity Spawning: Entity: [146435] Spawned By Player: [yes / 7 2] MODEL [999748158] TYPE [ped]
+[03:03:35] [DEBUG] ^2Entity Spawning: Entity: [143878] Spawned By Player: [yes / 7 7] MODEL [934775262] TYPE [vehicle]
+[03:03:36] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029197544825303040/screenshot.jpg
+[03:03:37] [DEBUG] ^2Entity Spawning: Entity: [147203] Spawned By Player: [yes / 0 13] MODEL [225514697] TYPE [ped]
+[03:03:39] ^0[^4Player Connect^0] ^0[^3Maxim^0] connecting...
+[03:03:39] [DEBUG] ^2Entity Spawning: Entity: [141064] Spawned By Player: [yes / 0 18] MODEL [1760825203] TYPE [object]
+[03:03:39] [DEBUG] ^2Entity Spawning: Entity: [143367] Spawned By Player: [yes / 0 18] MODEL [1760825203] TYPE [object]
+[03:03:40] [DEBUG] ^2Entity Spawning: Entity: [149761] Spawned By Player: [yes / 0 20] MODEL [225514697] TYPE [ped]
+[03:03:41] ^0[^318^0] ^0[^3HL |  Juls MS^0] authentificated as ChocoHax Admin/Moderator
+[03:03:44] [DEBUG] ^2Entity Spawning: Entity: [142345] Spawned By Player: [yes / 0 13] MODEL [1760825203] TYPE [object]
+[03:03:44] [DEBUG] ^2Entity Spawning: Entity: [144135] Spawned By Player: [yes / 0 13] MODEL [1760825203] TYPE [object]
+[03:03:44] [DEBUG] ^2Entity Spawning: Entity: [144391] Spawned By Player: [yes / 0 20] MODEL [1760825203] TYPE [object]
+[03:03:44] [DEBUG] ^2Entity Spawning: Entity: [144647] Spawned By Player: [yes / 0 20] MODEL [1760825203] TYPE [object]
+[03:03:46] ^0[^4Player Connect^0] ^0[^3Morheam^0] connecting...
+[03:03:46] [DEBUG] ^2Entity Spawning: Entity: [139016] Spawned By Player: [yes / 0 17] MODEL [225514697] TYPE [ped]
+[03:03:50] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029197601637150840/screenshot.jpg
+[03:03:53] [DEBUG] ^2Entity Spawning: Entity: [144903] Spawned By Player: [yes / 0 4] MODEL [1760825203] TYPE [object]
+[03:03:53] [DEBUG] ^2Entity Spawning: Entity: [145159] Spawned By Player: [yes / 0 4] MODEL [1760825203] TYPE [object]
+[03:03:55] [DEBUG] ^2Entity Spawning: Entity: [145926] Spawned By Player: [yes / 0 17] MODEL [1760825203] TYPE [object]
+[03:03:55] [DEBUG] ^2Entity Spawning: Entity: [146182] Spawned By Player: [yes / 0 17] MODEL [1760825203] TYPE [object]
+[03:03:56] [DEBUG] ^2Entity Spawning: Entity: [146436] Spawned By Player: [yes / 0 18] MODEL [1365216886] TYPE [object]
+[03:03:56] [DEBUG] ^2Entity Spawning: Entity: [146949] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[03:03:58] [DEBUG] ^2Entity Spawning: Entity: [147461] Spawned By Player: [yes / 0 19] MODEL [225514697] TYPE [ped]
+[03:04:01] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029197649125064720/screenshot.jpg
+[03:04:02] [DEBUG] ^2Entity Spawning: Entity: [150785] Spawned By Player: [yes / 0 14] MODEL [1760825203] TYPE [object]
+[03:04:02] [DEBUG] ^2Entity Spawning: Entity: [151041] Spawned By Player: [yes / 0 14] MODEL [1760825203] TYPE [object]
+[03:04:09] [DEBUG] ^2Entity Spawning: Entity: [146438] Spawned By Player: [yes / 0 19] MODEL [1760825203] TYPE [object]
+[03:04:09] [DEBUG] ^2Entity Spawning: Entity: [146950] Spawned By Player: [yes / 0 19] MODEL [1760825203] TYPE [object]
+[03:04:09] [DEBUG] ^2Entity Spawning: Entity: [147718] Spawned By Player: [yes / 7 18] MODEL [1794449327] TYPE [ped]
+[03:04:10] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029197686672474192/screenshot.jpg
+[03:04:10] [DEBUG] ^2Entity Spawning: Entity: [148229] Spawned By Player: [yes / 0 15] MODEL [-1910604593] TYPE [object]
+[03:04:14] [DEBUG] ^2Entity Spawning: Entity: [148484] Spawned By Player: [yes / 0 3] MODEL [1365216886] TYPE [object]
+[03:04:15] [DEBUG] ^2Entity Spawning: Entity: [148739] Spawned By Player: [yes / 0 22] MODEL [225514697] TYPE [ped]
+[03:04:20] [DEBUG] ^2Entity Spawning: Entity: [148995] Spawned By Player: [yes / 0 16] MODEL [225514697] TYPE [ped]
+[03:04:21] [DEBUG] ^2Entity Spawning: Entity: [149251] Spawned By Player: [yes / 0 22] MODEL [1760825203] TYPE [object]
+[03:04:21] [DEBUG] ^2Entity Spawning: Entity: [149507] Spawned By Player: [yes / 0 22] MODEL [1760825203] TYPE [object]
+[03:04:30] ^0[^4Player Connect^0] ^0[^3~u~ Tyler^0] connecting...
+[03:04:31] [DEBUG] ^2Entity Spawning: Entity: [150533] Spawned By Player: [yes / 0 24] MODEL [225514697] TYPE [ped]
+[03:04:35] [DEBUG] ^2Entity Spawning: Entity: [152067] Spawned By Player: [yes / 0 16] MODEL [1760825203] TYPE [object]
+[03:04:35] [DEBUG] ^2Entity Spawning: Entity: [153091] Spawned By Player: [yes / 0 16] MODEL [1760825203] TYPE [object]
+[03:04:36] [DEBUG] ^2Entity Spawning: Entity: [150022] Spawned By Player: [yes / 0 24] MODEL [1760825203] TYPE [object]
+[03:04:36] [DEBUG] ^2Entity Spawning: Entity: [151557] Spawned By Player: [yes / 0 24] MODEL [1760825203] TYPE [object]
+[03:04:37] [DEBUG] ^2Entity Spawning: Entity: [148488] Spawned By Player: [yes / 0 23] MODEL [225514697] TYPE [ped]
+[03:04:38] [DEBUG] ^2Entity Spawning: Entity: [150278] Spawned By Player: [yes / 0 26] MODEL [225514697] TYPE [ped]
+[03:04:43] [DEBUG] ^2Entity Spawning: Entity: [152837] Spawned By Player: [yes / 0 26] MODEL [1760825203] TYPE [object]
+[03:04:43] [DEBUG] ^2Entity Spawning: Entity: [157185] Spawned By Player: [yes / 0 26] MODEL [1760825203] TYPE [object]
+[03:04:44] [DEBUG] Screenshot received from Peter Griffin https://cdn.discordapp.com/attachments/1027585247321264188/1029197830348353586/screenshot.jpg
+[03:04:45] [DEBUG] ^2Entity Spawning: Entity: [151302] Spawned By Player: [yes / 0 21] MODEL [225514697] TYPE [ped]
+[03:04:49] [DEBUG] ^2Entity Spawning: Entity: [154372] Spawned By Player: [yes / 0 23] MODEL [1760825203] TYPE [object]
+[03:04:49] [DEBUG] ^2Entity Spawning: Entity: [154627] Spawned By Player: [yes / 0 23] MODEL [1760825203] TYPE [object]
+[03:04:53] ^0[^4Player Connect^0] ^0[^3Jessi^0] connecting...
+[03:04:57] [DEBUG] ^2Entity Spawning: Entity: [151815] Spawned By Player: [yes / 0 21] MODEL [1760825203] TYPE [object]
+[03:04:57] [DEBUG] ^2Entity Spawning: Entity: [152326] Spawned By Player: [yes / 0 21] MODEL [1760825203] TYPE [object]
+[03:04:58] ^0[^4Player Connect^0] ^0[^3BlackPanther^0] connecting...
+[03:05:00] [DEBUG] ^2Entity Spawning: Entity: [152582] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:05:00] ^0[^4Player Connect^0] ^0[^3~r~ HL | JoScha^0] connecting...
+[03:05:00] [DEBUG] ^2Entity Spawning: Entity: [153349] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:05:01] ^0[^4Player Connect^0] ^0[^3SchattenJagd33^0] connecting...
+[03:05:08] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029197929828864010/screenshot.jpg
+[03:05:15] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029197959285452860/screenshot.jpg
+[03:05:22] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029197989635444737/screenshot.jpg
+[03:05:23] [DEBUG] ^2Entity Spawning: Entity: [153350] Spawned By Player: [yes / 0 16] MODEL [148511758] TYPE [object]
+[03:05:25] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029198001513705502/screenshot.jpg
+[03:05:28] [DEBUG] ^2Entity Spawning: Entity: [150023] Spawned By Player: [yes / 0 21] MODEL [1365216886] TYPE [object]
+[03:05:29] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029198019930898442/screenshot.jpg
+[03:05:34] [DEBUG] ^2Entity Spawning: Entity: [150534] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:05:37] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029198050918408284/screenshot.jpg
+[03:05:37] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029198053300785202/screenshot.jpg
+[03:05:39] ^0[^4Player Connect^0] ^0[^3HL| Minimi^0] connecting...
+[03:05:41] [DEBUG] ^2Entity Spawning: Entity: [150024] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:05:42] [DEBUG] ^2Entity Spawning: Entity: [150535] Spawned By Player: [yes / 0 30] MODEL [225514697] TYPE [ped]
+[03:05:43] [DEBUG] ^2Entity Spawning: Entity: [156419] Spawned By Player: [yes / 0 7] MODEL [-1910604593] TYPE [object]
+[03:05:45] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029198085118771201/screenshot.jpg
+[03:05:46] [DEBUG] ^2Entity Spawning: Entity: [151560] Spawned By Player: [yes / 0 30] MODEL [1760825203] TYPE [object]
+[03:05:46] [DEBUG] ^2Entity Spawning: Entity: [153607] Spawned By Player: [yes / 0 30] MODEL [1760825203] TYPE [object]
+[03:05:51] ^0[^4Player Connect^0] ^0[^3Maxim^0] connecting...
+[03:05:55] [DEBUG] ^2Entity Spawning: Entity: [150025] Spawned By Player: [yes / 0 25] MODEL [225514697] TYPE [ped]
+[03:05:58] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029198140206751754/screenshot.jpg
+[03:06:00] ^0[^4Player Disconnect^0] Jessi disconnected... (^3Spielabsturz: GTA5_b2699.exe!sub_140586984 (0x1c1)^0)
+[03:06:03] [DEBUG] ^2Entity Spawning: Entity: [152585] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:06:03] [DEBUG] ^2Entity Spawning: Entity: [153864] Spawned By Player: [yes / 0 31] MODEL [225514697] TYPE [ped]
+[03:06:07] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029198180425928775/screenshot.jpg
+[03:06:08] [DEBUG] ^2Entity Spawning: Entity: [156933] Spawned By Player: [yes / 0 27] MODEL [225514697] TYPE [ped]
+[03:06:09] [DEBUG] ^2Entity Spawning: Entity: [160513] Spawned By Player: [yes / 0 25] MODEL [1760825203] TYPE [object]
+[03:06:09] [DEBUG] ^2Entity Spawning: Entity: [160769] Spawned By Player: [yes / 0 25] MODEL [1760825203] TYPE [object]
+[03:06:09] [DEBUG] ^2Entity Spawning: Entity: [154118] Spawned By Player: [yes / 0 31] MODEL [1760825203] TYPE [object]
+[03:06:09] [DEBUG] ^2Entity Spawning: Entity: [154886] Spawned By Player: [yes / 0 31] MODEL [1760825203] TYPE [object]
+[03:06:11] [DEBUG] ^2Entity Spawning: Entity: [159234] Spawned By Player: [yes / 7 16] MODEL [999748158] TYPE [ped]
+[03:06:11] [DEBUG] ^2Entity Spawning: Entity: [159490] Spawned By Player: [yes / 7 16] MODEL [934775262] TYPE [vehicle]
+[03:06:13] [DEBUG] ^2Entity Spawning: Entity: [157701] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:06:25] [DEBUG] ^2Entity Spawning: Entity: [152587] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:06:26] [DEBUG] ^2Entity Spawning: Entity: [155143] Spawned By Player: [yes / 0 27] MODEL [1760825203] TYPE [object]
+[03:06:26] [DEBUG] ^2Entity Spawning: Entity: [155400] Spawned By Player: [yes / 0 27] MODEL [1760825203] TYPE [object]
+[03:06:26] [DEBUG] ^2Entity Spawning: Entity: [155656] Spawned By Player: [yes / 0 28] MODEL [225514697] TYPE [ped]
+[03:06:28] [DEBUG] ^2Entity Spawning: Entity: [155911] Spawned By Player: [yes / 0 4] MODEL [746336278] TYPE [object]
+[03:06:28] ^0[^4Player Connect^0] ^0[^3HL | Snoop^0] connecting...
+[03:06:30] [DEBUG] ^2Entity Spawning: Entity: [156167] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:06:31] [DEBUG] ^2Entity Spawning: Entity: [156679] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[03:06:32] ^0[^4Player Connect^0] ^0[^3Jessi^0] connecting...
+[03:06:32] [DEBUG] ^2Entity Spawning: Entity: [155912] Spawned By Player: [yes / 0 34] MODEL [225514697] TYPE [ped]
+[03:06:36] [DEBUG] ^2Entity Spawning: Entity: [157447] Spawned By Player: [yes / 0 34] MODEL [1760825203] TYPE [object]
+[03:06:36] [DEBUG] ^2Entity Spawning: Entity: [157703] Spawned By Player: [yes / 0 34] MODEL [1760825203] TYPE [object]
+[03:06:37] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029198305567191130/screenshot.jpg
+[03:06:38] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029198308696141866/screenshot.jpg
+[03:06:39] [DEBUG] ^2Entity Spawning: Entity: [152589] Spawned By Player: [yes / 0 17] MODEL [746336278] TYPE [object]
+[03:06:40] [DEBUG] ^2Entity Spawning: Entity: [156169] Spawned By Player: [yes / 0 28] MODEL [1760825203] TYPE [object]
+[03:06:40] [DEBUG] ^2Entity Spawning: Entity: [157958] Spawned By Player: [yes / 0 28] MODEL [1760825203] TYPE [object]
+[03:06:42] [DEBUG] ^2Entity Spawning: Entity: [158213] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:06:42] [DEBUG] ^2Entity Spawning: Entity: [158468] Spawned By Player: [yes / 7 25] MODEL [-1743316013] TYPE [vehicle]
+[03:06:42] [DEBUG] ^2Entity Spawning: Entity: [158724] Spawned By Player: [yes / 7 25] MODEL [999748158] TYPE [ped]
+[03:06:49] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029198352388206682/screenshot.jpg
+[03:06:49] [DEBUG] ^2Entity Spawning: Entity: [152590] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:06:54] [DEBUG] ^2Entity Spawning: Entity: [156680] Spawned By Player: [yes / 0 33] MODEL [225514697] TYPE [ped]
+[03:06:59] [DEBUG] ^2Entity Spawning: Entity: [159749] Spawned By Player: [yes / 7 19] MODEL [1311755301] TYPE [vehicle]
+[03:07:03] [DEBUG] ^2Entity Spawning: Entity: [160006] Spawned By Player: [yes / 0 33] MODEL [1760825203] TYPE [object]
+[03:07:03] [DEBUG] ^2Entity Spawning: Entity: [161539] Spawned By Player: [yes / 0 33] MODEL [1760825203] TYPE [object]
+[03:07:12] [DEBUG] ^2Entity Spawning: Entity: [158982] Spawned By Player: [yes / 7 30] MODEL [2112052861] TYPE [vehicle]
+[03:07:22] [DEBUG] ^2Entity Spawning: Entity: [160261] Spawned By Player: [yes / 0 31] MODEL [1365216886] TYPE [object]
+[03:07:24] [DEBUG] ^2Entity Spawning: Entity: [161029] Spawned By Player: [yes / 7 5] MODEL [55628203] TYPE [vehicle]
+[03:07:28] [DEBUG] ^2Entity Spawning: Entity: [158983] Spawned By Player: [yes / 0 32] MODEL [225514697] TYPE [ped]
+[03:07:28] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029198519233417346/screenshot.jpg
+[03:07:29] [DEBUG] ^2Entity Spawning: Entity: [161284] Spawned By Player: [yes / 0 35] MODEL [225514697] TYPE [ped]
+[03:07:33] [DEBUG] ^2Entity Spawning: Entity: [163075] Spawned By Player: [yes / 0 36] MODEL [225514697] TYPE [ped]
+[03:07:35] [DEBUG] ^2Entity Spawning: Entity: [165378] Spawned By Player: [yes / 0 35] MODEL [1760825203] TYPE [object]
+[03:07:35] [DEBUG] ^2Entity Spawning: Entity: [165890] Spawned By Player: [yes / 0 35] MODEL [1760825203] TYPE [object]
+[03:07:35] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029198548136362044/screenshot.jpg
+[03:07:36] [DEBUG] ^2Entity Spawning: Entity: [160263] Spawned By Player: [yes / 7 14] MODEL [744705981] TYPE [vehicle]
+[03:07:43] [DEBUG] ^2Entity Spawning: Entity: [158725] Spawned By Player: [yes / 0 32] MODEL [1760825203] TYPE [object]
+[03:07:43] [DEBUG] ^2Entity Spawning: Entity: [161799] Spawned By Player: [yes / 0 32] MODEL [1760825203] TYPE [object]
+[03:07:43] [DEBUG] ^2Entity Spawning: Entity: [162055] Spawned By Player: [yes / 0 36] MODEL [1760825203] TYPE [object]
+[03:07:44] [DEBUG] ^2Entity Spawning: Entity: [162310] Spawned By Player: [yes / 0 36] MODEL [1760825203] TYPE [object]
+[03:07:50] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029198608660172850/screenshot.jpg
+[03:07:52] [DEBUG] ^2Entity Spawning: Entity: [162566] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:07:59] ^0[^4Player Disconnect^0] Yiana Summer disconnected... (^3Exiting^0)
+[03:08:00] [DEBUG] ^2Entity Spawning: Entity: [146439] Spawned By Player: [yes / 7 31] MODEL [807456716] TYPE [vehicle]
+[03:08:06] [DEBUG] ^2Entity Spawning: Entity: [147462] Spawned By Player: [yes / 0 27] MODEL [-1138601601] TYPE [object]
+[03:08:06] [DEBUG] ^2Entity Spawning: Entity: [162823] Spawned By Player: [yes / 0 36] MODEL [1365216886] TYPE [object]
+[03:08:17] ^0[^4Player Connect^0] ^0[^3Yiana Summer^0] connecting...
+[03:08:21] ^0[^4Player Connect^0] ^0[^3HL Steini^0] connecting...
+[03:08:29] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029198768735789076/screenshot.jpg
+[03:08:30] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:08:31] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:08:44] ^0[^4Player Connect^0] ^0[^3DerLordR3x^0] connecting...
+[03:08:56] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:09:11] [DEBUG] ^2Entity Spawning: Entity: [162824] Spawned By Player: [yes / 0 37] MODEL [225514697] TYPE [ped]
+[03:09:12] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029198952890896445/screenshot.jpg
+[03:09:16] [DEBUG] ^2Entity Spawning: Entity: [163333] Spawned By Player: [yes / 0 37] MODEL [1760825203] TYPE [object]
+[03:09:16] [DEBUG] ^2Entity Spawning: Entity: [163589] Spawned By Player: [yes / 0 37] MODEL [1760825203] TYPE [object]
+[03:09:31] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:09:33] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:09:37] [DEBUG] ^2Entity Spawning: Entity: [163844] Spawned By Player: [yes / 7 18] MODEL [1794449327] TYPE [ped]
+[03:09:39] [DEBUG] ^2Entity Spawning: Entity: [164100] Spawned By Player: [yes / 0 38] MODEL [225514697] TYPE [ped]
+[03:09:40] ^0[^4Player Disconnect^0] HL | Snoop disconnected... (^3Spielabsturz: GTA5_b2699.exe!sub_14058250C (0x316)^0)
+[03:09:47] [DEBUG] ^2Entity Spawning: Entity: [161286] Spawned By Player: [yes / 0 38] MODEL [1760825203] TYPE [object]
+[03:09:47] [DEBUG] ^2Entity Spawning: Entity: [163845] Spawned By Player: [yes / 0 38] MODEL [1760825203] TYPE [object]
+[03:09:47] [DEBUG] ^2Entity Spawning: Entity: [164356] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:09:58] [DEBUG] ^2Entity Spawning: Entity: [164357] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:10:00] [DEBUG] ^2Entity Spawning: Entity: [164613] Spawned By Player: [yes / 7 32] MODEL [-171220693] TYPE [vehicle]
+[03:10:01] [DEBUG] ^2Entity Spawning: Entity: [164868] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:10:04] [DEBUG] ^2Entity Spawning: Entity: [162567] Spawned By Player: [yes / 0 39] MODEL [225514697] TYPE [ped]
+[03:10:15] [DEBUG] ^2Entity Spawning: Entity: [160264] Spawned By Player: [yes / 0 39] MODEL [1760825203] TYPE [object]
+[03:10:15] [DEBUG] ^2Entity Spawning: Entity: [164360] Spawned By Player: [yes / 0 39] MODEL [1760825203] TYPE [object]
+[03:10:21] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029199244390826035/screenshot.jpg
+[03:10:39] ^0[^4Player Connect^0] ^0[^3HL | Snoop^0] connecting...
+[03:10:39] [DEBUG] ^2Entity Spawning: Entity: [147463] Spawned By Player: [yes / 7 12] MODEL [-1756021720] TYPE [vehicle]
+[03:10:39] [DEBUG] ^2Entity Spawning: Entity: [165380] Spawned By Player: [yes / 7 12] MODEL [999748158] TYPE [ped]
+[03:10:42] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029199332693528668/screenshot.jpg
+[03:10:43] [DEBUG] ^2Entity Spawning: Entity: [165636] Spawned By Player: [yes / 0 17] MODEL [746336278] TYPE [object]
+[03:10:52] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029199372208050198/screenshot.jpg
+[03:10:52] [DEBUG] ^2Entity Spawning: Entity: [165637] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:10:53] [DEBUG] ^2Entity Spawning: Entity: [165892] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:10:53] [DEBUG] ^2Entity Spawning: Entity: [166148] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:11:03] [DEBUG] ^2Entity Spawning: Entity: [165381] Spawned By Player: [yes / 7 13] MODEL [999748158] TYPE [ped]
+[03:11:03] [DEBUG] ^2Entity Spawning: Entity: [166660] Spawned By Player: [yes / 7 13] MODEL [-1237253773] TYPE [vehicle]
+[03:11:03] [DEBUG] ^2Entity Spawning: Entity: [166916] Spawned By Player: [yes / 0 27] MODEL [683570518] TYPE [object]
+[03:11:03] [DEBUG] Screenshot received from SchattenJagd33 https://cdn.discordapp.com/attachments/1027585247321264188/1029199418555105310/screenshot.jpg
+[03:11:11] [DEBUG] Screenshot received from DerLordR3x https://cdn.discordapp.com/attachments/1027585247321264188/1029199449819467816/screenshot.jpg
+[03:11:18] [DEBUG] ^2Entity Spawning: Entity: [166149] Spawned By Player: [yes / 0 39] MODEL [-925658112] TYPE [object]
+[03:11:58] ^0[^4Player Connect^0] ^0[^3SliceOnFiveM^0] connecting...
+[03:11:59] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029199654845427874/screenshot.jpg
+[03:12:23] [DEBUG] ^2Entity Spawning: Entity: [138499] Spawned By Player: [yes / 0 40] MODEL [225514697] TYPE [ped]
+[03:12:25] [DEBUG] ^2Entity Spawning: Entity: [167682] Spawned By Player: [yes / 0 11] MODEL [1365216886] TYPE [object]
+[03:12:29] [DEBUG] ^2Entity Spawning: Entity: [165383] Spawned By Player: [yes / 0 40] MODEL [1760825203] TYPE [object]
+[03:12:29] [DEBUG] ^2Entity Spawning: Entity: [166406] Spawned By Player: [yes / 0 40] MODEL [1760825203] TYPE [object]
+[03:12:31] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:12:31] [DEBUG] ^2Entity Spawning: Entity: [140293] Spawned By Player: [yes / 0 3] MODEL [2116969379] TYPE [object]
+[03:12:31] [DEBUG] ^2Entity Spawning: Entity: [142086] Spawned By Player: [yes / 0 3] MODEL [2116969379] TYPE [object]
+[03:12:31] [DEBUG] ^2Entity Spawning: Entity: [142597] Spawned By Player: [yes / 0 3] MODEL [2116969379] TYPE [object]
+[03:12:31] [DEBUG] ^2Entity Spawning: Entity: [147972] Spawned By Player: [yes / 0 3] MODEL [2116969379] TYPE [object]
+[03:12:32] [DEBUG] ^2Entity Spawning: Entity: [153353] Spawned By Player: [yes / 7 11] MODEL [-1743316013] TYPE [vehicle]
+[03:12:32] [DEBUG] ^2Entity Spawning: Entity: [165641] Spawned By Player: [yes / 7 11] MODEL [999748158] TYPE [ped]
+[03:12:32] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:12:42] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029199834713964544/screenshot.jpg
+[03:12:49] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029199862673195028/screenshot.jpg
+[03:12:52] [DEBUG] ^2Entity Spawning: Entity: [140294] Spawned By Player: [yes / 0 41] MODEL [225514697] TYPE [ped]
+[03:12:59] [DEBUG] ^2Entity Spawning: Entity: [142088] Spawned By Player: [yes / 0 41] MODEL [1760825203] TYPE [object]
+[03:12:59] [DEBUG] ^2Entity Spawning: Entity: [142599] Spawned By Player: [yes / 0 41] MODEL [1760825203] TYPE [object]
+[03:13:02] [DEBUG] ^2Entity Spawning: Entity: [147974] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:13:06] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029199935503085608/screenshot.jpg
+[03:13:06] [DEBUG] ^2Entity Spawning: Entity: [166153] Spawned By Player: [yes / 7 3] MODEL [934775262] TYPE [vehicle]
+[03:13:07] [DEBUG] Screenshot received from DerLordR3x https://cdn.discordapp.com/attachments/1027585247321264188/1029199939986784276/screenshot.jpg
+[03:13:07] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:13:13] [DEBUG] ^2Entity Spawning: Entity: [146440] Spawned By Player: [yes / 7 21] MODEL [-1671539132] TYPE [vehicle]
+[03:13:15] [DEBUG] ^2Entity Spawning: Entity: [167174] Spawned By Player: [yes / 7 18] MODEL [-394412962] TYPE [vehicle]
+[03:13:30] [DEBUG] ^2Entity Spawning: Entity: [147975] Spawned By Player: [yes / 7 38] MODEL [-121446169] TYPE [vehicle]
+[03:13:39] [DEBUG] ^2Entity Spawning: Entity: [166917] Spawned By Player: [yes / 0 39] MODEL [-2054442544] TYPE [object]
+[03:13:39] [DEBUG] Screenshot received from DerLordR3x https://cdn.discordapp.com/attachments/1027585247321264188/1029200075903213578/screenshot.jpg
+[03:13:42] [DEBUG] ^2Entity Spawning: Entity: [166918] Spawned By Player: [yes / 0 39] MODEL [-2054442544] TYPE [object]
+[03:13:48] [DEBUG] Screenshot received from DerLordR3x https://cdn.discordapp.com/attachments/1027585247321264188/1029200110766260234/screenshot.jpg
+[03:13:55] ^0[^4Player Connect^0] ^0[^3Browser^0] connecting...
+[03:14:01] ^0[^4Player Disconnect^0] DerLordR3x disconnected... (^3Exiting^0)
+[03:14:18] [DEBUG] ^2Entity Spawning: Entity: [160265] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:14:44] [DEBUG] ^2Entity Spawning: Entity: [162568] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:15:17] ^0[^4Player Disconnect^0] Peter Griffin disconnected... (^3Spielabsturz: GTA5_b2699.exe!sub_14058250C (0x316)^0)
+[03:15:18] [DEBUG] ^2Entity Spawning: Entity: [137734] Spawned By Player: [yes / 7 37] MODEL [1131912276] TYPE [vehicle]
+[03:15:18] [DEBUG] ^2Entity Spawning: Entity: [139269] Spawned By Player: [yes / 7 37] MODEL [68070371] TYPE [ped]
+[03:15:33] [DEBUG] ^2Entity Spawning: Entity: [139780] Spawned By Player: [yes / 7 31] MODEL [-1349095620] TYPE [vehicle]
+[03:15:33] [DEBUG] ^2Entity Spawning: Entity: [152591] Spawned By Player: [yes / 0 30] MODEL [76092178] TYPE [object]
+[03:15:34] [DEBUG] ^2Entity Spawning: Entity: [153355] Spawned By Player: [yes / 0 26] MODEL [-708789241] TYPE [object]
+[03:15:36] ^0[^4Player Connect^0] ^0[^3Peter Griffin^0] connecting...
+[03:15:40] [DEBUG] ^2Entity Spawning: Entity: [158214] Spawned By Player: [yes / 0 30] MODEL [1365216886] TYPE [object]
+[03:15:41] [DEBUG] ^2Entity Spawning: Entity: [159750] Spawned By Player: [yes / 7 18] MODEL [-1743316013] TYPE [vehicle]
+[03:15:42] [DEBUG] ^2Entity Spawning: Entity: [160266] Spawned By Player: [yes / 0 3] MODEL [-292162984] TYPE [object]
+[03:15:44] [DEBUG] ^2Entity Spawning: Entity: [164361] Spawned By Player: [yes / 7 28] MODEL [-1671539132] TYPE [vehicle]
+[03:15:54] [DEBUG] ^2Entity Spawning: Entity: [158215] Spawned By Player: [yes / 0 30] MODEL [76092178] TYPE [object]
+[03:16:03] [DEBUG] ^2Entity Spawning: Entity: [152592] Spawned By Player: [yes / 7 34] MODEL [2112052861] TYPE [vehicle]
+[03:16:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[03:16:12] ChocoHax Global Ban List updated successfully...
+[03:16:14] [DEBUG] ^2Entity Spawning: Entity: [137735] Spawned By Player: [yes / 7 20] MODEL [-1349095620] TYPE [vehicle]
+[03:16:16] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029200728968933377/screenshot.jpg
+[03:16:23] [DEBUG] ^2Entity Spawning: Entity: [139270] Spawned By Player: [yes / 7 36] MODEL [-1349095620] TYPE [vehicle]
+[03:16:29] [DEBUG] ^2Entity Spawning: Entity: [165127] Spawned By Player: [yes / 0 30] MODEL [1365216886] TYPE [object]
+[03:16:32] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029200798351102053/screenshot.jpg
+[03:16:33] [DEBUG] ^2Entity Spawning: Entity: [165893] Spawned By Player: [yes / 7 20] MODEL [904750859] TYPE [vehicle]
+[03:16:43] [DEBUG] ^2Entity Spawning: Entity: [166154] Spawned By Player: [yes / 7 36] MODEL [1475773103] TYPE [vehicle]
+[03:16:44] [DEBUG] ^2Entity Spawning: Entity: [166919] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:16:44] [DEBUG] ^2Entity Spawning: Entity: [167175] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:16:45] ^0[^4Player Disconnect^0] Yiana Summer disconnected... (^3Exiting^0)
+[03:16:48] [DEBUG] ^2Entity Spawning: Entity: [162825] Spawned By Player: [yes / 0 42] MODEL [225514697] TYPE [ped]
+[03:16:51] [DEBUG] Screenshot received from Scholz https://cdn.discordapp.com/attachments/1027585247321264188/1029200879154376784/screenshot.jpg
+[03:16:52] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029200884023959553/screenshot.jpg
+[03:16:55] [DEBUG] ^2Entity Spawning: Entity: [167177] Spawned By Player: [yes / 0 42] MODEL [1760825203] TYPE [object]
+[03:16:55] [DEBUG] ^2Entity Spawning: Entity: [167941] Spawned By Player: [yes / 0 42] MODEL [1760825203] TYPE [object]
+[03:17:04] [DEBUG] Screenshot received from SchattenJagd33 https://cdn.discordapp.com/attachments/1027585247321264188/1029200935311900702/screenshot.jpg
+[03:17:08] [DEBUG] ^2Entity Spawning: Entity: [163336] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[03:17:10] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029200957076156516/screenshot.jpg
+[03:17:12] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029200966538502154/screenshot.jpg
+[03:17:20] [DEBUG] ^2Entity Spawning: Entity: [163337] Spawned By Player: [yes / 7 32] MODEL [-713569950] TYPE [vehicle]
+[03:17:27] [DEBUG] ^2Entity Spawning: Entity: [163592] Spawned By Player: [yes / 0 17] MODEL [-320848029] TYPE [object]
+[03:17:35] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029201065645711410/screenshot.jpg
+[03:17:38] [DEBUG] ^2Entity Spawning: Entity: [163593] Spawned By Player: [yes / 0 17] MODEL [-320848029] TYPE [object]
+[03:17:56] [DEBUG] ^2Entity Spawning: Entity: [163594] Spawned By Player: [yes / 7 36] MODEL [1475773103] TYPE [vehicle]
+[03:17:57] ^0[^4Player Connect^0] ^0[^3HL | Nico^0] connecting...
+[03:18:07] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029201198781313115/screenshot.jpg
+[03:18:39] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029201330247585842/screenshot.jpg
+[03:18:46] [DEBUG] Screenshot received from ~r~ HL | JoScha https://cdn.discordapp.com/attachments/1027585247321264188/1029201360622723112/screenshot.jpg
+[03:18:46] [DEBUG] ^2Entity Spawning: Entity: [168197] Spawned By Player: [yes / 7 5] MODEL [2112052861] TYPE [vehicle]
+[03:18:46] [DEBUG] ^2Entity Spawning: Entity: [168453] Spawned By Player: [yes / 7 36] MODEL [-1168952148] TYPE [vehicle]
+[03:18:47] [DEBUG] ^2Entity Spawning: Entity: [168709] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:18:47] [DEBUG] ^2Entity Spawning: Entity: [168964] Spawned By Player: [yes / 0 8] MODEL [1365216886] TYPE [object]
+[03:18:51] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029201380482764851/screenshot.jpg
+[03:18:51] [DEBUG] ^2Entity Spawning: Entity: [168710] Spawned By Player: [yes / 0 34] MODEL [1365216886] TYPE [object]
+[03:18:55] [DEBUG] ^2Entity Spawning: Entity: [158216] Spawned By Player: [yes / 0 43] MODEL [225514697] TYPE [ped]
+[03:18:57] [DEBUG] ^2Entity Spawning: Entity: [172033] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:19:00] [DEBUG] ^2Entity Spawning: Entity: [169476] Spawned By Player: [yes / 0 43] MODEL [1760825203] TYPE [object]
+[03:19:00] [DEBUG] ^2Entity Spawning: Entity: [169732] Spawned By Player: [yes / 0 43] MODEL [1760825203] TYPE [object]
+[03:19:00] [DEBUG] ^2Entity Spawning: Entity: [169988] Spawned By Player: [yes / 0 2] MODEL [-292162984] TYPE [object]
+[03:19:01] [DEBUG] Explosion: 
+[03:19:01] [DEBUG] ^2Entity Spawning: Entity: [170755] Spawned By Player: [yes / 0 26] MODEL [-708789241] TYPE [object]
+[03:19:02] [DEBUG] Explosion: 
+[03:19:03] [DEBUG] ^2Entity Spawning: Entity: [171267] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:19:07] [DEBUG] ^2Entity Spawning: Entity: [168711] Spawned By Player: [yes / 7 10] MODEL [-1237253773] TYPE [vehicle]
+[03:19:16] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029201489253638204/screenshot.jpg
+[03:19:19] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029201498011349012/screenshot.jpg
+[03:19:20] [DEBUG] ^2Entity Spawning: Entity: [168454] Spawned By Player: [yes / 7 30] MODEL [409049982] TYPE [vehicle]
+[03:19:21] [DEBUG] ^2Entity Spawning: Entity: [171778] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:19:22] [DEBUG] ^2Entity Spawning: Entity: [172034] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:19:30] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029201544350007316/screenshot.jpg
+[03:19:31] [DEBUG] ^2Entity Spawning: Entity: [163595] Spawned By Player: [yes / 0 8] MODEL [1365216886] TYPE [object]
+[03:19:31] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029201550662451291/screenshot.jpg
+[03:19:44] [DEBUG] ^2Entity Spawning: Entity: [160267] Spawned By Player: [yes / 0 41] MODEL [1365216886] TYPE [object]
+[03:19:52] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029201636670832701/screenshot.jpg
+[03:19:55] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029201650151342120/screenshot.jpg
+[03:20:12] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029201720506581022/screenshot.jpg
+[03:20:14] [DEBUG] ^2Entity Spawning: Entity: [160268] Spawned By Player: [yes / 0 17] MODEL [-822947892] TYPE [object]
+[03:20:21] [DEBUG] ^2Entity Spawning: Entity: [172292] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:20:21] ^0[^4Player Disconnect^0] ~r~ HL | JoScha disconnected... (^3Exiting^0)
+[03:20:41] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029201842011389992/screenshot.jpg
+[03:20:46] [DEBUG] ^2Entity Spawning: Entity: [150536] Spawned By Player: [yes / 0 27] MODEL [-1036807324] TYPE [object]
+[03:20:46] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029201866325758025/screenshot.jpg
+[03:20:49] [DEBUG] ^2Entity Spawning: Entity: [151561] Spawned By Player: [yes / 0 27] MODEL [-1036807324] TYPE [object]
+[03:20:53] [DEBUG] Screenshot received from HL | Snoop https://cdn.discordapp.com/attachments/1027585247321264188/1029201895002218526/screenshot.jpg
+[03:21:05] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029201944989933599/screenshot.jpg
+[03:21:38] [DEBUG] ^2Entity Spawning: Entity: [153608] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:21:41] [DEBUG] ^2Entity Spawning: Entity: [153609] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:21:45] [DEBUG] ^2Entity Spawning: Entity: [153357] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:22:00] [DEBUG] ^2Entity Spawning: Entity: [153358] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:01] [DEBUG] ^2Entity Spawning: Entity: [153610] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:03] [DEBUG] ^2Entity Spawning: Entity: [153611] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:03] [DEBUG] ^2Entity Spawning: Entity: [160269] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:22:20] [DEBUG] ^2Entity Spawning: Entity: [153359] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:21] [DEBUG] ^2Entity Spawning: Entity: [153612] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:21] [DEBUG] ^2Entity Spawning: Entity: [153360] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:22:23] [DEBUG] ^2Entity Spawning: Entity: [153361] Spawned By Player: [yes / 0 41] MODEL [1365216886] TYPE [object]
+[03:22:33] [DEBUG] ^2Entity Spawning: Entity: [153613] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:22:39] [DEBUG] ^2Entity Spawning: Entity: [153362] Spawned By Player: [yes / 0 41] MODEL [1365216886] TYPE [object]
+[03:22:53] [DEBUG] Screenshot received from HL | Snoop https://cdn.discordapp.com/attachments/1027585247321264188/1029202397018460211/screenshot.jpg
+[03:23:12] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029202475456147486/screenshot.jpg
+[03:23:15] [DEBUG] ^2Entity Spawning: Entity: [153363] Spawned By Player: [yes / 0 27] MODEL [-822947892] TYPE [object]
+[03:23:23] [DEBUG] ^2Entity Spawning: Entity: [153614] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:23:40] [DEBUG] ^2Entity Spawning: Entity: [160271] Spawned By Player: [yes / 0 17] MODEL [-320848029] TYPE [object]
+[03:23:55] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029202658894037022/screenshot.jpg
+[03:24:00] [DEBUG] Screenshot received from 𝒜𝓊f 𝒮üzz | Latif https://cdn.discordapp.com/attachments/1027585247321264188/1029202677193789511/screenshot.jpg
+[03:24:26] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029202786702864444/screenshot.jpg
+[03:24:34] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029202820576063489/screenshot.jpg
+[03:24:35] [DEBUG] ^2Entity Spawning: Entity: [153364] Spawned By Player: [yes / 0 17] MODEL [-822947892] TYPE [object]
+[03:24:36] [DEBUG] ^2Entity Spawning: Entity: [153615] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:24:43] [DEBUG] ^2Entity Spawning: Entity: [153616] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:25:13] [DEBUG] ^2Entity Spawning: Entity: [153365] Spawned By Player: [yes / 7 3] MODEL [-1452148639] TYPE [vehicle]
+[03:25:17] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029203001983909908/screenshot.jpg
+[03:25:17] [DEBUG] ^2Entity Spawning: Entity: [153617] Spawned By Player: [yes / 0 10] MODEL [746336278] TYPE [object]
+[03:25:20] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029203014281605200/screenshot.jpg
+[03:25:20] [DEBUG] ^2Entity Spawning: Entity: [159751] Spawned By Player: [yes / 0 10] MODEL [1365216886] TYPE [object]
+[03:25:22] [DEBUG] ^2Entity Spawning: Entity: [153618] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:25:22] [DEBUG] ^2Entity Spawning: Entity: [160272] Spawned By Player: [yes / 7 18] MODEL [-1404319008] TYPE [vehicle]
+[03:25:24] [DEBUG] ^2Entity Spawning: Entity: [163597] Spawned By Player: [yes / 7 43] MODEL [-121446169] TYPE [vehicle]
+[03:25:26] [DEBUG] ^2Entity Spawning: Entity: [164617] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:25:26] [DEBUG] ^2Entity Spawning: Entity: [165130] Spawned By Player: [yes / 0 23] MODEL [-1910604593] TYPE [object]
+[03:25:32] [DEBUG] ^2Entity Spawning: Entity: [153619] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:25:37] [DEBUG] ^2Entity Spawning: Entity: [153366] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:25:37] [DEBUG] ^2Entity Spawning: Entity: [159752] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:25:46] [DEBUG] ^2Entity Spawning: Entity: [159753] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:25:53] [DEBUG] ^2Entity Spawning: Entity: [159754] Spawned By Player: [yes / 7 3] MODEL [-1842748181] TYPE [vehicle]
+[03:25:57] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029203169718308965/screenshot.jpg
+[03:26:02] [DEBUG] ^2Entity Spawning: Entity: [160273] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:26:03] [DEBUG] ^2Entity Spawning: Entity: [164618] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:26:10] [DEBUG] ^2Entity Spawning: Entity: [153368] Spawned By Player: [yes / 7 41] MODEL [-834353991] TYPE [vehicle]
+[03:26:14] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029203240069382154/screenshot.jpg
+[03:26:18] [DEBUG] ^2Entity Spawning: Entity: [160274] Spawned By Player: [yes / 7 14] MODEL [744705981] TYPE [vehicle]
+[03:26:41] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029203354183798784/screenshot.jpg
+[03:26:50] [DEBUG] ^2Entity Spawning: Entity: [139271] Spawned By Player: [yes / 7 18] MODEL [-1481236684] TYPE [vehicle]
+[03:26:51] [DEBUG] ^2Entity Spawning: Entity: [139781] Spawned By Player: [yes / 0 31] MODEL [-1585232418] TYPE [object]
+[03:26:53] [DEBUG] ^2Entity Spawning: Entity: [139272] Spawned By Player: [yes / 0 41] MODEL [1365216886] TYPE [object]
+[03:27:01] [DEBUG] ^2Entity Spawning: Entity: [153620] Spawned By Player: [yes / 7 18] MODEL [-394412962] TYPE [vehicle]
+[03:27:03] [DEBUG] ^2Entity Spawning: Entity: [139782] Spawned By Player: [yes / 7 16] MODEL [904750859] TYPE [vehicle]
+[03:27:09] [DEBUG] ^2Entity Spawning: Entity: [159491] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:27:14] ^0[^4Player Disconnect^0] SchattenJagd33 disconnected... (^3Disconnected.^0)
+[03:27:22] [DEBUG] ^2Entity Spawning: Entity: [139273] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:27:24] [DEBUG] ^2Entity Spawning: Entity: [150537] Spawned By Player: [yes / 7 25] MODEL [2112052861] TYPE [vehicle]
+[03:27:45] [DEBUG] ^2Entity Spawning: Entity: [139274] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:27:47] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029203628940070944/screenshot.jpg
+[03:27:57] [DEBUG] ^2Entity Spawning: Entity: [139275] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:28:12] [DEBUG] ^2Entity Spawning: Entity: [139276] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:28:17] [DEBUG] ^2Entity Spawning: Entity: [154120] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:28:18] [DEBUG] ^2Entity Spawning: Entity: [154887] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:28:48] [DEBUG] ^2Entity Spawning: Entity: [151563] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:29:25] [DEBUG] ^2Entity Spawning: Entity: [153867] Spawned By Player: [yes / 7 10] MODEL [1549126457] TYPE [vehicle]
+[03:29:35] [DEBUG] ^2Entity Spawning: Entity: [154121] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:29:48] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029204137394569226/screenshot.jpg
+[03:29:51] [DEBUG] ^2Entity Spawning: Entity: [154888] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[03:29:53] [DEBUG] ^2Entity Spawning: Entity: [159492] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:30:02] ^0[^4Player Disconnect^0] HL | Jibbo disconnected... (^3Exiting^0)
+[03:30:29] [DEBUG] ^2Entity Spawning: Entity: [148740] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[03:30:35] [DEBUG] ^2Entity Spawning: Entity: [133891] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:30:56] [DEBUG] ^2Entity Spawning: Entity: [133892] Spawned By Player: [yes / 7 16] MODEL [296357396] TYPE [vehicle]
+[03:30:58] [DEBUG] ^2Entity Spawning: Entity: [148741] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:30:59] [DEBUG] ^2Entity Spawning: Entity: [149252] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:31:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[03:31:11] ChocoHax Global Ban List updated successfully...
+[03:31:34] [DEBUG] ^2Entity Spawning: Entity: [133893] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[03:32:08] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029204726459420752/screenshot.jpg
+[03:32:09] [DEBUG] ^2Entity Spawning: Entity: [133894] Spawned By Player: [yes / 0 12] MODEL [-1585232418] TYPE [object]
+[03:32:27] [DEBUG] ^2Entity Spawning: Entity: [133895] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:32:34] [DEBUG] ^2Entity Spawning: Entity: [139278] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:32:39] [DEBUG] ^2Entity Spawning: Entity: [139279] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:32:40] [DEBUG] ^2Entity Spawning: Entity: [148743] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:32:43] [DEBUG] ^2Entity Spawning: Entity: [139280] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:32:43] [DEBUG] ^2Entity Spawning: Entity: [149253] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:32:46] [DEBUG] ^2Entity Spawning: Entity: [149510] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:32:46] [DEBUG] ^2Entity Spawning: Entity: [150538] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:32:48] [DEBUG] ^2Entity Spawning: Entity: [149254] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[03:32:50] [DEBUG] ^2Entity Spawning: Entity: [149511] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:32:52] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029204909968609330/screenshot.jpg
+[03:33:04] [DEBUG] ^2Entity Spawning: Entity: [148744] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:33:04] [DEBUG] ^2Entity Spawning: Entity: [150539] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:33:13] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029204992403460207/screenshot.jpg
+[03:33:15] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029205006609547324/screenshot.jpg
+[03:33:22] [DEBUG] ^2Entity Spawning: Entity: [148745] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:33:22] [DEBUG] ^2Entity Spawning: Entity: [149513] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:33:35] [DEBUG] ^2Entity Spawning: Entity: [148746] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:33:35] [DEBUG] ^2Entity Spawning: Entity: [149514] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:33:48] [DEBUG] ^2Entity Spawning: Entity: [148747] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:33:50] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029205154848854026/screenshot.jpg
+[03:33:52] [DEBUG] ^2Entity Spawning: Entity: [148748] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:33:58] [DEBUG] ^2Entity Spawning: Entity: [149515] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:33:59] [DEBUG] ^2Entity Spawning: Entity: [150540] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:34:05] [DEBUG] ^2Entity Spawning: Entity: [149516] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:34:14] [DEBUG] ^2Entity Spawning: Entity: [149517] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:34:14] [DEBUG] ^2Entity Spawning: Entity: [150541] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:34:18] [DEBUG] ^2Entity Spawning: Entity: [149518] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:34:22] [DEBUG] ^2Entity Spawning: Entity: [150542] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:34:26] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029205302282834001/screenshot.jpg
+[03:34:28] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029205311548051516/screenshot.jpg
+[03:34:41] [DEBUG] ^2Entity Spawning: Entity: [149519] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[03:34:50] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029205405676601354/screenshot.jpg
+[03:35:15] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029205508650963004/screenshot.jpg
+[03:35:23] [DEBUG] ^2Entity Spawning: Entity: [133896] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:35:34] [DEBUG] ^2Entity Spawning: Entity: [133897] Spawned By Player: [yes / 7 43] MODEL [-726635538] TYPE [vehicle]
+[03:35:38] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029205604109139978/screenshot.jpg
+[03:35:54] [DEBUG] ^2Entity Spawning: Entity: [148749] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:35:56] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029205680227356724/screenshot.jpg
+[03:35:58] [DEBUG] ^2Entity Spawning: Entity: [149255] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[03:36:05] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029205720652054548/screenshot.jpg
+[03:36:17] [DEBUG] ^2Entity Spawning: Entity: [139282] Spawned By Player: [yes / 7 43] MODEL [-1071380347] TYPE [vehicle]
+[03:36:19] [DEBUG] ^2Entity Spawning: Entity: [148750] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:36:32] [DEBUG] ^2Entity Spawning: Entity: [149256] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[03:36:37] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029205852059619448/screenshot.jpg
+[03:36:38] [DEBUG] ^2Entity Spawning: Entity: [150543] Spawned By Player: [yes / 7 43] MODEL [699456151] TYPE [vehicle]
+[03:36:49] [DEBUG] ^2Entity Spawning: Entity: [151565] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[03:36:54] [DEBUG] ^2Entity Spawning: Entity: [148751] Spawned By Player: [yes / 0 27] MODEL [1365216886] TYPE [object]
+[03:36:56] [DEBUG] ^2Entity Spawning: Entity: [154122] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:37:09] [DEBUG] ^2Entity Spawning: Entity: [150544] Spawned By Player: [yes / 0 34] MODEL [1365216886] TYPE [object]
+[03:37:14] [DEBUG] ^2Entity Spawning: Entity: [149521] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:37:40] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029206119169659030/screenshot.jpg
+[03:37:42] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206127021395998/screenshot.jpg
+[03:37:57] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206190489600010/screenshot.jpg
+[03:38:08] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206236937343036/screenshot.jpg
+[03:38:11] [DEBUG] ^2Entity Spawning: Entity: [149522] Spawned By Player: [yes / 0 16] MODEL [1365216886] TYPE [object]
+[03:38:12] [DEBUG] ^2Entity Spawning: Entity: [150545] Spawned By Player: [yes / 0 17] MODEL [683570518] TYPE [object]
+[03:38:17] [DEBUG] Screenshot received from 𝒜𝓊f 𝒮üzz | Latif https://cdn.discordapp.com/attachments/1027585247321264188/1029206275445227642/screenshot.jpg
+[03:38:18] [DEBUG] ^2Entity Spawning: Entity: [149523] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:38:25] [DEBUG] ^2Entity Spawning: Entity: [154123] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[03:38:34] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206342877065226/screenshot.jpg
+[03:38:34] [DEBUG] ^2Entity Spawning: Entity: [159239] Spawned By Player: [yes / 0 27] MODEL [683570518] TYPE [object]
+[03:38:34] [DEBUG] Screenshot received from Increase_Live https://cdn.discordapp.com/attachments/1027585247321264188/1029206345133609021/screenshot.jpg
+[03:38:42] [DEBUG] ^2Entity Spawning: Entity: [154124] Spawned By Player: [yes / 0 27] MODEL [683570518] TYPE [object]
+[03:38:46] [DEBUG] ^2Entity Spawning: Entity: [154125] Spawned By Player: [yes / 0 27] MODEL [683570518] TYPE [object]
+[03:38:53] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206426012373022/screenshot.jpg
+[03:39:06] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206476813762651/screenshot.jpg
+[03:39:11] [DEBUG] Explosion: 
+[03:39:11] [DEBUG] Explosion: 
+[03:39:14] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029206512066891806/screenshot.jpg
+[03:39:37] [DEBUG] ^2Entity Spawning: Entity: [159494] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:39:44] [DEBUG] ^2Entity Spawning: Entity: [159756] Spawned By Player: [yes / 0 4] MODEL [1365216886] TYPE [object]
+[03:40:00] [DEBUG] ^2Entity Spawning: Entity: [150546] Spawned By Player: [yes / 0 5] MODEL [1365216886] TYPE [object]
+[03:40:00] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206703587201106/screenshot.jpg
+[03:40:06] [DEBUG] ^2Entity Spawning: Entity: [159495] Spawned By Player: [yes / 0 8] MODEL [1365216886] TYPE [object]
+[03:40:31] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029206836303384676/screenshot.jpg
+[03:40:34] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029206846361325589/screenshot.jpg
+[03:40:38] [DEBUG] ^2Entity Spawning: Entity: [150547] Spawned By Player: [yes / 7 3] MODEL [-1152363687] TYPE [vehicle]
+[03:40:41] [DEBUG] ^2Entity Spawning: Entity: [153621] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:41:03] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029206969795493948/screenshot.jpg
+[03:41:08] [DEBUG] ^2Entity Spawning: Entity: [153622] Spawned By Player: [yes / 7 18] MODEL [934775262] TYPE [vehicle]
+[03:41:31] [DEBUG] Screenshot received from StrikeFa1ld_tv https://cdn.discordapp.com/attachments/1027585247321264188/1029207085482782751/screenshot.jpg
+[03:41:40] [DEBUG] ^2Entity Spawning: Entity: [159496] Spawned By Player: [yes / 0 5] MODEL [1365216886] TYPE [object]
+[03:41:46] [DEBUG] ^2Entity Spawning: Entity: [162569] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:41:54] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029207181532352513/screenshot.jpg
+[03:42:07] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029207238029615144/screenshot.jpg
+[03:42:10] [DEBUG] ^2Entity Spawning: Entity: [159497] Spawned By Player: [yes / 0 18] MODEL [1365216886] TYPE [object]
+[03:42:15] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029207271957336104/screenshot.jpg
+[03:42:24] [DEBUG] Screenshot received from StrikeFa1ld_tv https://cdn.discordapp.com/attachments/1027585247321264188/1029207310440075364/screenshot.jpg
+[03:42:25] [DEBUG] ^2Entity Spawning: Entity: [154126] Spawned By Player: [yes / 0 3] MODEL [-2140390666] TYPE [object]
+[03:42:41] [DEBUG] ^2Entity Spawning: Entity: [154127] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:42:44] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029207390639366274/screenshot.jpg
+[03:42:48] [DEBUG] ^2Entity Spawning: Entity: [159498] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[03:42:51] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029207422910349312/screenshot.jpg
+[03:43:19] [DEBUG] ^2Entity Spawning: Entity: [162570] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:43:59] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029207708454371328/screenshot.jpg
+[03:44:01] [DEBUG] ^2Entity Spawning: Entity: [145413] Spawned By Player: [yes / 0 14] MODEL [1365216886] TYPE [object]
+[03:44:04] [DEBUG] ^2Entity Spawning: Entity: [153623] Spawned By Player: [yes / 0 27] MODEL [-2140390666] TYPE [object]
+[03:44:07] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029207741639692338/screenshot.jpg
+[03:44:11] [DEBUG] ^2Entity Spawning: Entity: [154129] Spawned By Player: [yes / 0 43] MODEL [1365216886] TYPE [object]
+[03:44:33] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029207852042170449/screenshot.jpg
+[03:45:24] [DEBUG] ^2Entity Spawning: Entity: [135427] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:45:30] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029208090756775966/screenshot.jpg
+[03:45:33] [DEBUG] ^2Entity Spawning: Entity: [135428] Spawned By Player: [yes / 0 38] MODEL [-1910604593] TYPE [object]
+[03:45:34] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029208104807694396/screenshot.jpg
+[03:45:35] [DEBUG] ^2Entity Spawning: Entity: [145414] Spawned By Player: [yes / 0 32] MODEL [1365216886] TYPE [object]
+[03:45:38] [DEBUG] ^2Entity Spawning: Entity: [148996] Spawned By Player: [yes / 0 4] MODEL [1365216886] TYPE [object]
+[03:45:48] [DEBUG] ^2Entity Spawning: Entity: [159759] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[03:46:06] [DEBUG] ^2Entity Spawning: Entity: [154131] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:46:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[03:46:11] ChocoHax Global Ban List updated successfully...
+[03:46:23] [DEBUG] ^2Entity Spawning: Entity: [145415] Spawned By Player: [yes / 7 33] MODEL [-1834689335] TYPE [vehicle]
+[03:46:38] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029208372177817600/screenshot.jpg
+[03:46:45] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029208405736431686/screenshot.jpg
+[03:46:46] [DEBUG] ^2Entity Spawning: Entity: [135172] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:46:46] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029208410132070440/screenshot.jpg
+[03:46:48] [DEBUG] ^2Entity Spawning: Entity: [153868] Spawned By Player: [yes / 0 38] MODEL [1365216886] TYPE [object]
+[03:46:48] [DEBUG] ^2Entity Spawning: Entity: [154132] Spawned By Player: [yes / 0 43] MODEL [-822947892] TYPE [object]
+[03:46:51] [DEBUG] ^2Entity Spawning: Entity: [162572] Spawned By Player: [yes / 0 27] MODEL [683570518] TYPE [object]
+[03:46:53] [DEBUG] ^2Entity Spawning: Entity: [162573] Spawned By Player: [yes / 0 10] MODEL [1365216886] TYPE [object]
+[03:46:58] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029208459788423168/screenshot.jpg
+[03:47:13] [DEBUG] ^2Entity Spawning: Entity: [135173] Spawned By Player: [yes / 7 13] MODEL [-322138975] TYPE [vehicle]
+[03:47:31] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029208594949881876/screenshot.jpg
+[03:47:53] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029208687493009458/screenshot.jpg
+[03:48:01] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029208722955845703/screenshot.jpg
+[03:48:13] [DEBUG] ^2Entity Spawning: Entity: [147464] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[03:48:21] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029208808410583180/screenshot.jpg
+[03:48:22] ^0[^4Player Disconnect^0] Increase_Live disconnected... (^3Exiting^0)
+[03:48:32] [DEBUG] ^2Entity Spawning: Entity: [140034] Spawned By Player: [yes / 0 23] MODEL [1365216886] TYPE [object]
+[03:48:32] [DEBUG] ^2Entity Spawning: Entity: [147465] Spawned By Player: [yes / 0 43] MODEL [1365216886] TYPE [object]
+[03:48:38] [DEBUG] ^2Entity Spawning: Entity: [148230] Spawned By Player: [yes / 7 23] MODEL [-1168952148] TYPE [vehicle]
+[03:48:54] [DEBUG] ^2Entity Spawning: Entity: [135174] Spawned By Player: [yes / 0 23] MODEL [1365216886] TYPE [object]
+[03:48:57] [DEBUG] ^2Entity Spawning: Entity: [140035] Spawned By Player: [yes / 0 15] MODEL [1365216886] TYPE [object]
+[03:48:58] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029208962949714011/screenshot.jpg
+[03:49:07] [DEBUG] ^2Entity Spawning: Entity: [135175] Spawned By Player: [yes / 0 15] MODEL [1365216886] TYPE [object]
+[03:49:19] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029209051768295424/screenshot.jpg
+[03:49:20] [DEBUG] ^2Entity Spawning: Entity: [140036] Spawned By Player: [yes / 7 15] MODEL [-893984159] TYPE [vehicle]
+[03:49:23] [DEBUG] ^2Entity Spawning: Entity: [145416] Spawned By Player: [yes / 7 15] MODEL [999748158] TYPE [ped]
+[03:49:27] [DEBUG] ^2Entity Spawning: Entity: [147466] Spawned By Player: [yes / 0 13] MODEL [-822947892] TYPE [object]
+[03:49:32] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029209103073022024/screenshot.jpg
+[03:49:33] [DEBUG] ^2Entity Spawning: Entity: [149257] Spawned By Player: [yes / 0 12] MODEL [-822947892] TYPE [object]
+[03:49:44] [DEBUG] ^2Entity Spawning: Entity: [147467] Spawned By Player: [yes / 7 33] MODEL [79380203] TYPE [vehicle]
+[03:49:45] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029209157116633208/screenshot.jpg
+[03:49:47] [DEBUG] ^2Entity Spawning: Entity: [153869] Spawned By Player: [yes / 7 23] MODEL [999748158] TYPE [ped]
+[03:49:49] [DEBUG] ^2Entity Spawning: Entity: [154133] Spawned By Player: [yes / 0 17] MODEL [683570518] TYPE [object]
+[03:49:57] [DEBUG] Screenshot received from Dave Sanchez https://cdn.discordapp.com/attachments/1027585247321264188/1029209208945659995/screenshot.jpg
+[03:50:02] [DEBUG] ^2Entity Spawning: Entity: [149258] Spawned By Player: [yes / 0 7] MODEL [-2054442544] TYPE [object]
+[03:50:41] [DEBUG] ^2Entity Spawning: Entity: [135177] Spawned By Player: [yes / 0 23] MODEL [1365216886] TYPE [object]
+[03:50:51] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029209436658614362/screenshot.jpg
+[03:51:00] [DEBUG] ^2Entity Spawning: Entity: [135179] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:51:02] [DEBUG] ^2Entity Spawning: Entity: [149259] Spawned By Player: [yes / 0 13] MODEL [-822947892] TYPE [object]
+[03:51:02] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029209481973870622/screenshot.jpg
+[03:51:02] [DEBUG] ^2Entity Spawning: Entity: [153870] Spawned By Player: [yes / 0 43] MODEL [1365216886] TYPE [object]
+[03:51:05] [DEBUG] ^2Entity Spawning: Entity: [135180] Spawned By Player: [yes / 0 12] MODEL [-822947892] TYPE [object]
+[03:51:07] [DEBUG] ^2Entity Spawning: Entity: [148232] Spawned By Player: [yes / 7 23] MODEL [-1168952148] TYPE [vehicle]
+[03:51:08] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029209505898172517/screenshot.jpg
+[03:51:13] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029209527666626630/screenshot.jpg
+[03:51:14] [DEBUG] ^2Entity Spawning: Entity: [148997] Spawned By Player: [yes / 0 43] MODEL [-822947892] TYPE [object]
+[03:51:17] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029209544074727444/screenshot.jpg
+[03:51:23] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029209568334598215/screenshot.jpg
+[03:51:23] [DEBUG] ^2Entity Spawning: Entity: [153871] Spawned By Player: [yes / 7 32] MODEL [-713569950] TYPE [vehicle]
+[03:51:31] [DEBUG] ^2Entity Spawning: Entity: [154134] Spawned By Player: [yes / 0 17] MODEL [-1296547421] TYPE [object]
+[03:51:45] [DEBUG] ^2Entity Spawning: Entity: [156420] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:51:45] [DEBUG] ^2Entity Spawning: Entity: [159502] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:51:48] [DEBUG] ^2Entity Spawning: Entity: [156421] Spawned By Player: [yes / 0 27] MODEL [-1863407086] TYPE [object]
+[03:52:07] [DEBUG] ^2Entity Spawning: Entity: [148998] Spawned By Player: [yes / 0 32] MODEL [1365216886] TYPE [object]
+[03:52:09] [DEBUG] ^2Entity Spawning: Entity: [159760] Spawned By Player: [yes / 0 21] MODEL [1365216886] TYPE [object]
+[03:52:09] [DEBUG] ^2Entity Spawning: Entity: [162574] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[03:52:21] [DEBUG] Screenshot received from Eliass https://cdn.discordapp.com/attachments/1027585247321264188/1029209811516137522/screenshot.jpg
+[03:52:21] [DEBUG] ^2Entity Spawning: Entity: [135182] Spawned By Player: [yes / 0 4] MODEL [1365216886] TYPE [object]
+[03:52:23] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029209820278030416/screenshot.jpg
+[03:52:25] ^0[^4Player Disconnect^0] Eliass disconnected... (^3Disconnected.^0)
+[03:52:30] [DEBUG] ^2Entity Spawning: Entity: [134659] Spawned By Player: [yes / 0 32] MODEL [1365216886] TYPE [object]
+[03:52:46] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029209918768676977/screenshot.jpg
+[03:52:47] [DEBUG] ^2Entity Spawning: Entity: [134660] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:52:47] [DEBUG] ^2Entity Spawning: Entity: [140037] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:52:51] [DEBUG] ^2Entity Spawning: Entity: [134661] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:52:53] [DEBUG] ^2Entity Spawning: Entity: [134662] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:52:58] [DEBUG] ^2Entity Spawning: Entity: [148999] Spawned By Player: [yes / 0 32] MODEL [1365216886] TYPE [object]
+[03:53:06] [DEBUG] ^2Entity Spawning: Entity: [134663] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:53:06] [DEBUG] ^2Entity Spawning: Entity: [140038] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:53:36] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029210127015870504/screenshot.jpg
+[03:53:47] ^0[^4Player Disconnect^0] Juniorr disconnected... (^3Disconnected.^0)
+[03:53:49] [DEBUG] ^2Entity Spawning: Entity: [140039] Spawned By Player: [yes / 0 12] MODEL [1839621839] TYPE [object]
+[03:53:58] [DEBUG] ^2Entity Spawning: Entity: [148233] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:53:59] [DEBUG] ^2Entity Spawning: Entity: [148489] Spawned By Player: [yes / 0 2] MODEL [1365216886] TYPE [object]
+[03:54:00] ^0[^4Player Connect^0] ^0[^3~r~ HL | JoScha^0] connecting...
+[03:54:16] [DEBUG] ^2Entity Spawning: Entity: [148234] Spawned By Player: [yes / 0 13] MODEL [1839621839] TYPE [object]
+[03:54:19] [DEBUG] ^2Entity Spawning: Entity: [148490] Spawned By Player: [yes / 7 14] MODEL [904750859] TYPE [vehicle]
+[03:54:29] [DEBUG] ^2Entity Spawning: Entity: [149000] Spawned By Player: [yes / 0 43] MODEL [-320848029] TYPE [object]
+[03:54:42] [DEBUG] ^2Entity Spawning: Entity: [149260] Spawned By Player: [yes / 0 44] MODEL [225514697] TYPE [ped]
+[03:54:44] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210411301617684/screenshot.jpg
+[03:54:47] [DEBUG] ^2Entity Spawning: Entity: [162576] Spawned By Player: [yes / 0 44] MODEL [1760825203] TYPE [object]
+[03:54:47] [DEBUG] ^2Entity Spawning: Entity: [163339] Spawned By Player: [yes / 0 44] MODEL [1760825203] TYPE [object]
+[03:54:51] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029210443664851025/screenshot.jpg
+[03:55:03] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210490662047815/screenshot.jpg
+[03:55:06] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029210504314486864/screenshot.jpg
+[03:55:17] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210549201928202/screenshot.jpg
+[03:55:17] [DEBUG] ^2Entity Spawning: Entity: [146691] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[03:55:23] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029210576557182996/screenshot.jpg
+[03:55:30] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210606374506557/screenshot.jpg
+[03:55:32] [DEBUG] ^2Entity Spawning: Entity: [132610] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[03:55:34] [DEBUG] ^2Entity Spawning: Entity: [132866] Spawned By Player: [yes / 7 14] MODEL [1265685543] TYPE [vehicle]
+[03:55:34] [DEBUG] ^2Entity Spawning: Entity: [133122] Spawned By Player: [yes / 0 4] MODEL [1365216886] TYPE [object]
+[03:55:35] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029210626838495263/screenshot.jpg
+[03:55:47] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210678092898394/screenshot.jpg
+[03:55:51] [DEBUG] ^2Entity Spawning: Entity: [133378] Spawned By Player: [yes / 7 4] MODEL [-482719877] TYPE [vehicle]
+[03:55:51] [DEBUG] ^2Entity Spawning: Entity: [146692] Spawned By Player: [yes / 7 4] MODEL [999748158] TYPE [ped]
+[03:55:57] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029210719633281165/screenshot.jpg
+[03:56:03] [DEBUG] ^2Entity Spawning: Entity: [133123] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[03:56:10] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210773072912395/screenshot.jpg
+[03:56:14] [DEBUG] ^2Entity Spawning: Entity: [132611] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[03:56:22] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029210823849148436/screenshot.jpg
+[03:56:29] [DEBUG] ^2Entity Spawning: Entity: [133124] Spawned By Player: [yes / 0 41] MODEL [-2054442544] TYPE [object]
+[03:56:29] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210854081699870/screenshot.jpg
+[03:56:37] [DEBUG] ^2Entity Spawning: Entity: [132612] Spawned By Player: [yes / 0 41] MODEL [-2054442544] TYPE [object]
+[03:56:38] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029210890790256710/screenshot.jpg
+[03:56:46] [DEBUG] ^2Entity Spawning: Entity: [132613] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:56:51] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029210944422821888/screenshot.jpg
+[03:57:07] [DEBUG] ^2Entity Spawning: Entity: [132614] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:57:44] [DEBUG] ^2Entity Spawning: Entity: [132615] Spawned By Player: [yes / 7 14] MODEL [904750859] TYPE [vehicle]
+[03:58:09] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029211274283851796/screenshot.jpg
+[03:58:12] [DEBUG] ^2Entity Spawning: Entity: [132867] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:58:31] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029211364650131476/screenshot.jpg
+[03:58:37] [DEBUG] ^2Entity Spawning: Entity: [132868] Spawned By Player: [yes / 0 3] MODEL [-1585232418] TYPE [object]
+[03:58:49] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029211441305235557/screenshot.jpg
+[03:59:22] [DEBUG] ^2Entity Spawning: Entity: [133125] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[03:59:43] [DEBUG] ^2Entity Spawning: Entity: [132869] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[03:59:47] [DEBUG] Screenshot received from Xander https://cdn.discordapp.com/attachments/1027585247321264188/1029211683031351336/screenshot.jpg
+[03:59:48] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029211689457025075/screenshot.jpg
+[03:59:51] [DEBUG] ^2Entity Spawning: Entity: [132870] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:00:02] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029211743345459250/screenshot.jpg
+[04:00:02] [DEBUG] Explosion: 
+[04:00:03] [DEBUG] Explosion: 
+[04:00:03] [DEBUG] Explosion: 
+[04:00:31] [DEBUG] ^2Entity Spawning: Entity: [146955] Spawned By Player: [yes / 7 3] MODEL [-1127249378] TYPE [vehicle]
+[04:00:47] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029211935725592576/screenshot.jpg
+[04:00:55] [DEBUG] ^2Entity Spawning: Entity: [135185] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:01:10] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029212031032766534/screenshot.jpg
+[04:01:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[04:01:12] ChocoHax Global Ban List updated successfully...
+[04:01:16] [DEBUG] ^2Entity Spawning: Entity: [133898] Spawned By Player: [yes / 7 3] MODEL [1475773103] TYPE [vehicle]
+[04:01:21] [DEBUG] ^2Entity Spawning: Entity: [137736] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:01:23] [DEBUG] ^2Entity Spawning: Entity: [139283] Spawned By Player: [yes / 7 7] MODEL [409049982] TYPE [vehicle]
+[04:01:34] [DEBUG] ^2Entity Spawning: Entity: [133127] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:01:35] [DEBUG] ^2Entity Spawning: Entity: [135186] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:01:46] [DEBUG] ^2Entity Spawning: Entity: [133128] Spawned By Player: [yes / 7 3] MODEL [-726635538] TYPE [vehicle]
+[04:02:17] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029212314722910238/screenshot.jpg
+[04:02:26] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029212352341614683/screenshot.jpg
+[04:02:27] ^0[^4Player Disconnect^0] Scholz disconnected... (^3Exiting^0)
+[04:02:35] ^0[^4Player Disconnect^0] ~r~ HL | JoScha disconnected... (^3Exiting^0)
+[04:02:38] ^0[^4Player Disconnect^0] mayn.str disconnected... (^3Exiting^0)
+[04:02:40] [DEBUG] ^2Entity Spawning: Entity: [133379] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:02:51] [DEBUG] ^2Entity Spawning: Entity: [133380] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:02:58] [DEBUG] ^2Entity Spawning: Entity: [133381] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:03:39] [DEBUG] Screenshot received from SliceOnFiveM https://cdn.discordapp.com/attachments/1027585247321264188/1029212657963765790/screenshot.jpg
+[04:03:41] [DEBUG] ^2Entity Spawning: Entity: [133382] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:03:56] [DEBUG] ^2Entity Spawning: Entity: [133383] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:04:29] [DEBUG] ^2Entity Spawning: Entity: [133899] Spawned By Player: [yes / 7 7] MODEL [-713569950] TYPE [vehicle]
+[04:04:42] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029212920824999986/screenshot.jpg
+[04:04:43] [DEBUG] ^2Entity Spawning: Entity: [133384] Spawned By Player: [yes / 0 43] MODEL [-822947892] TYPE [object]
+[04:04:51] [DEBUG] ^2Entity Spawning: Entity: [134146] Spawned By Player: [yes / 0 21] MODEL [746336278] TYPE [object]
+[04:04:57] [DEBUG] ^2Entity Spawning: Entity: [134147] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[04:05:04] [DEBUG] ^2Entity Spawning: Entity: [134915] Spawned By Player: [yes / 0 27] MODEL [-531179099] TYPE [object]
+[04:05:04] [DEBUG] ^2Entity Spawning: Entity: [135187] Spawned By Player: [yes / 0 27] MODEL [-966735958] TYPE [object]
+[04:05:05] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029213019399520317/screenshot.jpg
+[04:05:10] [DEBUG] ^2Entity Spawning: Entity: [135188] Spawned By Player: [yes / 0 27] MODEL [-1016640704] TYPE [object]
+[04:05:12] ^0[^4Player Disconnect^0] Xander disconnected... (^3Exiting^0)
+[04:05:12] [DEBUG] ^2Entity Spawning: Entity: [134148] Spawned By Player: [yes / 0 8] MODEL [1365216886] TYPE [object]
+[04:05:14] [DEBUG] ^2Entity Spawning: Entity: [134149] Spawned By Player: [yes / 0 12] MODEL [-2054442544] TYPE [object]
+[04:05:15] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029213057529938030/screenshot.jpg
+[04:05:22] [DEBUG] ^2Entity Spawning: Entity: [134150] Spawned By Player: [yes / 7 40] MODEL [122224136] TYPE [vehicle]
+[04:05:34] [DEBUG] ^2Entity Spawning: Entity: [135682] Spawned By Player: [yes / 7 26] MODEL [-171220693] TYPE [vehicle]
+[04:05:37] [DEBUG] ^2Entity Spawning: Entity: [137737] Spawned By Player: [yes / 7 13] MODEL [2112052861] TYPE [vehicle]
+[04:05:47] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029213194738225222/screenshot.jpg
+[04:05:48] [DEBUG] ^2Entity Spawning: Entity: [133385] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[04:05:51] [DEBUG] ^2Entity Spawning: Entity: [143620] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:05:53] [DEBUG] ^2Entity Spawning: Entity: [143879] Spawned By Player: [yes / 0 27] MODEL [1839621839] TYPE [object]
+[04:06:06] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029213274622926898/screenshot.jpg
+[04:06:10] [DEBUG] ^2Entity Spawning: Entity: [133386] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:06:14] [DEBUG] ^2Entity Spawning: Entity: [143621] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:06:24] [DEBUG] ^2Entity Spawning: Entity: [137738] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:06:25] [DEBUG] ^2Entity Spawning: Entity: [133387] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:06:29] [DEBUG] ^2Entity Spawning: Entity: [133388] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:06:44] [DEBUG] ^2Entity Spawning: Entity: [132872] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:06:46] [DEBUG] ^2Entity Spawning: Entity: [132873] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:07:28] [DEBUG] ^2Entity Spawning: Entity: [133389] Spawned By Player: [yes / 0 13] MODEL [-2054442544] TYPE [object]
+[04:07:41] [DEBUG] ^2Entity Spawning: Entity: [133390] Spawned By Player: [yes / 7 1] MODEL [-121446169] TYPE [vehicle]
+[04:07:50] [DEBUG] ^2Entity Spawning: Entity: [143622] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[04:07:54] [DEBUG] ^2Entity Spawning: Entity: [145419] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:08:02] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213757102108733/screenshot.jpg
+[04:08:04] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029213767654985768/screenshot.jpg
+[04:08:05] [DEBUG] ^2Entity Spawning: Entity: [133391] Spawned By Player: [yes / 7 33] MODEL [1832265812] TYPE [ped]
+[04:08:05] [DEBUG] ^2Entity Spawning: Entity: [145420] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:08:09] [DEBUG] ^2Entity Spawning: Entity: [146441] Spawned By Player: [yes / 7 1] MODEL [1093697054] TYPE [vehicle]
+[04:08:10] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213791797395476/screenshot.jpg
+[04:08:18] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213824487804988/screenshot.jpg
+[04:08:25] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213852015013958/screenshot.jpg
+[04:08:29] [DEBUG] ^2Entity Spawning: Entity: [146694] Spawned By Player: [yes / 0 27] MODEL [-822947892] TYPE [object]
+[04:08:34] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213894704648202/screenshot.jpg
+[04:08:41] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029213922525462599/screenshot.jpg
+[04:08:47] [DEBUG] ^2Entity Spawning: Entity: [146956] Spawned By Player: [yes / 7 28] MODEL [2112052861] TYPE [vehicle]
+[04:08:48] [DEBUG] ^2Entity Spawning: Entity: [147468] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:08:55] [DEBUG] ^2Entity Spawning: Entity: [147719] Spawned By Player: [yes / 7 25] MODEL [-1670998136] TYPE [vehicle]
+[04:09:02] [DEBUG] ^2Entity Spawning: Entity: [132875] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[04:09:08] [DEBUG] ^2Entity Spawning: Entity: [132876] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[04:09:28] [DEBUG] ^2Entity Spawning: Entity: [134666] Spawned By Player: [yes / 7 5] MODEL [1131912276] TYPE [vehicle]
+[04:09:34] [DEBUG] ^2Entity Spawning: Entity: [143623] Spawned By Player: [yes / 7 8] MODEL [904750859] TYPE [vehicle]
+[04:09:38] [DEBUG] ^2Entity Spawning: Entity: [137739] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:10:11] [DEBUG] ^2Entity Spawning: Entity: [134151] Spawned By Player: [yes / 0 13] MODEL [-1620762220] TYPE [object]
+[04:10:11] [DEBUG] ^2Entity Spawning: Entity: [147469] Spawned By Player: [yes / 0 3] MODEL [1365216886] TYPE [object]
+[04:10:12] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029214303955460206/screenshot.jpg
+[04:10:15] [DEBUG] ^2Entity Spawning: Entity: [148235] Spawned By Player: [yes / 0 43] MODEL [1839621839] TYPE [object]
+[04:10:15] [DEBUG] ^2Entity Spawning: Entity: [148491] Spawned By Player: [yes / 7 40] MODEL [-726635538] TYPE [vehicle]
+[04:10:17] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029214327863005214/screenshot.jpg
+[04:10:19] [DEBUG] ^2Entity Spawning: Entity: [149001] Spawned By Player: [yes / 0 13] MODEL [1839621839] TYPE [object]
+[04:10:32] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029214386801356860/screenshot.jpg
+[04:10:35] [DEBUG] ^2Entity Spawning: Entity: [137740] Spawned By Player: [yes / 0 13] MODEL [-1620762220] TYPE [object]
+[04:10:38] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029214413770735676/screenshot.jpg
+[04:10:51] [DEBUG] ^2Entity Spawning: Entity: [132877] Spawned By Player: [yes / 0 43] MODEL [1839621839] TYPE [object]
+[04:10:58] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029214497535176794/screenshot.jpg
+[04:11:06] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029214533740417124/screenshot.jpg
+[04:11:07] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029214536617693285/screenshot.jpg
+[04:11:09] [DEBUG] ^2Entity Spawning: Entity: [134152] Spawned By Player: [yes / 0 27] MODEL [1839621839] TYPE [object]
+[04:11:29] [DEBUG] ^2Entity Spawning: Entity: [143880] Spawned By Player: [yes / 7 8] MODEL [904750859] TYPE [vehicle]
+[04:11:33] [DEBUG] ^2Entity Spawning: Entity: [148236] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:12:02] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029214767744811050/screenshot.jpg
+[04:12:58] [DEBUG] ^2Entity Spawning: Entity: [135683] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:13:29] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029215131248382004/screenshot.jpg
+[04:13:44] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029215192984338494/screenshot.jpg
+[04:13:51] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029215223464341554/screenshot.jpg
+[04:13:56] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029215244586864721/screenshot.jpg
+[04:13:59] [DEBUG] ^2Entity Spawning: Entity: [135684] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:14:03] [DEBUG] ^2Entity Spawning: Entity: [147470] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:14:27] [DEBUG] ^2Entity Spawning: Entity: [135685] Spawned By Player: [yes / 7 40] MODEL [-114291515] TYPE [vehicle]
+[04:14:34] [DEBUG] ^2Entity Spawning: Entity: [147471] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:14:44] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029215441509416970/screenshot.jpg
+[04:15:10] [DEBUG] ^2Entity Spawning: Entity: [147472] Spawned By Player: [yes / 0 26] MODEL [1365216886] TYPE [object]
+[04:15:12] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029215561873375333/screenshot.jpg
+[04:15:13] [DEBUG] ^2Entity Spawning: Entity: [148237] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:15:15] [DEBUG] ^2Entity Spawning: Entity: [147473] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[04:15:52] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029215731621036082/screenshot.jpg
+[04:16:10] [DEBUG] Screenshot received from HL| Minimi https://cdn.discordapp.com/attachments/1027585247321264188/1029215807600853043/screenshot.jpg
+[04:16:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[04:16:12] ChocoHax Global Ban List updated successfully...
+[04:16:14] [DEBUG] ^2Entity Spawning: Entity: [147474] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:16:37] [DEBUG] ^2Entity Spawning: Entity: [147475] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:16:37] [DEBUG] ^2Entity Spawning: Entity: [148238] Spawned By Player: [yes / 0 33] MODEL [1365216886] TYPE [object]
+[04:17:25] ^0[^4Player Connect^0] ^0[^3rkort^0] connecting...
+[04:17:28] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029216132562948097/screenshot.jpg
+[04:17:37] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029216172090073108/screenshot.jpg
+[04:17:44] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029216203014680586/screenshot.jpg
+[04:17:50] [DEBUG] ^2Entity Spawning: Entity: [132878] Spawned By Player: [yes / 7 40] MODEL [1311755301] TYPE [vehicle]
+[04:17:51] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029216229543645274/screenshot.jpg
+[04:17:52] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029216234744586240/screenshot.jpg
+[04:17:53] [DEBUG] ^2Entity Spawning: Entity: [135686] Spawned By Player: [yes / 0 12] MODEL [-1620762220] TYPE [object]
+[04:17:54] [DEBUG] ^2Entity Spawning: Entity: [147476] Spawned By Player: [yes / 0 25] MODEL [1839621839] TYPE [object]
+[04:17:55] [DEBUG] ^2Entity Spawning: Entity: [148240] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:17:59] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029216263265853511/screenshot.jpg
+[04:18:02] [DEBUG] ^2Entity Spawning: Entity: [148493] Spawned By Player: [yes / 0 13] MODEL [-1620762220] TYPE [object]
+[04:18:07] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029216297826914324/screenshot.jpg
+[04:18:09] [DEBUG] Screenshot received from Peter Griffin https://cdn.discordapp.com/attachments/1027585247321264188/1029216306819518464/screenshot.jpg
+[04:18:11] [DEBUG] ^2Entity Spawning: Entity: [149262] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:18:13] [DEBUG] ^2Entity Spawning: Entity: [148241] Spawned By Player: [yes / 0 42] MODEL [-447760697] TYPE [object]
+[04:18:14] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029216324657877002/screenshot.jpg
+[04:18:14] [DEBUG] ^2Entity Spawning: Entity: [134153] Spawned By Player: [yes / 0 13] MODEL [-1620762220] TYPE [object]
+[04:18:18] [DEBUG] ^2Entity Spawning: Entity: [148242] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:18:22] [DEBUG] ^2Entity Spawning: Entity: [148494] Spawned By Player: [yes / 0 27] MODEL [1839621839] TYPE [object]
+[04:18:43] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216447395799070/screenshot.jpg
+[04:18:58] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029216510889177108/screenshot.jpg
+[04:19:03] [DEBUG] ^2Entity Spawning: Entity: [149263] Spawned By Player: [yes / 0 3] MODEL [1365216886] TYPE [object]
+[04:19:10] [DEBUG] ^2Entity Spawning: Entity: [150548] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:19:16] [DEBUG] ^2Entity Spawning: Entity: [133393] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:19:20] [DEBUG] ^2Entity Spawning: Entity: [151303] Spawned By Player: [yes / 0 28] MODEL [1365216886] TYPE [object]
+[04:19:24] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216615839051796/screenshot.jpg
+[04:19:51] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216732881096775/screenshot.jpg
+[04:20:00] [DEBUG] ^2Entity Spawning: Entity: [132879] Spawned By Player: [yes / 7 40] MODEL [122224136] TYPE [vehicle]
+[04:20:00] [DEBUG] ^2Entity Spawning: Entity: [133394] Spawned By Player: [yes / 0 45] MODEL [225514697] TYPE [ped]
+[04:20:15] [DEBUG] ^2Entity Spawning: Entity: [150549] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[04:20:16] [DEBUG] ^2Entity Spawning: Entity: [153369] Spawned By Player: [yes / 0 45] MODEL [1760825203] TYPE [object]
+[04:20:16] [DEBUG] ^2Entity Spawning: Entity: [153624] Spawned By Player: [yes / 0 45] MODEL [1760825203] TYPE [object]
+[04:20:16] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216837994545172/screenshot.jpg
+[04:20:16] [DEBUG] ^2Entity Spawning: Entity: [154135] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:20:26] [DEBUG] ^2Entity Spawning: Entity: [145422] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:20:34] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216912422473768/screenshot.jpg
+[04:20:37] [DEBUG] ^2Entity Spawning: Entity: [145423] Spawned By Player: [yes / 0 12] MODEL [-1620762220] TYPE [object]
+[04:20:42] [DEBUG] Screenshot received from Ricky_Rage https://cdn.discordapp.com/attachments/1027585247321264188/1029216947327483984/screenshot.jpg
+[04:20:43] [DEBUG] Screenshot received from PV-MaXi https://cdn.discordapp.com/attachments/1027585247321264188/1029216953082069083/screenshot.jpg
+[04:20:44] [DEBUG] ^2Entity Spawning: Entity: [135687] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[04:20:48] [DEBUG] ^2Entity Spawning: Entity: [150550] Spawned By Player: [yes / 0 27] MODEL [746336278] TYPE [object]
+[04:20:49] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029216976482078730/screenshot.jpg
+[04:20:51] [DEBUG] ^2Entity Spawning: Entity: [154136] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:20:53] [DEBUG] ^2Entity Spawning: Entity: [150551] Spawned By Player: [yes / 0 45] MODEL [1365216886] TYPE [object]
+[04:20:53] [DEBUG] ^2Entity Spawning: Entity: [156422] Spawned By Player: [yes / 0 45] MODEL [1365216886] TYPE [object]
+[04:20:55] [DEBUG] ^2Entity Spawning: Entity: [158469] Spawned By Player: [yes / 0 17] MODEL [-1620762220] TYPE [object]
+[04:21:10] [DEBUG] ^2Entity Spawning: Entity: [132880] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:21:12] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029217073299193876/screenshot.jpg
+[04:21:13] [DEBUG] ^2Entity Spawning: Entity: [135688] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:21:15] [DEBUG] ^2Entity Spawning: Entity: [154137] Spawned By Player: [yes / 7 40] MODEL [-48031959] TYPE [vehicle]
+[04:21:16] [DEBUG] ^2Entity Spawning: Entity: [159505] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[04:21:29] [DEBUG] ^2Entity Spawning: Entity: [159763] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:21:32] [DEBUG] ^2Entity Spawning: Entity: [160275] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:21:46] [DEBUG] ^2Entity Spawning: Entity: [154138] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:21:58] [DEBUG] ^2Entity Spawning: Entity: [135689] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:22:13] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029217329713786940/screenshot.jpg
+[04:22:14] [DEBUG] ^2Entity Spawning: Entity: [149264] Spawned By Player: [yes / 0 25] MODEL [-822947892] TYPE [object]
+[04:22:17] [DEBUG] ^2Entity Spawning: Entity: [159764] Spawned By Player: [yes / 0 17] MODEL [1874679314] TYPE [object]
+[04:22:41] [DEBUG] ^2Entity Spawning: Entity: [135690] Spawned By Player: [yes / 7 40] MODEL [699456151] TYPE [vehicle]
+[04:22:53] [DEBUG] ^2Entity Spawning: Entity: [149265] Spawned By Player: [yes / 0 17] MODEL [-1138601601] TYPE [object]
+[04:23:10] [DEBUG] ^2Entity Spawning: Entity: [159506] Spawned By Player: [yes / 0 25] MODEL [1365216886] TYPE [object]
+[04:23:18] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029217602075107328/screenshot.jpg
+[04:23:27] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029217639710609478/screenshot.jpg
+[04:23:48] [DEBUG] ^2Entity Spawning: Entity: [139783] Spawned By Player: [yes / 7 45] MODEL [836213613] TYPE [vehicle]
+[04:23:53] [DEBUG] ^2Entity Spawning: Entity: [159765] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:24:07] [DEBUG] ^2Entity Spawning: Entity: [159766] Spawned By Player: [yes / 7 40] MODEL [-1013450936] TYPE [vehicle]
+[04:24:12] [DEBUG] ^2Entity Spawning: Entity: [161030] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:24:12] [DEBUG] ^2Entity Spawning: Entity: [162577] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:24:16] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029217846519144538/screenshot.jpg
+[04:24:19] [DEBUG] ^2Entity Spawning: Entity: [149266] Spawned By Player: [yes / 0 17] MODEL [-942878619] TYPE [object]
+[04:24:23] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029217875568906331/screenshot.jpg
+[04:24:24] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029217878651719800/screenshot.jpg
+[04:24:45] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029217964995649556/screenshot.jpg
+[04:25:03] [DEBUG] ^2Entity Spawning: Entity: [139784] Spawned By Player: [yes / 0 25] MODEL [1839621839] TYPE [object]
+[04:25:14] [DEBUG] ^2Entity Spawning: Entity: [147477] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:25:19] [DEBUG] Screenshot received from Sucuk mit ei https://cdn.discordapp.com/attachments/1027585247321264188/1029218108575076373/screenshot.jpg
+[04:25:22] [DEBUG] ^2Entity Spawning: Entity: [159767] Spawned By Player: [yes / 7 40] MODEL [122224136] TYPE [vehicle]
+[04:25:33] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029218167593119876/screenshot.jpg
+[04:25:35] [DEBUG] ^2Entity Spawning: Entity: [140040] Spawned By Player: [yes / 0 12] MODEL [1839621839] TYPE [object]
+[04:25:43] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029218210265956392/screenshot.jpg
+[04:25:44] [DEBUG] ^2Entity Spawning: Entity: [147478] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:25:47] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029218227303235634/screenshot.jpg
+[04:25:56] [DEBUG] ^2Entity Spawning: Entity: [162578] Spawned By Player: [yes / 0 45] MODEL [1365216886] TYPE [object]
+[04:25:58] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029218272815632474/screenshot.jpg
+[04:26:07] [DEBUG] ^2Entity Spawning: Entity: [162579] Spawned By Player: [yes / 0 45] MODEL [1365216886] TYPE [object]
+[04:26:23] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029218379610992740/screenshot.jpg
+[04:26:30] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029218406852984952/screenshot.jpg
+[04:26:39] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029218446338166864/screenshot.jpg
+[04:26:40] [DEBUG] ^2Entity Spawning: Entity: [162580] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:27:00] [DEBUG] ^2Entity Spawning: Entity: [163340] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:27:02] [DEBUG] Screenshot received from gobboking https://cdn.discordapp.com/attachments/1027585247321264188/1029218541062328451/screenshot.jpg
+[04:27:03] [DEBUG] ^2Entity Spawning: Entity: [162581] Spawned By Player: [yes / 0 12] MODEL [-822947892] TYPE [object]
+[04:27:48] [DEBUG] ^2Entity Spawning: Entity: [162582] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:28:03] [DEBUG] Screenshot received from HL | Snoop https://cdn.discordapp.com/attachments/1027585247321264188/1029218796164100146/screenshot.jpg
+[04:28:34] ^0[^4Player Disconnect^0] Sucuk mit ei disconnected... (^3Exiting^0)
+[04:28:35] [DEBUG] ^2Entity Spawning: Entity: [136962] Spawned By Player: [yes / 0 17] MODEL [1365216886] TYPE [object]
+[04:28:36] [DEBUG] ^2Entity Spawning: Entity: [151306] Spawned By Player: [yes / 0 45] MODEL [1365216886] TYPE [object]
+[04:28:52] [DEBUG] ^2Entity Spawning: Entity: [146442] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:28:54] [DEBUG] ^2Entity Spawning: Entity: [151307] Spawned By Player: [yes / 7 1] MODEL [1093697054] TYPE [vehicle]
+[04:29:20] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029219118915801118/screenshot.jpg
+[04:29:32] [DEBUG] ^2Entity Spawning: Entity: [136963] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:31:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[04:31:12] ChocoHax Global Ban List updated successfully...
+[04:31:41] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029219711176691712/screenshot.jpg
+[04:31:45] [DEBUG] ^2Entity Spawning: Entity: [136964] Spawned By Player: [yes / 0 27] MODEL [1365216886] TYPE [object]
+[04:31:45] [DEBUG] ^2Entity Spawning: Entity: [146443] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:31:53] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029219760350703636/screenshot.jpg
+[04:31:58] [DEBUG] ^2Entity Spawning: Entity: [147481] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[04:32:03] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029219800490184815/screenshot.jpg
+[04:32:03] [DEBUG] ^2Entity Spawning: Entity: [134669] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:32:21] [DEBUG] Screenshot received from 𝒜𝓊f 𝒮üzz | Latif https://cdn.discordapp.com/attachments/1027585247321264188/1029219877627646042/screenshot.jpg
+[04:32:21] [DEBUG] ^2Entity Spawning: Entity: [147482] Spawned By Player: [yes / 0 20] MODEL [-1585232418] TYPE [object]
+[04:32:28] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029219908229287936/screenshot.jpg
+[04:32:31] [DEBUG] ^2Entity Spawning: Entity: [156425] Spawned By Player: [yes / 0 8] MODEL [746336278] TYPE [object]
+[04:32:55] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029220023086088223/screenshot.jpg
+[04:33:22] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029220136667840542/screenshot.jpg
+[04:33:28] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029220153747066931/screenshot.jpg
+[04:33:29] [DEBUG] Screenshot received from HL| Minimi https://cdn.discordapp.com/attachments/1027585247321264188/1029220165482717244/screenshot.jpg
+[04:33:39] [DEBUG] ^2Entity Spawning: Entity: [147483] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:33:39] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029220206419132516/screenshot.jpg
+[04:33:40] [DEBUG] ^2Entity Spawning: Entity: [149267] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:33:41] [DEBUG] ^2Entity Spawning: Entity: [147484] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:34:02] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029220301491413043/screenshot.jpg
+[04:34:11] [DEBUG] Screenshot received from HL| Minimi https://cdn.discordapp.com/attachments/1027585247321264188/1029220339898667108/screenshot.jpg
+[04:34:13] [DEBUG] ^2Entity Spawning: Entity: [136965] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:34:13] [DEBUG] ^2Entity Spawning: Entity: [147485] Spawned By Player: [yes / 0 33] MODEL [-2054442544] TYPE [object]
+[04:34:52] [DEBUG] ^2Entity Spawning: Entity: [136966] Spawned By Player: [yes / 0 27] MODEL [1365216886] TYPE [object]
+[04:35:12] [DEBUG] ^2Entity Spawning: Entity: [147486] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:36:05] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029220819911573514/screenshot.jpg
+[04:36:18] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029220874752118825/screenshot.jpg
+[04:36:20] [DEBUG] ^2Entity Spawning: Entity: [136967] Spawned By Player: [yes / 0 38] MODEL [-2054442544] TYPE [object]
+[04:36:20] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029220883010687016/screenshot.jpg
+[04:37:44] [DEBUG] ^2Entity Spawning: Entity: [136968] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:37:52] [DEBUG] ^2Entity Spawning: Entity: [147487] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:38:04] [DEBUG] ^2Entity Spawning: Entity: [147488] Spawned By Player: [yes / 0 43] MODEL [1839621839] TYPE [object]
+[04:38:09] [DEBUG] ^2Entity Spawning: Entity: [139785] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:38:11] [DEBUG] Screenshot received from 𝒜𝓊f 𝒮üzz | Latif https://cdn.discordapp.com/attachments/1027585247321264188/1029221346397401158/screenshot.jpg
+[04:38:17] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029221374687973466/screenshot.jpg
+[04:38:18] [DEBUG] ^2Entity Spawning: Entity: [148243] Spawned By Player: [yes / 0 20] MODEL [-1585232418] TYPE [object]
+[04:38:22] [DEBUG] ^2Entity Spawning: Entity: [149268] Spawned By Player: [yes / 0 25] MODEL [1839621839] TYPE [object]
+[04:38:27] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029221411878862878/screenshot.jpg
+[04:38:35] [DEBUG] ^2Entity Spawning: Entity: [136969] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:38:40] [DEBUG] Explosion: 
+[04:38:44] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029221483580502026/screenshot.jpg
+[04:38:55] [DEBUG] ^2Entity Spawning: Entity: [148245] Spawned By Player: [yes / 0 42] MODEL [-1620762220] TYPE [object]
+[04:39:39] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029221717446496256/screenshot.jpg
+[04:39:56] [DEBUG] ^2Entity Spawning: Entity: [139786] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:40:21] [DEBUG] ^2Entity Spawning: Entity: [139787] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:40:34] [DEBUG] ^2Entity Spawning: Entity: [154140] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:40:39] [DEBUG] ^2Entity Spawning: Entity: [156426] Spawned By Player: [yes / 7 40] MODEL [-1788665315] TYPE [ped]
+[04:41:00] [DEBUG] ^2Entity Spawning: Entity: [139788] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:41:10] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029222097177804870/screenshot.jpg
+[04:41:18] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029222130669338726/screenshot.jpg
+[04:41:52] [DEBUG] ^2Entity Spawning: Entity: [154142] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:42:40] [DEBUG] ^2Entity Spawning: Entity: [139791] Spawned By Player: [yes / 0 42] MODEL [1365216886] TYPE [object]
+[04:42:44] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029222491249442816/screenshot.jpg
+[04:42:47] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029222502888644749/screenshot.jpg
+[04:43:00] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029222561252380693/screenshot.jpg
+[04:43:22] [DEBUG] ^2Entity Spawning: Entity: [133900] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:43:57] [DEBUG] ^2Entity Spawning: Entity: [133901] Spawned By Player: [yes / 0 42] MODEL [1089807209] TYPE [object]
+[04:44:03] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029222824327512134/screenshot.jpg
+[04:44:04] [DEBUG] ^2Entity Spawning: Entity: [136970] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:44:18] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029222887325974528/screenshot.jpg
+[04:44:30] [DEBUG] ^2Entity Spawning: Entity: [139792] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:44:48] [DEBUG] ^2Entity Spawning: Entity: [139284] Spawned By Player: [yes / 7 7] MODEL [934775262] TYPE [vehicle]
+[04:44:51] [DEBUG] ^2Entity Spawning: Entity: [139793] Spawned By Player: [yes / 7 33] MODEL [1832265812] TYPE [ped]
+[04:44:55] [DEBUG] ^2Entity Spawning: Entity: [143624] Spawned By Player: [yes / 7 34] MODEL [1663218586] TYPE [vehicle]
+[04:45:09] [DEBUG] ^2Entity Spawning: Entity: [152593] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:45:17] [DEBUG] ^2Entity Spawning: Entity: [135692] Spawned By Player: [yes / 0 27] MODEL [519908417] TYPE [object]
+[04:45:22] [DEBUG] ^2Entity Spawning: Entity: [152594] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:45:47] [DEBUG] ^2Entity Spawning: Entity: [154143] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:46:04] [DEBUG] ^2Entity Spawning: Entity: [139794] Spawned By Player: [yes / 7 33] MODEL [1832265812] TYPE [ped]
+[04:46:07] ^0[^4Player Disconnect^0] PV-MaXi disconnected... (^3Disconnected.^0)
+[04:46:08] [DEBUG] ^2Entity Spawning: Entity: [139017] Spawned By Player: [yes / 7 33] MODEL [1832265812] TYPE [ped]
+[04:46:11] Sending Heartbeat to `^3ChocoHax^0` servers
+[04:46:12] ChocoHax Global Ban List updated successfully...
+[04:46:18] [DEBUG] ^2Entity Spawning: Entity: [135693] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:46:36] [DEBUG] ^2Entity Spawning: Entity: [136971] Spawned By Player: [yes / 7 34] MODEL [2112052861] TYPE [vehicle]
+[04:46:39] [DEBUG] ^2Entity Spawning: Entity: [139795] Spawned By Player: [yes / 0 42] MODEL [1839621839] TYPE [object]
+[04:46:46] [DEBUG] Screenshot received from 67 Hustler https://cdn.discordapp.com/attachments/1027585247321264188/1029223508577894460/screenshot.jpg
+[04:46:58] [DEBUG] ^2Entity Spawning: Entity: [143625] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:46:58] [DEBUG] ^2Entity Spawning: Entity: [146445] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:04] [DEBUG] ^2Entity Spawning: Entity: [146446] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:47:15] [DEBUG] ^2Entity Spawning: Entity: [146695] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:21] [DEBUG] ^2Entity Spawning: Entity: [146447] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:25] [DEBUG] ^2Entity Spawning: Entity: [146448] Spawned By Player: [yes / 0 27] MODEL [1365216886] TYPE [object]
+[04:47:26] [DEBUG] ^2Entity Spawning: Entity: [146696] Spawned By Player: [yes / 7 34] MODEL [904750859] TYPE [vehicle]
+[04:47:26] [DEBUG] ^2Entity Spawning: Entity: [152596] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:47:37] [DEBUG] ^2Entity Spawning: Entity: [146449] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:49] [DEBUG] ^2Entity Spawning: Entity: [146450] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:53] [DEBUG] ^2Entity Spawning: Entity: [154144] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:47:59] [DEBUG] ^2Entity Spawning: Entity: [152598] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:48:04] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029223833770655784/screenshot.jpg
+[04:48:29] [DEBUG] ^2Entity Spawning: Entity: [139018] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:48:29] [DEBUG] ^2Entity Spawning: Entity: [152599] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:48:43] [DEBUG] ^2Entity Spawning: Entity: [154145] Spawned By Player: [yes / 0 27] MODEL [519908417] TYPE [object]
+[04:48:46] [DEBUG] ^2Entity Spawning: Entity: [135694] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:48:46] [DEBUG] ^2Entity Spawning: Entity: [154146] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:48:51] [DEBUG] ^2Entity Spawning: Entity: [135695] Spawned By Player: [yes / 0 27] MODEL [-143315610] TYPE [object]
+[04:49:01] [DEBUG] ^2Entity Spawning: Entity: [135696] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:49:02] [DEBUG] ^2Entity Spawning: Entity: [154147] Spawned By Player: [yes / 0 27] MODEL [-143315610] TYPE [object]
+[04:49:07] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029224099412721674/screenshot.jpg
+[04:49:08] [DEBUG] ^2Entity Spawning: Entity: [159508] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:49:10] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029224110250786876/screenshot.jpg
+[04:49:15] [DEBUG] ^2Entity Spawning: Entity: [159509] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:16] [DEBUG] ^2Entity Spawning: Entity: [159768] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:22] [DEBUG] ^2Entity Spawning: Entity: [159769] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:22] [DEBUG] ^2Entity Spawning: Entity: [161033] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:23] [DEBUG] ^2Entity Spawning: Entity: [162583] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:49:24] [DEBUG] ^2Entity Spawning: Entity: [163599] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:49:24] [DEBUG] ^2Entity Spawning: Entity: [164624] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:49:25] [DEBUG] ^2Entity Spawning: Entity: [164873] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:49:27] [DEBUG] ^2Entity Spawning: Entity: [165133] Spawned By Player: [yes / 0 43] MODEL [289396019] TYPE [object]
+[04:49:28] [DEBUG] ^2Entity Spawning: Entity: [165644] Spawned By Player: [yes / 0 43] MODEL [289396019] TYPE [object]
+[04:49:35] [DEBUG] ^2Entity Spawning: Entity: [162584] Spawned By Player: [yes / 0 42] MODEL [289396019] TYPE [object]
+[04:49:35] [DEBUG] ^2Entity Spawning: Entity: [165645] Spawned By Player: [yes / 0 42] MODEL [289396019] TYPE [object]
+[04:49:35] [DEBUG] ^2Entity Spawning: Entity: [165896] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:36] [DEBUG] ^2Entity Spawning: Entity: [166158] Spawned By Player: [yes / 0 42] MODEL [289396019] TYPE [object]
+[04:49:37] [DEBUG] ^2Entity Spawning: Entity: [166661] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:49:52] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029224289003651092/screenshot.jpg
+[04:49:59] [DEBUG] ^2Entity Spawning: Entity: [135697] Spawned By Player: [yes / 0 45] MODEL [289396019] TYPE [object]
+[04:49:59] ^0[^4Player Disconnect^0] rkort disconnected... (^3Exiting^0)
+[04:50:24] ^0[^4Player Connect^0] ^0[^3rkort^0] connecting...
+[04:50:26] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029224429944840262/screenshot.jpg
+[04:50:32] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029224454447955978/screenshot.jpg
+[04:50:56] [DEBUG] ^2Entity Spawning: Entity: [133395] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:50:58] ^0[^4Player Disconnect^0] Peter Griffin disconnected... (^3Exiting^0)
+[04:51:12] [DEBUG] ^2Entity Spawning: Entity: [146697] Spawned By Player: [yes / 0 12] MODEL [1365216886] TYPE [object]
+[04:51:12] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029224625156137022/screenshot.jpg
+[04:51:18] [DEBUG] ^2Entity Spawning: Entity: [153370] Spawned By Player: [yes / 0 13] MODEL [1365216886] TYPE [object]
+[04:51:26] ^0[^4Player Connect^0] ^0[^3Peter Griffin^0] connecting...
+[04:51:39] [DEBUG] Screenshot received from G https://cdn.discordapp.com/attachments/1027585247321264188/1029224735101440010/screenshot.jpg
+[04:51:50] [DEBUG] Screenshot received from marab https://cdn.discordapp.com/attachments/1027585247321264188/1029224781863714926/screenshot.jpg
+[04:52:37] [DEBUG] ^2Entity Spawning: Entity: [133396] Spawned By Player: [yes / 0 47] MODEL [225514697] TYPE [ped]
+[04:52:44] [DEBUG] ^2Entity Spawning: Entity: [147490] Spawned By Player: [yes / 0 47] MODEL [1760825203] TYPE [object]
+[04:52:44] [DEBUG] ^2Entity Spawning: Entity: [153626] Spawned By Player: [yes / 0 47] MODEL [1760825203] TYPE [object]
+[04:52:48] [DEBUG] ^2Entity Spawning: Entity: [135431] Spawned By Player: [yes / 0 46] MODEL [225514697] TYPE [ped]
+[04:53:03] [DEBUG] ^2Entity Spawning: Entity: [152603] Spawned By Player: [yes / 0 46] MODEL [1760825203] TYPE [object]
+[04:53:03] [DEBUG] ^2Entity Spawning: Entity: [153373] Spawned By Player: [yes / 0 46] MODEL [1760825203] TYPE [object]
+[04:53:17] [DEBUG] ^2Entity Spawning: Entity: [139285] Spawned By Player: [yes / 0 47] MODEL [1839621839] TYPE [object]
+[04:53:24] [DEBUG] ^2Entity Spawning: Entity: [139286] Spawned By Player: [yes / 0 47] MODEL [1839621839] TYPE [object]
+[04:53:28] [DEBUG] ^2Entity Spawning: Entity: [136975] Spawned By Player: [yes / 0 20] MODEL [1365216886] TYPE [object]
+[04:53:32] [DEBUG] ^2Entity Spawning: Entity: [146701] Spawned By Player: [yes / 0 47] MODEL [1365216886] TYPE [object]
+[04:53:57] [DEBUG] Screenshot received from rkort https://cdn.discordapp.com/attachments/1027585247321264188/1029225313206538320/screenshot.jpg
+[04:54:23] [DEBUG] Screenshot received from HL| Minimi https://cdn.discordapp.com/attachments/1027585247321264188/1029225421235036180/screenshot.jpg
+[04:54:39] [DEBUG] ^2Entity Spawning: Entity: [132616] Spawned By Player: [yes / 0 43] MODEL [289396019] TYPE [object]
+[04:54:45] ^0[^4Player Connect^0] ^0[^3Ayleen^0] connecting...
+[04:54:48] [DEBUG] ^2Entity Spawning: Entity: [136976] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:55:43] ^0[^4Player Disconnect^0] StrikeFa1ld_tv disconnected... (^3Exiting^0)
+[04:55:46] ^0[^4Player Disconnect^0] 𝒜𝓊f 𝒮üzz | Latif disconnected... (^3Exiting^0)
+[04:55:51] [DEBUG] ^2Entity Spawning: Entity: [131074] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:56:18] [DEBUG] ^2Entity Spawning: Entity: [131075] Spawned By Player: [yes / 0 47] MODEL [1365216886] TYPE [object]
+[04:56:57] [DEBUG] ^2Entity Spawning: Entity: [132618] Spawned By Player: [yes / 0 48] MODEL [225514697] TYPE [ped]
+[04:57:03] ^0[^4Player Disconnect^0] Jessi disconnected... (^3Exiting^0)
+[04:57:13] ^0[^4Player Disconnect^0] G disconnected... (^3Exiting^0)
+[04:57:14] [DEBUG] ^2Entity Spawning: Entity: [131076] Spawned By Player: [yes / 0 48] MODEL [1760825203] TYPE [object]
+[04:57:14] [DEBUG] ^2Entity Spawning: Entity: [133129] Spawned By Player: [yes / 0 48] MODEL [1760825203] TYPE [object]
+[04:57:19] [DEBUG] ^2Entity Spawning: Entity: [134917] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:57:24] [DEBUG] Screenshot received from ~u~ Tyler https://cdn.discordapp.com/attachments/1027585247321264188/1029226184380256266/screenshot.jpg
+[04:57:36] [DEBUG] ^2Entity Spawning: Entity: [134918] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:57:47] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029226278626267176/screenshot.jpg
+[04:58:19] [DEBUG] ^2Entity Spawning: Entity: [135190] Spawned By Player: [yes / 0 41] MODEL [1365216886] TYPE [object]
+[04:58:20] [DEBUG] ^2Entity Spawning: Entity: [135938] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:58:34] [DEBUG] ^2Entity Spawning: Entity: [135939] Spawned By Player: [yes / 0 25] MODEL [289396019] TYPE [object]
+[04:58:40] ^0[^4Player Disconnect^0] Morheam disconnected... (^3Exiting^0)
+[04:58:53] [DEBUG] ^2Entity Spawning: Entity: [135698] Spawned By Player: [yes / 0 48] MODEL [1365216886] TYPE [object]
+[04:58:54] [DEBUG] ^2Entity Spawning: Entity: [136977] Spawned By Player: [yes / 0 47] MODEL [1365216886] TYPE [object]
+[04:58:55] [DEBUG] Screenshot received from Peter Griffin https://cdn.discordapp.com/attachments/1027585247321264188/1029226564669423656/screenshot.jpg
+[04:58:55] [DEBUG] ^2Entity Spawning: Entity: [143881] Spawned By Player: [yes / 0 46] MODEL [289396019] TYPE [object]
+[04:58:56] [DEBUG] ^2Entity Spawning: Entity: [135699] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:58:56] [DEBUG] ^2Entity Spawning: Entity: [145667] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:59:02] [DEBUG] ^2Entity Spawning: Entity: [146702] Spawned By Player: [yes / 0 48] MODEL [1365216886] TYPE [object]
+[04:59:04] [DEBUG] Screenshot received from Maxim https://cdn.discordapp.com/attachments/1027585247321264188/1029226602170699816/screenshot.jpg
+[04:59:17] [DEBUG] ^2Entity Spawning: Entity: [150279] Spawned By Player: [yes / 0 25] MODEL [-1620762220] TYPE [object]
+[04:59:18] [DEBUG] ^2Entity Spawning: Entity: [134670] Spawned By Player: [yes / 0 46] MODEL [289396019] TYPE [object]
+[04:59:18] [DEBUG] ^2Entity Spawning: Entity: [151308] Spawned By Player: [yes / 0 46] MODEL [289396019] TYPE [object]
+[04:59:18] [DEBUG] ^2Entity Spawning: Entity: [153872] Spawned By Player: [yes / 0 32] MODEL [289396019] TYPE [object]
+[04:59:18] [DEBUG] ^2Entity Spawning: Entity: [154149] Spawned By Player: [yes / 0 32] MODEL [289396019] TYPE [object]
+[04:59:22] [DEBUG] ^2Entity Spawning: Entity: [156428] Spawned By Player: [yes / 0 27] MODEL [289396019] TYPE [object]
+[04:59:24] [DEBUG] ^2Entity Spawning: Entity: [162827] Spawned By Player: [yes / 0 25] MODEL [289396019] TYPE [object]
+[04:59:26] [DEBUG] ^2Entity Spawning: Entity: [163076] Spawned By Player: [yes / 0 13] MODEL [289396019] TYPE [object]
+[04:59:29] [DEBUG] ^2Entity Spawning: Entity: [146957] Spawned By Player: [yes / 0 12] MODEL [289396019] TYPE [object]
+[04:59:31] [DEBUG] ^2Entity Spawning: Entity: [166663] Spawned By Player: [yes / 0 28] MODEL [-1585232418] TYPE [object]
+[04:59:43] ^0[^4Player Disconnect^0] ~u~ Tyler disconnected... (^3Exiting^0)
+[04:59:46] [DEBUG] ^2Entity Spawning: Entity: [146958] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[04:59:51] ^0[^4Player Disconnect^0] SliceOnFiveM disconnected... (^3Exiting^0)
+[04:59:55] ^0[^4Player Disconnect^0] BlackPanther disconnected... (^3Exiting^0)
+[05:00:04] [DEBUG] ^2Entity Spawning: Entity: [131586] Spawned By Player: [yes / 0 25] MODEL [289396019] TYPE [object]
+[05:00:05] ^0[^4Player Disconnect^0] HL| Minimi disconnected... (^3Exiting^0)
+[05:00:24] [DEBUG] ^2Entity Spawning: Entity: [131587] Spawned By Player: [yes / 0 1] MODEL [1365216886] TYPE [object]
+[05:00:27] ^0[^4Player Disconnect^0] 67 Hustler disconnected... (^3Exiting^0)
+[05:00:29] ^0[^4Player Disconnect^0] HL | Nico disconnected... (^3Exiting^0)
+[05:00:42] [DEBUG] ^2Entity Spawning: Entity: [131330] Spawned By Player: [yes / 0 25] MODEL [289396019] TYPE [object]
+[05:00:45] ^0[^4Player Disconnect^0] gobboking disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] Dave Sanchez disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] DeF_Toshi-sama disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] marab disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] Ricky_Rage disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] Maxim disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] HL Steini disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] HL | Snoop disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] rkort disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] Peter Griffin disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)
+[05:00:46] ^0[^4Player Disconnect^0] Ayleen disconnected... (^3[txAdmin] Server Neustart (Automatisierter Neustart um 05:00).^0)

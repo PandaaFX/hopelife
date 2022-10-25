@@ -1,0 +1,627 @@
+/* GARAGE PAGE */
+.garage-page
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.garage-page-title-box
+{
+    position: absolute;
+    top: 4vh;
+    width: 250px;
+}
+
+.garage-page-title
+{
+    font-weight: 800;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FF27F6 0%, #FF2E2E 98.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 0px 140px #FF2A89;
+}
+
+.garage-page-title-desc
+{
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.33) !important;
+}
+
+
+.garage-page-l
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 0;
+}
+
+.garage-page-r
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    right: 0;
+}
+
+
+
+.garage-page-3-fx
+{
+    position: absolute;
+    right: 0px;
+    top: 0vh;
+}
+
+.fx-green-l
+{
+    position: absolute;
+    left: 0;
+}
+
+.car-l
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.park-car
+{
+    text-align: left;
+    position: absolute;
+    left: 0vh;
+    top: 20vh;
+    width: 868.5px;
+    height: 69px;
+    background: linear-gradient(89.96deg, rgba(0, 0, 0, 0.55) 0.03%, rgba(0, 0, 0, 0) 99.91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-car
+{
+    text-align: right;
+    position: absolute;
+    right: 0vh;
+    top: 20vh;
+    width: 868.5px;
+    height: 69px;
+    background: linear-gradient(89.96deg, rgba(0, 0, 0, 0) 0.03%, rgba(0, 0, 0, 0.55) 99.91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.park-car-title
+{
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 5vw;
+}
+
+.buy-car-title
+{
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 5vw;
+}
+
+.park-car-title-desc
+{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    position: absolute;
+    bottom: -3.5vh;
+    left: 5vw;
+}
+.buy-car-title-desc
+{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    position: absolute;
+    bottom: -3.5vh;
+    right: 5vw;
+}
+
+.hex-white-l, .hex-green-l
+{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+
+.fx-white-l
+{
+    position: absolute;
+    left: 0;
+}
+
+.back-btn, .back-btn-buy
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(116, 116, 116, 0.1716) 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    margin: 60px;
+    z-index: 1000;
+    transition: all 250ms ease-in-out;
+}
+
+.back-btn:hover, .back-btn-buy:hover
+{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(116, 116, 116, 0.1916) 100%);
+}
+
+.back-btn img, .back-btn-buy img
+{
+    position: absolute;
+    top: 20px;
+}
+
+.back-btn p, .back-btn-buy p
+{
+    color: white;
+    font-weight: 500;
+    font-size: 0.75rem;
+    position: absolute;
+    width: 80px;
+    bottom: 10px;
+}
+
+.fx-green-r
+{
+    position: absolute;
+    right: 0;
+}
+
+.car-r
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.fx-white-r
+{
+    position: absolute;
+    right: 0;
+}
+
+.hex-white-r, .hex-green-r
+{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+
+/* PARKOUT PAGE */
+.parkout-page
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background: url(./assets/img/garage/parkout-bg.png);
+    background-size: cover;
+}
+
+.parkout-page-title-box
+{
+    position: absolute;
+    top: 4vh;
+    width: 250px;
+}
+
+.parkout-page-title
+{
+    font-weight: 800;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FF27F6 0%, #FF2E2E 98.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 0px 140px #FF2A89;
+}
+
+.parkout-page-title-desc
+{
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.33) !important;
+}
+
+.parkout-list
+{
+    position: absolute;
+    height: 78vh;
+    width: 750px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    bottom: 5vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.car-element
+{
+    position: relative;
+    width: 740px !important;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.car-icon, .buy-car-icon
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(116, 116, 116, 0.1716) 100%);
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carname
+{
+    position: absolute;
+    left: 80px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px !important;
+}
+
+.park-buttons
+{
+    position: absolute;
+    right: 0;
+    width: 280px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.park-btn
+{
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-10deg);
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.park-btn:hover
+{
+    background-color: #FFDC5F;
+    box-shadow: 0px 6px 26px rgba(255, 220, 95, 0.25);
+}
+
+.spawn-btn
+{
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-10deg);
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.spawn-btn:hover
+{
+    background-color: #cfcfcfbe;
+    color: black;
+    /* box-shadow: 0px 6px 26px rgba(255, 255, 255, 0.25); */
+}
+
+.fav-add
+{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 425px;
+}
+
+.fav-filled
+{
+    position: absolute;
+    color: white;   
+    transform: skew(-10deg);
+    font-size: 1.45rem;
+    transition: color 250ms ease-in-out;
+}
+
+
+
+.fav-filled
+{
+    color: white;
+    /* text-shadow: 0px 6px 26px rgba(255, 220, 95, 0.25); */
+    z-index: 100000;
+}
+
+.park-btn p
+{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #252525;
+}
+.spawn-btn p
+{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.no-vehicles
+{
+    position: absolute;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+
+.no-vehicles-text h2
+{
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.no-vehicles-text p
+{
+    margin: -5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+.buy-page
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.buy-garage-title
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 334px;
+    height: 96px;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.skull-icon
+{
+    position: relative;
+    margin-right: 20px;
+    left: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(116, 116, 116, 0.1716) 100%);
+    border-radius: 5px;
+    padding: 28px;
+}
+
+.buy-garage-title h2
+{
+    position: relative;
+    text-align: left;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 38px;
+    background: linear-gradient(90deg, #FF27F6 0%, #FF2E2E 98.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 0px 140px #FF2A89;
+    bottom: 10px;
+    text-transform: uppercase;
+}
+
+.buy-garage-title p
+{
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.33);
+    bottom: 0px;
+    margin-left: 110px;
+    width: 250px;
+}
+
+.buy-list
+{
+    position: absolute;
+    width: 394px;
+    height: 590px;
+    /* display: flex; */
+    /* align-items: center; */
+    left: 0;
+    top: 0;
+    margin: 180px 60px;
+    overflow: scroll;
+}
+
+.buy-vehicle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 394px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #FFFFFF;
+    transition: background-color 250ms ease-in-out;
+    margin-bottom: 25px;
+}
+
+.buy-car-icon
+{
+    left: 0;
+}
+
+.car-white, .car-black
+{
+    position: absolute;
+}
+
+
+.buy-car-text
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 165px;
+    left: 80px;
+    position: absolute;
+    text-align: left;
+}
+
+.buy-car-price
+{
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDFF69;
+    right: 0;
+    margin: 25px;
+}
+
+.buy-pricing
+{
+    position: absolute;
+    bottom: 1vh;
+    left: 0;
+    margin: 60px;
+    text-align: left;
+}
+
+.end-price-text
+{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.summe
+{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #BDFF69;
+}
+
+.buy-buttons
+{
+    position: relative;
+    width: 394px;
+    height: 63px;
+    transform: skew(-10deg);
+    margin-top: 20px;
+}
+
+.buy-car-btn
+{
+    position: absolute;
+    width: 195px;
+    height: 63px;
+    background: #FFDC5F;
+    box-shadow: 0px 6px 26px rgba(255, 220, 95, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.buy-car-btn p
+{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #252525;
+}
+
+.test-drive
+{
+    position: absolute;
+    width: 195px;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    color: white;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Color themes
+    // Available themes: dark, light, darkred, darkgold, darkgreen, pink
+    // To change a theme, simply replace "dark" in the line below with any style above and restart your script. -->
+
+    <link rel="stylesheet" href="./style/themes/dark.css">
+
+    <!-- ////////////////////////////////////////////// -->    
+    
+    <link rel="stylesheet" type="text/css" href="./style/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+</head>
+
+<body>
+    <div id="app" v-if="visible">
+        <section class="notif-box js-notif"></section>
+        <section class="menu__parts" v-if="partsMenuVisible">
+            <div class="menu__parts-wrap">
+                <div v-for="(partData, partName) in parts" v-on:click="partBtnClick(partName)" :class="'menu__part menu__part--' + partName">
+                    <div class="menu__part-bg"></div>
+                    <h1 class="menu__part-title">{{ partData.label }}</h1>
+                    <span class="menu__part-desc">{{ tattoos[partName].length }} {{ texts.tattoos }}</span>
+                </div>
+            </div>
+        </section>
+        <section class="menu__tats js-tats-menu" style="display: none">
+            <div class="menu__tats-wrap">
+                <div class="menu__tats-box">
+                    <div class="menu__tats-logo">
+                        <img src="img/tattoologo.png" alt="Logo">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1440 320" class="menu__tats-wave">
+                        <path d="M1 256c203-10.7 385-104.2 484-126.2 174-33 317-16.5 484 1.1 159 15.4 311 80.3 391 115.5l80 35.2V0H0Z" />
+                    </svg>
+                    <div class="menu__tats-content">
+                        <div class="menu__tats-header">
+                            <h1 class="menu__tats-title">{{ texts.list_of_tattoos }}</h1>
+                            <span v-if="tattoosMenuVisible" class="menu__tats-count">{{ (currentTattooIndex + 1) + '/' + tattoos[currentCategory].length }}</span>
+                        </div>
+                        <ul class="menu__tats-list" ref="tattooList">
+                            <li 
+                                v-if="tattoosMenuVisible && tattoos[currentCategory].length"
+                                v-for="(tattoo, index) in tattoos[currentCategory]"
+                                v-on:click="setCurrentTattooIndex($event, tattoo)"
+                                :class="[tattoo == tattoos[currentCategory][0] ? 'tat-selected' : '' , 'js-tattoo-item']" 
+                                :data-index="index"
+                            >
+                                <span>
+                                    <template v-if="tattoo.Permissions">
+                                        {{ tattoo.Permissions.jobs && tattoo.Permissions.jobs.length ? '💼 ' : '' }}
+                                        {{ tattoo.Permissions.identifiers && tattoo.Permissions.identifiers.length ? '⭐ ' : '' }}
+                                    </template>
+                                    {{ tattoo.CustomName ? tattoo.CustomName : (tattoo.Name ?? 'Unnamed') }}
+                                </span>
+                                <strong class="js-tattoo-price" v-if="!tattoo.Owned">
+                                    {{ getTattooPriceLabel(tattoo.Price) }}
+                                </strong>
+                                <span class="js-tattoo-price" v-if="tattoo.Owned">
+                                    ✔
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="menu__tats-opacity">
+                            <label for="opacity">
+                                <span>{{ texts.opacity }}</span>
+                                <span>{{ opacity.level }}</span>
+                            </label>
+                            <input name="opacity.level" v-model="opacity.level" @input="handlePreview()" type="range" min="1" max="5">
+                        </div>
+
+                        <div class="menu__tats-henna">
+                            <label class="tooltip__wrap">
+                                <input name="useHenna" type="checkbox" v-model="useHenna">
+                                {{ texts.use_henna }}
+                                <span class="tooltip">
+                                    <svg class="tooltip__icon" xmlns="http://www.w3.org/2000/svg" id="tooltip" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0Zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10Z"/><path d="M12.717 5.063A4 4 0 0 0 8 9a1 1 0 0 0 2 0 2 2 0 0 1 2.371-1.967 2.024 2.024 0 0 1 1.6 1.595 2 2 0 0 1-1 2.125A3.954 3.954 0 0 0 11 14.257V15a1 1 0 0 0 2 0v-.743a1.982 1.982 0 0 1 .93-1.752 4 4 0 0 0-1.213-7.442Z"/><rect x="11" y="17" width="2" height="2" rx="1"/></svg>
+                                    <span class="tooltip__info tooltip__info--top">{{ texts.henna_info }}</span>
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <div class="menu__tats-controls">
+                            <button class="menu__tats-btn menu__tats-btn--icon" v-if="!onlySpecificPart" v-on:click="menuGoBackClick">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" xml:space="preserve" viewBox="0 0 30.725 30.725">
+                                    <path d="M24.078 26.457a2.5 2.5 0 0 1-1.77 4.267 2.497 2.497 0 0 1-1.768-.731L5.914 15.362 20.543.732a2.499 2.499 0 1 1 3.535 3.536L12.984 15.362l11.094 11.095z" />
+                                </svg>
+                            </button>
+                            <button class="menu__tats-btn" v-if="tattoosMenuVisible && !onlyPreview" v-on:click="buyOrRemoveWithButton">
+                                <span v-if="!tattoos[currentCategory][currentTattooIndex].Owned">{{ texts.buy_tattoo }}</span>
+                                <span v-else>{{ texts.remove_tattoo }}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu__slider-wrap">
+                <input type="range" min="-180" max="180" value="0" step="2" class="menu__slider js-cam-slider">
+            </div>
+        </section>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

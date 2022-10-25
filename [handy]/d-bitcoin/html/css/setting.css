@@ -1,0 +1,22 @@
+.settingelement {
+    width: 100%;
+    height: 6vh;
+    line-height: 4vh;
+    font-size: 3vh;
+    padding: 1vh;
+    background-color: rgb(25, 25, 25)!important;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+
+.settingright {
+    height: 4vh;
+    line-height: 4vh!important;
+    text-align: center!important;
+    float: right;
+}
+
+.settingright:hover {
+    color: rgb(139, 226, 161);
+    transition: 0.5s;
+}

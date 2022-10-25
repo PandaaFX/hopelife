@@ -1,0 +1,35 @@
+
+[07:59:44] Configuration loaded successfully...
+[07:59:44] Loaded language ^0[^3eng^0]
+[08:00:01] ChocoHax [^31.5.4b^0] is starting, Please wait...
+[08:00:01] Successfully connected to the authentication server
+[08:00:01] Connected to: ^0[^3lynxcollective.ltd #1 1.5.4b^0]
+[08:00:01] Current account: ^0[^3alexandar.lazarevski006@gmail.com^0]
+[08:00:01] Current server IP: ^0[^3193.42.12.47^0]
+[08:00:01] ^5MOTD: ^0This ChocoHax version is outdated, We recommend updating to the latest ChocoHax version as soon as possible^0
+[08:00:01] ^0[^3runcode^0] is a dangerous resources that can be exploited, we recommend removing it from the server as fast as possible...
+[08:00:02] Sending Heartbeat to `^3ChocoHax^0` servers
+[08:00:02] ChocoHax Global Ban List updated successfully...
+[08:01:46] ^0[^4Player Connect^0] ^0[^3mrsxenia^0] connecting...
+[08:02:32] [DEBUG] ^2Entity Spawning: Entity: [131073] Spawned By Player: [yes / 0 1] MODEL [225514697] TYPE [ped]
+[08:02:37] [DEBUG] ^2Entity Spawning: Entity: [131330] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[08:02:37] [DEBUG] ^2Entity Spawning: Entity: [131586] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[08:02:39] ^0[^31^0] ^0[^3mrsxenia^0] authentificated as ChocoHax Admin/Moderator
+[08:02:43] ^0[^4Player Disconnect^0] mrsxenia disconnected... (^3Exiting^0)
+[08:02:59] ^0[^4Player Connect^0] ^0[^3mrsxenia^0] connecting...
+[08:03:46] [DEBUG] ^2Entity Spawning: Entity: [132866] Spawned By Player: [yes / 0 2] MODEL [225514697] TYPE [ped]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [133123] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [133379] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [131331] Spawned By Player: [yes / 0 2] MODEL [-160937700] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [131587] Spawned By Player: [yes / 0 2] MODEL [-160937700] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [131842] Spawned By Player: [yes / 0 2] MODEL [-160937700] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [132610] Spawned By Player: [yes / 0 2] MODEL [-160937700] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [132098] Spawned By Player: [yes / 0 2] MODEL [865563579] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [131074] Spawned By Player: [yes / 0 2] MODEL [1171655821] TYPE [object]
+[08:03:50] [DEBUG] ^2Entity Spawning: Entity: [132354] Spawned By Player: [yes / 0 2] MODEL [-1251197000] TYPE [object]
+[08:03:53] ^0[^32^0] ^0[^3mrsxenia^0] authentificated as ChocoHax Admin/Moderator
+[08:05:27] ^0[^4Player Connect^0] ^0[^3Brilltz^0] connecting...
+[08:05:31] ^0[^4Player Connect^0] ^0[^3Brilltz^0] connecting...
+[08:09:00] ^0[^4Player Disconnect^0] mrsxenia disconnected... (^3Disconnected.^0)
+[08:13:53] ^0[^4Player Connect^0] ^0[^3Tatiiy^0] connecting...
+[08:13:54] ^0[^4Player Connect^0] ^0[^3Tatiiy^0] connecting...

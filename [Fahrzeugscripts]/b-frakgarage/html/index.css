@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;0,900;1,200&family=Rajdhani:wght@700&display=swap');
+
+* {
+    transition: 500ms;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ui {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0vw;
+    top: 0vw;
+}
+
+.ui .bg {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/background.png);
+}
+
+.ui .bgeffect {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/effect.png);
+}
+
+.ui .titleMain {
+    position: absolute;
+    width: 163px;
+    height: 44px;
+    left: 879px;
+    top: 48px;
+    font-family: 'Montserrat', sans-serif;    font-style: bold;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    background: -webkit-linear-gradient(330deg, #FF27F6, #FF2E2E);
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 140px #FF2A89;
+    -webkit-text-fill-color: transparent;
+}
+
+.ui .descMain {
+    position: absolute;
+    width: 203px;
+    height: 40px;
+    left: 859px;
+    top: 92.01px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.ui .rightLine {
+    position: absolute;
+    width: 1035.5px;
+    height: 69px;
+    left: 884.5px;
+    top: 193px;
+    background: linear-gradient(89.96deg, rgba(0, 0, 0, 0) 0.03%, rgba(0, 0, 0, 0.55) 99.91%);
+}
+
+.rightLine .title {
+    position: absolute;
+    width: 704px;
+    height: 78px;
+    left: 29vh;
+    top: -0.25vh;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.ui .leftSide {
+    position: absolute;
+    width: 960px;
+    height: 1080px;
+}
+
+.ui .rightSide {
+    position: absolute;
+    width: 960px;
+    height: 1080px;
+    left: 50%;
+}
+
+.rightLine .desc {
+    
+    position: absolute;
+    width: 283px;
+    height: 44px;
+    left: 55.25vh;
+    top: 7.25vh;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+
+    color: rgba(255, 255, 255, 0.55);
+
+}
+
+.ui .selectedRight {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+
+    background-repeat: no-repeat;
+    background: url(imgs/selectedright.png);
+}
+
+.ui .selectedLeft {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+
+    background-repeat: no-repeat;
+    background: url(imgs/selectedleft.png);
+}
+
+
+
+.ui .strich {
+    position: absolute;
+    width: 3px;
+    height: 924px;
+    left: 933.18px;
+    top: 139.25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.55) 45.83%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 0px 69px rgba(255, 255, 255, 0.25));
+    transform: rotate(12.89deg);
+}
+
+.ui .leftLine {
+    position: absolute;
+    width: 868.5px;
+    height: 69px;
+    left: 0px;
+    top: 193px;
+    background: linear-gradient(89.96deg, rgba(0, 0, 0, 0.55) 0.03%, rgba(0, 0, 0, 0) 99.91%);
+}
+
+.leftLine .title {
+    position: absolute;
+    width: 497px;
+    height: 78px;
+    left: 158px;
+    top: -5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.leftLine .desc {
+    position: absolute;
+    width: 283px;
+    height: 44px;
+    left: 163px;
+    top: 80px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.ui2 {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0vw;
+    top: 0vw;
+}
+
+.ui2 .bg {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/background.png);
+}
+
+.ui2 .bgeffect {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/garage.png);
+}
+
+.ui2 .titleMain {
+    position: absolute;
+    width: 163px;
+    height: 44px;
+    left: 879px;
+    top: 48px;
+    font-family: 'Montserrat', sans-serif;    font-style: bold;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    background: -webkit-linear-gradient(330deg, #FF27F6, #FF2E2E);
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 140px #FF2A89;
+    -webkit-text-fill-color: transparent;
+}
+
+.ui2 .descMain {
+    position: absolute;
+    width: 203px;
+    height: 40px;
+    left: 859px;
+    top: 92.01px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.ui2 .carContent {
+    position: absolute;
+    width: 772px;
+    height: 840px;
+    left: 574px;
+    top: 175px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+
+}
+
+.carContent::-webkit-scrollbar {
+    width: 1vh;
+    background: transparent
+}
+
+.carContent .carFrame {
+    position: relative;
+    width: 772px;
+    height: 60px;
+    margin-bottom: 1vh;
+
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 5px;
+}
+
+.carFrame .carIcon {
+        position: absolute;
+    width: 70px;
+    height: 60px;
+    left: -0.50vh;
+    background: url(imgs/car.png);
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.carFrame .carName {
+    position: absolute;
+width: 226px;
+height: 20px;
+left: 86px;
+top: 20px;
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+
+.carFrame .parkOut {
+    
+    position: absolute;
+    width: 150.78px;
+    height: 44.93px;
+    top: 0.75vh;
+    left: 55vh;
+    color: #000000;
+
+    background: #ffffff;
+    /* transform: skew(30deg, 20deg); */
+    transform: skewX(-30deg);
+    /* transform: skewY(1.07rad); */
+}
+
+.parkOut:hover {
+    background: #FFDC5F;
+    color: #000000;
+
+}
+
+.parkOut .text {
+    position: absolute;
+width: 78px;
+height: 17px;
+left: 4vh;
+top: 1.40vh;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+transform: skewX(30deg);
+
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+
+}
+
+
+.ui3 {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0vw;
+    top: 0vw;
+}
+
+
+.ui3 .bg {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/shopbackground.png);
+}
+
+.ui3 .bgeffect {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(imgs/shopeffect.png);
+}
+
+.ui3 .shopIcon {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 60px;
+    top: 61px;
+    background: url(imgs/shopicon.png);
+
+}
+
+.ui3 .shopTitle {
+    position: absolute;
+    width: 247px;
+    height: 76px;
+    left: 147px;
+    top: 56px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    overflow: visible;
+    font-weight: 800;
+    font-size: 36px;
+    z-index: 99vh;
+    line-height: 38px;
+    background: -webkit-linear-gradient(330deg, #FF27F6, #FF2E2E);
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 140px #FF2A89;
+    -webkit-text-fill-color: transparent;
+}
+
+.ui3 .shopDesc {
+    position: absolute;
+    width: 164px;
+    height: 20px;
+    left: 147px;
+    top: 132px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: rgba(255, 255, 255, 0.33);
+}
+
+.ui3 .shopContent {
+    position: absolute;
+    width: 394px;
+    height: 690px;
+    left: 60px;
+    top: 163px;
+    word-wrap:break-all; text-align: justify; word-break:break-all; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+
+}
+
+.carContent::-webkit-scrollbar {
+    width: 1vh;
+    background: transparent
+}
+
+.shopContent .carFrame {
+    position: relative;
+    width: 394px;
+    height: 60px;
+    margin-bottom: 1vh;
+
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.shopContent::-webkit-scrollbar {
+    width: 0.2vh;
+    background: transparent
+}
+
+
+.shopContent .carFrame:hover {
+    background: linear-gradient(0deg, #cecece52, #cacaca52), rgba(0, 0, 0, 0.25);
+}
+.ui3 .buybtn {
+    position: absolute;
+    width: 203px;
+    height: 63px;
+    left: 60px;
+    top: 968px;
+    transform: skewX(-30deg);
+
+    background: #FFDC5F;
+    box-shadow: 0px 6px 26px rgba(255, 220, 95, 0.25);
+}
+
+.ui3 .testbtn {
+    position: absolute;
+    width: 203px;
+    height: 63px;
+    left: 267px;
+    top: 968px;
+    transform: skewX(-30deg);
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.ui3 .price {
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    left: 60px;
+    top: 905px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #BDFF69;
+}
+
+.ui3 .carInfo {
+    position: absolute;
+    width: 160.5px;
+    height: 61.5px;
+    left: 473.5px;
+    top: 231px;
+
+    background: url(imgs/carinfo.png);
+    border-radius: 10px;
+}
+
+.carInfo .title {
+    position: absolute;
+    width: 127px;
+    height: 18px;
+    left: 28%;
+    top: 1vh;
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #252525;
+}
+
+.carInfo .desc {
+    position: absolute;
+    width: 101px;
+    height: 15px;
+    left: 38%;
+    top: 3vh;
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 15px;
+
+    color: #5c5c5ccc;
+}
+
+.ui3 .buyText {
+    position: absolute;
+    width: 76px;
+    height: 17px;
+    left: 60px;
+    top: 888px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    color: #FFFFFF;
+
+}
+
+.buybtn .text {
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    left: 27%;
+    top: 2vh;
+    transform: skewX(30deg);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+    
+    color: #252525;
+
+}
+
+.testbtn .text {
+
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    left: 27%;
+    top: 2vh;
+    transform: skewX(30deg);
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+    
+    color: #FFFFFF;
+
+}
+
+.shopContent .carName {
+    position: absolute;
+    width: 107px;
+    height: 40px;
+    left: 90px;
+    top: 19px;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4447884416924666vh;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.shopContent .carPrice {
+    position: absolute;
+width: 97px;
+height: 20px;
+left: 300px;
+top: 33%;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #BDFF69;
+}

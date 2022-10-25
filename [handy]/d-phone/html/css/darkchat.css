@@ -1,0 +1,68 @@
+#darkchat {
+    /* left: 0%!important; */
+}
+
+#darkchat-overview {
+    margin-right: 0%;
+}
+
+#darkchat-chat {
+    /* margin-right: 0%; */
+    grid-column: 1/4;
+}
+
+.darkchat-overview-new {
+    position: absolute;
+    bottom: 4vh;
+    right: 2.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    background-color: var(--green-color);
+    color: white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.darkchat-overview-new:hover {
+    background-color: var(--green-colorh);
+    transition: 0.5s;
+
+}
+
+.darkchat-overview-join {
+    position: absolute;
+    bottom: 4vh;
+    right: 7.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    background-color: var(--accent-color);
+    color: white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.darkchat-overview-join:hover {
+    background-color: var(--accent-colorh);
+    transition: 0.5s;
+
+}
+
+#darkchat-chat-content {
+    /* height: 40.5vh!important; */
+}

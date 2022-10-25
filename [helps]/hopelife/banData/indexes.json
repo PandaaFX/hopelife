@@ -1,0 +1,304 @@
+{
+    "414719": {
+        "module": "clientProtection",
+        "name": "Fahir Ramovic",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-10-02] 19.45.32"
+    },
+    "367442": {
+        "module": "clientProtection",
+        "time": "[2022-08-25] 00.32.35",
+        "reason": "External Script (Eulen)",
+        "name": "NiklasSC00"
+    },
+    "476944": {
+        "module": "clientProtection",
+        "time": "[2022-08-25] 20.35.38",
+        "reason": "External Script (Eulen)",
+        "name": "df420sfyk69oCb182ufh06fl0p2qa2co"
+    },
+    "482932": {
+        "module": "clientProtection",
+        "time": "[2022-09-18] 17.46.18",
+        "reason": "External Script (Eulen)",
+        "name": "anYoNe"
+    },
+    "773914": {
+        "module": "eventsProtection",
+        "name": "hemara",
+        "reason": "Blacklisted Event",
+        "time": "[2022-08-20] 23.25.11"
+    },
+    "628993": {
+        "module": "clientProtection",
+        "time": "[2022-08-28] 04.06.41",
+        "reason": "External Script (Eulen)",
+        "name": "godgaso"
+    },
+    "041274": "[2022-10-18] 06.17.09",
+    "005223": {
+        "module": "clientProtection",
+        "name": "Red Killer",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-08-27] 16.49.33"
+    },
+    "249539": "[2022-10-18] 16.45.19",
+    "450672": {
+        "module": "clientProtection",
+        "name": "SalzLord",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-07-10] 12.56.37"
+    },
+    "517018": {
+        "module": "clientProtection",
+        "name": "^8Ace Bombe",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-07] 18.50.19"
+    },
+    "310821": {
+        "module": "clientProtection",
+        "time": "[2022-09-19] 00.15.18",
+        "reason": "External Script (Eulen)",
+        "name": "el_mascho"
+    },
+    "397672": "[2022-10-15] 22.20.16",
+    "132742": {
+        "module": "weaponsProtection",
+        "name": "German_Player112",
+        "reason": "Give Weapon",
+        "time": "[2022-09-23] 13.30.04"
+    },
+    "211160": {
+        "module": "clientProtection",
+        "name": "Arif",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-03] 19.49.36"
+    },
+    "551602": {
+        "module": "eventsProtection",
+        "time": "[2022-07-10] 16.06.39",
+        "reason": "Anti Generic Event",
+        "name": "hunde472"
+    },
+    "682298": {
+        "module": "clientProtection",
+        "time": "[2022-07-08] 15.49.26",
+        "reason": "External Script (Eulen)",
+        "name": "Prometheuz"
+    },
+    "813266": "[2022-10-06] 21.00.06",
+    "618324": {
+        "module": "clientProtection",
+        "name": "Bonobo bizeps",
+        "reason": "Blacklisted Weapon",
+        "time": "[2022-08-26] 12.13.09"
+    },
+    "937045": "[2022-10-09] 13.57.24",
+    "714127": {
+        "module": "clientProtection",
+        "time": "[2022-09-14] 19.49.20",
+        "reason": "External Script (Eulen)",
+        "name": "Sc4tmanJr"
+    },
+    "617525": {
+        "module": "clientProtection",
+        "name": "sterri",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-08-31] 19.51.47"
+    },
+    "587104": "[2022-10-09] 13.59.05",
+    "660572": {
+        "module": "clientProtection",
+        "time": "[2022-09-13] 20.27.37",
+        "reason": "External Script (Eulen)",
+        "name": "BigToTheSmoke"
+    },
+    "206218": {
+        "extra": "2138347493 > weapon_firework\nProjectile: -1356599793\nEffect: 13",
+        "time": "[2022-08-06] 15.30.18",
+        "name": "xMagic",
+        "reason": "Projektil aus einer Waffe auf der schwarzen Liste",
+        "module": "weapons"
+    },
+    "848559": {
+        "extra": "-656458692 > weapon_knuckle",
+        "time": "[2022-08-10] 23.53.27",
+        "name": "Dian",
+        "reason": "Gib dem Spieler eine Waffe",
+        "module": "weapons"
+    },
+    "667253": {
+        "module": "clientProtection",
+        "name": "Mxhmet",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-30] 21.28.08"
+    },
+    "920802": {
+        "module": "clientProtection",
+        "name": "freshniko.dll",
+        "reason": "Blacklisted Weapon",
+        "time": "[2022-09-27] 22.29.00"
+    },
+    "614337": {
+        "module": "clientProtection",
+        "time": "[2022-09-08] 18.35.06",
+        "reason": "External Script (Eulen)",
+        "name": "Pumkine"
+    },
+    "446863": {
+        "module": "clientProtection",
+        "time": "[2022-07-08] 15.32.09",
+        "reason": "External Script (Eulen)",
+        "name": "clay"
+    },
+    "120714": "[2022-10-10] 17.28.21",
+    "894614": {
+        "module": "eventsProtection",
+        "time": "[2022-08-13] 00.55.14",
+        "reason": "Pre Blacklisted Event",
+        "name": "yuno"
+    },
+    "063798": {
+        "module": "clientProtection",
+        "time": "[2022-09-08] 17.27.02",
+        "reason": "External Script (Eulen)",
+        "name": "Vasilij Popov"
+    },
+    "003842": {
+        "module": "clientProtection",
+        "time": "[2022-08-16] 20.02.25",
+        "reason": "External Script (Eulen)",
+        "name": "beria"
+    },
+    "199170": "[2022-10-12] 19.20.13",
+    "276415": {
+        "module": "clientProtection",
+        "time": "[2022-09-06] 18.08.58",
+        "reason": "External Script (Eulen)",
+        "name": "Patrick "
+    },
+    "185089": "[2022-10-17] 18.14.28",
+    "296881": {
+        "module": "clientProtection",
+        "time": "[2022-09-10] 20.32.30",
+        "reason": "External Script (Eulen)",
+        "name": "Mr. Pinkman"
+    },
+    "217841": {
+        "module": "clientProtection",
+        "time": "[2022-09-08] 01.48.10",
+        "reason": "External Script (Eulen)",
+        "name": "187getto41"
+    },
+    "672986": {
+        "module": "clientProtection",
+        "time": "[2022-08-13] 12.05.34",
+        "reason": "External Script (Eulen)",
+        "name": "- ^4 medl 069"
+    },
+    "068561": "[2022-10-11] 02.20.20",
+    "726878": {
+        "module": "clientProtection",
+        "name": "EinSackZwiebel",
+        "reason": "Blacklisted Weapon",
+        "time": "[2022-08-26] 12.13.55"
+    },
+    "949924": {
+        "module": "eventsProtection",
+        "time": "[2022-07-08] 17.17.06",
+        "reason": "Anti Generic Event",
+        "name": "Vanity"
+    },
+    "770845": {
+        "module": "clientProtection",
+        "time": "[2022-09-08] 17.21.32",
+        "reason": "External Script (Eulen)",
+        "name": "skenderbalkan"
+    },
+    "425490": {
+        "module": "clientProtection",
+        "time": "[2022-10-03] 09.12.52",
+        "reason": "External Script (Eulen)",
+        "name": "YginoEcht"
+    },
+    "017920": {
+        "module": "clientProtection",
+        "name": "Jan",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-17] 14.19.09"
+    },
+    "423502": {
+        "module": "clientProtection",
+        "time": "[2022-07-11] 23.19.56",
+        "reason": "External Script (Eulen)",
+        "name": "Florian"
+    },
+    "666611": {
+        "module": "clientProtection",
+        "name": "123lolollol123",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-08-26] 13.16.58"
+    },
+    "096435": "[2022-10-08] 23.34.06",
+    "937963": {
+        "module": "clientProtection",
+        "time": "[2022-08-24] 00.31.19",
+        "reason": "External Script (Eulen)",
+        "name": "ende33754"
+    },
+    "445933": {
+        "module": "clientProtection",
+        "name": "Harry Shprotter",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-27] 22.24.27"
+    },
+    "568394": "[2022-10-09] 01.34.52",
+    "161601": {
+        "module": "clientProtection",
+        "time": "[2022-09-24] 14.39.36",
+        "reason": "External Script (Eulen)",
+        "name": "Lorenzo"
+    },
+    "598549": {
+        "module": "clientProtection",
+        "time": "[2022-09-28] 16.55.26",
+        "reason": "Blacklisted Weapon",
+        "name": "GOAT |  Drachenlord"
+    },
+    "978159": {
+        "module": "clientProtection",
+        "name": "Denizzzzzz",
+        "reason": "Blacklisted Weapon",
+        "time": "[2022-09-25] 10.44.40"
+    },
+    "904991": {
+        "module": "clientProtection",
+        "time": "[2022-09-18] 16.57.51",
+        "reason": "External Script (Eulen)",
+        "name": "taylan"
+    },
+    "348359": {
+        "module": "weaponsProtection",
+        "time": "[2022-09-28] 01.32.39",
+        "reason": "Remove Weapon",
+        "name": "NYRP | Aiko"
+    },
+    "060960": {
+        "module": "clientProtection",
+        "name": "Barney",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-08-28] 21.38.23"
+    },
+    "824081": {
+        "module": "clientProtection",
+        "name": "garng",
+        "reason": "External Script (Eulen)",
+        "time": "[2022-09-10] 14.41.44"
+    },
+    "515824": {
+        "module": "clientProtection",
+        "time": "[2022-09-08] 23.17.33",
+        "reason": "External Script (Eulen)",
+        "name": "sin"
+    }
+}

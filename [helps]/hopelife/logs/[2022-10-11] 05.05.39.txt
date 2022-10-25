@@ -1,0 +1,154 @@
+
+[05:05:39] Configuration loaded successfully...
+[05:05:39] Loaded language ^0[^3eng^0]
+[05:05:57] ChocoHax [^31.5.4b^0] is starting, Please wait...
+[05:05:57] Successfully connected to the authentication server
+[05:05:57] Connected to: ^0[^3lynxcollective.ltd #1 1.5.4b^0]
+[05:05:57] Current account: ^0[^3alexandar.lazarevski006@gmail.com^0]
+[05:05:57] Current server IP: ^0[^3193.42.12.47^0]
+[05:05:57] ^5MOTD: ^0This ChocoHax version is outdated, We recommend updating to the latest ChocoHax version as soon as possible^0
+[05:05:57] ^0[^3runcode^0] is a dangerous resources that can be exploited, we recommend removing it from the server as fast as possible...
+[05:05:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[05:05:58] ChocoHax Global Ban List updated successfully...
+[05:06:03] ^0[^4Player Connect^0] ^0[^3SRDC[FFFFFF]MvDnEs^0] connecting...
+[05:06:24] ^0[^4Player Connect^0] ^0[^3SRDC[FFFFFF]MvDnEs^0] connecting...
+[05:06:33] ^0[^4Player Connect^0] ^0[^3SRDC[FFFFFF]MvDnEs^0] connecting...
+[05:07:47] ^0[^4Player Connect^0] ^0[^3HL | Vito^0] connecting...
+[05:08:46] ^0[^4Player Connect^0] ^0[^3Dave Sanchez^0] connecting...
+[05:08:46] ^0[^4Player Connect^0] ^0[^3HL | Nico^0] connecting...
+[05:09:10] [DEBUG] ^2Entity Spawning: Entity: [131073] Spawned By Player: [yes / 0 1] MODEL [225514697] TYPE [ped]
+[05:09:16] [DEBUG] ^2Entity Spawning: Entity: [131586] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[05:09:16] [DEBUG] ^2Entity Spawning: Entity: [131842] Spawned By Player: [yes / 0 1] MODEL [1760825203] TYPE [object]
+[05:09:26] [DEBUG] ^2Entity Spawning: Entity: [131330] Spawned By Player: [yes / 0 1] MODEL [1089807209] TYPE [object]
+[05:09:27] [DEBUG] ^2Entity Spawning: Entity: [132098] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:27] [DEBUG] ^2Entity Spawning: Entity: [132354] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [132610] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [132866] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [133122] Spawned By Player: [yes / 0 1] MODEL [1171655821] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [133378] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [133634] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [133890] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:28] [DEBUG] ^2Entity Spawning: Entity: [134146] Spawned By Player: [yes / 0 1] MODEL [865563579] TYPE [object]
+[05:09:29] [DEBUG] ^2Entity Spawning: Entity: [134402] Spawned By Player: [yes / 0 1] MODEL [-1251197000] TYPE [object]
+[05:09:29] [DEBUG] ^2Entity Spawning: Entity: [134658] Spawned By Player: [yes / 0 1] MODEL [-160937700] TYPE [object]
+[05:09:34] [DEBUG] Screenshot received from HL | Vito https://cdn.discordapp.com/attachments/1027585247321264188/1029229245752414349/screenshot.jpg
+[05:09:35] [DEBUG] ^2Entity Spawning: Entity: [134913] Spawned By Player: [yes / 0 1] MODEL [-1585232418] TYPE [object]
+[05:09:38] [DEBUG] ^2Entity Spawning: Entity: [135169] Spawned By Player: [yes / 0 2] MODEL [225514697] TYPE [ped]
+[05:09:43] [DEBUG] ^2Entity Spawning: Entity: [136962] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[05:09:43] [DEBUG] ^2Entity Spawning: Entity: [137218] Spawned By Player: [yes / 0 2] MODEL [1760825203] TYPE [object]
+[05:10:00] [DEBUG] ^2Entity Spawning: Entity: [134915] Spawned By Player: [yes / 7 1] MODEL [836213613] TYPE [vehicle]
+[05:10:16] [DEBUG] ^2Entity Spawning: Entity: [135427] Spawned By Player: [yes / 7 2] MODEL [68070371] TYPE [ped]
+[05:10:16] [DEBUG] ^2Entity Spawning: Entity: [135683] Spawned By Player: [yes / 7 2] MODEL [1131912276] TYPE [vehicle]
+[05:11:23] [DEBUG] ^2Entity Spawning: Entity: [135428] Spawned By Player: [yes / 7 2] MODEL [600450546] TYPE [vehicle]
+[05:13:00] ^0[^4Player Connect^0] ^0[^3Dave Sanchez^0] connecting...
+[05:13:38] [DEBUG] ^2Entity Spawning: Entity: [135684] Spawned By Player: [yes / 7 1] MODEL [934775262] TYPE [vehicle]
+[05:14:08] [DEBUG] ^2Entity Spawning: Entity: [135429] Spawned By Player: [yes / 7 2] MODEL [-1127249378] TYPE [vehicle]
+[05:17:54] ^0[^4Player Connect^0] ^0[^3Lukas1The1Best1Player^0] connecting...
+[05:18:03] [DEBUG] Screenshot received from HL | Nico https://cdn.discordapp.com/attachments/1027585247321264188/1029231378623115314/screenshot.jpg
+[05:18:16] ^0[^4Player Connect^0] ^0[^3Lukas1The1Best1Player^0] connecting...
+[05:18:37] [DEBUG] ^2Entity Spawning: Entity: [135430] Spawned By Player: [yes / 7 2] MODEL [122224136] TYPE [vehicle]
+[05:19:15] [DEBUG] ^2Entity Spawning: Entity: [135939] Spawned By Player: [yes / 0 1] MODEL [2116969379] TYPE [object]
+[05:19:15] [DEBUG] ^2Entity Spawning: Entity: [135685] Spawned By Player: [yes / 0 1] MODEL [2116969379] TYPE [object]
+[05:19:15] [DEBUG] ^2Entity Spawning: Entity: [136195] Spawned By Player: [yes / 0 1] MODEL [2116969379] TYPE [object]
+[05:19:15] [DEBUG] ^2Entity Spawning: Entity: [136451] Spawned By Player: [yes / 0 1] MODEL [2116969379] TYPE [object]
+[05:20:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[05:20:58] ^0[^4Player Connect^0] ^0[^3Lukas1The1Best1Player^0] connecting...
+[05:20:58] ChocoHax Global Ban List updated successfully...
+[05:27:45] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:27:55] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:28:14] [DEBUG] Screenshot received from HL | Vito https://cdn.discordapp.com/attachments/1027585247321264188/1029233941342867506/screenshot.jpg
+[05:28:24] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:28:50] ^0[^4Player Connect^0] ^0[^3Dave Sanchez^0] connecting...
+[05:29:05] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:35:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[05:35:58] ChocoHax Global Ban List updated successfully...
+[05:37:47] ^0[^4Player Disconnect^0] HL | Nico disconnected... (^3Exiting^0)
+[05:39:24] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:44:43] ^0[^4Player Disconnect^0] HL | Vito disconnected... (^3Disconnected.^0)
+[05:50:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[05:50:58] ChocoHax Global Ban List updated successfully...
+[05:53:49] ^0[^4Player Connect^0] ^0[^3CROkodil80^0] connecting...
+[05:59:03] ^0[^4Player Connect^0] ^0[^3HL | Vito^0] connecting...
+[06:00:26] [DEBUG] ^2Entity Spawning: Entity: [131074] Spawned By Player: [yes / 0 3] MODEL [225514697] TYPE [ped]
+[06:00:32] [DEBUG] ^2Entity Spawning: Entity: [131588] Spawned By Player: [yes / 0 3] MODEL [1760825203] TYPE [object]
+[06:00:32] [DEBUG] ^2Entity Spawning: Entity: [131844] Spawned By Player: [yes / 0 3] MODEL [1760825203] TYPE [object]
+[06:05:38] [DEBUG] ^2Entity Spawning: Entity: [134917] Spawned By Player: [yes / 7 3] MODEL [934775262] TYPE [vehicle]
+[06:05:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[06:05:58] ChocoHax Global Ban List updated successfully...
+[06:06:49] [DEBUG] ^2Entity Spawning: Entity: [134918] Spawned By Player: [yes / 7 3] MODEL [836213613] TYPE [vehicle]
+[06:08:40] [DEBUG] ^2Entity Spawning: Entity: [134919] Spawned By Player: [yes / 7 3] MODEL [1475773103] TYPE [vehicle]
+[06:16:36] ^0[^4Player Connect^0] ^0[^3Elena/Jason^0] connecting...
+[06:20:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[06:20:58] ChocoHax Global Ban List updated successfully...
+[06:26:08] ^0[^4Player Connect^0] ^0[^3Lukas1The1Best1Player^0] connecting...
+[06:35:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[06:35:58] ChocoHax Global Ban List updated successfully...
+[06:37:09] [DEBUG] ^2Entity Spawning: Entity: [134920] Spawned By Player: [yes / 7 3] MODEL [-1349095620] TYPE [vehicle]
+[06:46:55] ^0[^4Player Connect^0] ^0[^3HL | Snoop^0] connecting...
+[06:48:07] [DEBUG] ^2Entity Spawning: Entity: [135174] Spawned By Player: [yes / 0 4] MODEL [225514697] TYPE [ped]
+[06:48:14] [DEBUG] ^2Entity Spawning: Entity: [135434] Spawned By Player: [yes / 0 4] MODEL [1760825203] TYPE [object]
+[06:48:14] [DEBUG] ^2Entity Spawning: Entity: [135688] Spawned By Player: [yes / 0 4] MODEL [1760825203] TYPE [object]
+[06:49:38] [DEBUG] ^2Entity Spawning: Entity: [135942] Spawned By Player: [yes / 0 4] MODEL [21833643] TYPE [object]
+[06:49:38] [DEBUG] ^2Entity Spawning: Entity: [136198] Spawned By Player: [yes / 0 4] MODEL [-35679191] TYPE [object]
+[06:50:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[06:50:58] ChocoHax Global Ban List updated successfully...
+[06:56:18] ^0[^4Player Connect^0] ^0[^3~g~Schmidl91^0] connecting...
+[06:57:11] [DEBUG] ^2Entity Spawning: Entity: [135944] Spawned By Player: [yes / 7 3] MODEL [1475773103] TYPE [vehicle]
+[06:57:38] [^1Ban^0] - ^0[^44^0] ^0[^2HL | Snoop^0] ^0[^1Resource Checker^0]
+[06:57:38] Ban ID ^0[^3115405^0] created
+[06:57:38] ^0[^4Player Disconnect^0] HL | Snoop disconnected... (^3💗ChocoHax: Anticheat ausgelöst. Bei Fehlbanns im Discord Support melden. BanID: [115405]^0)
+[06:57:38] [^1Ban^0] - ^0[^43^0] ^0[^2HL | Vito^0] ^0[^1Resource Checker^0]
+[06:57:39] Ban ID ^0[^3462716^0] created
+[06:57:39] ^0[^4Player Disconnect^0] HL | Vito disconnected... (^3💗ChocoHax: Anticheat ausgelöst. Bei Fehlbanns im Discord Support melden. BanID: [462716]^0)
+[06:57:52] ^0[^30^0] ^0[^3Console^0] issued command ^0[^2lynx unban 462716^0]
+[06:57:52] Ban ID ^0[^3462716^0] removed
+[06:58:01] ^0[^30^0] ^0[^3Console^0] issued command ^0[^2lynx unban 115405^0]
+[06:58:01] Ban ID ^0[^3115405^0] removed
+[06:58:20] ^0[^4Player Connect^0] ^0[^3mrsxenia^0] connecting...
+[06:58:41] ^0[^4Player Connect^0] ^0[^3HL | Vito^0] connecting...
+[06:58:43] ^0[^4Player Connect^0] ^0[^3HL | Snoop^0] connecting...
+[06:59:10] [DEBUG] ^2Entity Spawning: Entity: [131075] Spawned By Player: [yes / 0 5] MODEL [225514697] TYPE [ped]
+[06:59:15] [DEBUG] ^2Entity Spawning: Entity: [131590] Spawned By Player: [yes / 0 5] MODEL [1760825203] TYPE [object]
+[06:59:15] [DEBUG] ^2Entity Spawning: Entity: [131846] Spawned By Player: [yes / 0 5] MODEL [1760825203] TYPE [object]
+[06:59:17] ^0[^35^0] ^0[^3mrsxenia^0] authentificated as ChocoHax Admin/Moderator
+[06:59:47] [DEBUG] ^2Entity Spawning: Entity: [134922] Spawned By Player: [yes / 0 6] MODEL [225514697] TYPE [ped]
+[06:59:51] [DEBUG] ^2Entity Spawning: Entity: [138755] Spawned By Player: [yes / 0 7] MODEL [225514697] TYPE [ped]
+[06:59:53] [DEBUG] ^2Entity Spawning: Entity: [135691] Spawned By Player: [yes / 0 6] MODEL [1760825203] TYPE [object]
+[06:59:53] [DEBUG] ^2Entity Spawning: Entity: [135947] Spawned By Player: [yes / 0 6] MODEL [1760825203] TYPE [object]
+[06:59:59] [DEBUG] ^2Entity Spawning: Entity: [135178] Spawned By Player: [yes / 0 7] MODEL [1760825203] TYPE [object]
+[06:59:59] [DEBUG] ^2Entity Spawning: Entity: [135439] Spawned By Player: [yes / 0 7] MODEL [1760825203] TYPE [object]
+[07:00:19] [DEBUG] ^2Entity Spawning: Entity: [133891] Spawned By Player: [yes / 7 6] MODEL [836213613] TYPE [vehicle]
+[07:01:03] [DEBUG] ^2Entity Spawning: Entity: [134147] Spawned By Player: [yes / 7 7] MODEL [904750859] TYPE [vehicle]
+[07:01:27] [DEBUG] ^2Entity Spawning: Entity: [134148] Spawned By Player: [yes / 7 7] MODEL [-726635538] TYPE [vehicle]
+[07:03:05] [DEBUG] ^2Entity Spawning: Entity: [133892] Spawned By Player: [yes / 7 6] MODEL [836213613] TYPE [vehicle]
+[07:04:14] [DEBUG] ^2Entity Spawning: Entity: [136202] Spawned By Player: [yes / 0 6] MODEL [-292162984] TYPE [object]
+[07:04:14] [DEBUG] ^2Entity Spawning: Entity: [136457] Spawned By Player: [yes / 0 6] MODEL [-292162984] TYPE [object]
+[07:04:15] [DEBUG] ^2Entity Spawning: Entity: [136712] Spawned By Player: [yes / 0 6] MODEL [-292162984] TYPE [object]
+[07:04:16] ^0[^4Player Connect^0] ^0[^3feigl^0] connecting...
+[07:05:18] [DEBUG] ^2Entity Spawning: Entity: [136203] Spawned By Player: [yes / 7 7] MODEL [296357396] TYPE [vehicle]
+[07:05:58] Sending Heartbeat to `^3ChocoHax^0` servers
+[07:05:58] ChocoHax Global Ban List updated successfully...
+[07:06:47] [DEBUG] ^2Entity Spawning: Entity: [133893] Spawned By Player: [yes / 7 6] MODEL [934775262] TYPE [vehicle]
+[07:06:56] ^0[^4Player Connect^0] ^0[^3HL Steini^0] connecting...
+[07:07:14] ^0[^4Player Connect^0] ^0[^3HL| Minimi^0] connecting...
+[07:07:35] [DEBUG] Screenshot received from HL | Snoop https://cdn.discordapp.com/attachments/1027585247321264188/1029258944796971130/screenshot.jpg
+[07:07:46] [DEBUG] Screenshot received from HL | Snoop https://cdn.discordapp.com/attachments/1027585247321264188/1029258992016445500/screenshot.jpg
+[07:08:08] ^0[^4Player Connect^0] ^0[^3feigl^0] connecting...
+[07:08:17] [DEBUG] ^2Entity Spawning: Entity: [133894] Spawned By Player: [yes / 7 6] MODEL [1475773103] TYPE [vehicle]
+[07:08:20] ^0[^4Player Connect^0] ^0[^3feigl^0] connecting...
+[07:08:23] [DEBUG] ^2Entity Spawning: Entity: [136204] Spawned By Player: [yes / 0 8] MODEL [225514697] TYPE [ped]
+[07:08:32] [DEBUG] ^2Entity Spawning: Entity: [136969] Spawned By Player: [yes / 0 8] MODEL [1760825203] TYPE [object]
+[07:08:32] [DEBUG] ^2Entity Spawning: Entity: [137224] Spawned By Player: [yes / 0 8] MODEL [1760825203] TYPE [object]
+[07:08:33] [DEBUG] ^2Entity Spawning: Entity: [134150] Spawned By Player: [yes / 7 6] MODEL [836213613] TYPE [vehicle]
+[07:08:34] [DEBUG] ^2Entity Spawning: Entity: [136459] Spawned By Player: [yes / 0 9] MODEL [225514697] TYPE [ped]
+[07:08:42] [DEBUG] ^2Entity Spawning: Entity: [136716] Spawned By Player: [yes / 0 9] MODEL [1760825203] TYPE [object]
+[07:08:42] [DEBUG] ^2Entity Spawning: Entity: [137481] Spawned By Player: [yes / 0 9] MODEL [1760825203] TYPE [object]
+[07:09:02] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029259311060369428/screenshot.jpg
+[07:09:15] [DEBUG] ^2Entity Spawning: Entity: [137737] Spawned By Player: [yes / 7 8] MODEL [2112052861] TYPE [vehicle]
+[07:09:22] [DEBUG] Screenshot received from HL Steini https://cdn.discordapp.com/attachments/1027585247321264188/1029259392345976892/screenshot.jpg
+[07:09:48] [DEBUG] ^2Entity Spawning: Entity: [133895] Spawned By Player: [yes / 7 8] MODEL [-121446169] TYPE [vehicle]
+[07:11:08] ^0[^4Player Disconnect^0] HL| Minimi disconnected... (^3Exiting^0)
+[07:11:12] ^0[^4Player Disconnect^0] HL | Snoop disconnected... (^3Exiting^0)
+[07:11:15] ^0[^4Player Disconnect^0] mrsxenia disconnected... (^3[txAdmin] Server Neustart (requested by MrsXeniaa).^0)
+[07:11:15] ^0[^4Player Disconnect^0] HL | Vito disconnected... (^3[txAdmin] Server Neustart (requested by MrsXeniaa).^0)
+[07:11:15] ^0[^4Player Disconnect^0] HL Steini disconnected... (^3[txAdmin] Server Neustart (requested by MrsXeniaa).^0)

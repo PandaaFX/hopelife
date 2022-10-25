@@ -1,0 +1,52 @@
+{
+    "s0ftt": {
+        "xbl": "xbl:2535431626799814",
+        "reason": "Script stop Detected : hope_biene",
+        "ID": 37442641,
+        "ip": "193.42.12.47",
+        "license": "license2:5ee8050f8124add18490ab8970423918d435e17b",
+        "discord": "discord:304192562158370816",
+        "hwid": "4:3b2f74cbf9a8fde01c7cdf0cca9891d32810e553f761a785ef69ed4fb4ec7cb6",
+        "steam": "NONE SUPPLIED"
+    },
+    "HL I YEAGER": {
+        "xbl": "xbl:2535462941816414",
+        "reason": "Explosion Method",
+        "ID": 33145809,
+        "ip": "193.42.12.47",
+        "license": "license2:abed33cc3b1c10443a9ed4576bf32e1ea0913ceb",
+        "discord": "discord:604972048275734529",
+        "hwid": "4:ace641a66adf5cda859096533831075f3c06105840dbbc5fe24dd098ce96cbb1",
+        "steam": "NONE SUPPLIED"
+    },
+    "^5Kurxxed🌠": {
+        "xbl": "NONE SUPPLIED",
+        "reason": "Blacklist event",
+        "ID": 67044396,
+        "ip": "193.42.12.47",
+        "license": "license2:ab45f081a9113dbf761d18629759e15edbd23ce4",
+        "discord": "discord:516171543932436481",
+        "hwid": "4:6e48d0d3cf5d2e9c0abe12af3a6f5a6b28f1b05c03ae2f645afcdbf4a54606f9",
+        "steam": "NONE SUPPLIED"
+    },
+    "Ayyed": {
+        "xbl": "xbl:2535432392934474",
+        "reason": "Script stop Detected : JD_logsV3",
+        "ID": 18180138,
+        "ip": "193.42.12.47",
+        "license": "license2:92fd08992349f6f97ce319b9693f020c7327d8d7",
+        "discord": "discord:371248226222866434",
+        "hwid": "4:d32f317bca310f724e86abc5e03c398182c2d8940d163918123e23456a290f1f",
+        "steam": "NONE SUPPLIED"
+    },
+    "Tretex": {
+        "xbl": "xbl:2535414109744716",
+        "reason": "Script stop Detected : MenuAPI",
+        "ID": 85467674,
+        "ip": "193.42.12.47",
+        "license": "license2:389b80d0d4420ebfb033ba55f866b9d7bbd20ec5",
+        "discord": "discord:792313850733002763",
+        "hwid": "4:c1390f12643234b098cd283e7f9a790efb7ead1344b8e8bb658550a832d4b187",
+        "steam": "NONE SUPPLIED"
+    }
+}
