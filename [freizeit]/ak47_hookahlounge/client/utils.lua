@@ -21,14 +21,14 @@ end)
 
 RegisterNetEvent('ak47_hookahlounge:openbossaction')
 AddEventHandler('ak47_hookahlounge:openbossaction', function()
-    TriggerEvent('esx_society:openBossMenu', 'hookahlounge', function(data, menu)
+    TriggerEvent('esx_society:openBossMenu', 'hookahlounge', {withdraw = true, deposit = true, wash = false, employees = true, grades = true}, function(data, menu)
         menu.close()
         inBossMenu = false
     end)
-    TriggerEvent('society:openBossMenu', 'hookahlounge', function(data, menu)
-        menu.close()
-        inBossMenu = false
-    end)
+    -- TriggerEvent('society:openBossMenu', 'hookahlounge', function(data, menu)
+    --     menu.close()
+    --     inBossMenu = false
+    -- end)
 end)
 
 RegisterNetEvent('ak47_hookahlounge:notify')
