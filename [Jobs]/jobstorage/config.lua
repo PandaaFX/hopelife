@@ -414,7 +414,7 @@ Config = {
             policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
         },
         {
-            name = "gheta", -- job name, must be the same as in your jobs table
+            name = "wein", -- job name, must be the same as in your jobs table
             coords = vector3(-1882.681274, 2070.712158, 140.994141), -- position of the location
             enableBlip = true, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
