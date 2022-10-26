@@ -33,7 +33,7 @@ pool.query(
   function (err, rows, fields) {
     // Connection is automatically released when query resolves
     if (err) throw err;
-    console.log("Successfully connected to database!");
+    console.log("Successfully connected to database");
   }
 );
 
