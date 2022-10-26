@@ -21,7 +21,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -58,7 +58,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -95,7 +95,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -132,7 +132,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -169,7 +169,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -206,7 +206,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -243,7 +243,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -280,7 +280,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -317,7 +317,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -354,7 +354,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -391,7 +391,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -428,7 +428,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -465,7 +465,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -502,7 +502,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -539,7 +539,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -576,7 +576,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -613,7 +613,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -650,7 +650,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -687,7 +687,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -724,7 +724,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -761,7 +761,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -798,7 +798,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -835,7 +835,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -872,7 +872,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -909,7 +909,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -946,7 +946,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -983,7 +983,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -1020,7 +1020,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
@@ -1057,7 +1057,7 @@ Config = {
             rgba = { 120, 255, 120, 155 }, -- color of marker
             subMarker = {
                 marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
-                posZ = 54.002, -- z position of the subMarker
+                posZ = -154.002, -- z position of the subMarker
             },
             enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
             pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
