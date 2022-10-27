@@ -112,7 +112,7 @@ AddEventHandler('hopelife:purgecmd', function ()
 		purge = false
 		ESX.ShowNotification("Purge wurde ~r~gestoppt", "success", 3000)
 	else
-		TriggerServerEvent("Server:SoundToAll", "ChillPurge.mp3", 1.0);
+		TriggerServerEvent("Server:SoundToAll", "ChillPurge", 1.0);
 		purge = true
 		ESX.ShowNotification("Purge wurde ~g~gestartet", "success", 3000)
 	end
