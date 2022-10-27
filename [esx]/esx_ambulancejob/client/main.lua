@@ -114,7 +114,7 @@ Citizen.CreateThread(function ()
 end)
 
 RegisterNetEvent('SetPurge', function(aktiv)
-	if aktiv == true then
+	if aktiv == "An" then
 		purge = true
 	else
 		purge = false
