@@ -86,7 +86,7 @@ RegisterCommand('purge', function(source, args, showError)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	if havePermission2(xPlayer) then
 		TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
-		aktivepurge = ture
+		aktivepurge = true
 	end
 
 end)
