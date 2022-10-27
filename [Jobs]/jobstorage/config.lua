@@ -748,7 +748,7 @@ Config = {
         },
         {
             name = "tribunal", -- job name, must be the same as in your jobs table
-            coords = vector3(5006.729492, -5755.358398, 15.479858), -- position of the location
+            coords = vector3(-106.41,999.59,235.76), -- position of the location
             enableBlip = true, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
@@ -785,7 +785,7 @@ Config = {
         },
         {
             name = "tribunal", -- job name, must be the same as in your jobs table
-            coords = vector3(5004.079102, -5752.944824, 15.479858), -- position of the location
+            coords = vector3(-100.65,1001.86,235.76), -- position of the location
             enableBlip = true, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Tresor", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
