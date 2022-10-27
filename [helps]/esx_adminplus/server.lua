@@ -81,11 +81,12 @@ RegisterCommand("playerskin", function(source, args, rawCommand)
     end
 end, true)
 ------------EINREISE------------
-
+local aktivepurge = false
 RegisterCommand('purge', function(source, args, showError)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	if havePermission2(xPlayer) then
 		TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
+		aktivepurge = ture
 	end
 
 end)
@@ -320,3 +321,7 @@ function sendToDiscord(msg)
     end
 end
 
+RegisterNetEvent('CheckPurge', function()
+	local src = source
+	TriggerClientEvent("SetPurge", src, aktivepurge)
+end)
