@@ -5,7 +5,7 @@ Config.Menu = "qb-menu" -- Your qb-menu name
 Config.Time = true -- Enable time "HALLOWEEN" on server?
 Config.Debug = true -- Enable debug?
 Config.OX = false -- You use ox-inventory? [ESX]
-Config.Progressbar = "qbcore" -- "qbcore", "myhic_progbar", "ox_lib", "quasar"
+Config.Progressbar = "ox_lib" -- "qbcore", "myhic_progbar", "ox_lib", "quasar"
 Config.EventAllRestarts = false -- If true, the event start's automatic when have restart the server
 Config.PumpkinReward = 1 -- This is the amount of pumpkin's player receive each pick up
 
