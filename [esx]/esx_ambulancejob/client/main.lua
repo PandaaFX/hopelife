@@ -110,13 +110,16 @@ RegisterNetEvent('hopelife:purgecmd')
 AddEventHandler('hopelife:purgecmd', function ()
 	if purge == true then
 		purge = false
+		ESX.ShowNotification("Purge wurde ~r~gestoppt", "success", 3000)
 	else
 		TriggerServerEvent("Server:SoundToAll", "ChillPurge.mp3", 1.0);
 		purge = true
+		ESX.ShowNotification("Purge wurde ~g~gestartet", "success", 3000)
 	end
-	for _, playerId in ipairs(GetPlayers()) do
-		purgemsg(purge)
+	--[[for _, playerId in ipairs(GetPlayers()) do
+		--purgemsg(purge)
 	end
+]]
 end)
 
 
