@@ -84,10 +84,18 @@ end, true)
 local aktivepurge = "Aus"
 RegisterCommand('purge', function(source, args, showError)
 	local xPlayer = ESX.GetPlayerFromId(source)
-	if havePermission2(xPlayer) then
-		TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
-		aktivepurge = "An"
+	if aktivepurge == "Aus" then
+		if havePermission2(xPlayer) then
+			TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
+			aktivepurge = "An"
+		end
+	else
+		if havePermission2(xPlayer) then
+			TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
+			aktivepurge = "Aus"
+		end
 	end
+
 
 end)
 
@@ -323,6 +331,5 @@ end
 
 RegisterNetEvent('CheckPurge', function()
 	local src = source
-	print("Aktiv: "..aktivepurge)
 	TriggerClientEvent("SetPurge", src, aktivepurge)
 end)
