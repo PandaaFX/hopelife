@@ -740,6 +740,23 @@ Config = {
             specifiedJob = "unicorn",
         },
 
+        SINALOA = {
+            browse = vector3(-112.96, 834.42, 235.68),
+            spawn = vector4(-106.43, 836.89, 235.68, 350.92),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "unicorn",
+        },
+
+                
+        SINALOAHeli = {
+            browse = vector3(-82.81, 808.51, 227.6),
+            spawn = vector4(-71.61, 808.09, 227.25, 283.11),
+            vehicletype = "aircraft",
+            specifiedJob = "lssd",
+        },
+
     },
 
     Impounds = {
