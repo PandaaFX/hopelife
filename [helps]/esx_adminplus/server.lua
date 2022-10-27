@@ -82,6 +82,14 @@ RegisterCommand("playerskin", function(source, args, rawCommand)
 end, true)
 ------------EINREISE------------
 
+RegisterCommand('purge', function(source, args, showError)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	if havePermission2(xPlayer) then
+		TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
+	end
+
+end)
+
 RegisterCommand("einreise", function(source, args, rawCommand)	-- /goto [ID]
     if source ~= 0 then
 		local xPlayer = ESX.GetPlayerFromId(source)

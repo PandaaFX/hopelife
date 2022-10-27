@@ -316,6 +316,3 @@ AddEventHandler('esx_ambulancejob:setDeathStatus', function(isDead)
 	end
 end)
 
-ESX.RegisterCommand('purge', {'admin', 'dev'}, function(xPlayer, args, showError)
-	TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
-end)
