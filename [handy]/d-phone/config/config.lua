@@ -227,8 +227,8 @@ Config.SaltyChat = true
 Config.ConstantRadio = false
 
 -- Wallpaper
-Config.backgroundurl = "https://i.imgur.com/ksLYQdF.png"
-Config.darkbackgroundurl = "https://i.imgur.com/ksLYQdF.png"
+Config.backgroundurl = "https://cdn.discordapp.com/attachments/968045722551337020/1018111991564484668/white.png"
+Config.darkbackgroundurl = "https://cdn.discordapp.com/attachments/968045722551337020/1018111976162992178/dark.png"
 
 Config.Wallpapers = {
     {
@@ -312,7 +312,7 @@ Config.LowerNumber = 1000
 Config.HigherNumber = 9999
 
 Config.hourplus = 0
-Config.hourplusnew = 0
+Config.hourplusnew = 2
 
 -- Radio
 -- These Jobs have access to the blocked channels

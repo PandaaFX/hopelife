@@ -9,4 +9,3 @@ Discord = {
         AllImageWebhook = "https://discord.com/api/webhooks/1032005755559235595/n9Shexll_0Zye-hjNdxlJDNyzuH579cU3No3ip_Dso91WSI4b1ky8jHcCsNMbsutvGWw",
     },
 }
-

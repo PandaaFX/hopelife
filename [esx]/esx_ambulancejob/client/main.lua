@@ -1,6 +1,7 @@
 local firstSpawn = true
 local pvp = false
 isDead, isSearched, medic = false, false, 0
+local purge = false 
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
@@ -94,17 +95,67 @@ AddEventHandler('esx_ambulancejob:clsearch', function(medicId)
 	end
 end)
 
+--Purge Event
+
+local function purgemsg(purge)
+	if purge == true then
+		ESX.ShowNotification("Purge wurde ~g~gestartet", "success", 3000)
+	else
+		ESX.ShowNotification("Purge wurde ~r~gestoppt", "success", 3000)
+	end
+
+end
+
+RegisterNetEvent('hopelife:purgecmd')
+AddEventHandler('hopelife:purgecmd', function ()
+	if purge == true then
+		purge = false
+	else
+		--sound einfügen
+		purge = true
+	end
+	for _, playerId in ipairs(GetPlayers()) do
+		purgemsg(purge)
+	end
+end)
+
+
+
 function OnPlayerDeath()
-	isDead = true
-	ESX.UI.Menu.CloseAll()
-	TriggerServerEvent('esx_ambulancejob:setDeathStatus', true)
+	if purge == false then
+		isDead = true
+		ESX.UI.Menu.CloseAll()
+		TriggerServerEvent('esx_ambulancejob:setDeathStatus', true)
+	
+		StartDeathTimer()
+		StartDistressSignal()
+		StartNotSignal()
+	
+		AnimpostfxPlay('DeathFailOut', 0, false)
+		ClearPedTasksImmediately(GetPlayerPed(-1))
+	elseif purge == true then
 
-	StartDeathTimer()
-	StartDistressSignal()
-	StartNotSignal()
+		local respawn = math.random(0, 3)
+		local heading = math.random(0, 360)
+		local respawnpos;
+		if respawn == 0 then
+			respawnpos = vector3(0,0,0);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 1 then
+			respawnpos = vector3(0,0,0);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 2 then
+			respawnpos = vector3(0,0,0);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 3 then
+			respawnpos = vector3(0,0,0);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		end
 
-	AnimpostfxPlay('DeathFailOut', 0, false)
-	ClearPedTasksImmediately(GetPlayerPed(-1))
+
+
+	end
+
 end
 
 RegisterNetEvent('esx_ambulancejob:useItem')

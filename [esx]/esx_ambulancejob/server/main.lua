@@ -315,3 +315,7 @@ AddEventHandler('esx_ambulancejob:setDeathStatus', function(isDead)
 		MySQL.update('UPDATE users SET is_dead = ? WHERE identifier = ?', {isDead, xPlayer.identifier})
 	end
 end)
+
+ESX.RegisterCommand('purge', {'admin', 'dev'}, function(xPlayer, args, showError)
+	TriggerClientEvent("hopelife:purgecmd", xPlayer.source)
+end)

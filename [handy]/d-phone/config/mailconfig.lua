@@ -41,9 +41,9 @@ Mailconfig.createmail = function (source)
 
     local f = string.lower(string.sub(Data.firstname, 1, 1))
     local l = string.lower(string.sub(Data.lastname, 1, 1))
-    -- Mail.print("Create Mail", "f " .. f)
+    --Mail.print("Create Mail", "f " .. f)
     local prefix = string.format("%s%s%s", f, l, math.random(1, 300))
-    -- Mail.print("Create Mail", "prefix " .. prefix)
+    --Mail.print("Create Mail", "prefix " .. prefix)
 
     local mail = string.format("%s%s", prefix, Mailconfig.domain)
 
