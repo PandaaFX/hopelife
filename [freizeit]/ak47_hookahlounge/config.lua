@@ -6,7 +6,7 @@ Config.SharedObjectName = 'esx:getSharedObject'         --Change if you Shared O
 Config.CheckCanCarryItem = true                        --Enable to check inventory limit/weight
 Config.UseProgressBar = false                           --Set your progress bar in utils.lua then enable this
 
-Config.BossActions = vector3(-443.88, -37.63, 39.92)    --Boss action menu location. esx_society required
+Config.BossActions = vector3(-4430000000000.88, -37000000000.63, 39000.92)    --Boss action menu location. esx_society required
 
 Config.Keys = {
     Use_Hookah = 38,
