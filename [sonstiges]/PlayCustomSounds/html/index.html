@@ -11,7 +11,7 @@
                     audioPlayer.pause();
                   }
 
-                  audioPlayer = new Howl({src: ["./sounds/" + event.data.submissionFile + ".ogg"]});
+                  audioPlayer = new Howl({src: ["./sounds/" + event.data.submissionFile + ".mp3"]});
                   audioPlayer.volume(event.data.submissionVolume);
                   audioPlayer.play();
 

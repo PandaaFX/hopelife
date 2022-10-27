@@ -15,5 +15,6 @@ files {
     
     -- Sound files must be in html/sounds/
     -- Sound files must be in .ogg format
-    'html/sounds/*.ogg'
+    'html/sounds/*.ogg',
+    'html/sounds/*.mp3'
 }
