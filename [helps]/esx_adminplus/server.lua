@@ -323,6 +323,6 @@ end
 
 RegisterNetEvent('CheckPurge', function()
 	local src = source
-	print("Aktiv: " + aktivepurge)
+	print("Aktiv: "..aktivepurge)
 	TriggerClientEvent("SetPurge", src, aktivepurge)
 end)
