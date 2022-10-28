@@ -106,6 +106,22 @@ local function purgemsg(purge)
 
 end
 
+Citizen.CreateThread(function ()
+	while true do
+		TriggerServerEvent("CheckPurge")
+		Citizen.Wait(1000)
+	end
+end)
+
+RegisterNetEvent('SetPurge')
+AddEventHandler("SetPurge", function(aktiv)
+	if aktiv == "An" then
+		purge = true
+	else
+		purge = false
+	end
+end)
+
 RegisterNetEvent('hopelife:purgecmd')
 AddEventHandler('hopelife:purgecmd', function ()
 	if purge == true then
