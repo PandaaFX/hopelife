@@ -383,7 +383,7 @@ Config.Crafting = {
 			{
 				item = 'coke', -- Item id and name of the image
 				amount = 3,
-				successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = true, -- if true = is item | if false = is weapon
 				time = 5, -- Time to craft (in seconds)
 				levelNeeded = 2, -- What level he needs to craft this item
@@ -402,7 +402,7 @@ Config.Crafting = {
 			{
 				item = 'coke_pooch', -- Item id and name of the image
 				amount = 3,
-				successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				successCraftPercentage = 85, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = true, -- if true = is item | if false = is weapon
 				time = 5, -- Time to craft (in seconds)
 				levelNeeded = 2, -- What level he needs to craft this item
