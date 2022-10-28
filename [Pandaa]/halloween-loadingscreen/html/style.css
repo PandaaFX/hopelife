@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "raleway1";
+  src: url("fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "raleway2";
+  src: url("fonts/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "raleway3";
+  src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+}
+:root {
+  --web-view-ids: Canvas;
+}
+#Canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  --web-view-name: Canvas;
+  --web-view-id: Canvas;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-enable-scale-up: true;
+  --web-scale-on-resize: true;
+  --web-center-vertically: true;
+  --web-enable-deep-linking: true;
+  display: flex;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "raleway3";
+  user-select: none;
+}
+
+.logo {
+  z-index: 5;
+  position: absolute;
+  left: 18em;
+  top: 5em;
+  width: calc(400px * 1.4);
+}
+.font {
+  z-index: 5;
+  position: absolute;
+  left: 18em;
+  top: 35em;
+  width: calc(500px * 1.2);
+}
+.date {
+  z-index: 5;
+  position: absolute;
+  left: 23em;
+  top: 24em;
+  width: 200px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  /* margin-left: 900px; */
+  margin-top: 55em;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+}
+.loading__ring {
+  z-index: 10000;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.loading__ring:first-child {
+  z-index: 10000;
+  transform: skew(30deg, 20deg);
+}
+.loading__ring:last-child {
+  z-index: 10000;
+  transform: skew(-30deg, -20deg) scale(-1, 1);
+}
+.loading__ring:last-child svg {
+  z-index: 10000;
+  animation-delay: -0.5s;
+}
+.loading__ring svg {
+  z-index: 10000;
+  animation: rotate 1s linear infinite;
+  fill: rgb(255, 174, 23);
+}
+.horror1 {
+  position: absolute;
+  bottom: 0;
+  left: 5em;
+  opacity: 0.02;
+  width: auto;
+  height: 650px;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.card {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+  top: 0;
+
+  background-color: #000;
+  border: 2px solid rgb(255, 174, 23);
+  border-radius: 25px;
+  pointer-events: none;
+
+  -webkit-animation: slide-top 1s ease-in-out both;
+  animation: slide-top 1s ease-in-out both;
+}
+
+.card h1 {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: rgb(255, 174, 23);
+}
+
+.epilep {
+  position: absolute;
+  z-index: 10;
+  bottom: 1em;
+  color: #b00000;
+  letter-spacing: -2px;
+}
