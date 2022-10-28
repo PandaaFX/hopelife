@@ -484,7 +484,15 @@ Config = {
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
-        },      
+        },   
+        
+        PEARLS = {
+            browse = vector3(-1791.942871, -1196.083496, 13.002930),
+            spawn = vector4(-1795.213135, -1188.250488, 13.002930, 317.480316),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+        }
         
        
     -- FRAK GARAGEN
