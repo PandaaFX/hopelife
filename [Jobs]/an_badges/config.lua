@@ -90,7 +90,7 @@ Config.Ranks = {
         [4] = "Special Agent",
         [5] = "Supervisory Agent",
         [6] = "Section Director",
-        [7] = "Co. Director",
+        [7] = "Asst. Director",
         [8] = "Director",
     },
 }
