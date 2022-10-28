@@ -492,7 +492,7 @@ Config = {
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
-        }
+        },
         
        
     -- FRAK GARAGEN
