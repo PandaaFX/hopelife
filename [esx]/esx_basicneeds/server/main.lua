@@ -178,6 +178,16 @@ ESX.RegisterUsableItem('casino_coke', function(source)
 	xPlayer.showNotification("Casino Cola getrunken")
 end)
 
+ESX.RegisterUsableItem('sanddorn', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	xPlayer.removeInventoryItem('sanddorn', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 50000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	xPlayer.showNotification("Sanddorn Likör getrunken")
+end)
+
+
 ESX.RegisterUsableItem('casino_ego_chaser', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	xPlayer.removeInventoryItem('casino_ego_chaser', 1)
