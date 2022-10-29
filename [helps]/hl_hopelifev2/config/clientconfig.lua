@@ -5,7 +5,7 @@ ClientConfig.General = {
     AntiStopper = true, -- it blocks cheaters to stop scripts (when its on you cant start/stop or restart scripts you should wait until restart of server)
     AntiESX = false, -- if you use ESX as framework, you should keep it false.
     AntiGodMode = false, -- if true, it blocks some known methods of godmode BUT if you have a script which uses godmode keep it false.
-    AntiSpectate = true, -- Cheater cant spectate when its on (dont forget to add your admin's hex ids or licences to ServerConfig.Whitelist so they can spectate !)
+    AntiSpectate = false, -- Cheater cant spectate when its on (dont forget to add your admin's hex ids or licences to ServerConfig.Whitelist so they can spectate !)
     AntiRadar = false, -- if you use Radar script, you should keep it false
     AntiVision = false, -- if you use Thermal/Night vision script, you should keep it false
     AntiMenyoo = false, -- it blocks menyooasi
@@ -25,7 +25,8 @@ ClientConfig.General = {
     AntiKillInvisible = true
 }
 ClientConfig.WLScripts = { -- if you add your script here, you will be able to start,stop or restart this script.
-    "esx_policejob",
+    "ws_farming",
+    "ws_loader",
 }
 ClientConfig.AntiLagSwitch = {
     Detection = true,
@@ -127,7 +128,7 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_PRECISIONRIFLE')] = true,
     [GetHashKey('WEAPON_PETROLCAN')] = true,
     [GetHashKey('WEAPON_SNOWBALL')] = true,
-
-    [966099553] = true, -- Default Fivem weapon, not delete this.
-    [0] = true, -- Default Fivem weapon, not delete this.
+    [966099533] = true,
+    [966099553] = true,
+    [0] = true,
 }
