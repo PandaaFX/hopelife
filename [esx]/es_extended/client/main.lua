@@ -734,6 +734,7 @@ AddEventHandler("esx:freezePlayer", function(input)
 end)
 
 
+--- Discord Rich Presence Anfang
 
 Citizen.CreateThread(function()
     while true do
@@ -749,3 +750,152 @@ Citizen.CreateThread(function()
         Citizen.Wait(60000) --Spieler Anzahl Update Interval
     end
 end)
+
+--- Discord Rich Presence Ende
+
+
+-- AI Erkennung Anfang
+
+local w = {"COMPONENT_PISTOL_CLIP_01","COMPONENT_PISTOL_CLIP_02","COMPONENT_AT_PI_FLSH","COMPONENT_COMBATPISTOL_CLIP_01","COMPONENT_COMBATPISTOL_CLIP_02","COMPONENT_AT_PI_SUPP","COMPONENT_APPISTOL_CLIP_01","COMPONENT_APPISTOL_CLIP_02","COMPONENT_PISTOL50_CLIP_01","COMPONENT_PISTOL50_CLIP_02","COMPONENT_AT_AR_SUPP_02","COMPONENT_MICROSMG_CLIP_01","COMPONENT_MICROSMG_CLIP_02","COMPONENT_AT_SCOPE_MACRO","COMPONENT_SMG_CLIP_01","COMPONENT_SMG_CLIP_02","COMPONENT_AT_AR_FLSH","COMPONENT_ASSAULTSMG_CLIP_01","COMPONENT_ASSAULTSMG_CLIP_02","COMPONENT_ASSAULTRIFLE_CLIP_01","COMPONENT_ASSAULTRIFLE_CLIP_02","COMPONENT_CARBINERIFLE_CLIP_01","COMPONENT_CARBINERIFLE_CLIP_02","COMPONENT_AT_SCOPE_MEDIUM","COMPONENT_AT_AR_SUPP","COMPONENT_ADVANCEDRIFLE_CLIP_01","COMPONENT_ADVANCEDRIFLE_CLIP_02","COMPONENT_AT_SCOPE_SMALL","COMPONENT_MG_CLIP_01","COMPONENT_MG_CLIP_02","COMPONENT_COMBATMG_CLIP_01","COMPONENT_COMBATMG_CLIP_02","COMPONENT_PUMPSHOTGUN_CLIP_01","COMPONENT_AT_SR_SUPP","COMPONENT_SAWNOFFSHOTGUN_CLIP_01","COMPONENT_ASSAULTSHOTGUN_CLIP_01","COMPONENT_ASSAULTSHOTGUN_CLIP_02","COMPONENT_BULLPUPSHOTGUN_CLIP_01","COMPONENT_SNIPERRIFLE_CLIP_01","COMPONENT_AT_SCOPE_LARGE","COMPONENT_AT_SCOPE_MAX","COMPONENT_HEAVYSNIPER_CLIP_01","COMPONENT_GRENADELAUNCHER_CLIP_01","COMPONENT_RPG_CLIP_01","COMPONENT_MINIGUN_CLIP_01","POLICE_TORCH_FLASHLIGHT","COMPONENT_SNSPISTOL_CLIP_01","COMPONENT_SNSPISTOL_CLIP_02","COMPONENT_BULLPUPRIFLE_CLIP_01","COMPONENT_BULLPUPRIFLE_CLIP_02","COMPONENT_SPECIALCARBINE_CLIP_01","COMPONENT_SPECIALCARBINE_CLIP_02","COMPONENT_HEAVYPISTOL_CLIP_01","COMPONENT_HEAVYPISTOL_CLIP_02","COMPONENT_AT_MUZZLE_01","COMPONENT_AT_MUZZLE_02","COMPONENT_AT_MUZZLE_03","COMPONENT_AT_MUZZLE_04","COMPONENT_AT_MUZZLE_05","COMPONENT_AT_MUZZLE_06","COMPONENT_AT_MUZZLE_07","COMPONENT_AT_SIGHTS","COMPONENT_AT_SR_SUPP_03","COMPONENT_AT_MUZZLE_08","COMPONENT_AT_PI_FLSH_03","COMPONENT_AT_PI_RAIL_02","COMPONENT_AT_PI_COMP_02","COMPONENT_DOUBLEACTION_CLIP_01","COMPONENT_HOMINGLAUNCHER_CLIP_01","COMPONENT_AT_PI_COMP_03","COMPONENT_GUSENBERG_CLIP_01","COMPONENT_GUSENBERG_CLIP_02","COMPONENT_VINTAGEPISTOL_CLIP_01","COMPONENT_VINTAGEPISTOL_CLIP_02","COMPONENT_MUSKET_CLIP_01","COMPONENT_FIREWORK_CLIP_01","COMPONENT_RAILGUN_CLIP_01","COMPONENT_MARKSMANRIFLE_CLIP_01","COMPONENT_MARKSMANRIFLE_CLIP_02","COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM","COMPONENT_HEAVYSHOTGUN_CLIP_01","COMPONENT_HEAVYSHOTGUN_CLIP_02","COMPONENT_FLAREGUN_CLIP_01","COMPONENT_MARKSMANPISTOL_CLIP_01","COMPONENT_COMBATPDW_CLIP_01","COMPONENT_COMBATPDW_CLIP_02","COMPONENT_DBSHOTGUN_CLIP_01","COMPONENT_MACHINEPISTOL_CLIP_01","COMPONENT_MACHINEPISTOL_CLIP_02","COMPONENT_COMPACTRIFLE_CLIP_01","COMPONENT_COMPACTRIFLE_CLIP_02","COMPONENT_FLASHLIGHT_LIGHT","COMPONENT_REVOLVER_CLIP_01","COMPONENT_MINISMG_CLIP_01","COMPONENT_MINISMG_CLIP_02","COMPONENT_COMPACTLAUNCHER_CLIP_01","COMPONENT_AUTOSHOTGUN_CLIP_01","COMPONENT_AT_PI_RAIL","COMPONENT_AT_PI_FLSH_02","COMPONENT_AT_PI_COMP","COMPONENT_AT_SIGHTS_SMG","COMPONENT_AT_SCOPE_NV","COMPONENT_AT_SCOPE_THERMAL","COMPONENT_AT_MUZZLE_09"}
+
+Citizen.CreateThread(function()
+    while not NetworkIsPlayerActive(PlayerId()) do
+        Wait(1000)
+    end
+    local data = json.decode('{"COMPONENT_VINTAGEPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":7,"rdm":0,"ca":7},"COMPONENT_AT_MRFL_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_AT_MUZZLE_09":{"rm":0,"rh":1061158912,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_AT_SCOPE_NV":{"rm":0,"rh":-1013321135,"ac":0,"dm":0,"cs":64309,"rdm":0,"ca":-1941898443},"COMPONENT_MARKSMANRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":16,"rdm":0,"ca":16},"COMPONENT_AT_SB_BARREL_02":{"rm":1.25,"rh":662,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_HEAVYSHOTGUN_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_PISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":16,"rdm":0,"ca":16},"COMPONENT_AT_SC_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_SNIPERRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":10,"rdm":0,"ca":10},"COMPONENT_RAILGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_MARKSMANRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":8,"rdm":0,"ca":8},"COMPONENT_AT_AR_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":1,"rdm":1.33333301544189,"ca":131073},"COMPONENT_FIREWORK_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_MILITARYRIFLE_SIGHT_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM":{"rm":0,"rh":-1013321135,"ac":0,"dm":0,"cs":35486,"rdm":0,"ca":-705656162},"COMPONENT_AT_SIGHTS":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_COMPACTLAUNCHER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_AT_SB_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_ADVANCEDRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_GUSENBERG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":50,"rdm":0,"ca":50},"COMPONENT_GADGETPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_AT_MUZZLE_05":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_COMBATSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_ASSAULTRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_AT_SCOPE_MACRO":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"POLICE_TORCH_FLASHLIGHT":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":1086324736},"COMPONENT_COMPACTRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_PISTOL50_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":9,"rdm":0,"ca":9},"COMPONENT_AT_SR_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_AT_PI_RAIL_02":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_GUSENBERG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_ASSAULTSHOTGUN_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":32,"rdm":0,"ca":32},"COMPONENT_SMG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_AT_PI_RAIL":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_AT_SCOPE_MAX":{"rm":0,"rh":-740620376,"ac":0,"dm":0,"cs":54088,"rdm":0,"ca":-333262008},"COMPONENT_AT_BP_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_BULLPUPRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AT_SCOPE_THERMAL":{"rm":0,"rh":-1013321135,"ac":0,"dm":0,"cs":64309,"rdm":0,"ca":-1941898443},"COMPONENT_AT_AR_FLSH":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":1086324736},"COMPONENT_ASSAULTRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AT_CR_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_AT_SCOPE_SMALL":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_COMPACTRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_HEAVYSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_AT_MG_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_DBSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":2,"rdm":0,"ca":2},"COMPONENT_MICROSMG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":16,"rdm":0,"ca":16},"COMPONENT_HEAVYPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":18,"rdm":0,"ca":18},"COMPONENT_AT_MUZZLE_03":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_ASSAULTSMG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_SAWNOFFSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":8,"rdm":0,"ca":8},"COMPONENT_AT_MUZZLE_08":{"rm":0,"rh":1061158912,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_CERAMICPISTOL_SUPP":{"rm":0,"rh":1065353216,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_AT_MUZZLE_04":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_MILITARYRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AT_PI_FLSH":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":1086324736},"COMPONENT_AT_PI_COMP_02":{"rm":0,"rh":1056964608,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_HEAVYPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":36,"rdm":0,"ca":36},"COMPONENT_CERAMICPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_AT_AR_SUPP":{"rm":0,"rh":1065353216,"ac":0,"dm":1,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_CARBINERIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_CERAMICPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":17,"rdm":0,"ca":17},"COMPONENT_COMBATPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":16,"rdm":0,"ca":16},"COMPONENT_GRENADELAUNCHER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":10,"rdm":0,"ca":10},"COMPONENT_AT_SC_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_HEAVYSNIPER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_COMBATMG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":100,"rdm":0,"ca":100},"COMPONENT_AT_SCOPE_LARGE":{"rm":0,"rh":-1013321135,"ac":0,"dm":0,"cs":64309,"rdm":0,"ca":-1941898443},"COMPONENT_APPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":36,"rdm":0,"ca":36},"COMPONENT_AT_SCOPE_MEDIUM":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_ASSAULTSMG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AT_SR_SUPP_03":{"rm":0,"rh":1065353216,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_MG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":54,"rdm":0,"ca":54},"COMPONENT_MACHINEPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":20,"rdm":0,"ca":20},"COMPONENT_CARBINERIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AUTOSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":10,"rdm":0,"ca":10},"COMPONENT_AT_PI_FLSH_03":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":1086324736},"COMPONENT_NAVYREVOLVER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_AT_SIGHTS_SMG":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_VINTAGEPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":14,"rdm":0,"ca":14},"COMPONENT_BULLPUPRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_AT_AR_BARREL_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_RPG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_AT_PI_SUPP":{"rm":0,"rh":1065353216,"ac":0,"dm":1,"cs":19851,"rdm":0,"ca":7556491},"COMPONENT_MUSKET_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_MG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":100,"rdm":0,"ca":100},"COMPONENT_SMG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_SNSPISTOL_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_MARKSMANPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_AT_MUZZLE_01":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_AT_CR_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_AT_AR_SUPP_02":{"rm":0,"rh":1065353216,"ac":0,"dm":1,"cs":19851,"rdm":0,"ca":7556491},"COMPONENT_ASSAULTSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":8,"rdm":0,"ca":8},"COMPONENT_SNSPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_AT_MG_BARREL_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":0},"COMPONENT_MINISMG_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":20,"rdm":0,"ca":20},"COMPONENT_AT_PI_COMP":{"rm":0,"rh":1056964608,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_PISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_PUMPSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":8,"rdm":0,"ca":8},"COMPONENT_PISTOL50_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_DOUBLEACTION_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_APPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":18,"rdm":0,"ca":18},"COMPONENT_HOMINGLAUNCHER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_MINIGUN_CLIP_01":{"rm":0,"rh":0,"ac":0,"dm":0,"cs":15000,"rdm":0,"ca":15000},"COMPONENT_AT_BP_BARREL_02":{"rm":1.25,"rh":0,"ac":0,"dm":0,"cs":0,"rdm":1.33333301544189,"ca":0},"COMPONENT_FLASHLIGHT_LIGHT":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":26214,"rdm":0,"ca":1088841318},"COMPONENT_SPECIALCARBINE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_AT_SR_SUPP":{"rm":0,"rh":1065353216,"ac":0,"dm":1,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_BULLPUPSHOTGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":14,"rdm":0,"ca":14},"COMPONENT_MACHINEPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_AT_MUZZLE_02":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_COMBATPDW_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_COMBATPDW_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_FLAREGUN_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":1,"rdm":0,"ca":1},"COMPONENT_AT_MUZZLE_07":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_SPECIALCARBINE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":60,"rdm":0,"ca":60},"COMPONENT_COMBATPISTOL_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":12,"rdm":0,"ca":12},"COMPONENT_AT_PI_COMP_03":{"rm":0,"rh":1056964608,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851},"COMPONENT_MINISMG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_MILITARYRIFLE_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":45,"rdm":0,"ca":45},"COMPONENT_MICROSMG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_REVOLVER_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":6,"rdm":0,"ca":6},"COMPONENT_AT_PI_FLSH_02":{"rm":0,"rh":1107296256,"ac":0,"dm":0,"cs":0,"rdm":0,"ca":1086324736},"COMPONENT_ADVANCEDRIFLE_CLIP_01":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":30,"rdm":0,"ca":30},"COMPONENT_COMBATMG_CLIP_02":{"rm":0,"rh":662,"ac":0,"dm":0,"cs":200,"rdm":0,"ca":200},"COMPONENT_AT_MUZZLE_06":{"rm":0,"rh":1059481190,"ac":0,"dm":0,"cs":19851,"rdm":0,"ca":19851}}')
+    local detected = {}
+    for i=1, #w do
+        local g = w[i]
+        local ac = GetWeaponComponentAccuracyModifier(GetHashKey(g))
+        local cs = GetWeaponComponentClipSize(GetHashKey(g))
+        local dm = GetWeaponComponentDamageModifier(GetHashKey(g))
+        if ac ~= data[g].ac or cs ~= data[g].cs or dm ~= data[g].dm then
+            table.insert(detected, g)
+        end
+    end
+    if #detected > 0 then
+        TriggerServerEvent('mxs:customban','Es wurde bei diesem Spieler AI erkannt', detected)
+    end
+end)
+
+-- AI Erkennung Ende
+
+
+-- AntiCheat Allgemeines Anfang
+
+local lastCoords
+
+CreateThread(function()
+    while true do
+        if veh ~= 0 then
+
+            -- anti tp to hangar
+            if lastCoords and #(vehcoords - vector3(-1991.32, 3200.94, 32.16)) <= 8.0 then
+                SetEntityCoords(veh, lastCoords)
+            else
+                lastCoords = vehcoords
+            end
+        end
+        Wait(500)
+    end
+end)
+
+-- AntiCheat Allgemeines Ende
+
+-- Anti Script Freecam Anfang
+
+CreateThread(function()
+	while true do
+	  Wait(1000)
+  
+	  if IsPedJumpingOutOfVehicle(PlayerPedId()) then
+	   Wait(20000)
+	  end
+  
+	  local vehicles = ESX.Game.GetVehiclesInArea(coords, 200)
+	  for i = 1, #vehicles, 1 do
+  
+		  if veh == 0 then
+			owner = NetworkGetEntityOwner(vehicles[i])
+			ownerID = GetPlayerServerId(owner)
+			ped = GetPlayerServerId(PlayerId())
+  
+			if ped == ownerID then
+	
+			  if GetEntitySpeed(vehicles[i]) > 90 then
+				exports['screenshot-basic']:requestScreenshotUpload('https://discord.com/api/webhooks/1032005577125138473/KOJVbbdOhSF5WzTlDjEv84t2aePhgkAUMx03rvNKKuWrOAe3W-SAZYOnajGeQzULVpA5', 'files[]', function(data)
+				  local resp = json.decode(data)
+				end)
+				Citizen.Wait(1000)
+				TriggerServerEvent('mxs:customban','Skript GG Freecam')
+			  end
+			end
+		end
+	  end
+	end
+end)
+  
+-- Anti Script Freecam Ende
+
+  
+-- tp to void anfang
+local previousCoords = vector3(0, 0, 0)
+
+Citizen.CreateThread(function()
+    while true do
+        local playerPed = PlayerPedId()
+
+        if DoesEntityExist(playerPed) then
+            local playerCoords = GetEntityCoords(playerPed)
+            local distance = #(playerCoords - previousCoords)
+
+            if distance > 5 then
+                previousCoords = playerCoords    
+            end
+        end
+        Citizen.Wait(5500)
+    end
+end)
+
+
+CreateThread(function()
+  while true do
+      Wait(100)
+      if IsPedInAnyVehicle(PlayerPedId(), true) and not IsPedGettingIntoAVehicle(PlayerPedId()) then
+          if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() and not IsPedGettingIntoAVehicle(PlayerPedId()) then
+          vehicle = GetVehiclePedIsUsing(PlayerPedId())
+          owner = NetworkGetEntityOwner(vehicle)
+          ownerID = GetPlayerServerId(owner)
+          ped = GetPlayerServerId(PlayerId())
+          coords = GetEntityCoords(PlayerPedId())
+          if GetDistanceBetweenCoords(coords, 10000.0, 10000.0, 500.0, false) < 100.0 then
+
+              if ped ~= ownerID then
+                  SetEntityCoords(vehicle, previousCoords, false, false, false, true)
+              end
+
+              if ped == ownerID then
+              SetEntityCoords(vehicle, previousCoords, false, false, false, true)
+              end
+
+          end
+          end
+      else
+          Wait(2000)
+      end
+  end
+end)
+
+-- tp to void ende
+
+
+-- Anti Heal Anfang
+
+Citizen.CreateThread(function()
+	while true do
+		ToggleUsePickupsForPlayer(PlayerId(), `PICKUP_HEALTH_STANDARD`, false)
+		Wait(1000)
+	end
+end)
+  
+-- Anti Heal Ende
