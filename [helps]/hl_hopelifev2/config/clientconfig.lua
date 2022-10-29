@@ -97,6 +97,7 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_NIGHTSTICK')] = true,
     [GetHashKey('WEAPON_STUNGUN')] = true,
     [GetHashKey('WEAPON_PISTOL')] = true,
+    [GetHashKey('WEAPON_PISTOL_MK2')] = true,
     [GetHashKey('WEAPON_COMBATPISTOL')] = true,
     [GetHashKey('WEAPON_SMG')] = true,
     [GetHashKey('WEAPON_CARBINERIFLE')] = true,
