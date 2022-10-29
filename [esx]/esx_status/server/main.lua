@@ -49,7 +49,7 @@ AddEventHandler('esx_status:update', function(status)
 		ESX.Players[xPlayer.source] = status	-- save locally for performance
 	end
 end)
-
+--[[
 CreateThread(function()
 	while true do
 		Wait(10 * 60 * 1000)
@@ -65,3 +65,4 @@ CreateThread(function()
 		end
 	end
 end)
+]]
