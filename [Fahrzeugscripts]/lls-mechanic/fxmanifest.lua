@@ -22,6 +22,7 @@ client_scripts {
 	
 	'config/client_functions.lua',
 	
+	'client/plate.lua',
 	'client/menus.lua',
 	'client/labels.lua',
 	'client/helper.lua',
