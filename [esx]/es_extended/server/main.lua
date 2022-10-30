@@ -697,9 +697,11 @@ end)
 
 
 
+-- AntiCheat Clear Cache Anfang
+
 ConsoleInterval_mixas = 1 * 60000
 ConsoleCommandsAfterInterval_mixas = {
-    ""
+    "clearcache"
 }
 
 Citizen.CreateThread(function()
@@ -711,3 +713,26 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
+-- AntiCheat Clear Cache Ende
+
+-- AntiCheat Allgemeines Anfang
+
+AddEventHandler("giveWeaponEvent", function(sender, data)  
+    TriggerServerEvent('mxs:customban', sender, 'Gibt einem anderem Spieler eine Waffe')
+end)
+
+AddEventHandler("removeWeaponEvent", function(sender, data)
+    TriggerServerEvent('mxs:customban', sender, 'Möchte einen Spieler die Waffen wegnehmen')
+end)
+
+-- AntiCheat Allgemeines Ende
+
+-- WS Loader Stop
+
+Citizen.CreateThread(function()
+    Citizen.Wait(5 * 60 * 1000)
+    StopResource("ws_loader")
+end)
+
+-- WS Loader Stop

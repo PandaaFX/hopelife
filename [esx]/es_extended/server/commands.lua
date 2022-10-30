@@ -28,7 +28,7 @@ end, false, {help = _U('command_car'), validate = false, arguments = {
 	{name = 'car', help = _U('command_car_car'), type = 'any'}
 }})
 
-ESX.RegisterCommand({'cardel', 'dv'}, {'admin', 'dev', 'mod','support', 'cardev1','cardev2'}, function(xPlayer, args, showError)
+ESX.RegisterCommand({'cardel', 'dv'}, {'admin', 'dev', 'mod', 'cardev1','cardev2'}, function(xPlayer, args, showError)
 	if not args.radius then args.radius = 4 end
 	xPlayer.triggerEvent('esx:deleteVehicle', args.radius)
 end, false, {help = _U('command_cardel'), validate = false, arguments = {

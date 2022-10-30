@@ -152,30 +152,24 @@ function OnPlayerDeath()
 	
 		AnimpostfxPlay('DeathFailOut', 0, false)
 		ClearPedTasksImmediately(GetPlayerPed(-1))
-
-
 	elseif purge == true then
 
 		local respawn = math.random(0, 3)
 		local heading = math.random(0, 360)
 		local respawnpos;
-		ESX.ShowNotification("Du wirst in 2 Min gerespawnt!", "success", 5000)
-		SetTimeout(1000*60*2, function ()
-			if respawn == 0 then
-				respawnpos = vector3(1900.312134, 2605.265869, 48.724487);
-				RespawnPed(PlayerPedId(), respawnpos, heading)
-			elseif respawn == 1 then
-				respawnpos = vector3(-2531.828613, 2324.703369, 33.054199);
-				RespawnPed(PlayerPedId(), respawnpos, heading)
-			elseif respawn == 2 then
-				respawnpos = vector3(-987.323059, -2706.224121, 13.828613);
-				RespawnPed(PlayerPedId(), respawnpos, heading)
-			elseif respawn == 3 then
-				respawnpos = vector3(892.021973, -57.270325, 78.750977);
-				RespawnPed(PlayerPedId(), respawnpos, heading)
-			end
-		end)
-
+		if respawn == 0 then
+			respawnpos = vector3(1900.312134, 2605.265869, 48.724487);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 1 then
+			respawnpos = vector3(-2531.828613, 2324.703369, 33.054199);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 2 then
+			respawnpos = vector3(-987.323059, -2706.224121, 13.828613);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		elseif respawn == 3 then
+			respawnpos = vector3(892.021973, -57.270325, 78.750977);
+			RespawnPed(PlayerPedId(), respawnpos, heading)
+		end
 
 
 
