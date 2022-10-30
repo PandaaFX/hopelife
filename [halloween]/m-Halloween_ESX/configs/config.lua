@@ -46,12 +46,13 @@ Config.Drops = { -- This is the drops when people go knock doors
       max = 4,
    },
    Itens = {
-      "phone",
-      "goldchain",
+      "sweets",
+      "schoko",
+      "cocktail",
+      "pumpkin"
    },
    ItensRare = {
-      "lockpick",
-      "advancedlockpick",
+      "ticket",
    }
 }
 
@@ -98,9 +99,12 @@ Config.Language = {
 --- Pumpkins & Trading Ped
 ------------
 
+
+
+
 Config.Objects = {
    -- Ped trading pumpkins
-   { Location = vector4(892.62, 3612.46, 32.82, 230.66), ["model"] = "prop_water_corpse_02" },
+  --{ Location = vector4(892.62, 3612.46, 32.82, 230.66), ["model"] = "prop_water_corpse_02" },
    -- Sandy Shores
    { Location = vector4(1343.52, 4307.95, 37.97-1, 69.0), ["model"] = "prop_veg_crop_03_pump" },
    { Location = vector4(1274.87, 4392.75, 46.18-1, 69.0), ["model"] = "prop_veg_crop_03_pump" },
