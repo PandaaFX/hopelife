@@ -20,7 +20,14 @@ local IndexPedAmbientfemale = {
 "fatcop",
 "bumblebee",
 "hope_biene",
-"hope_halloween"
+"hope_halloween",
+"nurse",
+"Oni",
+"Huntress",
+"Spirit",
+"Pyramidhead",
+"Sadako",
+"Plague"
 }
 
 local statIndexPedanimals = 1
