@@ -11,8 +11,7 @@ end)
 
 RegisterNetEvent('esx_jail:jailPlayer')
 AddEventHandler('esx_jail:jailPlayer', function(_jailTime)
-	jailTime = _jailTime
-
+	jailTime, fastTimer = _jailTime, _jailTime
 	local playerPed = PlayerPedId()
 
 	TriggerEvent('skinchanger:getSkin', function(skin)
@@ -24,7 +23,7 @@ AddEventHandler('esx_jail:jailPlayer', function(_jailTime)
 	end)
 
 	SetPedArmour(playerPed, 0)
-	--ESX.Game.Teleport(playerPed, Config.JailLocation)
+	ESX.Game.Teleport(playerPed, Config.JailLocation)
 	isInJail, unjail = true, false
 
 	while not unjail do
@@ -44,12 +43,7 @@ AddEventHandler('esx_jail:jailPlayer', function(_jailTime)
 		--end
 	end
 
-	ESX.Game.Teleport(playerPed, Config.JailBlip)
-	isInJail = false
 
-	ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
-		TriggerEvent('skinchanger:loadSkin', skin)
-	end)
 end)
 
 Citizen.CreateThread(function()
@@ -57,14 +51,24 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 
 		if jailTime > 0 and isInJail then
-			if fastTimer < 0 then
-				fastTimer = jailTime
-			end
+			--if fastTimer < 0 then
+			--	fastTimer = jailTime
+			--end
 
-			draw2dText(_U('remaining_msg', ESX.Math.Round(fastTimer)), 0.175, 0.955)
-			fastTimer = fastTimer - 0.01
+			draw2dText(_U('remaining_msg', fastTimer), 0.175, 0.955)
+			--fastTimer = fastTimer - 0.01
 		else
 			Citizen.Wait(100)
+			
+		end
+	end
+end)
+
+Citizen.CreateThread(function() 
+	while true do 
+		Citizen.Wait(1000)
+		if fastTimer > 0 and isInJail then
+			fastTimer = fastTimer - 1
 		end
 	end
 end)
@@ -72,6 +76,15 @@ end)
 RegisterNetEvent('esx_jail:unjailPlayer')
 AddEventHandler('esx_jail:unjailPlayer', function()
 	unjail, jailTime, fastTimer = true, 0, 0
+
+	local playerPed = PlayerPedId()
+
+	ESX.Game.Teleport(playerPed, Config.JailBlip)
+	isInJail = false
+
+	ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+		TriggerEvent('skinchanger:loadSkin', skin)
+	end)
 end)
 
 AddEventHandler('playerSpawned', function(spawn)
