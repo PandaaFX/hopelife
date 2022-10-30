@@ -74,3 +74,5 @@ Config.Doors = {
    {coords = vector3(-905.2466, 587.4352, 100.0409), z = 100.0409, looted = false},
    {coords = vector3(-924.6613, 561.777, 98.99629), z = 98.99629, looted = false},
 }
+
+-- Test
