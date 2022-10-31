@@ -4,7 +4,7 @@ AddEventHandler('shoprobbery:server:policeAlert', function(coords)
         local players = ESX.GetPlayers()
         for i = 1, #players do
             local player = ESX.GetPlayerFromId(players[i])
-            if player['job']['name'] == 'fib' or player['job']['name'] == 'police' or player['job']['name'] == 'lssd' or player['job']['name'] == 'doj' then
+            if player['job']['name'] == 'fib' or player['job']['name'] == 'police' or player['job']['name'] == 'lssd' then
                 TriggerClientEvent('shoprobbery:client:policeAlert', players[i], coords)
             end
         end
