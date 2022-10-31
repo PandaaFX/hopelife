@@ -6,8 +6,8 @@ CreateThread(function()
     end
 end)
 
-local Display = "target"
-
+local Display = "3dtext"
+local activ = false
 local zone = 0
 function ExportTargets()
     if Display == "target" then
@@ -42,31 +42,56 @@ function ExportTargets()
             distance = 2.5
         })
     elseif Display == "3dtext" then
+
         CreateThread(function() 
             while true do
             local inRange = false
-            Wait(5) 
+            Wait(1) 
             local playerPed = PlayerPedId()
             local pos = GetEntityCoords(playerPed)
-            for k,v in pairs(Config.Doors) do
-                local dist = #(pos - vector3(v.coords))
-                if dist < 3 then
-                inRange = true
-                    if dist < 2 then
-                        DrawText3Ds(pos.x, pos.y, pos.z, "~g~[E]~s~ - Knock Door")
+                for k,v in pairs(Config.Doors) do
+                    local dist = #(pos - vector3(v.coords))
+                    if dist < 3 then
+                    inRange = true
+                        if dist < 2 then
+                            DrawText3Ds(v.coords.x, v.coords.y, v.coords.z+1, "~g~[E]~s~ - An der Tür klopfen")
                             if IsControlJustPressed(0, 38) then
                                 TriggerEvent('m-Halloween:Client:KnockDoor')
                             end
                         end
                     end
                 end
-                if not inRange then
+        
+                for k,v in pairs(Config.Objects) do
+                    local dist = #(pos - vector3(v.Location))
+                        if dist < 3 then
+                            inRange = true
+                                if dist < 2.5 then
+                                    local pumpkin = GetClosestObjectOfType(pos.x, pos.y, pos.z, 2.5, GetHashKey('prop_veg_crop_03_pump'), false, false, false)
+                                    if DoesEntityExist(pumpkin) then
+                                    DrawText3Ds(v.Location.x, v.Location.y, v.Location.z+1, "~g~[E]~s~ - Kürbis sammeln")
+                                    if IsControlJustPressed(0, 38) and activ == false then
+                                       
+                                        
+                                            activ = true
+                                            TriggerEvent('m-Halloween:Client:PickPumpkin')
+                                        
+                                        
+                                    end
+                                end
+                                end
+                            
+                        end
+                end
+                if inRange == false then
+                    activ = false
                     Wait(1000)
                 end
-                Wait(3)
             end
+    
+
         end)
-    end
+        end
 end
 
 function DrawText3Ds(x, y, z, text)

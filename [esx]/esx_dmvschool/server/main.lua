@@ -23,7 +23,11 @@ RegisterNetEvent('esx_dmvschool:pay122')
 AddEventHandler('esx_dmvschool:pay122', function(price)
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
+	if xPlayer.getMoney() >= price then
+		xPlayer.removeMoney(price)
+		TriggerClientEvent('esx:showNotification', _source, _U('you_paid', ESX.Math.GroupDigits(price)))
+	else
+		TriggerClientEvent('esx:showNotification', _source, "Nicht genug Bargeld!")
+	end
 
-	xPlayer.removeMoney(price)
-	TriggerClientEvent('esx:showNotification', _source, _U('you_paid', ESX.Math.GroupDigits(price)))
 end)

@@ -25,10 +25,6 @@ Config.Peds = { -- Peds spawning when you knock the door
    'a_f_y_business_02',
    'a_m_m_genfat_01',
    'a_m_m_farmer_01',
-   'a_m_m_eastsa_02',
-   'a_m_m_soucent_02',
-   'a_m_y_business_01',
-   'a_m_y_indian_01',
    'a_m_y_salton_01',
    'u_m_y_zombie_01', -- If the ped is that zombie, then the player dont get reward, and have some laught scare sound! :)
 }
@@ -39,7 +35,7 @@ Config.BlipSettings = {
    blipDisplay = 4,
    blipScale = 0.65,
    blipColour = 1,
-   blipName = "Trick or Treat",
+   blipName = "Süßes oder Saures",
 }
 
 Config.Drops = { -- This is the drops when people go knock doors
@@ -50,12 +46,13 @@ Config.Drops = { -- This is the drops when people go knock doors
       max = 4,
    },
    Itens = {
-      "phone",
-      "goldchain",
+      "sweets",
+      "schoko",
+      "cocktail",
+      "pumpkin"
    },
    ItensRare = {
-      "lockpick",
-      "advancedlockpick",
+      "ticket",
    }
 }
 
@@ -75,26 +72,26 @@ Config.Trade = { -- The people can trade pumpkin's for items, here you put the i
 ------------
 Config.Language = {
    qbTarget = {
-      knockDoor = "Knock Door",
-      pickPumpkin = "Pick Pumpkin",
-      tradePumpkins = "Trade Pumpkins",
+      knockDoor = "Klopf Klopf",
+      pickPumpkin = "Kürbis Nehmen",
+      tradePumpkins = "Kürbisse tauschen",
    },
    Notify = {
-      eventStarted = "Event Halloween Started!",
-      doorsRestarted = "All doors restarted!",
-      zombieNotify = "What are you doing here? GO AWAY!!!",
-      noSpace = "You don't have space in your inventory.",
-      noPumpkins = "You don't have enough pumpkins",
+      eventStarted = "Halloween Event gestartet! Viel Spaß",
+      doorsRestarted = "Alle Türen zurückgestzt",
+      zombieNotify = "Du will die. WraaWrrrrwrwww",
+      noSpace = "Du hast keinen Platz im Rucksack",
+      noPumpkins = "Du hast nicht genug Kürbisse",
    },
    Progressbars = {
-      pickPumpkin = "Picking up the pump...",
+      pickPumpkin = "Kürbis aufnehmen.....",
    },
    qbMenu = {
-      headerMenu = "Tranding Pumpkins",
-      txtHeader = "Here you can exchange pumpkins for valuable items!",
-      amount = "Amount:",
-      pumpkins = "pumpkins",
-      close = "Close"
+      headerMenu = "Kürbisverkauf",
+      txtHeader = "Hier kannst du deine Kürbisse eintauschen",
+      amount = "Menge",
+      pumpkins = "Kürbisse",
+      close = "Schließen"
    }
 }
 
@@ -102,9 +99,12 @@ Config.Language = {
 --- Pumpkins & Trading Ped
 ------------
 
+
+
+
 Config.Objects = {
    -- Ped trading pumpkins
-   { Location = vector4(892.62, 3612.46, 32.82, 230.66), ["model"] = "prop_water_corpse_02" },
+  --{ Location = vector4(892.62, 3612.46, 32.82, 230.66), ["model"] = "prop_water_corpse_02" },
    -- Sandy Shores
    { Location = vector4(1343.52, 4307.95, 37.97-1, 69.0), ["model"] = "prop_veg_crop_03_pump" },
    { Location = vector4(1274.87, 4392.75, 46.18-1, 69.0), ["model"] = "prop_veg_crop_03_pump" },
