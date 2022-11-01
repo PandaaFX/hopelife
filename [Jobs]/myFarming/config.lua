@@ -525,6 +525,7 @@ Config.SellItems = {
 }
 
 Config.BuyItems = {
+    --[[
     ['import'] = {
         {category = 'Hauptkategorie', content = {
             {sqlitem = 'cola', label = 'Cola', priceBuy = 800.0},
@@ -558,6 +559,7 @@ Config.BuyItems = {
             {sqlitem = 'eistee', label = 'Eistee', priceBuy = 800.0},
         }},
     },
+    --]]
 }
 --[[
 

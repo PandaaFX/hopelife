@@ -36,6 +36,7 @@ end)
 
 
 function getJobXP()
+    local _source = source
 	local steamID = GetPlayerIdentifiers(source)[1]
 	if Config.useNewESX then
 		steamID = string.gsub(GetPlayerIdentifiers(source)[2], "license:", "")
@@ -43,7 +44,7 @@ function getJobXP()
 	
     for k, v in pairs(playerXP) do
         if v.steamID == steamID then
-            TriggerClientEvent('myFarming:receiveJobXP', source, v.xp)
+            TriggerClientEvent('myFarming:receiveJobXP', _source, v.xp)
         end
     end
 end
@@ -83,27 +84,27 @@ AddEventHandler('myFarming:collectItems', function(item, label, amount, xptype, 
         --print(Config.ItemLimits[item])
         if weight + amount * Config.ItemLimits[item] <= Config.MaxCarry then
             xPlayer.addInventoryItem(item, amount)
-            TriggerClientEvent('myFarming:msg', source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'] .. ' (~g~' .. weight + amount * Config.ItemLimits[item] .. '~s~/~y~' .. Config.MaxCarry .. '~s~)')
+            TriggerClientEvent('myFarming:msg', _source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'] .. ' (~g~' .. weight + amount * Config.ItemLimits[item] .. '~s~/~y~' .. Config.MaxCarry .. '~s~)')
             if xptype ~= nil then
                 addJobXP(source, xptype, amount)
             end
         else
-            TriggerClientEvent('myFarming:msg', source, Translation[Config.Locale]['too_heavy'])
+            TriggerClientEvent('myFarming:msg', _source, Translation[Config.Locale]['too_heavy'])
         end
 
     elseif Config.useESXWeightSystem then
         if xPlayer.canCarryItem(item, amount) then
             xPlayer.addInventoryItem(item, amount)
-            TriggerClientEvent('myFarming:msg', source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'])
+            TriggerClientEvent('myFarming:msg', _source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'])
             if xptype ~= nil then
                 addJobXP(source, xptype, amount)
             end
         else
-            TriggerClientEvent('myFarming:msg', source, Translation[Config.Locale]['too_heavy'])
+            TriggerClientEvent('myFarming:msg', _source, Translation[Config.Locale]['too_heavy'])
         end
     else
         xPlayer.addInventoryItem(item, amount)
-        TriggerClientEvent('myFarming:msg', source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'])
+        TriggerClientEvent('myFarming:msg', _source, '~g~' .. amount .. 'x ' .. label .. ' ~s~' .. Translation[Config.Locale]['collected'])
         if xptype ~= nil then
             addJobXP(source, xptype, amount)
         end
@@ -254,7 +255,7 @@ AddEventHandler('myFarming:buyItems', function(item, amount, price)
                     exports['cyber_Tax']:RemoveMoneyWithTax(tax,society.account)
                     TriggerClientEvent('myFarming:msg', _source, "~r~Gegenstand gekauft für (inkl. Steuern)" .. tax .. '$')
                 else
-                    TriggerClientEvent('esx:showNotification', source, "Firma hat nicht genug Geld")
+                    TriggerClientEvent('esx:showNotification', _source, "Firma hat nicht genug Geld")
                 end
             end)
         else 
@@ -520,8 +521,8 @@ end
 
 RegisterServerEvent('myFarming:getShopContent')
 AddEventHandler('myFarming:getShopContent', function()
-
-    TriggerClientEvent('myFarming:receiveShopContent', source, shopContent)
+    local _source = source
+    TriggerClientEvent('myFarming:receiveShopContent', _source, shopContent)
 
 end)
 
