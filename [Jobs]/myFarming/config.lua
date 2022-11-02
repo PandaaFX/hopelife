@@ -21,7 +21,7 @@ Config.FarmingAreas = {
     ]]--
 	-- you can set blip = nil to hide the blip
 
-    {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 1, data = nil}, items = {{name = 'grapperaisin', label = 'Trauben', randoma = 1, randomb = 3}}, x = -1721.828613,y= 2348.953857,z= 58.345825, range = 50.0, collectingTime = 10, animation = {type = 'animation', dict = "mini@repair", anim = "fixing_a_ped"}, requiredItems={}},
+    {requiredJob = 'wein', xptype = nil, blip = {sprite = 1, color = 1, data = nil}, items = {{name = 'grapperaisin', label = 'Trauben', randoma = 1, randomb = 3}}, x = -1721.828613,y= 2348.953857,z= 58.345825, range = 50.0, collectingTime = 10, animation = {type = 'animation', dict = "mini@repair", anim = "fixing_a_ped"}, requiredItems={}},
     {requiredJob = 'unemployed', xptype = nil, blip = {sprite = 1, color = 36, data = nil}, items = {{name = 'schrauben', label = 'Schrauben', randoma = 1, randomb = 3}}, x = 2427.375732,y= 3084.263672,z= 48.842529, range = 5.0, collectingTime = 10, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 33, data = nil}, items = {{name = 'weat', label = 'Weizen', randoma = 2, randomb = 5}}, x = 2616.83, y = 4451.19, z = 39.06, range = 60.0, collectingTime = 15, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 4, data = nil}, items = {{name = 'baumwolle', label = 'Baumwolle', randoma = 1, randomb = 3}}, x = 5353.332031,y= -5334.685547,z= 38.159668, range = 60.0, collectingTime = 10, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
@@ -523,9 +523,11 @@ Config.SellItems = {
     -- },
 
 }
+Config.BuyItemsAktiv = false
 
 Config.BuyItems = {
-    --[[
+    ['import'] = {}
+       --[[
     ['import'] = {
         {category = 'Hauptkategorie', content = {
             {sqlitem = 'cola', label = 'Cola', priceBuy = 800.0},
@@ -536,6 +538,7 @@ Config.BuyItems = {
             {sqlitem = 'coffee', label = 'Kaffee', priceBuy = 500.0},
         }},
     },
+     
     ['hookah'] = {
         {category = 'Kühllager', content = {
             {sqlitem = 'fleisch', label = 'Fleisch', priceBuy = 250.0},
@@ -625,7 +628,7 @@ Config.LocalItems = {
     state = 0,
     recommendJob = 'unemployed'},
 
-    /*{id = 5, label = 'The Pearl Celebration', 
+    --[[{id = 5, label = 'The Pearl Celebration', 
     price = 1540, 
     requires = {
         {item = 'golem', label = 'Golem', amount = 12},
@@ -634,7 +637,7 @@ Config.LocalItems = {
     }, 
     destination = {x = -1816.31, y = -1192.68, z = 14.31},
     state = 0,
-    recommendJob = 'Clubs'},*/
+    recommendJob = 'Clubs'},]]
 
     {id = 18, label = 'Airport Bilgeco', 
     price = 29500, 
