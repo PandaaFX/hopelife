@@ -82,7 +82,7 @@ ESX.RegisterServerCallback("utk_oh:checkItem", function(source, cb, itemname)
     if item >= 1 then
         cb(true)
     else
-        cb(false)
+        cb('Du hast keine ' .. itemname .. '!')
     end
 end)
 ESX.RegisterServerCallback("utk_oh:gettotalcash", function(source, cb)
