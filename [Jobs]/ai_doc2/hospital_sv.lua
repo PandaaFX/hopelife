@@ -22,7 +22,7 @@ RegisterServerEvent('esx_hospital:price')
 AddEventHandler('esx_hospital:price', function()
   	local _source = source	
 	local xPlayer = ESX.GetPlayerFromId(_source)
-	local price = 150000
+	local price = 75000
 	
 	if(xPlayer.getMoney() >= price) then
 		xPlayer.removeMoney((price))
