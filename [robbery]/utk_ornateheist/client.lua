@@ -216,7 +216,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.hack1.x, self.hack1.y, self.hack1.z, self.text.usehack, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 UTK.checks.hack1 = true
                                                 self.currenthack = 0
                                                 self:Hack()
@@ -234,7 +234,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.hack2.x, self.hack2.y, self.hack2.z, self.text.usehack, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 UTK.checks.hack2 = true
                                                 self.info.stage = 2
                                                 self.currenthack = 1
@@ -265,7 +265,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.card1.x, self.card1.y, self.card1.z, self.text.usecard, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                        if output then
+                                        if output == true then
                                             UTK.checks.id1 = true
                                             self.currentid = 1
                                             self:IdCard()
@@ -296,7 +296,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.card2.x, self.card2.y, self.card2.z, self.text.usecard, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                        if output then
+                                        if output == true then
                                             TriggerServerEvent("utk_oh:removeitem", "id_card")
                                             UTK.checks.id2 = true
                                             self.currentid = 2
@@ -331,7 +331,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.thermal1.x, self.thermal1.y, self.thermal1.z, self.text.usethermal, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 TriggerServerEvent("utk_oh:removeitem", "thermal_charge")
                                                 UTK.checks.thermal1 = true
                                                 self.currentplant = 1
@@ -350,7 +350,7 @@ function UTK:HandleInfo()
                                     DrawText3D(self.thermal2.x, self.thermal2.y, self.thermal2.z, self.text.usethermal, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 TriggerServerEvent("utk_oh:removeitem", "thermal_charge")
                                                 UTK.checks.thermal2 = true
                                                 self.currentplant = 2
@@ -382,7 +382,7 @@ function UTK:HandleInfo()
                                         DrawText3D(self.lockpick1.x, self.lockpick1.y, self.lockpick1.z, self.text.uselockpick, 0.40)
                                         if dst <= 1 and IsControlJustReleased(0, 38) then
                                             ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                                if output then
+                                                if output == true then
                                                     TriggerServerEvent("utk_oh:removeitem", "lockpick")
                                                     UTK.checks.lockpick1 = true
                                                     self.currentpick = 1
@@ -401,7 +401,7 @@ function UTK:HandleInfo()
                                         DrawText3D(self.lockpick2.x, self.lockpick2.y, self.lockpick2.z, self.text.uselockpick, 0.40)
                                         if dst <= 1 and IsControlJustReleased(0, 38) then
                                             ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                                if output then
+                                                if output == true then
                                                     TriggerServerEvent("utk_oh:removeitem", "lockpick")
                                                     UTK.checks.lockpick2 = true
                                                     self.currentpick = 2
