@@ -10,7 +10,9 @@
      {title="Katzen Kaffee", colour=48, id=463, x=-579.06, y = -1065.78, z = 22.35},
      {title="Pearls Restaurant", colour=29, id=270, x=-1833.415, y = -1194.843, z = 14.30},
      {title="Kurant Bar", colour=29, id=270, x=377.578, y = -1078.008, z = 29.46},
+     {title="Tequila LaLa", colour=29, id=270, x=-559.84, y = 285.76, z = 82.18},
 		} 
+		
   
 Citizen.CreateThread(function()
 
