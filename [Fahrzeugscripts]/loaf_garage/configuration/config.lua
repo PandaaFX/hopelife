@@ -544,21 +544,21 @@ Config = {
             specifiedJob = "saints",
         },
 
-        LAFAMILIA = {
-            browse = vector3(-3212.822021, 822.764832, 8.925293),
-            spawn = vector4(-3200.980225, 811.964844, 8.925293, 212.598419),
-            vehicletype = "car",
-            vehicletype2 = "motos",
-            vehicletype3 = "car2",
-            specifiedJob = "lafam",
-        },
+        -- LAFAMILIA = {
+        --     browse = vector3(-3212.822021, 822.764832, 8.925293),
+        --     spawn = vector4(-3200.980225, 811.964844, 8.925293, 212.598419),
+        --     vehicletype = "car",
+        --     vehicletype2 = "motos",
+        --     vehicletype3 = "car2",
+        --     specifiedJob = "lafam",
+        -- },
         
-        LAFAMILIAHeli = {
-            browse = vector3(-3251.775879, 838.127502, 2.909912),
-            spawn = vector4(-3258.316406, 838.984619, 2.909912, 45.354328),
-            vehicletype = "aircraft",
-            specifiedJob = "lafam",
-        },
+        -- LAFAMILIAHeli = {
+        --     browse = vector3(-3251.775879, 838.127502, 2.909912),
+        --     spawn = vector4(-3258.316406, 838.984619, 2.909912, 45.354328),
+        --     vehicletype = "aircraft",
+        --     specifiedJob = "lafam",
+        -- },
 
         LCN = {
             browse = vector3(-1522.325317, 99.270332, 56.711304),
@@ -753,7 +753,7 @@ Config = {
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
-            specifiedJob = "unicorn",
+            specifiedJob = "lafam",
         },
 
         SINALOA = {
