@@ -99,11 +99,14 @@ function IsRolePresent(user, role)
 					return true
 				end
 			end
+			print("Rolle nicht gefunden!")
 			return false
 		else
+			print("Discord api problem!")
 			return false
 		end
 	else
+		print("Keine DiscordID gefunden!")
 		return false
 	end
 end

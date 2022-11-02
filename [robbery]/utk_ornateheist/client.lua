@@ -85,22 +85,22 @@ UTK = {
     },
     alarmblip,
     text = { -- Texts
-        loudstart = "[~r~E~w~] um die Tür zu ~g~knacken~w~",
-        silentstart = "[~r~E~w~] um die Tür zu ~g~sprengen~w~",
-        usecard = "[~r~E~w~] ID Karte benützen",
-        usethermal = "[~r~E~w~] Thermal Ladung benützen",
-        usehack = "[~r~E~w~] Security Panel Hacken",
-        uselockpick = "[~r~E~w~] Use Dietrich",
-        usesearch = "[~r~E~w~] Suche nach ID Karte",
+        loudstart = "[~r~E~w~] um die Tür zu ~g~sprengen~w~",
+        silentstart = "[~r~E~w~] um die Türschloss zu ~g~knacken~w~",
+        usecard = "[~r~E~w~] ID Karte benutzen",
+        usethermal = "[~r~E~w~] Thermal Ladung platzieren",
+        usehack = "[~r~E~w~] Security Panel hacken",
+        uselockpick = "[~r~E~w~] Schloss knacken",
+        usesearch = "[~r~E~w~] Nach ID Karte suchen",
         lootcash= "[~r~E~w~] Geldkarre ausräumen",
         lootgold = "[~r~E~w~] Goldkarre ausräumen",
         lootdia = "[~r~E~w~] Diamantenkarre ausrauben",
         card = "ID Karte wird benutzt",
-        thermal = "Lege Thermal Ladung",
+        thermal = "Platziere Thermalladung",
         burning = "Schloss schmilzt",
         lockpick = "Schloss wird geknackt",
         using = "Panel lädt...",
-        used = "Prozess Komplett",
+        used = "Prozess komplett",
         stage = "komplett.",
         search = "suche...",
         hacking = "hacke...",
@@ -172,14 +172,14 @@ function UTK:HandleInfo()
                                         --TriggerServerEvent('roadphone:sendDispatch', GetPlayerServerId(PlayerId()), "Ein Raub ist im Gange", requiredJob2, {x  = 257.10, y = 220.30, z = 106.28}, true)
                                         --TriggerServerEvent('roadphone:sendDispatch', GetPlayerServerId(PlayerId()), "Ein Raub ist im Gange", requiredJob3, {x  = 257.10, y = 220.30, z = 106.28}, true)
                                     elseif output ~= true then
-                                        TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Termal Sprengladung benötigt!', 5000)
+                                        TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                     end
                                 end, 1)
                             end
                         end
                         local dst2 = GetDistanceBetweenCoords(coords, self.silentstart.x, self.silentstart.y, self.silentstart.z, true)
 
-                        if dst2 <= 6 then
+                        if dst2 <= 6  then
                             DrawText3D(self.silentstart.x, self.silentstart.y, self.silentstart.z, self.text.silentstart, 0.40)
                             if dst2 <= 1 and  IsControlJustReleased(0,38) then
                                 ESX.TriggerServerCallback("utk_oh:startevent", function(output)
@@ -190,7 +190,7 @@ function UTK:HandleInfo()
                                         self.currentpick = 0
                                         self:Lockpick()
                                     elseif output ~= true then
-                                        TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Dietrich benötigt', 5000)
+                                        TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                     end
                                 end, 2)
                             end
@@ -216,12 +216,12 @@ function UTK:HandleInfo()
                                     DrawText3D(self.hack1.x, self.hack1.y, self.hack1.z, self.text.usehack, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 UTK.checks.hack1 = true
                                                 self.currenthack = 0
                                                 self:Hack()
-                                            elseif not output then
-                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keinen Hacking Laptop!', 5000)
+                                            elseif output ~= true  then
+                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "laptop_h")
                                     end
@@ -234,13 +234,13 @@ function UTK:HandleInfo()
                                     DrawText3D(self.hack2.x, self.hack2.y, self.hack2.z, self.text.usehack, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 UTK.checks.hack2 = true
                                                 self.info.stage = 2
                                                 self.currenthack = 1
                                                 self:Hack()
-                                            elseif not output then
-                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keinen Hacking Laptop!', 5000)
+                                            elseif output ~= true  then
+                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "laptop_h")
                                     end
@@ -265,12 +265,12 @@ function UTK:HandleInfo()
                                     DrawText3D(self.card1.x, self.card1.y, self.card1.z, self.text.usecard, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                        if output then
+                                        if output == true then
                                             UTK.checks.id1 = true
                                             self.currentid = 1
                                             self:IdCard()
-                                        elseif not output then
-                                            TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keine ID Karte', 5000)
+                                        elseif output ~= true  then
+                                            TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                         end
                                         end, "id_card")
                                     end
@@ -296,13 +296,13 @@ function UTK:HandleInfo()
                                     DrawText3D(self.card2.x, self.card2.y, self.card2.z, self.text.usecard, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                        if output then
+                                        if output == true then
                                             TriggerServerEvent("utk_oh:removeitem", "id_card")
                                             UTK.checks.id2 = true
                                             self.currentid = 2
                                             self:IdCard()
-                                        elseif not output then
-                                            TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keine ID Card!', 5000)
+                                        elseif output ~= true  then
+                                            TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                         end
                                         end, "id_card")
                                     end
@@ -331,13 +331,13 @@ function UTK:HandleInfo()
                                     DrawText3D(self.thermal1.x, self.thermal1.y, self.thermal1.z, self.text.usethermal, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 TriggerServerEvent("utk_oh:removeitem", "thermal_charge")
                                                 UTK.checks.thermal1 = true
                                                 self.currentplant = 1
                                                 self:Plant()
-                                            elseif not output then
-                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keine Thermalladungen!', 5000)
+                                            elseif output ~= true then
+                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "thermal_charge")
                                     end
@@ -350,13 +350,13 @@ function UTK:HandleInfo()
                                     DrawText3D(self.thermal2.x, self.thermal2.y, self.thermal2.z, self.text.usethermal, 0.40)
                                     if dst <= 1 and IsControlJustReleased(0, 38) then
                                         ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                            if output then
+                                            if output == true then
                                                 TriggerServerEvent("utk_oh:removeitem", "thermal_charge")
                                                 UTK.checks.thermal2 = true
                                                 self.currentplant = 2
                                                 self:Plant()
-                                            elseif not output then
-                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keine Thermalladungen!', 5000)
+                                            elseif output ~= true  then
+                                                TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "thermal_charge")
                                     end
@@ -382,13 +382,13 @@ function UTK:HandleInfo()
                                         DrawText3D(self.lockpick1.x, self.lockpick1.y, self.lockpick1.z, self.text.uselockpick, 0.40)
                                         if dst <= 1 and IsControlJustReleased(0, 38) then
                                             ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                                if output then
+                                                if output == true then
                                                     TriggerServerEvent("utk_oh:removeitem", "lockpick")
                                                     UTK.checks.lockpick1 = true
                                                     self.currentpick = 1
                                                     self:Lockpick()
-                                                elseif not output then
-                                                    TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Keine Dietriche!', 5000)
+                                                elseif output ~= true  then
+                                                    TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                                 end
                                             end, "lockpick")
                                         end
@@ -401,13 +401,13 @@ function UTK:HandleInfo()
                                         DrawText3D(self.lockpick2.x, self.lockpick2.y, self.lockpick2.z, self.text.uselockpick, 0.40)
                                         if dst <= 1 and IsControlJustReleased(0, 38) then
                                             ESX.TriggerServerCallback("utk_oh:checkItem", function(output)
-                                                if output then
+                                                if output == true then
                                                     TriggerServerEvent("utk_oh:removeitem", "lockpick")
                                                     UTK.checks.lockpick2 = true
                                                     self.currentpick = 2
                                                     self:Lockpick()
-                                                elseif not output then
-                                                    TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', 'Du hast keine Dietriche!', 5000)
+                                                elseif output ~= true  then
+                                                    TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                                 end
                                             end, "lockpick")
                                         end
@@ -495,7 +495,7 @@ function UTK:Plant()
     Citizen.Wait(4000)
     exports['progressBars']:startUI(12000, self.text.burning)
     DeleteObject(bag)
-    SetPedComponentVariation(ped, 5, 45, 0, 0)
+    SetPedComponentVariation(ped, 5, 0, 0, 0)
     DetachEntity(bomba, 1, 1)
     FreezeEntityPosition(bomba, true)
     TriggerServerEvent("utk_oh:ptfx", method)
@@ -669,7 +669,7 @@ function UTK:Hack()
     DeleteObject(laptop)
     DeleteObject(card)
     FreezeEntityPosition(ped, false)
-    SetPedComponentVariation(ped, 5, 45, 0, 0)
+    SetPedComponentVariation(ped, 5, 0, 0, 0)
 end
 function UTK:IdCard()
     UTK.disableinput = true
@@ -874,7 +874,7 @@ function Loot(currentgrab)
 	if DoesEntityExist(GrabBag) then
         DeleteEntity(GrabBag)
     end
-    SetPedComponentVariation(ped, 5, 45, 0, 0)
+    SetPedComponentVariation(ped, 5, 0, 0, 0)
 	RemoveAnimDict("anim@heists@ornate_bank@grab_cash")
 	SetModelAsNoLongerNeeded(emptyobj)
 	SetModelAsNoLongerNeeded(GetHashKey("hei_p_m_bag_var22_arm_s"))
@@ -1459,7 +1459,7 @@ AddEventHandler("utk_oh:gas_c", function()
                 if DoesEntityExist(GrabBag) then
                     DeleteEntity(GrabBag)
                 end
-                SetPedComponentVariation(ped, 5, 45, 0, 0)
+                SetPedComponentVariation(ped, 5, 0, 0, 0)
                 NetworkStopSynchronisedScene(Grab1)
                 NetworkStopSynchronisedScene(Grab2)
                 NetworkStopSynchronisedScene(Grab3)

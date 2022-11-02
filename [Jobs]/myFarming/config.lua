@@ -16,12 +16,12 @@ Config.FarmingAreas = {
     --[[
         name                : name of item in database
         label               : your label for the item
-        amount              : amount of items required (if removeAfterCollect is set to true, this amount is removed from inventory as well)
+        amount              : amount of items required (if removeAfterCollect is set to true, this amount is removed from inventory as well) -2166.290039, 164.479126, 173.143555
         removeAfterCollect  : if true the required items is removed from inventory after collecting
     ]]--
 	-- you can set blip = nil to hide the blip
 
-    {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 1, data = nil}, items = {{name = 'grapperaisin', label = 'Trauben', randoma = 1, randomb = 3}}, x = -1721.828613,y= 2348.953857,z= 58.345825, range = 50.0, collectingTime = 10, animation = {type = 'animation', dict = "mini@repair", anim = "fixing_a_ped"}, requiredItems={}},
+    {requiredJob = 'wein', xptype = nil, blip = {sprite = 1, color = 1, data = nil}, items = {{name = 'grapperaisin', label = 'Trauben', randoma = 1, randomb = 3}}, x = -1721.828613,y= 2348.953857,z= 58.345825, range = 50.0, collectingTime = 10, animation = {type = 'animation', dict = "mini@repair", anim = "fixing_a_ped"}, requiredItems={}},
     {requiredJob = 'unemployed', xptype = nil, blip = {sprite = 1, color = 36, data = nil}, items = {{name = 'schrauben', label = 'Schrauben', randoma = 1, randomb = 3}}, x = 2427.375732,y= 3084.263672,z= 48.842529, range = 5.0, collectingTime = 10, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 33, data = nil}, items = {{name = 'weat', label = 'Weizen', randoma = 2, randomb = 5}}, x = 2616.83, y = 4451.19, z = 39.06, range = 60.0, collectingTime = 15, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 4, data = nil}, items = {{name = 'baumwolle', label = 'Baumwolle', randoma = 1, randomb = 3}}, x = 5353.332031,y= -5334.685547,z= 38.159668, range = 60.0, collectingTime = 10, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
@@ -30,7 +30,7 @@ Config.FarmingAreas = {
     {requiredJob = 'unemployed', xptype = nil, blip = {sprite = 1, color = 69, data = nil}, items = {{name = 'salad', label = 'Salat', randoma = 1, randomb = 3}}, x = 3288.39, y = 5181.42, z = 18.56, range = 8.0, collectingTime = 15, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = nil, items = {{name = 'hopfen', label = 'Hopfen', randoma = 1, randomb = 2}}, x = 1773.903320,y= 5000.637207,z= 52.229248, range = 7.0, collectingTime = 20, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = nil, items = {{name = 'agave', label = 'Agavensaft', randoma = 1, randomb = 2}}, x = 1583.512085,y= 3292.061523,z= 42.169922, range = 7.0, collectingTime = 20, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
-    {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 44, data = nil}, items = {{name = 'pilz', label = 'Pilze', randoma = 1, randomb = 3}}, x = -2166.19,y= -154.82,z= 168.99, range = 30.0, collectingTime = 8, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
+    {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 44, data = nil}, items = {{name = 'pilz', label = 'Pilze', randoma = 1, randomb = 3}}, x = -2166.290039,y= 164.47,z= 173.14, range = 30.0, collectingTime = 8, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 71, data = nil}, items = {{name = 'aramid', label = 'Aramid', randoma = 1, randomb = 2}}, x = 2731.45,y= 2879.47,z= 38.02, range = 20.0, collectingTime = 8, animation = {type = 'scenario', anim = "world_human_gardener_plant"}, requiredItems={}},
     {requiredJob = nil, xptype = nil, blip = {sprite = 1, color = 20, data = nil}, items = {{name = 'stone', label = 'Steine', percentage = 20, randoma = 1, randomb = 3}, {name = 'coal', label = 'Kohle', percentage = 40, randoma = 1, randomb = 3},{name = 'copper', label = 'Kupfer', percentage = 60, randoma = 1, randomb = 3}, {name = 'iron', label = 'Eisen', percentage = 85, randoma = 1, randomb = 3}, {name = 'diamond', label = 'Diamant', percentage = 95, randoma = 1, randomb = 1}, {name = 'emerald', label = 'Saphir', percentage = 100, randoma = 1, randomb = 1}}, x = -587.221985,y= 2050.114258,z= 129.957520, range = 38.0, collectingTime = 10, animation = {type = 'scenario', anim = "WORLD_HUMAN_CONST_DRILL"}, requiredItems={}},
 }
@@ -523,8 +523,11 @@ Config.SellItems = {
     -- },
 
 }
+Config.BuyItemsAktiv = false
 
 Config.BuyItems = {
+    ['import'] = {}
+       --[[
     ['import'] = {
         {category = 'Hauptkategorie', content = {
             {sqlitem = 'cola', label = 'Cola', priceBuy = 800.0},
@@ -535,6 +538,7 @@ Config.BuyItems = {
             {sqlitem = 'coffee', label = 'Kaffee', priceBuy = 500.0},
         }},
     },
+     
     ['hookah'] = {
         {category = 'Kühllager', content = {
             {sqlitem = 'fleisch', label = 'Fleisch', priceBuy = 250.0},
@@ -558,6 +562,7 @@ Config.BuyItems = {
             {sqlitem = 'eistee', label = 'Eistee', priceBuy = 800.0},
         }},
     },
+    --]]
 }
 --[[
 
@@ -623,7 +628,7 @@ Config.LocalItems = {
     state = 0,
     recommendJob = 'unemployed'},
 
-    /*{id = 5, label = 'The Pearl Celebration', 
+    --[[{id = 5, label = 'The Pearl Celebration', 
     price = 1540, 
     requires = {
         {item = 'golem', label = 'Golem', amount = 12},
@@ -632,7 +637,7 @@ Config.LocalItems = {
     }, 
     destination = {x = -1816.31, y = -1192.68, z = 14.31},
     state = 0,
-    recommendJob = 'Clubs'},*/
+    recommendJob = 'Clubs'},]]
 
     {id = 18, label = 'Airport Bilgeco', 
     price = 29500, 

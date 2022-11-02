@@ -41,7 +41,9 @@ local clientcode = [[
 	
 	Citizen.CreateThread(function()
 		for i = 1, #Config.Shops, 1 do
-			for _,v in pairs(Config.NPCConfig) do
+
+            local v = Config.NPCConfig[i]
+            
 				local x, y, z = Config.Shops[i].coords
 				RequestModel(v[4])
 				while not HasModelLoaded(v[4]) do
@@ -52,7 +54,7 @@ local clientcode = [[
 				FreezeEntityPosition(ped, true)
 				SetEntityInvincible(ped, true)
 				SetBlockingOfNonTemporaryEvents(ped, true)
-			end
+
 		end
 	end)
 	
@@ -138,26 +140,38 @@ local clientcode = [[
 				StopScreenEffect(blur)
 				DoScreenFadeOut(1200)
 				Citizen.Wait(1200)
-				ESX.Game.SpawnVehicle(data.model, Config.SpawnZone, Config.SpawnHeading, function(vehicle)
-					a=randomchar('A','Z')
-					b=randomchar('A','Z')
-					c=randomchar('A','Z')
-	
-					n1=randomchar('0','9')
-					n2=randomchar('0','9')
-					n3=randomchar('0','9')
-					-- local newPlate = GeneratePlate()
-					local newPlate = a..b..c.. ' ' ..n1..n2..n3
-					local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
-					vehicleProps.plate = newPlate
-					TaskWarpPedIntoVehicle(GetPlayerPed(-1), vehicle, -1)
-					SetVehicleNumberPlateText(vehicle, newPlate)
-					TriggerServerEvent('hl_frakshop:setVehicleOwned', vehicleProps, PlayerData.job.name, vehType)
-					Citizen.Wait(500)
-					DoScreenFadeIn(800)
-					Citizen.Wait(700)
-					TriggerEvent('esx:showAdvancedNotification', 'Fraktions Autohändler', 'Information', "Du hast ein Fahrzeug gekauft.\nKennzeichen: " .. newPlate, 'CHAR_TOM', 1)
-				end)
+
+				for i = 1, #Config.Shops, 1 do
+
+
+							local dist = GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), Config.Shops[i].coords)
+							
+							if dist <= Config.InteractDistance then
+								ESX.Game.SpawnVehicle(data.model, Config.Shops[i].SpawnZone, Config.Shops[i].SpawnHeading, function(vehicle)
+									a=randomchar('A','Z')
+									b=randomchar('A','Z')
+									c=randomchar('A','Z')
+					
+									n1=randomchar('0','9')
+									n2=randomchar('0','9')
+									n3=randomchar('0','9')
+									local newPlate = a..b..c.. ' ' ..n1..n2..n3
+									local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
+									vehicleProps.plate = newPlate
+									TaskWarpPedIntoVehicle(GetPlayerPed(-1), vehicle, -1)
+									SetVehicleNumberPlateText(vehicle, newPlate)
+									TriggerServerEvent('hl_frakshop:setVehicleOwned', vehicleProps, PlayerData.job.name, vehType)
+									Citizen.Wait(500)
+									DoScreenFadeIn(800)
+									Citizen.Wait(700)
+									TriggerEvent('esx:showAdvancedNotification', 'Fraktions Autohändler', 'Information', "Du hast ein Fahrzeug gekauft.\nKennzeichen: " .. newPlate, 'CHAR_TOM', 1)
+								end)
+								
+							end
+
+
+				end
+
 			else
 				TriggerEvent('esx:showAdvancedNotification', 'Fraktions Autohändler', 'Information', "Du hast nicht genug Geld dabei.", 'CHAR_TOM', 1)
 			end
@@ -210,32 +224,6 @@ local clientcode = [[
 		table.insert(Charset, string.char(i)) 
 	end
 	
-	function GeneratePlate()
-		local generatedPlate
-		local doBreak = false
-	
-		while true do
-			Citizen.Wait(2)
-			math.randomseed(GetGameTimer())
-			if Config.PlateUseSpace then
-				generatedPlate = string.upper(GetRandomLetter(Config.PlateLetters) .. ' ' .. GetRandomNumber(Config.PlateNumbers))
-			else
-				generatedPlate = string.upper(GetRandomLetter(Config.PlateLetters) .. GetRandomNumber(Config.PlateNumbers))
-			end
-	
-			ESX.TriggerServerCallback('esx_vehicleshop:isPlateTaken', function (isPlateTaken)
-				if not isPlateTaken then
-					doBreak = true
-				end
-			end, generatedPlate)
-	
-			if doBreak then
-				break
-			end
-		end
-	
-		return generatedPlate
-	end
 	
 	
 	function GetRandomNumber(length)

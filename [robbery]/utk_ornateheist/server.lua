@@ -50,7 +50,7 @@ ESX.RegisterServerCallback("utk_oh:startevent", function(source, cb, method)
                         info.style = 1
                         info.locked = true
                     else
-                        cb("Du hast keine Thermal Ladungen")
+                        cb("Du hast keine Thermalladungen")
                     end
                 elseif method == 2 then
                     local item = yPlayer.getInventoryItem("lockpick")["count"]
@@ -69,7 +69,7 @@ ESX.RegisterServerCallback("utk_oh:startevent", function(source, cb, method)
                 cb("Es müssen "..mincops.." Polizisten in der Stadt anwesend sein")
             end
         else
-            cb(math.floor((cooldown - (os.time() - lastrobbed)) / 60)..":"..math.fmod((cooldown - (os.time() - lastrobbed)), 60).." übrig bist zum nächsten Raub")
+            cb(math.floor((cooldown - (os.time() - lastrobbed)) / 60)..":"..math.fmod((cooldown - (os.time() - lastrobbed)), 60).." übrig bis zum nächsten Raub.")
         end
     else
         cb("Die Bank wird schon ausgeraubt")
@@ -78,11 +78,11 @@ end)
 ESX.RegisterServerCallback("utk_oh:checkItem", function(source, cb, itemname)
     local xPlayer = ESX.GetPlayerFromId(source)
     local item = xPlayer.getInventoryItem(itemname)["count"]
-
+    local itemlabel = xPlayer.getInventoryItem(itemname)["label"]
     if item >= 1 then
         cb(true)
     else
-        cb(false)
+        cb('Du hast kein ' .. itemlabel .. '!')
     end
 end)
 ESX.RegisterServerCallback("utk_oh:gettotalcash", function(source, cb)
