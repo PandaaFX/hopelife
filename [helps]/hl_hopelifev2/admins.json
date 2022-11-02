@@ -2,6 +2,9 @@
     "MrsXeniaTv": {
         "identifier": "license:ee6abac07d2457e814358c258e7dc98f021316cf"
     },
+    "Juls": {
+        "identifier": "license:854e9801753a4851d660f64cab08cd6111829712"
+    },
     "PandaaFX": {
         "identifier": "license:171bdec412d216926b20b185bf0efbe30d76d2a0"
     },
@@ -11,19 +14,16 @@
     "Thomas": {
         "identifier": "license:d30f00afb8429dc31f5dfb05213eae53cf6e2513"
     },
-    "Dxrii": {
-        "identifier": "license:5d51403f083a2dd3875eed8d38a602d652b252b2"
-    },
-    "Touchi.": {
-        "identifier": "license:eed3fe7c5ca3750dadb5a0744078224cb4b0a9d7"
+    "taz": {
+        "identifier": "license:c3da4d194f881ddfc0fb30a01b495e34637eec86"
     },
     "CmdChief": {
         "identifier": "license:eca58cbc18e6f75327b97a823ca3a9f390e89b8d"
     },
-    "FunnyBuddys": {
-        "identifier": "license:511a01f0af18f4e136db4a768d6d1da7a935c4b9"
+    "Touchi.": {
+        "identifier": "license:eed3fe7c5ca3750dadb5a0744078224cb4b0a9d7"
     },
-    "Juls": {
-        "identifier": "license:854e9801753a4851d660f64cab08cd6111829712"
+    "Dxrii": {
+        "identifier": "license:5d51403f083a2dd3875eed8d38a602d652b252b2"
     }
 }

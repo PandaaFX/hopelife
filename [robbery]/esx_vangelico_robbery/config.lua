@@ -1,7 +1,7 @@
 Config = {}
 Config.Locale = 'de'
 
-Config.RequiredCopsRob = 4
+Config.RequiredCopsRob = 4 -- def: 4
 Config.RequiredCopsSell = 0
 Config.MinJewels = 1
 Config.MaxJewels = 5
