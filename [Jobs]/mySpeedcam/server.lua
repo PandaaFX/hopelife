@@ -31,6 +31,10 @@ AddEventHandler('myRadarcontrol:addProfit', function(type, radarID, label, profi
 		dateString = os.date("%x | %H:%M")
 	end
 
+    TriggerEvent("okokBilling:CreateCustomInvoice", _source, tonumber(profit), "Überschreitung der Höchstgeschwindigkeit", "Blitzer", "police", "society_police")
+
+--[[										
+
     MySQL.Async.fetchAll('SELECT * FROM speedcams_profit WHERE (type = @type AND radarID = @radarID) LIMIT 1', {
         ['@type'] = type,
         ['@radarID'] = radarID,
@@ -57,7 +61,7 @@ AddEventHandler('myRadarcontrol:addProfit', function(type, radarID, label, profi
         end
     end
     )
-
+]]
 end)
 
 
