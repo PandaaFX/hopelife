@@ -78,11 +78,11 @@ end)
 ESX.RegisterServerCallback("utk_oh:checkItem", function(source, cb, itemname)
     local xPlayer = ESX.GetPlayerFromId(source)
     local item = xPlayer.getInventoryItem(itemname)["count"]
-
+    local itemlabel = xPlayer.getInventoryItem(itemname)["label"]
     if item >= 1 then
         cb(true)
     else
-        cb('Du hast keine ' .. itemname .. '!')
+        cb('Du hast kein ' .. itemlabel .. '!')
     end
 end)
 ESX.RegisterServerCallback("utk_oh:gettotalcash", function(source, cb)
