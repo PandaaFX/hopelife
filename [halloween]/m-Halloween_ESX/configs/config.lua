@@ -46,12 +46,13 @@ Config.Drops = { -- This is the drops when people go knock doors
       max = 4,
    },
    Itens = {
-      "phone",
-      "goldchain",
+      "sweets",
+      "schoko",
+      "cocktail",
+      "pumpkin"
    },
    ItensRare = {
-      "lockpick",
-      "advancedlockpick",
+      "ticket",
    }
 }
 
