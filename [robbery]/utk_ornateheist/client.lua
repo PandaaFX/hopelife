@@ -220,7 +220,7 @@ function UTK:HandleInfo()
                                                 UTK.checks.hack1 = true
                                                 self.currenthack = 0
                                                 self:Hack()
-                                            elseif not output then
+                                            elseif output ~= true  then
                                                 TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "laptop_h")
@@ -239,7 +239,7 @@ function UTK:HandleInfo()
                                                 self.info.stage = 2
                                                 self.currenthack = 1
                                                 self:Hack()
-                                            elseif not output then
+                                            elseif output ~= true  then
                                                 TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "laptop_h")
@@ -269,7 +269,7 @@ function UTK:HandleInfo()
                                             UTK.checks.id1 = true
                                             self.currentid = 1
                                             self:IdCard()
-                                        elseif not output then
+                                        elseif output ~= true  then
                                             TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                         end
                                         end, "id_card")
@@ -301,7 +301,7 @@ function UTK:HandleInfo()
                                             UTK.checks.id2 = true
                                             self.currentid = 2
                                             self:IdCard()
-                                        elseif not output then
+                                        elseif output ~= true  then
                                             TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                         end
                                         end, "id_card")
@@ -336,7 +336,7 @@ function UTK:HandleInfo()
                                                 UTK.checks.thermal1 = true
                                                 self.currentplant = 1
                                                 self:Plant()
-                                            elseif not output then
+                                            elseif output ~= true then
                                                 TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "thermal_charge")
@@ -355,7 +355,7 @@ function UTK:HandleInfo()
                                                 UTK.checks.thermal2 = true
                                                 self.currentplant = 2
                                                 self:Plant()
-                                            elseif not output then
+                                            elseif output ~= true  then
                                                 TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                             end
                                         end, "thermal_charge")
@@ -387,7 +387,7 @@ function UTK:HandleInfo()
                                                     UTK.checks.lockpick1 = true
                                                     self.currentpick = 1
                                                     self:Lockpick()
-                                                elseif not output then
+                                                elseif output ~= true  then
                                                     TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                                 end
                                             end, "lockpick")
@@ -406,7 +406,7 @@ function UTK:HandleInfo()
                                                     UTK.checks.lockpick2 = true
                                                     self.currentpick = 2
                                                     self:Lockpick()
-                                                elseif not output then
+                                                elseif output ~= true  then
                                                     TriggerEvent('hopelife:notify', 1, '#5f0085', 'ACHTUNG', output, 5000)
                                                 end
                                             end, "lockpick")
