@@ -22,32 +22,11 @@ Config.enableMarker = true -- purple marker at the DJ stations
 
 Config.DJPositions = {
     {
-        name = 'Milehigh',
-        pos = vector3(-174.6, -1014.07, 254.45),
+        name = 'Tequilalala',
+        pos = vector3(-562.219788, 281.881317, 85.676147),
         requiredJob = 'dj', 
         range = 30.0, 
         volume = 1.0 --[[ do not touch the volume! --]]
-    },
-    {
-        name = 'Beachclub',
-        pos = vector3(-1476.28, -1249.97, 2.9),
-        requiredJob = 'admin', 
-        range = 40.0, 
-        volume = 0.1 --[[ do not touch the volume! --]]
-    },
-    {
-        name = 'OBlock',
-        pos = vector3(-14.72, -1437.82, 34.15),
-        requiredJob = 'oblocks', 
-        range = 30.0, 
-        volume = 0.1 --[[ do not touch the volume! --]]
-    },
-    {
-        name = 'Bloods',
-        pos = vector3(-1566.24, -415.14, 42.38),
-        requiredJob = 'bloods', 
-        range = 20.0, 
-        volume = 0.1 --[[ do not touch the volume! --]]
     },
     {
         name = 'Casino',

@@ -64,7 +64,7 @@ Citizen.CreateThread(function()
             if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), item.x, item.y, item.z, true) <= 20 then
                 DrawMarker(0, item.x, item.y, item.z, 0, 0, 0, 0, 0, 0, 2.001, 2.0001, 0.5001, 0, 155, 255, 200, 0, 0, 0, 0)
                 if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), item.x,item.y,item.z, true) <= 5 then
-                    ShowInfo("Drücke ~INPUT_VEH_HORN~ um behandelt zu werden ~r~(~h~~g~$150000~r~)", 0)
+                    ShowInfo("Drücke ~INPUT_VEH_HORN~ um behandelt zu werden ~r~(~h~~g~$75000~r~)", 0)
                     if (IsControlJustPressed(1,38)) and (GetEntityHealth(GetPlayerPed(-1)) < 200) and (GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), item.x, item.y, item.z, true) <= 5) then
                         TriggerEvent("pNotify:SetQueueMax", -1, "lmao", 10)
                         TriggerEvent("pNotify:SendNotification", {

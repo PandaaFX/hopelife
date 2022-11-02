@@ -227,7 +227,9 @@ Citizen.CreateThread(function()
 									sendInvoice(fine, values.name,  currentSpeed, maxSpeed + tolerance, values.society)
 									if values.isMobile ~= nil and values.isMobile then
 										TriggerServerEvent('myRadarcontrol:addProfit', 'mobile', values.mobileID, values.name, fine)
+										
 									else
+
 										TriggerServerEvent('myRadarcontrol:addProfit', 'static', key, values.name, fine)
 									end
 									

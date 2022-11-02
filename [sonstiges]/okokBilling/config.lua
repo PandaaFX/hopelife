@@ -26,7 +26,7 @@ Config.AuthorReceivesAPercentage = false -- When sending a society invoice
 
 Config.AuthorPercentage = 10 -- Percentage that the invoice author receives
 
-Config.VATPercentage = 23
+Config.VATPercentage = 5
 
 Config.SocietyReceivesLessWithVAT = false
 
@@ -324,7 +324,6 @@ Config.BillsList = {
 Config.AdminGroups = {
 	'superadmin',
 	'admin',
-	'dev',
 }
 
 -------------------------- DISCORD LOGS
