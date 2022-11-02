@@ -41,7 +41,9 @@ local clientcode = [[
 	
 	Citizen.CreateThread(function()
 		for i = 1, #Config.Shops, 1 do
-			for _,v in pairs(Config.NPCConfig) do
+
+            local v = Config.NPCConfig[i]
+            
 				local x, y, z = Config.Shops[i].coords
 				RequestModel(v[4])
 				while not HasModelLoaded(v[4]) do
@@ -52,7 +54,7 @@ local clientcode = [[
 				FreezeEntityPosition(ped, true)
 				SetEntityInvincible(ped, true)
 				SetBlockingOfNonTemporaryEvents(ped, true)
-			end
+
 		end
 	end)
 	
