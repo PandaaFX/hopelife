@@ -322,8 +322,8 @@ Config.BillsList = {
 }
 
 Config.AdminGroups = {
-	'superadmin',
 	'admin',
+	'dev'
 }
 
 -------------------------- DISCORD LOGS

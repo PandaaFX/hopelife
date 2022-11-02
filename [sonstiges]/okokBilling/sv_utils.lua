@@ -2,6 +2,7 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
+
 Webhook = 'https://discord.com/api/webhooks/1020209012131758121/egEGXqO5GUhTd2g0s9aXrfekbtutQMcxoh3ly8kIs4TBI6op_uohQUnKqso3qovyAtDD'
 
 ESX.RegisterServerCallback(Config.EventPrefix..":getPlayerGroup", function(source, cb)
