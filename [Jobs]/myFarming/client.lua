@@ -752,46 +752,46 @@ function generateBuyMenu()
     collectgarbage()
 
     
-
+    if Config.BuyItemsAktiv == true then
     local buyMenu = NativeUI.CreateMenu(currentBuyer.label, nil, Config.MenuPosition.x, Config.MenuPosition.y)
     _menuPool:Add(buyMenu)
 
-    if Config.BuyItems[currentBuyer.type] ~= nil then
-        for k, v in pairs(Config.BuyItems[currentBuyer.type]) do
+        if Config.BuyItems[currentBuyer.type] ~= nil then
+            for k, v in pairs(Config.BuyItems[currentBuyer.type]) do
 
-            local sub2 = _menuPool:AddSubMenu(buyMenu, v.category)
+                local sub2 = _menuPool:AddSubMenu(buyMenu, v.category)
 
-            for k2, v2 in pairs(v.content) do
-                --local buySellItem = NativeUI.CreateItem(v2.label, '~b~')
-                --buySellItem:RightLabel(currentSeller.priceModifier * v2.priceBuy .. '$')
-                --sub:AddItem(buySellItem)
+                for k2, v2 in pairs(v.content) do
+                    --local buySellItem = NativeUI.CreateItem(v2.label, '~b~')
+                    --buySellItem:RightLabel(currentSeller.priceModifier * v2.priceBuy .. '$')
+                    --sub:AddItem(buySellItem)
 
-                local buyBuyItem_sub = _menuPool:AddSubMenu(sub2, v2.label)
-                sub2.Items[k2]:RightLabel(currentBuyer.priceModifier * v2.priceBuy .. '$')
+                    local buyBuyItem_sub = _menuPool:AddSubMenu(sub2, v2.label)
+                    sub2.Items[k2]:RightLabel(currentBuyer.priceModifier * v2.priceBuy .. '$')
 
-                local buy = NativeUI.CreateItem("Kaufen", "Wähle was du kaufen willst")
-                buyBuyItem_sub:AddItem(buy)
+                    local buy = NativeUI.CreateItem("Kaufen", "Wähle was du kaufen willst")
+                    buyBuyItem_sub:AddItem(buy)
 
-                buyBuyItem_sub.OnItemSelect = function(sender, item, index)
+                    buyBuyItem_sub.OnItemSelect = function(sender, item, index)
 
-                    if item == buy then
-                        local res_amount2 = CreateDialog(Translation[Config.Locale]['input_howmuch2'])
-                        if tonumber(res_amount2) then
-                            local quantity = tonumber(res_amount2)
-                            --print(v2.sqlitem)
-                            TriggerServerEvent('myFarming:buyItems', v2.sqlitem, quantity, currentBuyer.priceModifier * v2.priceBuy)
+                        if item == buy then
+                            local res_amount2 = CreateDialog(Translation[Config.Locale]['input_howmuch2'])
+                            if tonumber(res_amount2) then
+                                local quantity = tonumber(res_amount2)
+                                --print(v2.sqlitem)
+                                TriggerServerEvent('myFarming:buyItems', v2.sqlitem, quantity, currentBuyer.priceModifier * v2.priceBuy)
+                            end
+                            
                         end
-                        
+
                     end
-
                 end
+
             end
-
+        else
+            print('myFarming: CONFIGURATION PROBLEM: You set a type for the seller, which does not exist!')
         end
-    else
-        print('myFarming: CONFIGURATION PROBLEM: You set a type for the seller, which does not exist!')
     end
-
     
     buyMenu:Visible(not buyMenu:Visible())
     _menuPool:RefreshIndex()
