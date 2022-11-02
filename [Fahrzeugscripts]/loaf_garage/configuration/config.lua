@@ -298,6 +298,14 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        Tequilalala = {
+            browse = vector3(-567.04, 311.22, 84.18),
+            --location = vector4(232.2, -792.48, 29.9, 160.0),
+            spawn = vector4(-67.3055, -2013.626, 18.00732, 149.69),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+        },
         Southside = {
             browse = vector3(-70.64725, -1833.547, 26.93774),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
