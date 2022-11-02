@@ -15,7 +15,7 @@ Config.Shops = {
         SpawnHeading = 311.811035,
     },
     {
-        coords = vector3(1718.729736, 4677.283691, 43.652710),
+        coords = vector3(1718.729736, 4677.283691, 42.652710),
         SpawnZone = vector3(1715.367065, 4668.843750, 43.079834),
         SpawnHeading = 85.039368,
     }
@@ -23,4 +23,5 @@ Config.Shops = {
 
  Config.NPCConfig = {
     { nil, 36.0, nil, 0x62CC28E2},
+    { nil, 89.0, nil, 0x62CC28E2},
 }
