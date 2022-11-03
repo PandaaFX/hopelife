@@ -714,8 +714,8 @@ Config = {
         },
 
         LSSD = {
-            browse = vector3(484.206604, 6022.483398, 31.335571),
-            spawn = vector4(478.219788, 6026.584473, 31.335571, 226.771667),
+            browse = vector3(-459.296692, 6029.749512, 31.487183),
+            spawn = vector4(-468.606598, 6038.386719, 31.335571, 229.606293),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -723,8 +723,8 @@ Config = {
         },
         
         LSSDHeli = {
-            browse = vector3(479.617584, 5979.375977, 31.301880),
-            spawn = vector4(475.701111, 5987.723145, 31.335571, 331.653534),
+            browse = vector3(-495.586823, 5992.087891, 31.301880),
+            spawn = vector4(-475.318695, 5988.553711, 31.335571, 317.480316),
             vehicletype = "aircraft",
             specifiedJob = "lssd",
         },
