@@ -119,7 +119,7 @@ Config = {
         },
         {
             name = "soa", -- job name, must be the same as in your jobs table
-            coords = vector3(-3031.740723, 87.665939, 12.345825), -- position of the location
+            coords = vector3(-562.18, 288.94, 82.18),--adjust angle 259.15? -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
