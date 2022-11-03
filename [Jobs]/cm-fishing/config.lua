@@ -3,70 +3,68 @@ Config = {}
 Config.Framework = 'esx' -- esx - oldqb - newqb
 Config.Mysql = 'mysql-async' -- mysql-async, ghmattimysql, oxmysql
 Config.DefaultImage = 'https://cdn.discordapp.com/attachments/983471660684423240/1018885207358705674/defaultimage.png'
-
-
-
--- Config.DrawText = '[E] - Start Fish'
 Config.MenuOpenKey = 38  -- [E] Keys Reference : https://docs.fivem.net/docs/game-references/controls/
 Config.CancelKey = 120 -- [X] Keys Reference : https://docs.fivem.net/docs/game-references/controls/
 Config.UseBotToken = true
 Config.BotToken = "ODg3MDcwNDkxOTA5Njg1MjU5.Gj_vYu.lcFBhuPcDhunYZuPCjDWygaFmfhqj0VLwGXzXM"
 Config.EnableAFKMode = true
+Config.DatabaseName = "codem-fishing"
+Config.DatabaseRewardName = "codem-fishing-rewards"
 
 Config.Fish = {
-        -- COMMON CATEGORY
-        {itemname = 'fish',                  xp = 5, name = 'Alter Fisch',               sell = true, category = 'common',   price = 50},
-        {itemname = 'bluegill',              xp = 5, name = 'Bluegill',                  sell = true, category = 'common',   price = 100},
-        {itemname = 'goldentrout',           xp = 5, name = 'Golden Trout',              sell = true, category = 'common',   price = 100},
-        {itemname = 'silverymonnow',         xp = 5, name = 'Silvery Monnow',            sell = true, category = 'common',   price = 100},
-        {itemname = 'strippedbass',          xp = 5, name = 'Stripped Bass',             sell = true, category = 'common',   price = 100},
-        {itemname = 'tench',                 xp = 5, name = 'Tench',                     sell = true, category = 'common',   price = 100},
-        {itemname = 'whitefish',             xp = 5, name = 'White Fish',                sell = true, category = 'common',   price = 100},
-        {itemname = 'crappie',               xp = 5, name = 'Crappie',                   sell = true, category = 'common',   price = 100},
-        {itemname = 'cruciancarp',           xp = 5, name = 'Crucian Carp',              sell = true, category = 'common',   price = 100},
-        -- UNCOMMON CATEGORY--------------   ------------------------------        ---------------------
-        {itemname = 'bluebackherring',       xp = 10, name = 'Blueback Herring',         sell = true, category = "uncommon", price = 250},
-        {itemname = 'bulltrout',             xp = 10, name = 'Bull Trout',               sell = true, category = "uncommon", price = 250},
-        {itemname = 'laketrout',             xp = 10, name = 'Lake Trout',               sell = true, category = "uncommon", price = 250},
-        {itemname = 'perch',                 xp = 10, name = 'Perch',                    sell = true, category = "uncommon", price = 250},
-        {itemname = 'chub',                  xp = 10, name = 'Chub',                     sell = true, category = "uncommon", price = 250},
-        {itemname = 'colorodopikeminnow',    xp = 10, name = 'Colorodo Pike Minnow',     sell = true, category = "uncommon", price = 250},
-        {itemname = 'drumfish',              xp = 10, name = 'Drum Fish',                sell = true, category = "uncommon", price = 250},
-        {itemname = 'wallaye',               xp = 10, name = 'Walleye',                  sell = true, category = "uncommon", price = 250},
-        -- RARE CATEGORY------------------   ------------------------------        ----------------------
-        {itemname = 'americanshad',          xp = 20, name = 'American Shad',            sell = true, category = "rare",     price = 500},
-        {itemname = 'palidsturgeon',         xp = 20, name = 'Palid Sturgeon',           sell = true, category = "rare",     price = 500},
-        {itemname = 'pike',                  xp = 20, name = 'Pike',                     sell = true, category = "rare",     price = 500},
-        {itemname = 'blackcrappie',          xp = 20, name = 'Black Crappie',            sell = true, category = "rare",     price = 500},
-        {itemname = 'bream',                 xp = 20, name = 'Bream',                    sell = true, category = "rare",     price = 500},
-        {itemname = 'brooktrout',            xp = 20, name = 'Brook Trout',              sell = true, category = "rare",     price = 500},
-        {itemname = 'shortnosesucker',       xp = 20, name = 'Shortnose Sucker',         sell = true, category = "rare",     price = 500},
-        {itemname = 'smallmouthbass',        xp = 20, name = 'Smallmouth Bass',          sell = true, category = "rare",     price = 500},
-        --LEGENDARY CATEGORY --
-        {itemname = 'arowana',               xp = 25, name = 'Arowana',                  sell = true, category = "legendary",price = 750},
-        {itemname = 'sweetfish',             xp = 25, name = 'Sweetfish',                sell = true, category = "legendary",price = 750},
-        {itemname = 'whitebass',             xp = 25, name = 'White Bass',               sell = true, category = "legendary",price = 750},
-        {itemname = 'alabamasturgeon',       xp = 25, name = 'Alabama Sturgeon',         sell = true, category = "legendary",price = 750},
-        --EPIC CATEGORY --
-        {itemname = 'lakesturgeon',          xp = 35, name = 'Lake Sturgeon',            sell = true, category = "epic",     price = 1000},
-        {itemname = 'koicarpblack',          xp = 35, name = 'Koi Carp Black',           sell = true, category = "epic",     price = 1000},
-        {itemname = 'lahontancutthroattrout',xp = 35, name = 'Lahontan Cutthroat Trout', sell = true, category = "epic",     price = 1000},
+    -- COMMON CATEGORY
+    {itemname = 'fish',                  xp = 5, name = 'Alter Fisch',               sell = true, category = 'common',   price = 50},
+    {itemname = 'bluegill',              xp = 5, name = 'Bluegill',                  sell = true, category = 'common',   price = 100},
+    {itemname = 'goldentrout',           xp = 5, name = 'Golden Trout',              sell = true, category = 'common',   price = 100},
+    {itemname = 'silverymonnow',         xp = 5, name = 'Silvery Monnow',            sell = true, category = 'common',   price = 100},
+    {itemname = 'strippedbass',          xp = 5, name = 'Stripped Bass',             sell = true, category = 'common',   price = 100},
+    {itemname = 'tench',                 xp = 5, name = 'Tench',                     sell = true, category = 'common',   price = 100},
+    {itemname = 'whitefish',             xp = 5, name = 'White Fish',                sell = true, category = 'common',   price = 100},
+    {itemname = 'crappie',               xp = 5, name = 'Crappie',                   sell = true, category = 'common',   price = 100},
+    {itemname = 'cruciancarp',           xp = 5, name = 'Crucian Carp',              sell = true, category = 'common',   price = 100},
+    -- UNCOMMON CATEGORY--------------   ------------------------------        ---------------------
+    {itemname = 'bluebackherring',       xp = 10, name = 'Blueback Herring',         sell = true, category = "uncommon", price = 250},
+    {itemname = 'bulltrout',             xp = 10, name = 'Bull Trout',               sell = true, category = "uncommon", price = 250},
+    {itemname = 'laketrout',             xp = 10, name = 'Lake Trout',               sell = true, category = "uncommon", price = 250},
+    {itemname = 'perch',                 xp = 10, name = 'Perch',                    sell = true, category = "uncommon", price = 250},
+    {itemname = 'chub',                  xp = 10, name = 'Chub',                     sell = true, category = "uncommon", price = 250},
+    {itemname = 'colorodopikeminnow',    xp = 10, name = 'Colorodo Pike Minnow',     sell = true, category = "uncommon", price = 250},
+    {itemname = 'drumfish',              xp = 10, name = 'Drum Fish',                sell = true, category = "uncommon", price = 250},
+    {itemname = 'wallaye',               xp = 10, name = 'Walleye',                  sell = true, category = "uncommon", price = 250},
+    -- RARE CATEGORY------------------   ------------------------------        ----------------------
+    {itemname = 'americanshad',          xp = 20, name = 'American Shad',            sell = true, category = "rare",     price = 500},
+    {itemname = 'palidsturgeon',         xp = 20, name = 'Palid Sturgeon',           sell = true, category = "rare",     price = 500},
+    {itemname = 'pike',                  xp = 20, name = 'Pike',                     sell = true, category = "rare",     price = 500},
+    {itemname = 'blackcrappie',          xp = 20, name = 'Black Crappie',            sell = true, category = "rare",     price = 500},
+    {itemname = 'bream',                 xp = 20, name = 'Bream',                    sell = true, category = "rare",     price = 500},
+    {itemname = 'brooktrout',            xp = 20, name = 'Brook Trout',              sell = true, category = "rare",     price = 500},
+    {itemname = 'shortnosesucker',       xp = 20, name = 'Shortnose Sucker',         sell = true, category = "rare",     price = 500},
+    {itemname = 'smallmouthbass',        xp = 20, name = 'Smallmouth Bass',          sell = true, category = "rare",     price = 500},
+    --LEGENDARY CATEGORY --
+    {itemname = 'arowana',               xp = 25, name = 'Arowana',                  sell = true, category = "legendary",price = 750},
+    {itemname = 'sweetfish',             xp = 25, name = 'Sweetfish',                sell = true, category = "legendary",price = 750},
+    {itemname = 'whitebass',             xp = 25, name = 'White Bass',               sell = true, category = "legendary",price = 750},
+    {itemname = 'alabamasturgeon',       xp = 25, name = 'Alabama Sturgeon',         sell = true, category = "legendary",price = 750},
+    --EPIC CATEGORY --
+    {itemname = 'lakesturgeon',          xp = 35, name = 'Lake Sturgeon',            sell = true, category = "epic",     price = 1000},
+    {itemname = 'koicarpblack',          xp = 35, name = 'Koi Carp Black',           sell = true, category = "epic",     price = 1000},
+    {itemname = 'lahontancutthroattrout',xp = 35, name = 'Lahontan Cutthroat Trout', sell = true, category = "epic",     price = 1000},
 
 
-        --------------------------- BAITS ------------------------                       sell = false  -- do not change
-        {itemname = 'spoonlurebait',    baitLevel = 1,  fishQualityScale = {'common'},   sell = false, name = 'Spoon Lure Köder',  category = "baits", price = 5, stars = 1, baitsuse = true},
-        {itemname = 'threesidedbait',   baitLevel = 2,  fishQualityScale = {'uncommon'}, sell = false, name = 'Three Sided Köder', category = "baits", price = 5, stars = 2, baitsuse = true},
-        {itemname = 'tailfishbait',     baitLevel = 3,  fishQualityScale = {'rare'},     sell = false, name = 'Tail Fish Köder',   category = "baits", price = 5, stars = 3, baitsuse = true},
-        {itemname = 'doublehookbait',   baitLevel = 4,  fishQualityScale = {'legendary'},sell = false, name = 'Double Hook Köder', category = "baits", price = 5, stars = 4, baitsuse = true},
-        {itemname = 'triplehooksbait',  baitLevel = 5,  fishQualityScale = {'epic'},     sell = false, name = 'Triple Hook Köder', category = "baits", price = 5, stars = 5, baitsuse = true},
+    --------------------------- BAITS ------------------------                       sell = false  -- do not change
+    {itemname = 'spoonlurebait',    baitLevel = 1,  fishQualityScale = {'common'},   sell = false, name = 'Spoon Lure Köder',  category = "baits", price = 5, stars = 1, baitsuse = true},
+    {itemname = 'threesidedbait',   baitLevel = 2,  fishQualityScale = {'uncommon'}, sell = false, name = 'Three Sided Köder', category = "baits", price = 5, stars = 2, baitsuse = true},
+    {itemname = 'tailfishbait',     baitLevel = 3,  fishQualityScale = {'rare'},     sell = false, name = 'Tail Fish Köder',   category = "baits", price = 5, stars = 3, baitsuse = true},
+    {itemname = 'doublehookbait',   baitLevel = 4,  fishQualityScale = {'legendary'},sell = false, name = 'Double Hook Köder', category = "baits", price = 5, stars = 4, baitsuse = true},
+    {itemname = 'triplehooksbait',  baitLevel = 5,  fishQualityScale = {'epic'},     sell = false, name = 'Triple Hook Köder', category = "baits", price = 5, stars = 5, baitsuse = true},
 
 
-        --------------------------- RODS ------------------------                          sell = false  -- do not change
-        {itemname = 'woodenrod',       minigameDiff = 'veryEasy',  name = 'Holz Angel',        sell = false, category = "rods", price = 3000, stars = 1, minlevel = 10, use = true},
-        {itemname = 'slimmaterialrod', minigameDiff = 'easy',      name = 'Angel (Dünn)', sell = false, category = "rods", price = 4000, stars = 2, minlevel = 20, use = true},
-        {itemname = 'danishrod',       minigameDiff = 'medium',    name = 'Normale Angel',        sell = false, category = "rods", price = 8000, stars = 3, minlevel = 30, use = true},
-        {itemname = 'koidrod',         minigameDiff = 'hard',      name = 'Koiangel',           sell = false, category = "rods", price = 15000,stars = 4, minlevel = 40, use = true},
-        {itemname = 'finewood',        minigameDiff = 'veryHard',  name = 'Spezialangel',      sell = false, category = "rods", price = 25000,stars = 5, minlevel = 50, use = true},
+    --------------------------- RODS ------------------------                          sell = false  -- do not change
+    {itemname = 'woodenrod',       minigameDiff = 'veryEasy',  name = 'Holz Angel',        sell = false, category = "rods", price = 3000, stars = 1, minlevel = 10, use = true},
+    {itemname = 'slimmaterialrod', minigameDiff = 'easy',      name = 'Angel (Dünn)', sell = false, category = "rods", price = 4000, stars = 2, minlevel = 20, use = true},
+    {itemname = 'danishrod',       minigameDiff = 'medium',    name = 'Normale Angel',        sell = false, category = "rods", price = 8000, stars = 3, minlevel = 30, use = true},
+    {itemname = 'koidrod',         minigameDiff = 'hard',      name = 'Koiangel',           sell = false, category = "rods", price = 15000,stars = 4, minlevel = 40, use = true},
+    {itemname = 'finewood',        minigameDiff = 'veryHard',  name = 'Spezialangel',      sell = false, category = "rods", price = 25000,stars = 5, minlevel = 50, use = true},
 }
 
 
@@ -123,10 +121,9 @@ Config.RequiredXP = {
     [50] = 25500,
 }
 
-
 Config.Draw = {
     ["enabled"]  =  true ,
-    ["textmarket"] = '[E] - Start Fish',
+    ["textmarket"] = '[E] Um den Markt zu Öffnen',
 }
 
 Config.FishingRestaurant = {
@@ -144,102 +141,102 @@ Config.FishingRestaurant = {
 
 Config.Spots = {
 
-        {
-            id = "del_perro",
-            blipName = "Del Perro Pier",
-            spotLvlStars = 1,
-            bgimage = 'delperro.png',
-            requiredLvl = 0,
-            coords = vector3(-1847.1, -1250.8, 8.61577),
-            location = "Pasific Ocean",
-            statement = "Del Perro Pier is, as its name suggests, located in Del Perro, Los Santos. It is mainly accessed through Red Desert Avenue. Del Perro Pier is renowned for its bright, vivid colors that shine at night, giving the surrounding beaches a sort of vibe.",
-            spotQuality = "Standart",
-            afkCatchInMinute = 1,
-            fishQualityScale = "Normal",
-            fishQualityScaleTable = {'common'},
+    {
+        id = "del_perro",
+        blipName = "Del Perro Pier",
+        spotLvlStars = 1,
+        bgimage = 'delperro.png',
+        requiredLvl = 0,
+        coords = vector3(-1847.1, -1250.8, 8.61577),
+        location = "Pasific Ocean",
+        statement = "Del Perro Pier is, as its name suggests, located in Del Perro, Los Santos. It is mainly accessed through Red Desert Avenue. Del Perro Pier is renowned for its bright, vivid colors that shine at night, giving the surrounding beaches a sort of vibe.",
+        spotQuality = "Standart",
+        afkCatchInMinute = 1,
+        fishQualityScale = "Normal",
+        fishQualityScaleTable = {'common'},
 
-        },
+    },
 
-        {
-            id = "chumash",
-            blipName = "Chumash Family Pier",
-            spotLvlStars = 2,
-            bgimage = 'chumash.png',
-            requiredLvl = 10,
-            coords = vector3(-3427.9, 966.576, 8.34668),
+    {
+        id = "chumash",
+        blipName = "Chumash Family Pier",
+        spotLvlStars = 2,
+        bgimage = 'chumash.png',
+        requiredLvl = 10,
+        coords = vector3(-3427.9, 966.576, 8.34668),
 
-            location = "Alamo Sea",
-            statement = "The Chumash Historic Family Pier is located in the heart of Chumash, which is accessible from Barbareno Road. A staple icon of the area, the boardwalk is lined with white fencing.",
-            spotQuality = "Normal",
-            afkCatchInMinute = 3,
-            fishQualityScale = "Normal - Besser",
-            fishQualityScaleTable = {'common', 'uncommon'},
+        location = "Alamo Sea",
+        statement = "The Chumash Historic Family Pier is located in the heart of Chumash, which is accessible from Barbareno Road. A staple icon of the area, the boardwalk is lined with white fencing.",
+        spotQuality = "Normal",
+        afkCatchInMinute = 3,
+        fishQualityScale = "Normal - Besser",
+        fishQualityScaleTable = {'common', 'uncommon'},
 
-        },
+    },
 
-        {
-            id = "procopio",
-            blipName = "Procopio Beach Pier",
-            spotLvlStars = 3,
-            bgimage = 'procopio.png',
-            requiredLvl = 20,
-            coords = vector3(-278.00, 6638.32, 8.61577),
+    {
+        id = "procopio",
+        blipName = "Procopio Beach Pier",
+        spotLvlStars = 3,
+        bgimage = 'procopio.png',
+        requiredLvl = 20,
+        coords = vector3(-278.00, 6638.32, 8.61577),
 
-            location = "Alamo Sea",
-            statement = "Procopio Beach is a beach in Grand Theft Auto V and Grand Theft Auto Online, located in northern Blaine County, east of Paleto Bay. It is located off the Great Ocean Highway and is located east of the Procopio Promenade.",
-            spotQuality = "Gut",
-            afkCatchInMinute = 4,
-            fishQualityScale = "Besser - Selten",
-            fishQualityScaleTable = {'common', 'rare'},
+        location = "Alamo Sea",
+        statement = "Procopio Beach is a beach in Grand Theft Auto V and Grand Theft Auto Online, located in northern Blaine County, east of Paleto Bay. It is located off the Great Ocean Highway and is located east of the Procopio Promenade.",
+        spotQuality = "Gut",
+        afkCatchInMinute = 4,
+        fishQualityScale = "Besser - Selten",
+        fishQualityScaleTable = {'common', 'rare'},
 
-        },
-        {
-            id = "millars",
-            blipName = "Millars Fishery",
-            spotLvlStars = 4,
-            bgimage = 'millars.png',
-            requiredLvl = 30,
-            coords = vector3(-1612.5, 5262.59, 3.97410),
+    },
+    {
+        id = "millars",
+        blipName = "Millars Fishery",
+        spotLvlStars = 4,
+        bgimage = 'millars.png',
+        requiredLvl = 30,
+        coords = vector3(-1612.5, 5262.59, 3.97410),
 
-            location = "Alamo Sea",
-            statement = "A group of businesses located at a pier on the north shore of the Alamo -Sea at the western edge of the settlement of Galilee, including the boatshop and a related fishing charter/commercial fishery Millars Fishery.",
-            spotQuality = "Sehr Gut",
-            afkCatchInMinute = 4,
-            fishQualityScale = "Besser - Selten",
-            fishQualityScaleTable = {'uncommon', 'rare'},
-        },
+        location = "Alamo Sea",
+        statement = "A group of businesses located at a pier on the north shore of the Alamo -Sea at the western edge of the settlement of Galilee, including the boatshop and a related fishing charter/commercial fishery Millars Fishery.",
+        spotQuality = "Sehr Gut",
+        afkCatchInMinute = 4,
+        fishQualityScale = "Besser - Selten",
+        fishQualityScaleTable = {'uncommon', 'rare'},
+    },
 
-        {
-            id = "califida",
-            blipName = "Califida Rd",
-            spotLvlStars = 4.5,
-            bgimage = 'califida.png',
-            requiredLvl = 40,
-            coords = vector3(1298.87, 4216.70, 33.9086),
+    {
+        id = "califida",
+        blipName = "Califida Rd",
+        spotLvlStars = 4.5,
+        bgimage = 'califida.png',
+        requiredLvl = 40,
+        coords = vector3(1298.87, 4216.70, 33.9086),
 
-            location = "Alamo Sea",
-            statement = "The Alamo Sea is the largest body of water located on the San Andreas mainland. It is fed by agricultural runoff from nearby Grapeseed and drains into the Pacific Ocean via Cassidy Creek and the Zancudo River..",
-            spotQuality = "Legendär",
-            afkCatchInMinute = 5,
-            fishQualityScale = "Besser - Legendär",
-            fishQualityScaleTable = {'common', 'legendary'},
+        location = "Alamo Sea",
+        statement = "The Alamo Sea is the largest body of water located on the San Andreas mainland. It is fed by agricultural runoff from nearby Grapeseed and drains into the Pacific Ocean via Cassidy Creek and the Zancudo River..",
+        spotQuality = "Legendär",
+        afkCatchInMinute = 5,
+        fishQualityScale = "Besser - Legendär",
+        fishQualityScaleTable = {'common', 'legendary'},
 
-        },
-        {
-            id = "whitesea",
-            blipName = "White Sea Fishing Spot",
-            spotLvlStars = 5,
-            bgimage = 'whitesea.png',
-            requiredLvl = 50,
-            coords = vector3(-1518.7, 1509.42, 111.624),
+    },
+    {
+        id = "whitesea",
+        blipName = "White Sea Fishing Spot",
+        spotLvlStars = 5,
+        bgimage = 'whitesea.png',
+        requiredLvl = 50,
+        coords = vector3(-1518.7, 1509.42, 111.624),
 
-            location = "Zancudo River",
-            statement = "The center is located on Tongva Drive in Tongva Valley, Los Santos County right next to a stream which eventually feeds into the Zancudo River.",
-            spotQuality = "Episch",
-            afkCatchInMinute = 5,
-            fishQualityScale = "Selten - Episch",
-            fishQualityScaleTable = {'rare', 'epic'},
-        },
+        location = "Zancudo River",
+        statement = "The center is located on Tongva Drive in Tongva Valley, Los Santos County right next to a stream which eventually feeds into the Zancudo River.",
+        spotQuality = "Episch",
+        afkCatchInMinute = 5,
+        fishQualityScale = "Selten - Episch",
+        fishQualityScaleTable = {'rare', 'epic'},
+    },
 
 
 }
@@ -392,7 +389,7 @@ function spotBlip()
     for k, v in pairs(Config.Spots) do
         local storeBlip = AddBlipForCoord(v.coords)
         SetBlipSprite(storeBlip, 88)
-        SetBlipScale(storeBlip, 0.6)
+        SetBlipScale(storeBlip, 0.7)
         SetBlipColour(storeBlip, 3)
         SetBlipAsShortRange(storeBlip, true)
         BeginTextCommandSetBlipName("STRING")
@@ -470,7 +467,7 @@ Config.Notifications = { -- Notifications
         type = "success",
     },
     ["checkspot"] = {
-        message = 'Check Spot...',
+        message = 'Überprüfe Angelstelle...',
         type = "success",
     },
     ["notonline"] = {
@@ -481,6 +478,7 @@ Config.Notifications = { -- Notifications
     
    
 }
+
 
 function GetIdentifier(source)
     if Config.Framework == "esx" then
