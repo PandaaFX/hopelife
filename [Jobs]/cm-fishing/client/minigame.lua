@@ -31,7 +31,7 @@ function HandleStore()
 
    local storeBlip = AddBlipForCoord(storeData["ped"]["position"])
    SetBlipSprite(storeBlip, storeData["blip"]["sprite"])
-   SetBlipScale(storeBlip, 1.0)
+   SetBlipScale(storeBlip, storeData["blip"]["size"])
    SetBlipColour(storeBlip, storeData["blip"]["color"])
    SetBlipAsShortRange(storeBlip, true)
    BeginTextCommandSetBlipName("STRING")
@@ -250,7 +250,7 @@ currentRod = rodType
 
 SendNUIMessage({
    type = 'FISHING_STARTED',
-   text = 'Checking fishing spot...',
+   text = 'Überprüfe Angelstelle...',
    time = 3000,
    updateProgressbar = true,
 })
@@ -296,7 +296,7 @@ function StartFishing(castLocation, fishingRod)
    if fishStarted then
       SendNUIMessage({
          type = 'FISHING_STARTED',
-         text = 'Waiting to bait the rod...',
+         text = 'Warte auf Köder...',
          time = 5000,
          updateProgressbar = false,
       })

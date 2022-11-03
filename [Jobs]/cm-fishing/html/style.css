@@ -27,12 +27,12 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
 }
 
@@ -48,7 +48,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-   background-image: url('./images/background.png');
+  background-image: url('./images/background.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -99,7 +99,7 @@ body {
 .notify-text {
   padding: 1rem;
   color: white;
-  filter: drop-shadow(0px 0px 5px #ab1494);
+  filter: drop-shadow(0px 0px 5px #00F0FF);
 
   width: 100%;
   margin-top: 3rem;
@@ -338,17 +338,10 @@ body {
 
 /* minigame end */
 
-
 .fishing-buttons {
-  position: absolute;
-  /* right: 0; */
-  bottom: 0.75rem;
+  text-align: center;
   display: flex;
   align-items: center;
-  /* left: 0; */
-  width: 100%;
-  height: auto;
-  justify-content: center;
 }
 
 .fishing-button {
@@ -435,8 +428,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
-  margin-top:3.6rem;
-  background: linear-gradient(180deg, rgba(224, 1, 216, 0.3) 37.5%, rgba(22, 17, 21, 0.3) 100%), linear-gradient(180deg, rgba(26, 26, 26, 0.75) 37.5%, rgba(17, 20, 22, 0.75) 100%);
+  margin-top: 3.6rem;
+  background: linear-gradient(180deg, rgba(1, 211, 224, 0.3) 37.5%, rgba(17, 20, 22, 0.3) 100%), linear-gradient(180deg, rgba(26, 26, 26, 0.75) 37.5%, rgba(17, 20, 22, 0.75) 100%);
   border-radius: 0.5rem;
 }
 
@@ -585,8 +578,8 @@ body {
   height: 9px !important;
 
 
-  background: #ab1494 !important;
-  box-shadow: 0px 0px 18px #c706aa !important;
+  background: #25D2D8 !important;
+  box-shadow: 0px 0px 18px #02D9E6 !important;
 }
 
 .achievements-swiper-buttons {
@@ -657,7 +650,7 @@ body {
 .menu-wrapper {
   width: 100%;
   height: 100%;
- 
+
   background-color: radial-gradient(163.47% 163.47% at -4.3% 65.19%, #181818 40.1%, #535353 95.31%);
   display: flex;
   align-items: center;
@@ -694,7 +687,7 @@ body {
 .playerimagesource {
   width: 4rem;
   height: 4rem;
-  border: 2px solid #ab1494;
+  border: 2px solid #00F0FF;
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -845,43 +838,45 @@ body {
   height: 8rem;
 
   margin-top: 0rem;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  align-content:flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
 
 }
 
 .m-logo {
   width: 100%;
   height: 100%;
- margin-top: 6rem;
+  margin-top: -3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
- 
+
 }
 
 
 .m-logo h2 {
 
-  width:15rem;
-  margin-top:-3rem;
+  width: 15rem;
+  margin-top: -3rem;
   font-family: "futura";
   color: white;
-  margin-left:1rem;
-  width:100%;
-  text-align:center;
+  margin-left: 1rem;
+  width: 100%;
+  text-align: center;
   font-size: 24px;
   letter-spacing: 0.24em;
   text-shadow: 0px 1px 21px rgba(255, 255, 255, 0.7);
 }
-.m-logo h2 span{
+
+.m-logo h2 span {
   font-family: "futura";
-  margin-left:-1rem;
+  margin-left: -1rem;
 }
+
 .wiki-wrapper {
   width: 93%;
   height: 44.375rem;
@@ -944,16 +939,17 @@ body {
 }
 
 .spots-wrapper {
-  width: 90%;
+  width: 100%;
   height: 44.375rem;
   margin-top: 5rem;
   display: flex;
   align-items: center;
   position: relative;
-  
+
   justify-content: center;
- 
+
 }
+
 .testimage {
   width: 40%;
   height: 40%;
@@ -986,10 +982,10 @@ body {
 }
 
 .spots-swiper-container {
-  width: 85%;
-  margin-left:-20rem;
+  width: 100%;
+  position: absolute;
   overflow: hidden;
-
+  right: -3rem;
 }
 
 .spot-stars {
@@ -1099,7 +1095,7 @@ body {
 }
 
 .back-button-wiki img {
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
 }
 
 
@@ -1107,7 +1103,7 @@ body {
 
 .swiper-next {
   position: absolute;
-  right: 12rem;
+  right: -2rem;
   z-index: 22222222;
   top: 50%;
   cursor: pointer;
@@ -1140,7 +1136,7 @@ body {
 
 .swiper-prev {
   position: absolute;
-    right: 12rem;
+  right: -2rem;
   z-index: 22222222;
   top: 50%;
   cursor: pointer;
@@ -1214,7 +1210,7 @@ body {
   color: white;
   letter-spacing: 0.175em;
   font-size: 1.25rem;
-  align-content:flex-start;
+  align-content: flex-start;
 
 
 
@@ -1226,14 +1222,15 @@ body {
   width: 80%;
 
   text-align: center;
-  
+
 }
+
 .market-wrapper-sellbutton h2:nth-child(2) {
 
   width: 80%;
 
   text-align: center;
-  
+
 }
 
 .market-wrapper-sellbutton2 {
@@ -1279,7 +1276,7 @@ body {
   background: #01D3E0;
   border-radius: 12px;
   font-size: 2rem;
-  color: #6d095e;
+  color: #044347;
   cursor: pointer;
 
   transition: 0.5s all;
@@ -1289,7 +1286,7 @@ body {
 .market-button-buy:hover {
   transition: 0.5s all;
   transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
 }
 
 .market-button-buy2 {
@@ -1303,7 +1300,7 @@ body {
   background: white;
   border-radius: 12px;
   font-size: 2rem;
-  color: #6d095e;
+  color: #044347;
   cursor: pointer;
   transition: 0.5s all;
 }
@@ -1311,7 +1308,7 @@ body {
 .market-button-buy2:hover {
 
   transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
   transition: 0.5s all;
 }
 
@@ -1350,7 +1347,7 @@ body {
 
 .board-wraper-player::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #ee01de;
+  background-color: #01DFEE;
   margin-left: 1rem;
 }
 
@@ -1372,6 +1369,7 @@ body {
 
   z-index: -1;
 }
+
 .board-player-image img {
   width: 100%;
 
@@ -1436,7 +1434,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
- 
+
 }
 
 .player-profile-left-page {
@@ -1466,7 +1464,7 @@ body {
 .player-profile-settings {
   position: absolute;
   width: 24rem;
- 
+
   height: 32rem;
 
   z-index: 1;
@@ -1475,7 +1473,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  
+
 
 }
 
@@ -1576,26 +1574,27 @@ body {
 
   width: 100%;
   height: 20%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-top:-1.8rem;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.8rem;
+
 
 }
-.player-profile-player-xpbar h2{
-  font-size:1.5rem;
-  color:white;
+
+.player-profile-player-xpbar h2 {
+  font-size: 1.5rem;
+  color: white;
 }
 
-.player-profile-player-xpbar h2 span{
-  font-size:1rem;
-  color:white;
+.player-profile-player-xpbar h2 span {
+  font-size: 1rem;
+  color: white;
 }
 
 .player-profile-player-xpbar-wid {
   position: relative;
-  max-width:100%;
+  max-width: 100%;
   height: 100%;
   background-color: #25D2D8;
   box-shadow: 0px 0px 17px rgba(37, 210, 216, 0.38);
@@ -1640,7 +1639,7 @@ body {
 
 .usediscordphoto:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
   border: 1px solid white;
   transition: 0.5s all;
   color: white;
@@ -1710,7 +1709,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
   border-radius: 5rem;
 }
 
@@ -1746,7 +1745,7 @@ body {
 
 .wiki-fish-container::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #a6118f;
+  background-color: #01DFEE;
   margin-left: 1rem;
 }
 
@@ -1771,8 +1770,9 @@ body {
 
 
 }
-.background-fish img{
-  width:100%;
+
+.background-fish img {
+  width: 100%;
 
 
 }
@@ -1871,8 +1871,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ee01de;
-  color: #7d0a75;
+  background: #01DFEE;
+  color: #0A757D;
 }
 
 .fish-price-common {
@@ -1886,8 +1886,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ee01de;
-  color: #7d0a75;
+  background: #01DFEE;
+  color: #0A757D;
 }
 
 .fish-price-uncommon {
@@ -1902,7 +1902,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #01EE43;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-rare {
@@ -1917,7 +1917,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #DBEE01;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-legandary {
@@ -1932,7 +1932,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #DE7EFF;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-epic {
@@ -1947,7 +1947,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #FE5EB6;
-  color: #7d0a75;
+  color: #0A757D;
   ;
 }
 
@@ -1960,10 +1960,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .wiki-fish-wrapper-fish-image img {
   width: 50%;
-  height:50%
-
+  height: 50%
 }
 
 .wiki-fish-wrapper-fish-name {
@@ -2135,7 +2135,7 @@ body {
 }
 
 .back-button-wiki-market img {
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
 }
 
 .add-to-card {
@@ -2211,7 +2211,7 @@ body {
   width: 15rem !important;
   height: 3.2rem !important;
   font-size: 1rem !important;
-  background: linear-gradient(90deg, rgba(204, 0, 255, 0.45) 0%, rgba(17, 19, 22, 0.45) 100%) !important;
+  background: linear-gradient(90deg, rgba(0, 240, 255, 0.45) 0%, rgba(17, 19, 22, 0.45) 100%) !important;
 }
 
 .basketpage-total-button {
@@ -2262,7 +2262,7 @@ body {
 
   margin-top: 1rem;
   padding-top: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
 
 
 }
@@ -2290,8 +2290,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ee01de;
-  color: #7d0a75;
+  background: #01DFEE;
+  color: #0A757D;
 }
 
 .wiki-fish-wrapper-fish-image-sellitem {
@@ -2315,7 +2315,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #01EE43;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-rare-sellitem {
@@ -2330,7 +2330,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #DBEE01;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-legandary-sellitem {
@@ -2345,7 +2345,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #DE7EFF;
-  color: #7d0a75;
+  color: #0A757D;
 }
 
 .fish-price-epic-sellitem {
@@ -2360,7 +2360,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #FE5EB6;
-  color: #7d0a75;
+  color: #0A757D;
   ;
 }
 
@@ -2369,7 +2369,7 @@ body {
   width: 15rem !important;
   height: 3.2rem !important;
   font-size: 1rem !important;
-  background: rgba(238, 1, 210, 0.38) !important;
+  background: rgba(1, 223, 238, 0.38) !important;
   transition: 1s all;
 }
 
@@ -2384,7 +2384,7 @@ body {
 .basketpage-cash-button-item-sell:hover {
   transform: scale(1.1);
   transition: 1s all;
-  filter: drop-shadow(0px 0px 10px #ab1494);
+  filter: drop-shadow(0px 0px 10px #00F0FF);
 }
 
 .back-button-wiki-market-sellitem {
@@ -2449,7 +2449,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(91.38deg, rgba(255, 0, 238, 0.26) 0.83%, rgba(17, 19, 22, 0) 100%);
+  background: linear-gradient(91.38deg, rgba(0, 255, 255, 0.26) 0.83%, rgba(17, 19, 22, 0) 100%);
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 0px 161px rgba(255, 255, 255, 0.15));
   border-radius: 8px;
