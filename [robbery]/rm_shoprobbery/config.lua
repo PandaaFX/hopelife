@@ -13,7 +13,7 @@ Config['ShopRobbery'] = {
         time = 2700,
     },
     ['rewardItems'] = { -- Add this items to database or shared. Don't change the order, you can change the item names.
-        {itemName = 'gold', count = math.random(5, 15)}, -- For safecrack reward
+        {itemName = 'gold', count = math.random(7, 19)}, -- For safecrack reward
         {itemName = 'diamond', count = math.random(7, 18)}, -- For safecrack reward
     },
     ['rewardMoneys'] = {
