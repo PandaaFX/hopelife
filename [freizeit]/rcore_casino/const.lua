@@ -299,15 +299,15 @@ machineModels[207578973] = {
     unluckyFactor = 5, -- each 5th spin will hit 0 chips no matter what, set unluckyFactor = 2 for each second spin, set to 0 to disable
     items = {{
         name = "Seven",
-        value = 125000,
+        value = 12500,
         ShowUpReducer = 70 -- Seven will have 100% (same) chance to hit for first time, then (-70%), 30% chance to hit second time, then (-70%), 9% chance to hit third time
     }, {
         name = "Plum",
-        value = 25000,
+        value = 2500,
         ShowUpReducer = 70
     }, {
         name = "Melon",
-        value = 37500,
+        value = 3750,
         ShowUpReducer = 70
     }, {
         name = "Diamond", -- fourth item of each machine is the first one on the scores display (the one thats enough if you hit once to get some chips)
@@ -315,15 +315,15 @@ machineModels[207578973] = {
         ShowUpReducer = 80
     }, {
         name = "Diamonds", -- fifth item of each machine is the jackpot one
-        value = 500000,
+        value = 50000,
         ShowUpReducer = 80
     }, {
         name = "Cherry",
-        value = 12500,
+        value = 1250,
         ShowUpReducer = 70
     }, {
         name = "Bell",
-        value = 50000,
+        value = 5000,
         ShowUpReducer = 70
     }, {
         name = "-",
