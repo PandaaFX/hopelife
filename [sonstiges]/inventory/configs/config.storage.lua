@@ -37,7 +37,7 @@ Config.StorageLocations = {
     }
   },
   ["ndrang"] = {
-    label = "N Drangetha",
+    label = "Wein",
     jobs = {'wein'}, -- set to false to disable whitelisting
     job_grades = {5,6,7,8,9,10,11,12}, -- set to false to disable grading
     weight = 5000000,
