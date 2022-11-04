@@ -18,7 +18,7 @@ Config.OpenMenuCommand = 'invoices' -- Command to open the menu
 
 Config.InvoiceDistance = 15
 
-Config.AllowPlayersInvoice = true -- if players can create Player to Player invoices
+Config.AllowPlayersInvoice = false -- if players can create Player to Player invoices
 
 Config.okokRequests = false -- Player to Player invoices only, to avoid abuse
 
