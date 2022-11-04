@@ -11,7 +11,9 @@ version '1.6'
 
 files {
     'config.ini',
-    'transportData.json'
+    'transportData.json',
+    'stream/gaudeee_carramp2.ydr',
+    'stream/gaudeee_carramp2.ytyp',
 }
 
 server_scripts {
@@ -24,4 +26,4 @@ client_scripts {
     'client/Kiminaze_VehicleTransport_Client.net.dll'
 }
 
-
+data_file 'DLC_ITYP_REQUEST' 'stream/gaudeee_carramp2.ytyp'
