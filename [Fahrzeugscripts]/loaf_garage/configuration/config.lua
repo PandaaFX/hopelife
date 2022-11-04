@@ -773,6 +773,15 @@ Config = {
             specifiedJob = "sinaloa",
         },
 
+        WEIN = {
+            browse = vector3(-1923.507690, 2060.848389, 140.808838),
+            spawn = vector4(-1918.061523, 2056.760498, 140.724487, 260.787415),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "sinaloa",
+        },
+
     },
 
     Impounds = {
