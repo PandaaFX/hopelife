@@ -16,11 +16,11 @@
       "IsNormalized": false,
       "IsZero": false
     },
-    "RampModelHash": -1061569318,
+    "RampModelHash": 1429567815,
     "RampPosition": {
       "X": 0.0,
-      "Y": -8.995015,
-      "Z": -0.357480764,
+      "Y": -8.451,
+      "Z": -0.265,
       "IsNormalized": false,
       "IsZero": false
     }
@@ -42,11 +42,11 @@
       "IsNormalized": false,
       "IsZero": false
     },
-    "RampModelHash": -1061569318,
+    "RampModelHash": -1000117506,
     "RampPosition": {
       "X": 0.0,
-      "Y": -9.224671,
-      "Z": -0.375247419,
+      "Y": -14.224671,
+      "Z": -1.187480764,
       "IsNormalized": false,
       "IsZero": false
     }
