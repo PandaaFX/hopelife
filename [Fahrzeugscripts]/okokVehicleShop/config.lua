@@ -351,7 +351,7 @@ Config.TransitionCamerasOffset = { -- Cameras positions, you can add as many as 
 
 Config.VehicleshopsCategories = { -- Categories shown on the vehicle shops, this is used to set the vehicles category
 	["vehicles"] = { -- TYPE of the vehicle shop
-		{display = "Standart", id = "commercials"},
+		{display = "Standard", id = "commercials"},
 		{display = "Supersportwagen", id = "supercars"},
 		{display = "Kompaktwagen", id = "compacts"},
 		{display = "Coupes", id = "coupes"},

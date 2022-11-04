@@ -192,7 +192,7 @@
     "menu:edit_marker:weapon_upgrader:grip": "Griff",
     "menu:edit_marker:weapon_upgrader:box_clip": "Box Clip",
     "menu:edit_marker:weapon_upgrader:luxary_finish": "Luxuriöse Ausführung",
-    "menu:edit_marker:weapon_upgrader:default_tint": "Standart Farbe",
+    "menu:edit_marker:weapon_upgrader:default_tint": "Standard Farbe",
     "menu:edit_marker:weapon_upgrader:green_tint": "Green farbe",
     "menu:edit_marker:weapon_upgrader:gold_tint": "Gold farbe",
     "menu:edit_marker:weapon_upgrader:pink_tint": "Pink farbe",
@@ -251,7 +251,7 @@
     "menu:dynamic:harvest:time_to_harvest": "Erntedauer (Sec)",
     "menu:dynamic:harvest:probabilty": "Ernte - Warscheinlichkeit",
 
-    "menu:dynamic:default": "Standart",
+    "menu:dynamic:default": "Standard",
 
     "menu:dynamic:animations:animation_dictionary": "Liste der Animationen:",
     "menu:dynamic:animations:animation_name": "Animations name:",
