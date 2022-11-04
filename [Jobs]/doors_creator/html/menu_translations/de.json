@@ -8,7 +8,7 @@
     "menu:ID": "ID",
     "menu:label": "Name",
     "menu:doors_count": "Anzahl Türen",
-    "menu:default": "Standart",
+    "menu:default": "Standard",
     "menu:maximum_distance": "Maximale Distanz",
     "menu:distance": "Distanz",
     "menu:model": "Model",
@@ -20,7 +20,7 @@
     "menu:save": "Speichern",
 
     "menu:used_doors": "Benutzte Türen",
-    "menu:default_doors_state": "Standart Status",
+    "menu:default_doors_state": "Standard Status",
     "menu:unlocked": "Offen",
     "menu:locked": "Abgeschlossen",
     "menu:icon_coordinates": "Icon Position",

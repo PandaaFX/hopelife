@@ -189,7 +189,7 @@ Locales['de'] = {
   ['weapon_antidote'] = 'Gegenmittel',
 
   -- Weapon Components
-  ['component_clip_default'] = 'standart Griff',
+  ['component_clip_default'] = 'standard Griff',
   ['component_clip_extended'] = 'erweiterter Griff',
   ['component_clip_drum'] = 'trommelmagazin',
   ['component_clip_box'] = 'kastenmagazin',
