@@ -109,10 +109,10 @@ local function openActionsMenu()
     if(canDoAnyAction and (config.canUseActionsMenuWhileOffDuty or isOnDuty) and (not exports[ GetCurrentResourceName() ]:isPlayerHandcuffed()) ) then
         local elements = {}
 
-        if(isBillingEnabled) then
+    --[[    if(isBillingEnabled) then
             table.insert(elements, {label = getLocalizedText('actions_billing'), value = "billing"})
         end
-
+    ]]
         if(canRob) then
             table.insert(elements, {label = getLocalizedText('actions_search'), value = "search"})
         end
