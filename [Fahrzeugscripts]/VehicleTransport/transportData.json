@@ -19,8 +19,8 @@
     "RampModelHash": 1429567815,
     "RampPosition": {
       "X": 0.0,
-      "Y": -8.451,
-      "Z": -0.265,
+      "Y": -9.965,
+      "Z": -0.764,
       "IsNormalized": false,
       "IsZero": false
     }
@@ -42,11 +42,11 @@
       "IsNormalized": false,
       "IsZero": false
     },
-    "RampModelHash": -1000117506,
+    "RampModelHash": 1429567815,
     "RampPosition": {
-      "X": 0.0,
-      "Y": -14.224671,
-      "Z": -1.187480764,
+      "X": -0.0,
+      "Y": -10.339,
+      "Z": -0.802,
       "IsNormalized": false,
       "IsZero": false
     }
