@@ -88,7 +88,7 @@ Citizen.CreateThread(function()
 
 	RMenu.Add('personal', 'person', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), 'Personen & Fahrzeug'))
 	RMenu.Add('personal', 'wallet', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('wallet_title')))
-	RMenu.Add('personal', 'billing', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('bills_title')))
+	--RMenu.Add('personal', 'billing', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('bills_title')))
 	RMenu.Add('personal', 'vehicle', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('vehicle_title')), function()
 		if IsPedSittingInAnyVehicle(plyPed) then
 			if (GetPedInVehicleSeat(GetVehiclePedIsIn(plyPed, false), -1) == plyPed) then
