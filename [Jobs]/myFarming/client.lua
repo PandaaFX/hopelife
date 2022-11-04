@@ -53,10 +53,12 @@ end)
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
 	ESX.PlayerData.job = job
+
     PlayerData = ESX.GetPlayerData()
     loadBlips()
     refreshZones()
 end)
+
 
 
 local blipData  = {}
@@ -78,7 +80,7 @@ function refreshZones()
 
     availableProcessor = {}
     for k, v in pairs(Config.Processor) do
-        if v.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v.requiredJob then
+        if v.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v.requiredJob and ESX.PlayerData.job.grade >= v.requiredrank then
             table.insert(availableProcessor, v)
         end
     end
@@ -143,7 +145,7 @@ function loadBlips()
 			end
 
 			--print(v2.requiredJob)
-			if v2.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v2.requiredJob then
+			if v2.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v2.requiredJob  and ESX.PlayerData.job.grade >= v2.requiredrank then
 				local blip = AddBlipForCoord(v2.x, v2.y, v2.z)
 				blipData['processor'][k2] = blip
                 if v2.blip ~= nil then

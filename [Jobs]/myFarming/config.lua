@@ -45,19 +45,19 @@ Config.CraftBlipColour = 2
 -- set ped = nil, when you want to disable the ped
 -- animation = nil, when you want to disable the animation
 Config.Processor = {
-    {requiredJob = nil,ItemsId = 1, label = 'Saft', XPType = 'juice', ped = "s_m_m_migrant_01", x = 2741.59, y = 4412.76, z = 48.62, rot = 190.0},
-    {requiredJob = 'unemployed', ItemsId = 2, label = 'Baeckerei', XPType = 'bakery', animation = {type = 'scenario', anim = "PROP_HUMAN_BUM_BIN"}, ped = "s_m_m_strvend_01", x = 395.04,y= -792.10,z= 29.29,rot= 266.57},
-    {requiredJob = 'unemployed',ItemsId = 6, label = 'Salatherstellung', XPType = 'salad', ped = nil, x = -1693.92, y = -1085.12, z = 13.15, rot = 130.0}, --"a_m_m_farmer_01"
-    {requiredJob = nil ,ItemsId = 7, label = 'Schmelze', XPType = 'stone', ped = "ig_chef2", x = 1109.076904,y= -2009.063721,z= 30.931152,rot= 36.850395},
-    {requiredJob = 'club' ,ItemsId = 9, label = 'Brauerei', XPType = 'brewery', ped = "ig_chef2", x = -56.571423,y= 6431.696777,z= 32.683472,rot= 303.307098},
-    {hideBlip= true, requiredJob = nil ,ItemsId = 10, label = 'Pilze', XPType = 'psilocybin', ped = "ig_chef2", x = -1810.11,y= -1226.13,z= 13.02,rot= 303.307098},
-    {hideBlip= true, requiredJob = 'wein' ,ItemsId = 11, label = 'Maische', XPType = 'maische', ped = "ig_chef2", x = -1932.303345,y= 2052.355957,z= 140.808838,rot= 252.283463},
-    {hideBlip= true, requiredJob = 'wein' ,ItemsId = 12, label = 'Wein', XPType = 'wein', ped = "ig_chef2", x = -1867.542847,y= 2058.250488,z= 140.994141,rot= 272.125977},
-    {requiredJob = nil ,ItemsId = 13, label = 'Stoff', XPType = 'stoff', ped = "ig_chef2", x = 5066.980469,y= -4591.279297,z= 2.842529,rot= 184.251968},  
-    {requiredJob = nil ,ItemsId = 14, label = 'Taschen', XPType = 'taschen', ped = "ig_chef2", x= 451.424164,y=  -739.200012,z = 27.342163, rot = 257.952759},
-    {requiredJob = nil ,ItemsId = 15, label = 'Aramid', XPType = 'aramid', ped = "ig_chef2", x = 2677.67,y= 2761.35,z= 37.88,rot= 34.015747},
-    {requiredJob = nil ,ItemsId = 16, label = 'Kevlar', XPType = 'kevlar', ped = "ig_chef2", x = 719.393433,y= -960.026367,z= 30.391968,rot= 133.228333},
-    {requiredJob = nil ,ItemsId = 17, label = 'Steine', XPType = 'stone', ped = nil, x = 1901.024170, y= 365.643951, z= 160.978027,rot=nil},
+    {requiredJob = nil, requiredrank = 0,ItemsId = 1, label = 'Saft', XPType = 'juice', ped = "s_m_m_migrant_01", x = 2741.59, y = 4412.76, z = 48.62, rot = 190.0},
+    {requiredJob = 'unemployed',requiredrank = 0, ItemsId = 2, label = 'Baeckerei', XPType = 'bakery', animation = {type = 'scenario', anim = "PROP_HUMAN_BUM_BIN"}, ped = "s_m_m_strvend_01", x = 395.04,y= -792.10,z= 29.29,rot= 266.57},
+    {requiredJob = 'unemployed',requiredrank = 0,ItemsId = 6, label = 'Salatherstellung', XPType = 'salad', ped = nil, x = -1693.92, y = -1085.12, z = 13.15, rot = 130.0}, --"a_m_m_farmer_01"
+    {requiredJob = nil, requiredrank = 0,ItemsId = 7, label = 'Schmelze', XPType = 'stone', ped = "ig_chef2", x = 1109.076904,y= -2009.063721,z= 30.931152,rot= 36.850395},
+    {requiredJob = 'club' ,requiredrank = 0,ItemsId = 9, label = 'Brauerei', XPType = 'brewery', ped = "ig_chef2", x = -56.571423,y= 6431.696777,z= 32.683472,rot= 303.307098},
+    {hideBlip= true, requiredJob = nil ,requiredrank = 0,ItemsId = 10, label = 'Pilze', XPType = 'psilocybin', ped = "ig_chef2", x = -1810.11,y= -1226.13,z= 13.02,rot= 303.307098},
+    {hideBlip= true, requiredJob = 'wein' ,requiredrank = 1,ItemsId = 11, label = 'Maische', XPType = 'maische', ped = "ig_chef2", x = -1932.303345,y= 2052.355957,z= 140.808838,rot= 252.283463},
+    {hideBlip= true, requiredJob = 'wein' ,requiredrank = 1,ItemsId = 12, label = 'Wein', XPType = 'wein', ped = "ig_chef2", x = -1867.542847,y= 2058.250488,z= 140.994141,rot= 272.125977},
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 13, label = 'Stoff', XPType = 'stoff', ped = "ig_chef2", x = 5066.980469,y= -4591.279297,z= 2.842529,rot= 184.251968},  
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 14, label = 'Taschen', XPType = 'taschen', ped = "ig_chef2", x= 451.424164,y=  -739.200012,z = 27.342163, rot = 257.952759},
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 15, label = 'Aramid', XPType = 'aramid', ped = "ig_chef2", x = 2677.67,y= 2761.35,z= 37.88,rot= 34.015747},
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 16, label = 'Kevlar', XPType = 'kevlar', ped = "ig_chef2", x = 719.393433,y= -960.026367,z= 30.391968,rot= 133.228333},
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 17, label = 'Steine', XPType = 'stone', ped = nil, x = 1901.024170, y= 365.643951, z= 160.978027,rot=nil},
     --{requiredJob = nil,ItemsId = 8, label = 'Jeweler', XPType = 'jewellery', ped = "u_f_y_jewelass_01", x = -622.05590820313, y = -232.09861755371, z = 38.057010650635, rot = 126.61913299561},
 }
 
