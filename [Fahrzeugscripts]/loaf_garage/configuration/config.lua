@@ -771,8 +771,8 @@ Config = {
         },
 
         SINALOA = {
-            browse = vector3(-2579.73, 1925.39, 167.29),
-            spawn = vector4(-2577.09, 1929.49, 167.46, 23303),
+            browse = vector3(-2592.052734, 1926.501099, 167.296753),
+            spawn = vector4(-2596.905518, 1921.542847, 167.296753, 0.000000),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -781,8 +781,8 @@ Config = {
 
                 
         SINALOAHeli = {
-            browse = vector3(-2579.31, 1920.16, 167.25),
-            spawn = vector4(-2563.11, 1905.06, 169.16, 247.53),
+            browse = vector3(-2598.224121, 1874.584595, 171.492310),
+            spawn = vector4(-2591.802246, 1883.920898, 173.345825, 133.228333),
             vehicletype = "aircraft",
             specifiedJob = "sinaloa",
         },
