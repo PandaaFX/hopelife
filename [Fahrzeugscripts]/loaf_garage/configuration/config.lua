@@ -793,7 +793,24 @@ Config = {
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
-            specifiedJob = "sinaloa",
+            specifiedJob = "wein",
+        },
+
+        VAGOS = {
+            browse = vector3(-1129.714233, -1604.492310, 4.392700),
+            spawn = vector4(-1126.404419, -1611.494507, 4.392700, 303.307098),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "vagos",
+        },
+
+                
+        VAGOSHeli = {
+            browse = vector3(-1118.558228, -1580.822021, 12.379517),
+            spawn = vector4(-1111.569214, -1583.156006, 11.874023, 303.307098),
+            vehicletype = "aircraft",
+            specifiedJob = "vagos",
         },
 
     },
