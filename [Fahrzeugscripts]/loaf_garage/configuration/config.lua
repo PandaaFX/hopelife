@@ -559,6 +559,20 @@ Config = {
         --     vehicletype = "aircraft",
         --     specifiedJob = "lafam",
         -- },
+        Oblocks = {
+            browse = vector3(337.542847, -2035.635132, 21.377319),
+            spawn = vector4(335.696716, -2039.301147, 20.720093, 48.188972),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "oblocks",
+        },
+        OblocksHeli = {
+            browse = vector3(345.217590, -2064.224121, 20.871826),
+            spawn = vector4(351.336273, -2054.518555, 21.798584, 317.480316),
+            vehicletype = "aircraft",
+            specifiedJob = "oblocks",
+        },
 
         LCN = {
             browse = vector3(-1522.325317, 99.270332, 56.711304),
