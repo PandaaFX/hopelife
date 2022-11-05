@@ -1,4 +1,4 @@
-
+--[[
 
 -- eingang
 table.insert(Config.DoorList, {
@@ -17,3 +17,4 @@ table.insert(Config.DoorList, {
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
 	-- autoLock = 1000
 })
+--]]

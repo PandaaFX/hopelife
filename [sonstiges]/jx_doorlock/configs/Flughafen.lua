@@ -18,6 +18,7 @@ table.insert(Config.DoorList, {
 	-- autoLock = 1000
 })
 
+--[[
 -- flughafen
 table.insert(Config.DoorList, {
 	objHeading = 149.99998474121,
@@ -36,3 +37,4 @@ table.insert(Config.DoorList, {
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
 	-- autoLock = 1000
 })
+--]]
