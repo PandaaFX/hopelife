@@ -76,6 +76,8 @@ Config.Crafting = {
 				'bloods',
 				'18th',
 				'hoover',
+				'vagos',
+				'oblocks',
 				},
 			},
 
@@ -102,6 +104,8 @@ Config.Crafting = {
 				'bloods',
 				'18th',
 				'hoover',
+				'vagos',
+				'oblocks',
 				},
 			},
 
@@ -127,6 +131,8 @@ Config.Crafting = {
 					'bloods',
 					'18th',
 					'hoover',
+					'vagos',
+				    'oblocks',
 				},
 			},
 
