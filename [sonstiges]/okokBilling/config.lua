@@ -78,7 +78,7 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'soa',
 	'outlaws',
 	'tribunal',
-	'che'
+	'che',
 	'weazel'
 }
 
