@@ -44,7 +44,7 @@ end
 local function checkdeath(cPed, pos)
     if contains(life, cPed) then
         if IsEntityDead(cPed) then
-
+            wait(2000)
             spawnped(respawnid)
             DeleteEntity(cPed)
             table.remove(life, pos)
