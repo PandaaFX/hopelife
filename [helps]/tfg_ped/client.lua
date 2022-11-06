@@ -50,8 +50,6 @@ local function checkdeath(cPed, pos)
             table.remove(life, pos)
 
         end
-    else
-        print('Nix Tot')
     end
 end
 
