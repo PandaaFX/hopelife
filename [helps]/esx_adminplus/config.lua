@@ -9,8 +9,6 @@ Config.adminRanks = { -- change this as your server ranking ( default are : supe
 				'dev',
 				'support',
 				'guide',
-				'cardev1',
-				'cardev2',
 				--'headadmin',
 				--'moderator',
 				--'manager',
