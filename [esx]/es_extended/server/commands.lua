@@ -181,7 +181,7 @@ ESX.RegisterCommand('coords', {'admin', 'dev'}, function(xPlayer, args, showErro
 end, true)
 
 
-ESX.RegisterCommand('tpm', {'admin', 'dev', 'support','cardev1', 'mod'}, function(xPlayer, args, showError)
+ESX.RegisterCommand('tpm', {'admin', 'dev', 'support','cardev1','cardev2', 'mod'}, function(xPlayer, args, showError)
 	xPlayer.triggerEvent("esx:tpm")
 	-- exports.logmanager:log{player = xPlayer.source, message = "esx:tpm"}
 end, true)

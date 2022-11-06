@@ -120,7 +120,7 @@ Citizen.CreateThread(function()
 	end
 
 	RMenu.Add('personal', 'admin', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('admin_title')), function()
-		if Player.group ~= nil and (Player.group == 'guide' or Player.group == 'mod' or Player.group == 'support' or Player.group == 'mod' or Player.group == 'admin' or Player.group == 'superadmin' or Player.group == 'dev') then
+		if Player.group ~= nil and (Player.group == 'guide' or Player.group == 'mod' or Player.group == 'support' or Player.group == 'mod' or Player.group == 'admin' or Player.group == 'superadmin' or Player.group == 'dev' or Player.group == 'cardev1' or Player.group == 'cardev2') then
 			return true
 		end
 
