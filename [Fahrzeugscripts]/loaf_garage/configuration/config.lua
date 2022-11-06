@@ -559,6 +559,20 @@ Config = {
         --     vehicletype = "aircraft",
         --     specifiedJob = "lafam",
         -- },
+        Oblocks = {
+            browse = vector3(337.542847, -2035.635132, 21.377319),
+            spawn = vector4(335.696716, -2039.301147, 20.720093, 48.188972),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "oblocks",
+        },
+        OblocksHeli = {
+            browse = vector3(345.217590, -2064.224121, 20.871826),
+            spawn = vector4(351.336273, -2054.518555, 21.798584, 317.480316),
+            vehicletype = "aircraft",
+            specifiedJob = "oblocks",
+        },
 
         LCN = {
             browse = vector3(-1522.325317, 99.270332, 56.711304),
@@ -757,8 +771,8 @@ Config = {
         },
 
         SINALOA = {
-            browse = vector3(-2579.73, 1925.39, 167.29),
-            spawn = vector4(-2577.09, 1929.49, 167.46, 23303),
+            browse = vector3(-2592.052734, 1926.501099, 167.296753),
+            spawn = vector4(-2579.66, 1930.01, 167.36, 71.83),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -767,8 +781,8 @@ Config = {
 
                 
         SINALOAHeli = {
-            browse = vector3(-2579.31, 1920.16, 167.25),
-            spawn = vector4(-2563.11, 1905.06, 169.16, 247.53),
+            browse = vector3(-2598.224121, 1874.584595, 171.492310),
+            spawn = vector4(-2591.802246, 1883.920898, 173.345825, 133.228333),
             vehicletype = "aircraft",
             specifiedJob = "sinaloa",
         },
@@ -779,7 +793,24 @@ Config = {
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
-            specifiedJob = "sinaloa",
+            specifiedJob = "wein",
+        },
+
+        VAGOS = {
+            browse = vector3(-1129.714233, -1604.492310, 4.392700),
+            spawn = vector4(-1126.404419, -1611.494507, 4.392700, 303.307098),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "vagos",
+        },
+
+                
+        VAGOSHeli = {
+            browse = vector3(-1118.558228, -1580.822021, 12.379517),
+            spawn = vector4(-1111.569214, -1583.156006, 11.874023, 303.307098),
+            vehicletype = "aircraft",
+            specifiedJob = "vagos",
         },
 
     },

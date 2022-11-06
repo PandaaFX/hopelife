@@ -1156,9 +1156,194 @@ Config = {
         },
         {
             name = "sinaloa", -- job name, must be the same as in your jobs table
-            coords = vector3(-2603.78, 1915.87, 163.46), -- position of the location
+            coords = vector3(-2600.887939, 1916.782471, 167.296753), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
+            display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
+            sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
+            scale = 0.5, -- scale of blip
+            color = 24, -- color of blip, see https://docs.fivem.net/docs/game-references/blips/
+            radius = 2.0, -- Radius of the action to open the menu
+            viewZone = true, -- view register register zone in game, if true marker, rgba and subMarker is needed
+            marker = 27, -- marker type see https://docs.fivem.net/docs/game-references/checkpoints/
+            rgba = { 120, 255, 120, 155 }, -- color of marker
+            subMarker = {
+                marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
+                posZ = -154.002, -- z position of the subMarker
+            },
+            enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
+            pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
+            pedOrientation = 65.981, -- orientation of the ped
+            level = { -- player can extend the storage. Define here the capacity and the price for the different levels.
+                { maxStorage = 50000, price = 20000 },
+                { maxStorage = 100000, price = 40000 },
+                { maxStorage = 150000, price = 60000 },
+                { maxStorage = 250000, price = 100000 },
+                { maxStorage = 500000, price = 500000 },
+                { maxStorage = 800000, price = 800000 },
+                { maxStorage = 1000000, price = 1000000 },
+            },
+            useBlackMoneyForUpgrade = false, -- use black money instead of money to upgrade the store
+            policeJobNameInYourDatabase =  "police", -- config here the job name of your police job.
+            policeRolesThatCanAccess = { -- set here the police grade names
+                "1",
+                "boss"
+            },
+            policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
+        },
+        {
+            name = "sinaloa", -- job name, must be the same as in your jobs table
+            coords = vector3(-2590.958252, 1917.837402, 167.296753), -- position of the location
+            enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
+            blipLabel = "Tresor", -- -- Name of the Blip
+            display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
+            sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
+            scale = 0.5, -- scale of blip
+            color = 24, -- color of blip, see https://docs.fivem.net/docs/game-references/blips/
+            radius = 2.0, -- Radius of the action to open the menu
+            viewZone = true, -- view register register zone in game, if true marker, rgba and subMarker is needed
+            marker = 27, -- marker type see https://docs.fivem.net/docs/game-references/checkpoints/
+            rgba = { 120, 255, 120, 155 }, -- color of marker
+            subMarker = {
+                marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
+                posZ = -154.002, -- z position of the subMarker
+            },
+            enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
+            pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
+            pedOrientation = 65.981, -- orientation of the ped
+            level = { -- player can extend the storage. Define here the capacity and the price for the different levels.
+                { maxStorage = 50000, price = 20000 },
+                { maxStorage = 100000, price = 40000 },
+                { maxStorage = 150000, price = 60000 },
+                { maxStorage = 250000, price = 100000 },
+                { maxStorage = 500000, price = 500000 },
+                { maxStorage = 800000, price = 800000 },
+                { maxStorage = 1000000, price = 1000000 },
+            },
+            useBlackMoneyForUpgrade = false, -- use black money instead of money to upgrade the store
+            policeJobNameInYourDatabase =  "police", -- config here the job name of your police job.
+            policeRolesThatCanAccess = { -- set here the police grade names
+                "1",
+                "boss"
+            },
+            policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
+        },
+        {
+            name = "oblocks", -- job name, must be the same as in your jobs table
+            coords = vector3(332.334,-2018.4132,22.337769), -- position of the location
+            enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
+            blipLabel = "Lager", -- -- Name of the Blip
+            display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
+            sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
+            scale = 0.5, -- scale of blip
+            color = 24, -- color of blip, see https://docs.fivem.net/docs/game-references/blips/
+            radius = 2.0, -- Radius of the action to open the menu
+            viewZone = true, -- view register register zone in game, if true marker, rgba and subMarker is needed
+            marker = 27, -- marker type see https://docs.fivem.net/docs/game-references/checkpoints/
+            rgba = { 120, 255, 120, 155 }, -- color of marker
+            subMarker = {
+                marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
+                posZ = -154.002, -- z position of the subMarker
+            },
+            enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
+            pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
+            pedOrientation = 65.981, -- orientation of the ped
+            level = { -- player can extend the storage. Define here the capacity and the price for the different levels.
+                { maxStorage = 50000, price = 20000 },
+                { maxStorage = 100000, price = 40000 },
+                { maxStorage = 150000, price = 60000 },
+                { maxStorage = 250000, price = 100000 },
+                { maxStorage = 500000, price = 500000 },
+                { maxStorage = 800000, price = 800000 },
+                { maxStorage = 1000000, price = 1000000 },
+            },
+            useBlackMoneyForUpgrade = false, -- use black money instead of money to upgrade the store
+            policeJobNameInYourDatabase =  "police", -- config here the job name of your police job.
+            policeRolesThatCanAccess = { -- set here the police grade names
+                "1",
+                "boss"
+            },
+            policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
+        },
+        {
+            name = "oblocks", -- job name, must be the same as in your jobs table
+            coords = vector3(336.158234, -2021.670288, 22.337769), -- position of the location
+            enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
+            blipLabel = "Tresor", -- -- Name of the Blip
+            display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
+            sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
+            scale = 0.5, -- scale of blip
+            color = 24, -- color of blip, see https://docs.fivem.net/docs/game-references/blips/
+            radius = 2.0, -- Radius of the action to open the menu
+            viewZone = true, -- view register register zone in game, if true marker, rgba and subMarker is needed
+            marker = 27, -- marker type see https://docs.fivem.net/docs/game-references/checkpoints/
+            rgba = { 120, 255, 120, 155 }, -- color of marker
+            subMarker = {
+                marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
+                posZ = -154.002, -- z position of the subMarker
+            },
+            enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
+            pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
+            pedOrientation = 65.981, -- orientation of the ped
+            level = { -- player can extend the storage. Define here the capacity and the price for the different levels.
+                { maxStorage = 50000, price = 20000 },
+                { maxStorage = 100000, price = 40000 },
+                { maxStorage = 150000, price = 60000 },
+                { maxStorage = 250000, price = 100000 },
+                { maxStorage = 500000, price = 500000 },
+                { maxStorage = 800000, price = 800000 },
+                { maxStorage = 1000000, price = 1000000 },
+            },
+            useBlackMoneyForUpgrade = false, -- use black money instead of money to upgrade the store
+            policeJobNameInYourDatabase =  "police", -- config here the job name of your police job.
+            policeRolesThatCanAccess = { -- set here the police grade names
+                "1",
+                "boss"
+            },
+            policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
+        },
+        {
+            name = "vagos", -- job name, must be the same as in your jobs table
+            coords = vector3(-1110.065918, -1640.294556, 4.628540), -- position of the location
+            enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
+            blipLabel = "Lager", -- -- Name of the Blip
+            display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
+            sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
+            scale = 0.5, -- scale of blip
+            color = 24, -- color of blip, see https://docs.fivem.net/docs/game-references/blips/
+            radius = 2.0, -- Radius of the action to open the menu
+            viewZone = true, -- view register register zone in game, if true marker, rgba and subMarker is needed
+            marker = 27, -- marker type see https://docs.fivem.net/docs/game-references/checkpoints/
+            rgba = { 120, 255, 120, 155 }, -- color of marker
+            subMarker = {
+                marker = 20, -- marker type see https://docs.fivem.net/docs/game-references/markers/
+                posZ = -154.002, -- z position of the subMarker
+            },
+            enablePed = false, -- Enable the ped. pedModel and pedOrientation is needed if you enable this options
+            pedModel = "s_m_y_airworker", -- ped model, see https://docs.fivem.net/docs/game-references/ped-models/
+            pedOrientation = 65.981, -- orientation of the ped
+            level = { -- player can extend the storage. Define here the capacity and the price for the different levels.
+                { maxStorage = 50000, price = 20000 },
+                { maxStorage = 100000, price = 40000 },
+                { maxStorage = 150000, price = 60000 },
+                { maxStorage = 250000, price = 100000 },
+                { maxStorage = 500000, price = 500000 },
+                { maxStorage = 800000, price = 800000 },
+                { maxStorage = 1000000, price = 1000000 },
+            },
+            useBlackMoneyForUpgrade = false, -- use black money instead of money to upgrade the store
+            policeJobNameInYourDatabase =  "police", -- config here the job name of your police job.
+            policeRolesThatCanAccess = { -- set here the police grade names
+                "1",
+                "boss"
+            },
+            policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
+        },
+        {
+            name = "vagos", -- job name, must be the same as in your jobs table
+            coords = vector3(-1108.259277, -1643.380249, 4.628540), -- position of the location
+            enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
+            blipLabel = "Tresor", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
             sprite = 440, -- blip symbol on map, see: https://docs.fivem.net/docs/game-references/blips/
             scale = 0.5, -- scale of blip

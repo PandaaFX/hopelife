@@ -6,7 +6,7 @@ Config.OnlyUnpaidCityInvoices = false
 
 Config.OnlyUnpaidSocietyInvoices = false
 
-Config.EventPrefix = 'okokBilling'
+Config.EventPrefix = 'hopelife'
 
 Config.Locale = 'de'
 
@@ -79,7 +79,7 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'outlaws',
 	'tribunal',
 	'che'
-
+	'weazel'
 }
 
 Config.InspectCitizenSocieties = { -- Which societies can access the Society Invoices
@@ -319,6 +319,12 @@ Config.BillsList = {
 	['che'] = {
 		{'Custom'}
 	},
+	['casino'] = {
+		{'Custom'}
+	},
+	['weazel'] = {
+		{'Custom'}
+	}
 }
 
 Config.AdminGroups = {
