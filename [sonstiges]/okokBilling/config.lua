@@ -6,7 +6,7 @@ Config.OnlyUnpaidCityInvoices = false
 
 Config.OnlyUnpaidSocietyInvoices = false
 
-Config.EventPrefix = 'okokBilling'
+Config.EventPrefix = 'hopelife'
 
 Config.Locale = 'de'
 
@@ -326,7 +326,7 @@ Config.BillsList = {
 
 Config.AdminGroups = {
 	'admin',
-	'dev',
+	'dev'
 }
 
 -------------------------- DISCORD LOGS

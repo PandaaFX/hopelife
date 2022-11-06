@@ -1,12 +1,11 @@
 ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-Citizen.CreateThread(function()
+CreateThread(function ()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(0)
+		Wait(0)
 	end
-end
-)
+end)
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 Webhook = 'https://discord.com/api/webhooks/1020209012131758121/egEGXqO5GUhTd2g0s9aXrfekbtutQMcxoh3ly8kIs4TBI6op_uohQUnKqso3qovyAtDD'
 
