@@ -319,6 +319,9 @@ Config.BillsList = {
 	['che'] = {
 		{'Custom'}
 	},
+	['casino'] = {
+		{'Custom'}
+	}
 }
 
 Config.AdminGroups = {
