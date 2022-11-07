@@ -244,7 +244,7 @@ Config.Wallpapers = {
         url = "https://i.imgur.com/vAKSYJF.png"
     },
     {
-        name = "HopeLife Standart",
+        name = "HopeLife Standard",
         url = "https://i.imgur.com/ksLYQdF.png"
     },
 }
