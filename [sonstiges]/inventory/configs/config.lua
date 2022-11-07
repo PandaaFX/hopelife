@@ -1,6 +1,6 @@
 Config = {}
 
-Config.OpenKey = 'k' -- Open key, use letters for FiveM keybinding | default: 'K'
+Config.OpenKey = 'F2' -- Open key, use letters for FiveM keybinding | default: 'K'
 Config.ESXPrefix = "esx" -- this only changes the prefix to core ESX events, not 3rd party scripts | default: "esx"
 Config.Blur = true -- Blurs the background | default: true
 Config.Delay = 250 -- how long it takes to load inventory in miliseconds | default: 150
