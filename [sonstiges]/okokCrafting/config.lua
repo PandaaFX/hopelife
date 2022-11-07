@@ -501,7 +501,7 @@ Config.Crafting = {
 
 		},
 	},
-
+	
 	{
 		coordinates = vector3(722.55, 4189.35, 41.09), -- coordinates of the table
 		radius = 1, -- radius of the table
@@ -536,7 +536,40 @@ Config.Crafting = {
 
 		},
 	},
-	
+	{
+		coordinates = vector3(-1878.30, 2054.78, 140.99), -- coordinates of the table
+		radius = 1, -- radius of the table
+		maxCraftRadius = 5, -- if you are further it will stop the craft
+		showBlipRadius = 50,
+		blip = {blipId = 89, blipColor = 3, blipScale = 0.9, blipText = "Crafting"}, -- to get blips and colors check this: https://wiki.gtanet.work/index.php?title=Blips
+		tableName = 'Cannabis', -- Title
+		tableID = 'Wein', -- make a different one for every table with NO spaces
+		crafts = { -- What items are available for crafting and the recipe
+			{
+				item = 'winabis', -- Item id and name of the image
+				amount = 2,
+				successCraftPercentage = 75, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 2, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'maische', 4, true},
+					{'weed_pooch', 2, true}, -- item/amount/if the item should be removed when crafting
+
+
+			
+				},
+				job = { -- What jobs can craft this item in this workbench
+				'wein',
+				},
+			},
+
+
+
+
+		},
+	},
 }
 -- Config.Crafting = {
 -- 	{
