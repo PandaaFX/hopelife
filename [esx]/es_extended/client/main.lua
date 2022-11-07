@@ -292,7 +292,7 @@ end)
 RegisterNetEvent('esx:spawnVehicle')
 AddEventHandler('esx:spawnVehicle', function(vehicle)
 	ESX.TriggerServerCallback("esx:isUserAdmin", function(admin)
-		if admin then
+		-- if admin then
 			local model = (type(vehicle) == 'number' and vehicle or GetHashKey(vehicle))
 
 			if IsModelInCdimage(model) then
@@ -304,7 +304,7 @@ AddEventHandler('esx:spawnVehicle', function(vehicle)
 			else
 				ESX.ShowNotification('Invalid vehicle model.')
 			end
-		end
+		-- end
 	end)
 end)
 
@@ -560,7 +560,7 @@ local GetEntityCoords = GetEntityCoords
 local GetGroundZFor_3dCoord = GetGroundZFor_3dCoord
 
 	ESX.TriggerServerCallback("esx:isUserAdmin", function(admin)
-		if admin then
+		-- if admin then
 			local blipMarker = GetFirstBlipInfoId(8)
 			if not DoesBlipExist(blipMarker) then
 					ESX.ShowNotification('No Waypoint Set.', true, false, 140)
@@ -640,7 +640,7 @@ local GetGroundZFor_3dCoord = GetGroundZFor_3dCoord
 			-- If Z coord was found, set coords in found coords.
 			SetPedCoordsKeepVehicle(ped, x, y, groundZ)
 			ESX.ShowNotification('Successfully Teleported', true, false, 140)
-		end
+		-- end
 	end)
 end)
 
@@ -649,21 +649,21 @@ RegisterNetEvent("esx:noclip")
 AddEventHandler("esx:noclip", function(input)
 	ESX.TriggerServerCallback("esx:isUserAdmin", function(admin)
 		if admin then
-    local player = PlayerId()
+			local player = PlayerId()
 
-    local msg = "disabled"
-	if(noclip == false)then
-		noclip_pos = GetEntityCoords(ESX.PlayerData.ped, false)
-	end
+			local msg = "disabled"
+			if(noclip == false)then
+				noclip_pos = GetEntityCoords(ESX.PlayerData.ped, false)
+			end
 
-	noclip = not noclip
+			noclip = not noclip
 
-	if(noclip)then
-		msg = "enabled"
-	end
+			if(noclip)then
+				msg = "enabled"
+			end
 
-	TriggerEvent("chatMessage", "Noclip has been ^2^*" .. msg)
-	end
+			TriggerEvent("chatMessage", "Noclip has been ^2^*" .. msg)
+		end
 	end)
 end)
 
