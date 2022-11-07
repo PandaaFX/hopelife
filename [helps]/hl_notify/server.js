@@ -30,7 +30,7 @@ function checkGroup(currentGroup) {
   // console.log(currentGroup);
   adminRoles.forEach((role) => {
     // console.log(role);
-    if (currentGroup.includes(role)) {
+    if (currentGroup == role) {
       return (vari = true);
     }
   });
