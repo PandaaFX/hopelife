@@ -37,7 +37,7 @@ EntityConfig.Invisible = {
 EntityConfig.BlacklistEntities = {
     BlacklistEntity = true, -- if true, it detects blacklisted entites below
     BlacklistedEntity = { -- type {kick or ban}
-    {hash = GetHashKey("veto2"), type = "ban"},
+    -- {hash = GetHashKey("veto2"), type = "ban"},
     {hash = GetHashKey("kuruma2"), type = "ban"},
     {hash = GetHashKey("zr3803"), type = "ban"},
     {hash = GetHashKey("monster"), type = "ban"},
