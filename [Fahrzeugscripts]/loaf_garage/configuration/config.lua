@@ -772,7 +772,7 @@ Config = {
 
         SINALOA = {
             browse = vector3(-2592.052734, 1926.501099, 167.296753),
-            spawn = vector4(-2596.905518, 1921.542847, 167.296753, 0.000000),
+            spawn = vector4(-2579.66, 1930.01, 167.36, 71.83),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
