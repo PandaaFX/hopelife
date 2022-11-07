@@ -187,9 +187,10 @@ Locales['de'] = {
   ['weapon_doubleaction'] = 'double-Action Revolver',
   ['weapon_pepperspray'] = 'Pfefferspray',
   ['weapon_antidote'] = 'Gegenmittel',
+  ['weapon_flashbang'] = 'Flashbang',
 
   -- Weapon Components
-  ['component_clip_default'] = 'standard Griff',
+  ['component_clip_default'] = 'standart Griff',
   ['component_clip_extended'] = 'erweiterter Griff',
   ['component_clip_drum'] = 'trommelmagazin',
   ['component_clip_box'] = 'kastenmagazin',
@@ -219,6 +220,7 @@ Locales['de'] = {
   ['ammo_snowball'] = 'schneebälle',
   ['ammo_flare'] = 'signalfackel(n)',
   ['ammo_flaregun'] = 'signalfackeln(munition)',
+  ['ammo_flashbang'] = 'flashbang(s)',
 
   -- Weapon Tints
   ['tint_default'] = 'standard',
