@@ -129,6 +129,7 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_PRECISIONRIFLE')] = true,
     [GetHashKey('WEAPON_PETROLCAN')] = true,
     [GetHashKey('WEAPON_SNOWBALL')] = true,
+    [GetHashKey('WEAPON_FLASHBANG')] = true,
     [966099533] = true,
     [966099553] = true,
     [0] = true,
