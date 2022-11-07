@@ -378,8 +378,8 @@ Config.Access = {
     },
     {
         frequenz = 2,
-        job = "army",
-        joblabel = "ARMY"
+        job = "lssd",
+        joblabel = "LSSD"
     },
     {
         frequenz = 2,
