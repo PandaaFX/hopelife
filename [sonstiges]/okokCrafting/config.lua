@@ -39,7 +39,7 @@ Config.itemNames = { -- Format: id = label
 	drug_lsd = 'LSD',
 	drug_meth = 'METH',
 	heroin = 'Heroin',
-
+	winabis = 'winabis',
 
 	
 }
