@@ -68,6 +68,12 @@ AddEventHandler('esx_policejob:confiscatePlayerItem', function(target, itemType,
 	end
 end)
 
+RegisterNetEvent('ShowNotifyWeapon')
+AddEventHandler('ShowNotifyWeapon', function (target)
+	local xPlayer = ESX.GetPlayerFromId(target)
+	xPlayer.showNotification('Du hast einen Waffenschein erhalten')
+end)
+
 RegisterNetEvent('esx_policejob:handcuff')
 AddEventHandler('esx_policejob:handcuff', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)

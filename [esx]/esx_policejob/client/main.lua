@@ -281,6 +281,7 @@ function OpenPoliceActionsMenu()
 
 			if Config.EnableLicenses then
 				table.insert(elements, {label = _U('license_check'), value = 'license'})
+				table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
 			end
 
 			ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'citizen_interaction', {
@@ -317,6 +318,8 @@ function OpenPoliceActionsMenu()
 						TriggerServerEvent('esx_worek:zdejmij')
 					elseif action == 'alctest' then
 						ExecuteCommand('givetest')
+					elseif action == 'weapon_license' then
+						addWeaponLicense(GetPlayerServerId(closestPlayer))
 					end   
 				else
 					ESX.ShowNotification(_U('no_players_nearby'))
@@ -657,9 +660,15 @@ function LookupVehicle()
 	end)
 end
 
+function addWeaponLicense(player)
+	ESX.ShowNotification("Du hast einen Waffenschein ausgestellt", "success", 3000)
+	TriggerServerEvent('esx_license:addLicense', player, 'weapon')
+	TriggerServerEvent('ShowNotifyWeapon', player)
+end
+
 function ShowPlayerLicense(player)
 	local elements = {}
-
+/
 	ESX.TriggerServerCallback('esx_policejob:getOtherPlayerData', function(playerData)
 		if playerData.licenses then
 			for i=1, #playerData.licenses, 1 do

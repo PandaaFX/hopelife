@@ -150,6 +150,7 @@ local function openActionsMenu()
 
         if(canCheckDrivingLicense or canCheckWeaponLicense) then
             table.insert(elements, {label = getLocalizedText('actions:check_licenses'), value = "checklicenses"})
+            table.insert(elements, {label = 'Waffenschein vergeben', value = "weapon"})
         end
 
         if(canHeal) then
@@ -170,6 +171,9 @@ local function openActionsMenu()
         }, 
         function(data, menu) 
             local action = data.current.value
+            local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+
+            if closestPlayer ~= -1 and closestDistance <= 3.0 then
 
             if(action == "billing") then
                 TriggerEvent(Utils.eventsPrefix .. ':actions:createBilling')
@@ -203,13 +207,25 @@ local function openActionsMenu()
                 TriggerEvent(Utils.eventsPrefix .. ":actions:healBig")
             elseif(action == "revive") then
                 TriggerEvent(Utils.eventsPrefix .. ":actions:revive")
+            elseif action == 'weapon_license' then
+                addWeaponLicense(GetPlayerServerId(closestPlayer))
+            
             end
+        else
+            ESX.ShowNotification('Niemand in der Nähe')
+        end
         end,
         function(data, menu)
             menu.close()
         end
         )
     end
+end
+
+function addWeaponLicense(player)
+	ESX.ShowNotification("Du hast einen Waffenschein ausgestellt", "success", 3000)
+	TriggerServerEvent('esx_license:addLicense', player, 'weapon')
+	TriggerServerEvent('ShowNotifyWeapon', player)
 end
 
 RegisterNetEvent(Utils.eventsPrefix .. ':openActionsMenu', openActionsMenu)
