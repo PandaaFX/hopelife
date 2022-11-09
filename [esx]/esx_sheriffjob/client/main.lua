@@ -25,7 +25,7 @@ end
 
 function OpenlssdActionsMenu()
 	ESX.UI.Menu.CloseAll()
-
+	local grade = ESX.PlayerData.job.grade
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'lssd_actions', {
 		title    = 'lssd',
 		align    = 'top-left',
@@ -53,7 +53,9 @@ function OpenlssdActionsMenu()
 
 			if Config.EnableLicenses then
 				table.insert(elements, {label = _U('license_check'), value = 'license'})
-				table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
+				if grade >= 15 then
+					table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
+				end
 			end
 
 			ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'citizen_interaction', {

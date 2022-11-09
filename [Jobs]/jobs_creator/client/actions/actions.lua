@@ -14,6 +14,12 @@ local canCheckWeaponLicense = false
 local canHeal = false
 local canRevive = false
 
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded', function(xPlayer)
+	ESX.PlayerData = xPlayer
+	ESX.PlayerLoaded = true
+end)
+
 local function checkAllowedActions()
     local promise = promise.new()
 
@@ -108,7 +114,7 @@ RegisterNetEvent(Utils.eventsPrefix .. ":actions:licensesMenu", checkLicenses)
 local function openActionsMenu()
     if(canDoAnyAction and (config.canUseActionsMenuWhileOffDuty or isOnDuty) and (not exports[ GetCurrentResourceName() ]:isPlayerHandcuffed()) ) then
         local elements = {}
-
+        local grade = ESX.PlayerData.job.grade
     --[[    if(isBillingEnabled) then
             table.insert(elements, {label = getLocalizedText('actions_billing'), value = "billing"})
         end
@@ -150,7 +156,10 @@ local function openActionsMenu()
 
         if(canCheckDrivingLicense or canCheckWeaponLicense) then
             table.insert(elements, {label = getLocalizedText('actions:check_licenses'), value = "checklicenses"})
-            table.insert(elements, {label = 'Waffenschein vergeben', value = "weapon"})
+            if grade >= 6 then
+                table.insert(elements, {label = 'Waffenschein vergeben', value = "weapon"})
+
+            end
         end
 
         if(canHeal) then
@@ -207,7 +216,7 @@ local function openActionsMenu()
                 TriggerEvent(Utils.eventsPrefix .. ":actions:healBig")
             elseif(action == "revive") then
                 TriggerEvent(Utils.eventsPrefix .. ":actions:revive")
-            elseif action == 'weapon_license' then
+            elseif action == 'weapon' then
                 addWeaponLicense(GetPlayerServerId(closestPlayer))
             
             end
