@@ -668,7 +668,6 @@ end
 
 function ShowPlayerLicense(player)
 	local elements = {}
-/
 	ESX.TriggerServerCallback('esx_policejob:getOtherPlayerData', function(playerData)
 		if playerData.licenses then
 			for i=1, #playerData.licenses, 1 do
