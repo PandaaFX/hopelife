@@ -8,7 +8,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.PlayerData = xPlayer
 	ESX.PlayerLoaded = true
 end)
-
+-- Fib 15
 RegisterNetEvent('esx:onPlayerLogout')
 AddEventHandler('esx:onPlayerLogout', function()
 	ESX.PlayerLoaded = false
@@ -252,7 +252,7 @@ end
 
 function OpenPoliceActionsMenu()
 	ESX.UI.Menu.CloseAll()
-
+	local grade = ESX.PlayerData.job.grade
 	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'police_actions', {
 		title    = 'Police',
 		align    = 'top-left',
@@ -281,7 +281,10 @@ function OpenPoliceActionsMenu()
 
 			if Config.EnableLicenses then
 				table.insert(elements, {label = _U('license_check'), value = 'license'})
-				table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
+				if grade >= 15 then
+					table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
+
+				end
 			end
 
 			ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'citizen_interaction', {
