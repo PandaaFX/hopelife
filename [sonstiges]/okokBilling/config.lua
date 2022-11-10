@@ -147,6 +147,7 @@ Config.BillsList = {
 		{'§13.3 Geschwindigkeitsüberschreitung 50-100', 15000},
 		{'§13.4 Geschwindigkeitsüberschreitung 100+', 25000},
 		{'§13.5 Falsch Parken', 15000},
+		{'Waffenschein', 50000},
 		{'Custom'}, -- If set without a price it'll let the players create a custom invoice (custom price)
 	},
 	['fib'] = {
@@ -201,6 +202,7 @@ Config.BillsList = {
 		{'§13.3 Geschwindigkeitsüberschreitung 50-100', 15000},
 		{'§13.4 Geschwindigkeitsüberschreitung 100+', 25000},
 		{'§13.5 Falsch Parken', 15000},
+		{'Waffenschein', 50000},
 		{'Custom'}, -- If set without a price it'll let the players create a custom invoice (custom price)
 	},
 	['lssd'] = {
@@ -255,6 +257,7 @@ Config.BillsList = {
 		{'§13.3 Geschwindigkeitsüberschreitung 50-100', 15000},
 		{'§13.4 Geschwindigkeitsüberschreitung 100+', 25000},
 		{'§13.5 Falsch Parken', 15000},
+		{'Waffenschein', 50000},
 		{'Custom'}, -- If set without a price it'll let the players create a custom invoice (custom price)
 	},
 	['ambulance'] = {
