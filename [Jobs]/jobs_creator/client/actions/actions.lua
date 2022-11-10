@@ -182,7 +182,7 @@ local function openActionsMenu()
             local action = data.current.value
             local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 
-            if closestPlayer ~= -1 and closestDistance <= 3.0 then
+            
 
             if(action == "billing") then
                 TriggerEvent(Utils.eventsPrefix .. ':actions:createBilling')
@@ -217,11 +217,14 @@ local function openActionsMenu()
             elseif(action == "revive") then
                 TriggerEvent(Utils.eventsPrefix .. ":actions:revive")
             elseif action == 'weapon' then
-                addWeaponLicense(GetPlayerServerId(closestPlayer))
-            
+                if closestPlayer ~= -1 and closestDistance <= 3.0 then
+                    addWeaponLicense(GetPlayerServerId(closestPlayer))
+                else
+                ESX.ShowNotification('Niemand in der Nähe')
             end
-        else
-            ESX.ShowNotification('Niemand in der Nähe')
+        
+
+     
         end
         end,
         function(data, menu)
