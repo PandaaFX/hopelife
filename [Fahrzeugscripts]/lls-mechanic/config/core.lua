@@ -130,7 +130,27 @@ marker = {
 actionDistance = 10.0
 },
 { -- outlaws boote
-pos = {x = 101.630768, y = -2988.567139, z = 1.747314},
+pos = {x = 93.151657, y = -2988.633057, z = 1.578735},
+whitelistJobName = 'outlaws',
+-- societyName = 'society_mechanic', -- uncomment this to enable society account for this point (only for whitelist points)
+blip = {
+enable = false,
+    type = 446,
+    color = 44,
+    title = 'outlaws',
+    scale = 0.8
+},
+marker = {
+    enable = false,
+    type = 30,
+    positionOffset = {x = 0.0, y = 0.0, z = 0.3},
+    scale = {x = 1.0, y = 1.0, z = 1.0},
+    color = {r = 0, g = 0, b = 0, a = 150},
+},
+actionDistance = 10.0
+},
+{ -- outlaws heli
+pos = {x = 167.090103, y = -3047.907715, z = 5.858643},
 whitelistJobName = 'outlaws',
 -- societyName = 'society_mechanic', -- uncomment this to enable society account for this point (only for whitelist points)
 blip = {
