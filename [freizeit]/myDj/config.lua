@@ -24,7 +24,7 @@ Config.DJPositions = {
     {
         name = 'Tequilalala',
         pos = vector3(-562.219788, 281.881317, 85.676147),
-        requiredJob = 'dj', 
+        requiredJob = nil, 
         range = 30.0, 
         volume = 1.0 --[[ do not touch the volume! --]]
     },
@@ -52,6 +52,13 @@ Config.DJPositions = {
     {
         name = 'Cayo',
         pos = vector3(4884.68, -4916.42, 3.7),
+        requiredJob = nil, 
+        range = 25.0, 
+        volume = 0.1 --[[ do not touch the volume! --]]
+    },
+    {
+        name = 'outlaws',
+        pos = vector3(134.835175, -2994.672607, 7.695190),
         requiredJob = nil, 
         range = 25.0, 
         volume = 0.1 --[[ do not touch the volume! --]]
