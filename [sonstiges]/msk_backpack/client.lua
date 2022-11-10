@@ -20,17 +20,27 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
                 for k, v in pairs(Config.Backpacks) do
                     if skin.sex == 0 then -- Male
                         if skin.bags_1 == v.skin.male.skin1 then -- Bag Skin
-                            TriggerServerEvent('msk_backpack:setJoinBag', k, v.weight)
-                            debug(skin.bags_1, v.skin.male.skin1, v.weight)
-                            currentBag = k
-                            currentBagWeight = v.weight
+                            local xPlayer = ESX.GetPlayerFromId(source)
+                            local item = xPlayer.getInventoryItem(k)["count"]
+                            local itemlabel = xPlayer.getInventoryItem(k)["label"]
+                            if item >= 1 then
+                                TriggerServerEvent('msk_backpack:setJoinBag', k, v.weight)
+                                debug(skin.bags_1, v.skin.male.skin1, v.weight)
+                                currentBag = k
+                                currentBagWeight = v.weight
+                            end
                         end
                     else -- Female
                         if skin.bags_1 == v.skin.female.skin1 then -- Bag Skin
-                            TriggerServerEvent('msk_backpack:setJoinBag', k, v.weight)
-                            debug(skin.bags_1, v.skin.female.skin1, v.weight)
-                            currentBag = k
-                            currentBagWeight = v.weight
+                            local xPlayer = ESX.GetPlayerFromId(source)
+                            local item = xPlayer.getInventoryItem(k)["count"]
+                            local itemlabel = xPlayer.getInventoryItem(k)["label"]
+                            if item >= 1 then
+                                TriggerServerEvent('msk_backpack:setJoinBag', k, v.weight)
+                                debug(skin.bags_1, v.skin.female.skin1, v.weight)
+                                currentBag = k
+                                currentBagWeight = v.weight
+                            end
                         end
                     end
                 end

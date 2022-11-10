@@ -26,6 +26,32 @@
     }
   },
   {
+    "ModelName": "389towmfd3",
+    "ModelHash": -2071796190,
+    "Min": {
+      "X": -1.3323034,
+      "Y": -6.00453424,
+      "Z": 0.348279834,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "Max": {
+      "X": 1.30291176,
+      "Y": 1.09367943,
+      "Z": 2.59515429,
+      "IsNormalized": false,
+      "IsZero": false
+    },
+    "RampModelHash": -1,
+    "RampPosition": {
+      "X": 0.0,
+      "Y": -9.965,
+      "Z": -0.764,
+      "IsNormalized": false,
+      "IsZero": false
+    }
+  },
+  {
     "ModelName": "trflat",
     "ModelHash": -1352468814,
     "Min": {
