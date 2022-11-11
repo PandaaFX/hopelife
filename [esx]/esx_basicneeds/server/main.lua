@@ -222,6 +222,24 @@ ESX.RegisterUsableItem('casino_ego_chaser', function(source)
 	xPlayer.showNotification("Ego Spezial getrunken")
 end)
 
+ESX.RegisterUsableItem('sweets', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	xPlayer.removeInventoryItem('sweets', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	xPlayer.showNotification("Süßigkeiten gegessen")
+end)
+
+ESX.RegisterUsableItem('schoko', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	xPlayer.removeInventoryItem('schoko', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	xPlayer.showNotification("Schokolade gegessen")
+end)
+
 ESX.RegisterUsableItem('casino_luckypotion', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	xPlayer.removeInventoryItem('casino_luckypotion', 1)
