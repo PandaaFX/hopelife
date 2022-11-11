@@ -297,7 +297,7 @@ AddEventHandler("lester:createBlip", function(type, x, y, z)
 end) --]]
 
 blip = false
-
+local isSelling = false
 Citizen.CreateThread(function()
 	TriggerEvent('lester:createBlip', 77, 706.669, -966.898, 30.413)
 	while true do
@@ -316,14 +316,16 @@ Citizen.CreateThread(function()
 						ESX.TriggerServerCallback('esx_ambulancejob:getItemAmount', function(quantity)
 							if quantity >= Config.MaxJewelsSell then
 								ESX.TriggerServerCallback('esx_vangelico_robbery:conteggio', function(CopsConnected)
-									if CopsConnected >= Config.RequiredCopsSell then
+									if CopsConnected >= Config.RequiredCopsSell and not isSelling then
+										isSelling = true
 										FreezeEntityPosition(playerPed, true)
 										TriggerEvent('mt:missiontext', _U('goldsell'), 10000)
 										Wait(10000)
 										FreezeEntityPosition(playerPed, false)
 										TriggerServerEvent('lester:vendita')
+										isSelling = false
 										blip = false
-									else
+									elseif not isSelling then
 										blip = false
 										TriggerEvent('esx:showNotification', _U('copsforsell') .. Config.RequiredCopsSell .. _U('copsforsell2'))
 									end

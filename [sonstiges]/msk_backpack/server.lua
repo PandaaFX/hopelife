@@ -47,7 +47,7 @@ AddEventHandler('msk_backpack:setDeathStatus', function(isDead)
             })
             MySQL.Sync.execute('UPDATE inventories SET data = @data WHERE type = @type AND identifier = @identifier', { 
                 ['@identifier'] = xPlayer.identifier,
-                ['@type'] = currentBag[1].bag,
+                ['@type'] = currentBag[0].bag,
                 ['@data'] = '[]',
             })
         elseif Config.BagInventory:match('secondary') then
@@ -61,7 +61,7 @@ AddEventHandler('msk_backpack:setDeathStatus', function(isDead)
             })
             MySQL.Sync.execute('UPDATE inventories SET data = @data WHERE type = @type AND identifier = @identifier', { 
                 ['@identifier'] = xPlayer.identifier,
-                ['@type'] = currentBag[1].bag,
+                ['@type'] = currentBag[0].bag,
                 ['@data'] = '[]',
             })
         end
