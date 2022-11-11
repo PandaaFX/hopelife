@@ -358,8 +358,8 @@ function StartDeathTimer()
 	end)
 
 	CreateThread(function()
-		local text, timeHeld
-
+		local text
+		local timeHeld = 0
 		-- early respawn timer
 		while earlySpawnTimer > 0 and isDead do
 			Wait(0)
