@@ -79,7 +79,8 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'outlaws',
 	'tribunal',
 	'che',
-	'weazel'
+	'weazel',
+	'lafam'
 }
 
 Config.InspectCitizenSocieties = { -- Which societies can access the Society Invoices
@@ -327,6 +328,9 @@ Config.BillsList = {
 		{'Custom'}
 	},
 	['weazel'] = {
+		{'Custom'}
+	},
+	['lafam'] = {
 		{'Custom'}
 	}
 }
