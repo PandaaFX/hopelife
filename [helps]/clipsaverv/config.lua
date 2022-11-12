@@ -4,6 +4,6 @@ Config = {
 		start_record = 314, -- Numpad +
 		stop_save_record = 314, -- Numpad +
 		stop_discard_record = 315, -- Numpad -
-		open_editor = 57 -- F10
+		open_editor = 118 -- F10
 	}
 }
