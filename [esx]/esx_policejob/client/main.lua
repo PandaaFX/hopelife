@@ -281,7 +281,7 @@ function OpenPoliceActionsMenu()
 
 			if Config.EnableLicenses then
 				table.insert(elements, {label = _U('license_check'), value = 'license'})
-				if grade >= 15 then
+				if grade >= 13 then
 					table.insert(elements, {label = 'Waffenschein vergeben', value = 'weapon_license'})
 
 				end
