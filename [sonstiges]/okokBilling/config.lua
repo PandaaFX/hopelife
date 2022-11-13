@@ -273,7 +273,7 @@ Config.BillsList = {
 		{'MRT', 25000},
 		{'OP (Klein)', 60000},
 		{'OP (Groß)', 90000},
-		{'Waffenschein', 15000},
+		{'Waffenschein', 40000},
 		{'Custom'},
 	},
 	['doj'] = {
