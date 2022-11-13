@@ -26,7 +26,7 @@ Config.DJPositions = {
         pos = vector3(-562.219788, 281.881317, 85.676147),
         requiredJob = nil, 
         range = 30.0, 
-        volume = 1.0 --[[ do not touch the volume! --]]
+        volume = 0.1 --[[ do not touch the volume! --]]
     },
     {
         name = 'Casino',
