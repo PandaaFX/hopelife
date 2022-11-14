@@ -25,14 +25,6 @@ ESX.RegisterUsableItem('tomatos', function(source)
 	xPlayer.showNotification("Tomate gegessen")
 end)
 
-ESX.RegisterUsableItem('pilz', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-	xPlayer.removeInventoryItem('pilz', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 30000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	xPlayer.showNotification(_U('used_pilz'))
-end)
 
 ESX.RegisterUsableItem('donut', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -237,7 +229,7 @@ ESX.RegisterUsableItem('baklava', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	xPlayer.showNotification("Baklava gegessen")
+	xPlayer.showNotification("used_baklava")
 end)
 
 ESX.RegisterUsableItem('schwarztee', function(source)
@@ -246,7 +238,7 @@ ESX.RegisterUsableItem('schwarztee', function(source)
 
 	TriggerClientEvent('esx_status:add', source, 'thirst', 100000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	xPlayer.showNotification("Schwarztee getrunken")
+	xPlayer.showNotification("used_schwarztee")
 end)
 
 
