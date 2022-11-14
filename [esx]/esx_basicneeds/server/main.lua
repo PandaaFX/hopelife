@@ -226,7 +226,7 @@ ESX.RegisterUsableItem('sweets', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	xPlayer.removeInventoryItem('sweets', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
 	xPlayer.showNotification("Süßigkeiten gegessen")
 end)
@@ -488,6 +488,19 @@ ESX.RegisterUsableItem('grapperaisin', function(source)
 	end
 	
 	xPlayer.showNotification("Trauben verarbeitet")
+end)
+
+ESX.RegisterUsableItem('pilz', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local trauben = xPlayer.getInventoryItem('pilz').count
+	if trauben < 10 then
+		TriggerClientEvent('esx:showNotification', source,"Nicht genug Pilze")
+	else
+		xPlayer.removeInventoryItem('pilz', 5)
+		xPlayer.addInventoryItem('pseudoefedrine', 2)
+	end
+	
+	xPlayer.showNotification("Pilze verarbeitet")
 end)
 
 ESX.RegisterUsableItem('tequila', function(source)
