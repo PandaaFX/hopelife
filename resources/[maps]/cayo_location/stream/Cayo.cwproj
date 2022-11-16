@@ -1,0 +1,22 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>h4_beach.ymap</Item>
+    <Item>h4_beach_party.ymap</Item>
+    <Item>h4_beach_props.ymap</Item>
+    <Item>h4_beach_props_party.ymap</Item>
+    <Item>map1.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>

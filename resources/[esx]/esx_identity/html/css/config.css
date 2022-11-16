@@ -1,0 +1,9 @@
+:root {
+	--containerfarbe: #131313;
+	--button: linear-gradient(93.03deg, #f601fe 14.21%, #590025 113.01%);
+	--button_hover: linear-gradient(93.03deg, #ffe3ef 14.21%, #ffffff 113.01%);
+	--primev: #f601fe;
+	--text: #FFF;
+	--low_opacity: rgba(255, 255, 255, 0.103);
+	--checkbox_true: linear-gradient(93.03deg, #ffb1d3 11.21%, #ffffff 113.01%);
+	--checkbox_false: linear-gradient(93.03deg, #f601fe 14.21%, #590025 113.01%);

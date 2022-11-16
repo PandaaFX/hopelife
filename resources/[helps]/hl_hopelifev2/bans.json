@@ -1,0 +1,142 @@
+{
+    "lassejoo7": {
+        "ID": 86786020,
+        "hwid": "4:a59c58907049d7a59f20c06826f9de482111428493c81373b52e77fabe4edcd9",
+        "license": "license2:b1a26e0f9b59b7345ebd711bffd86b8d13ffbb0b",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Script stop Detected : hl_blaupause",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:992537636738715688"
+    },
+    "76561199175182292": {
+        "ID": 28537701,
+        "hwid": "4:74db74ae3561a56a18b8e635160f5d4e05e0ad0b840b392a0984b749862890f5",
+        "license": "license2:a38c3d3f2f9e688898d6b3b84de19f7a692b7f64",
+        "steam": "NONE SUPPLIED",
+        "ip": "193.42.12.47",
+        "reason": "Script stop Detected : JD_logsV3",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:1031964726558740610"
+    },
+    "gebigebi": {
+        "ID": 76993027,
+        "hwid": "4:c0aca72dd8514ff590165d9f06f2baa6f8f386f7b15944d9f238ef2bbd74c08f",
+        "license": "license2:8f395ae6398f57f28f7c05bf0964961dfd3b1a17",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Script stop Detected : roddy_identity",
+        "xbl": "xbl:2535437981731554",
+        "discord": "discord:796320846221934593"
+    },
+    "rant52932": {
+        "ID": 93545596,
+        "hwid": "4:adbd56fdf8ebfe2b4ea3b8c5c14249e629f89cc4598aff924fd2c9ebc78f651f",
+        "license": "license2:15945f421ab0514533b7bbb06d501ee77c084b77",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Script stop Detected : jx_doorlock",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:951722428663480401"
+    },
+    "Tony Hopper": {
+        "ID": 19278760,
+        "hwid": "4:22352cad7204e481603a14a7d7e732dc4c7e238d4cd4d6baa12bc3ba78924cb4",
+        "license": "license2:4001982b53375a456aaeea81b2c7af468c464fad",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Blacklist entity",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:433614975961923594"
+    },
+    "Louis": {
+        "ID": 33780568,
+        "hwid": "4:d1697008a0e5a99bafcd5d4657a51b1e175d93cdcdbd0bc8a2b3559248e75c3f",
+        "license": "license2:4391ace85b72b041969972a6b40367e31354c2f2",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Es wurde bei diesem Spieler AI erkannt",
+        "xbl": "xbl:2535472852476189",
+        "discord": "discord:950721469254606859"
+    },
+    "Elias Hanma": {
+        "ID": 11606718,
+        "hwid": "4:9d7430e0eb5d460fd88bf9309380c2e1143cacaac7cfbf1da14d77768c3147bc",
+        "license": "license2:832901ae89636b399a94b713ce487144b4c097a7",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Script stop Detected : okokCrafting",
+        "xbl": "xbl:2535444914281690",
+        "discord": "discord:847267665345380352"
+    },
+    "Musti": {
+        "ID": 74975835,
+        "hwid": "4:ddedbb07d48a4eb8219b57a61cd8b9b600cfdacbf921be5e1dba1adb762179d8",
+        "license": "license2:fe947eaace83e287d3ef3dfb8f110cbb747f33b4",
+        "ip": "193.42.12.47",
+        "discord": "discord:957732209777856643",
+        "reason": "Script stop Detected : connectqueue",
+        "xbl": "NONE SUPPLIED",
+        "steam": "NONE SUPPLIED"
+    },
+    "tvmxd": {
+        "ID": 70877366,
+        "hwid": "4:63c337388483b0160c3e185a4a295403b2e7cbe7d31b78f635cc2db6c1bc6180",
+        "license": "license2:36b0f478749347b8b4210606200a9dcef925b259",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Es wurde bei diesem Spieler AI erkannt",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:990912366726217799"
+    },
+    "Chris 𝒜𝓈𝓉𝓇𝑜": {
+        "ID": 90030006,
+        "hwid": "4:2ae091220c1f432d49e129fe35ae943f0a5f4f95f31a4303a72a1dfd40a0b474",
+        "license": "license2:7ba3720bd34b067b6cc1d794388f8372a491acbf",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Es wurde bei diesem Spieler AI erkannt",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:671061725751148544"
+    },
+    "nøkknøkkopenup": {
+        "ID": 79742634,
+        "hwid": "4:2eae7833ab5da4bd245bba3525ecf758b58776ed2a0e39e5ff2061b34dbd2c8c",
+        "license": "license2:28f86c3662698ab9266811f185b4f958871118af",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Mod Menu Detected --> HydroMenu",
+        "xbl": "xbl:2535435927239998",
+        "discord": "discord:519225033638281217"
+    },
+    "Herr Wesoly": {
+        "ID": 7673041,
+        "hwid": "4:29a08fdf69049eea5fa687fbf214120557c90d9569015ded097fb55af14a37be",
+        "license": "license2:992aca06411ca6df38a3de239c2082a568118354",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Es wurde bei diesem Spieler AI erkannt",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:912122061558784040"
+    },
+    "SteelBree guuudddddd": {
+        "ID": 5661953,
+        "hwid": "4:a09931f7c53096ee94e6cf25bc9b11e70aee8243c8c5d4e54147cc3312f30f80",
+        "license": "license2:6018bbf506ce6cac3af4968af5ca36b96e3a54a3",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Es wurde bei diesem Spieler AI erkannt",
+        "xbl": "NONE SUPPLIED",
+        "discord": "discord:675467971728113666"
+    },
+    "Jayden": {
+        "ID": 98907481,
+        "hwid": "4:9652dd77ca34c18edd08d594d4fc96de8dcaf05c8d54242221704804d360bf8d",
+        "license": "license2:6239dc6192ff68dd0add19b15418cf8f3934dbf7",
+        "ip": "193.42.12.47",
+        "steam": "NONE SUPPLIED",
+        "reason": "Blacklist event",
+        "xbl": "xbl:2535464274081102",
+        "discord": "discord:793429285548851230"
+    }
+}

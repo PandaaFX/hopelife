@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/config.css">
+    <title>Identity</title>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="ui_container">
+    <div class="background">
+      <div class="bg_container">
+        <div class="main_blurr"></div>
+        <div class="Header">
+          <span class="firstlayer2">Hope<span class="v">Life</span></span>
+          <span class="secondlayer2">EINREISE</span>
+          <div class="einreise_vector"></div>
+          <span class="einreise">EINREISE</span>
+          <span class="einreise_text">ACHTEN SIE AUF ALLE ZULÄSSIGEN ZEICHEN BEI DER EINGABE. 
+            SIE BENÖTIGEN HILFE? MELDEN SIE SICH IM<span class="hier">DISCORD.</span></span>
+        </div>
+
+        <div class="left_circles">
+          <div class="main_lcircle"></div>
+          <div class="border_l1"></div>
+          <div class="border_l2"></div>
+          <div class="border_l3"></div>
+        </div>
+        <div class="right_circles">
+          <div class="main_rcircle"></div>
+          <div class="border_r1"></div>
+          <div class="border_r2"></div>
+          <div class="border_r3"></div>
+          <img class="person_icon" src="img/sugardaddy.png">
+        </div>
+
+        <div class="inputs">
+          <input type="text" class="input_vorname" placeholder="Vorname">
+          <input type="text" class="input_nachname" placeholder="Nachname">
+          <input type="text" class="input_größe" placeholder="Größe (140 - 250cm)">
+          <input type="text" class="input_alter" placeholder="Geburtsdatum  (JJJJ-MM-TT)">
+          <input type="text" class="input_geschlecht" placeholder="Geschlecht (M/F)" maxlength="1"> <!--Abfrage was eingegebn wurde-->
+        </div>
+        <div class="checkbox">
+          <div class="true">
+            <div class="checkbox_vorname">
+              <img class="vorname_true" src="img/check.png">
+              <div class="vorname_vector"></div>
+            </div>
+            <div class="checkbox_nachname">
+              <img class="nachname_true" src="img/check.png">
+              <div class="nachname_vector"></div>
+            </div>
+            <div class="checkbox_größe">
+              <img class="größe_true" src="img/check.png">
+              <div class="größe_vector"></div>
+            </div>
+            <div class="checkbox_geburtsdatum">
+              <img class="geburtsdatum_true" src="img/check.png">
+              <div class="geburtsdatum_vector"></div>
+            </div>
+            <div class="checkbox_geschlecht">
+              <img class="geschlecht_true" src="img/check.png">
+              <div class="geschlecht_vector"></div>
+            </div>
+          </div>
+          <!--
+          <div class="false">
+            <div class="checkbox_vorname_f">
+              <img class="vorname_false" src="uncheck.png">
+            </div>
+            <div class="checkbox_nachname_f">
+              <img class="nachname_false" src="uncheck.png">
+            </div>
+            <div class="checkbox_größe_f">
+              <img class="größe_false" src="uncheck.png">
+            </div>
+            <div class="checkbox_geburtsdatum_f">
+              <img class="geburtsdatum_false" src="uncheck.png">
+            </div>
+            <div class="checkbox_geschlecht_f">
+              <img class="geschlecht_false" src="uncheck.png">
+            </div>
+            -->
+          </div>
+          <button class="einreisen_btn" onclick="submit()">EINREISEN</button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

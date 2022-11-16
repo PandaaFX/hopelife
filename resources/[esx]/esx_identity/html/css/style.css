@@ -1,0 +1,320 @@
+body {
+	user-select: none;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+	* {
+		font-family: 'Poppins';
+		margin: 0;
+		padding: 0;
+		border: none;
+	}	
+
+button {
+	position: absolute;
+	background: var(--button);
+	border-radius: 1vw;
+	width: 12vw;
+	height: 2.4vw;
+	cursor: pointer;
+	text-align: center;
+	font-size: 0.9vw;
+	font-weight: 900;
+	color: var(--text);
+	transition: .3s ease-in-out 0s;
+}
+
+button:hover {
+	transform: scale(1.06);
+	background: var(--button_hover);
+	color: var(--primev);
+	font-weight: 500;
+}
+
+input{
+	background: transparent;
+	outline: none;
+	font-family: 'Poppins';
+	font-weight: 100;
+	font-size: 0.7vw;
+	color: var(--text);
+	width: 15.7vw;
+	height: 2.5vw;
+	text-align: center;
+	border-style:  var(--text);
+	background-color: var(--low_opacity);
+}
+
+::placeholder  {
+	color: var(--text);
+	font-weight: 200;
+	padding-left: 2vw;
+	opacity: 70%;
+	text-align: left;
+  }
+
+.einreisen_btn {
+	position: absolute;
+	top: 88%;
+	left: 43%;
+}
+  .firstlayer2 {
+	position: absolute;
+	color: var(--text);
+	top: 1.4%;
+	left: 44.5%;
+	font-size: 2.1vw;
+	font-weight: 900;
+  }
+  .v {
+	position: absolute;
+	color: var(--primev);
+	top: 0%;
+	left: 102.5%;
+	font-size: 2.1vw;
+	font-weight: 900;
+  }
+  .secondlayer2 {
+	position: absolute;
+	color: var(--text);
+	top: 7%;
+	left: 47.5%;
+	font-size: 0.8vw;
+  } 
+
+
+.ui_container {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(19, 19, 19, 0.644);
+}
+
+  .bg_container {
+	color: rgba(19, 19, 19, 0.644);
+  }
+  .main_blurr {
+	position: absolute;
+	background: var(--primev);
+	top: -70vw;
+	left: -40%;
+	border-radius: 50%;
+	width: 70vw;
+	height: 80vw;
+	position: relative;
+	filter: blur(60vw);
+	
+
+  }
+
+  .main_lcircle, .main_rcircle, .einreise_vector, .vorname_vector, .nachname_vector, .größe_vector, .geburtsdatum_vector, .geschlecht_vector {
+	position: absolute;
+	background: var(--primev);
+
+  }
+
+  .main_lcircle {
+	width: 40vw;
+	height: 40vw;
+	border-radius: 50%;
+	left: -25%;
+	top: 15%;
+  }
+
+  .border_l1, .border_l2, .border_l3, .border_r1, .border_r2, .border_r3 {
+	position: absolute;
+	border: solid var(--primev);
+	border-radius: 50%;
+  }
+  .border_l1 {
+	width: 45vw;
+	height: 45vw;
+	top: 10.5%;
+	left: -26.6%;
+	opacity: 70%;
+  }
+  .border_l2 {
+	width: 50vw;
+	height: 50vw;
+	top: 6%;
+	left: -28.2%;
+	opacity: 40%;
+  }
+  .border_l3 {
+	width: 55vw;
+	height: 55vw;
+	top: 1.8%;
+	left: -30%;
+	opacity: 10%;
+  }
+
+  .main_rcircle {
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
+	top: 66.7%;
+	left: 85%;
+  }
+  .border_r1 {
+	width: 25vw;
+	height: 25vw;
+	top: 60.5%;
+	left: 81%;
+	opacity: 70%;
+  }
+  .border_r2 {
+	width: 30vw;
+	height: 30vw;
+	top: 55.8%;
+	left: 78%;
+	opacity: 40%;
+  }
+  .border_r3 {
+	width: 35vw;
+	height: 35vw;
+	top: 50.8%;
+	left: 75%;
+	opacity: 10%;
+  }
+
+.person_icon {
+	position: absolute;
+	top: 53%;
+	left: 80%;
+	width: 26vw;
+}
+
+.einreise_vector, .vorname_vector, .nachname_vector, .größe_vector, .geburtsdatum_vector, .geschlecht_vector{
+	position: absolute;
+	height: 0.3vw;
+	width: 5vw;
+	border-radius: 1vw;
+}
+.einreise_vector {
+	left: 46.6%;
+	top: 14%;
+}
+.vorname_vector, .nachname_vector, .größe_vector, .geburtsdatum_vector, .geschlecht_vector {
+	left: -340%;
+	top: 10%;
+}
+.einreise {
+	position: absolute;
+	color: var(--text);
+	top: 15%;
+	left: 47.2%;
+	font-size: 1vw;
+  }
+.einreise_text {
+	position: absolute;
+	color: var(--text);
+	font-size: 0.7vw;
+	text-align: center;
+	width: 20vw;
+	top: 18%;
+	left: 39%;
+}
+.hier {
+	position: absolute;
+	color: var(--primev);
+	font-size: 0.7vw;
+	text-align: center;
+	width: 20vw;
+	top: 50%;
+	left: 43.5%;
+}
+
+/* inputs */
+
+.input_vorname, .input_nachname, .input_größe, .input_alter, .input_geschlecht {
+	position: absolute;
+	left: 40%;
+}
+
+.input_vorname {
+	top: 30%;
+}
+
+.input_nachname {
+	top: 41%;
+}
+
+.input_größe {
+	top: 52%;
+}
+.input_alter {
+	top: 63%;
+}
+.input_geschlecht {
+	top: 74%;
+}
+
+/* checkboxen */
+.vorname_true, .nachname_true, .größe_true, .geburtsdatum_true, .geschlecht_true {
+	position: absolute;
+	left: 32%;
+	top: 39%;
+	width: 1.5vw;
+}
+.vorname_false, .nachname_false, .größe_false, .geburtsdatum_false, .geschlecht_false {
+	position: absolute;
+	left: 37%;
+	top: 35%;
+	width: 1.1vw;
+}
+.checkbox_vorname, .checkbox_nachname, .checkbox_größe, .checkbox_geburtsdatum, .checkbox_geschlecht {
+	position: absolute;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	left: 54%;
+	background: var(--checkbox_true);
+}
+
+.checkbox_vorname {
+	top: 28.8%;
+}
+.checkbox_nachname {
+	top: 40%;
+}
+.checkbox_größe {
+	top: 50.8%;
+}
+.checkbox_geburtsdatum {
+	top: 61.7%;
+}
+.checkbox_geschlecht {
+	top: 72.7%;
+}
+
+.checkbox_vorname_f, .checkbox_nachname_f, .checkbox_größe_f, .checkbox_geburtsdatum_f, .checkbox_geschlecht_f {
+	position: absolute;
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	left: 54%;
+	background: var(--checkbox_false);
+}
+
+.checkbox_vorname_f {
+	top: 28.8%;
+}
+.checkbox_nachname_f {
+	top: 40%;
+}
+.checkbox_größe_f {
+	top: 50.8%;
+}
+.checkbox_geburtsdatum_f {
+	top: 61.7%;
+}
+.checkbox_geschlecht_f {
+	top: 72.7%;
+}
