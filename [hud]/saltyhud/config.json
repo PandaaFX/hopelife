@@ -1,8 +1,0 @@
-{
-  "Enabled": true,
-  "RangeModifier": 1.0,
-  "RangeText": "{voicerange} Meter",
-  "RadioText": "Funk {channel}",
-  "HideWhilePauseMenuOpen": true,
-  "Position": [0, 0]
-}

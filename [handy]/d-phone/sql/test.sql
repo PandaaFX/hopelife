@@ -1,1 +1,0 @@
-ALTER TABLE `phone_business` ADD COLUMN `id` int(11) NOT NULL AUTO_INCREMENT;

@@ -1,3 +1,0 @@
-
-[16:56:23] Configuration loaded successfully...
-[16:56:23] Loaded language ^0[^3eng^0]
