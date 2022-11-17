@@ -5,7 +5,7 @@ table.insert(Config.DoorList, {
 	objHeading = 244.00003051758,
 	objCoords = vector3(-2556.443, 1916.092, 167.9061),
 	garage = false,
-	maxDistance = 6.0,
+	maxDistance = 12.0,
 	slides = true,
 	locked = true,
 	fixText = false,

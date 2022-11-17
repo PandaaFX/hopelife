@@ -1045,7 +1045,7 @@ Config = {
         },
         {
             name = "hookahlounge", -- job name, must be the same as in your jobs table
-            coords = vector3(-436.457153, -35.828568, 40.872559), -- position of the location
+            coords = vector3(-432.303284, -35.828568, 40.872559), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
@@ -1230,7 +1230,7 @@ Config = {
         },
         {
             name = "oblocks", -- job name, must be the same as in your jobs table
-            coords = vector3(332.334,-2018.4132,22.337769), -- position of the location
+            coords = vector3(337.978027, -2019.349487, 22.169189), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
@@ -1267,7 +1267,7 @@ Config = {
         },
         {
             name = "oblocks", -- job name, must be the same as in your jobs table
-            coords = vector3(336.158234, -2021.670288, 22.337769), -- position of the location
+            coords = vector3(339.441772, -2017.503296, 22.169189), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Tresor", -- -- Name of the Blip
             display = 4, -- see displayId on https://docs.fivem.net/natives/?_0x9029B2F3DA924928
