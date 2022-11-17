@@ -590,7 +590,7 @@ ESX.RegisterUsableItem('baklava', function(source)
 	xPlayer.removeInventoryItem('baklava', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
 	xPlayer.showNotification(_U("used_baklava"))
 end)
 
