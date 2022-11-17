@@ -32,7 +32,8 @@ Config.Locale = 'de'
 
 Config.Societies = { -- Which societies have bank accounts
 	"police",
-	"ambulance"
+	"ambulance",
+	"bauamt"
 }
 
 Config.SocietyAccessRanks = { -- Which ranks of the society have access to it

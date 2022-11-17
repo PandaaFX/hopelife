@@ -35,6 +35,14 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        lssdoffi = {
+            browse = vector3(-458.334076, 6052.522949, 31.487183),
+            --location = vector4(232.2, -792.48, 29.9, 160.0),
+            spawn = vector4(-449.248352, 6052.812988, 31.335571, 212.598419),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+        },
         Crastenburg = {
             browse = vector3(-1211.340698, -182.136261, 39.322388),
             --location = vector4(232.2, -792.48, 29.9, 160.0),

@@ -7,7 +7,7 @@ table.insert(Config.DoorList, {
 		{objHash = -770740285, objHeading = 354.99987792969, objCoords = vector3(-670.0551, 329.5765, 83.11162)}
  },
 	slides = false,
-	authorizedJobs = { ['ambulance']=0,['offambulance']=0, ['police']=0, ['fib']=0 },
+	authorizedJobs = { ['ambulance']=0,['offambulance']=0, ['police']=0, ['fib']=0, ['lssd']=0  },
 	audioRemote = false,
 	locked = true,
 	maxDistance = 2.5,
