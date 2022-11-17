@@ -68,6 +68,16 @@ ESX.RegisterUsableItem('cheese', function(source)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
 	xPlayer.showNotification(_U('used_cheese'))
 end)
+
+ESX.RegisterUsableItem('kase', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	xPlayer.removeInventoryItem('kase', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	xPlayer.showNotification(_U('used_cheese'))
+end)
+
 ESX.RegisterUsableItem('lachs', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	xPlayer.removeInventoryItem('lachs', 1)
