@@ -25,14 +25,6 @@ ESX.RegisterUsableItem('tomatos', function(source)
 	xPlayer.showNotification("Tomate gegessen")
 end)
 
-ESX.RegisterUsableItem('pilz', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-	xPlayer.removeInventoryItem('pilz', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 30000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	xPlayer.showNotification(_U('used_pilz'))
-end)
 
 ESX.RegisterUsableItem('donut', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -664,6 +656,19 @@ ESX.RegisterUsableItem('weed_pooch', function(source)
 		TriggerClientEvent('esx:showNotification', source, "Ein Tütchen geöffnet...")
 	end
 end)
+
+ESX.RegisterUsableItem('pilz', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local weed = xPlayer.getInventoryItem('pilz').count
+	if weed < 1 then
+		TriggerClientEvent('esx:showNotification', source,"Nicht genug Pilze")
+	else
+		xPlayer.removeInventoryItem('pilz', 2)
+		xPlayer.addInventoryItem('psilocybin', 1)
+		TriggerClientEvent('esx:showNotification', source, "Psilocybin hergestellt...")
+	end
+end)
+
 
 ESX.RegisterUsableItem('fixkit', function(source)
 	local source = source
