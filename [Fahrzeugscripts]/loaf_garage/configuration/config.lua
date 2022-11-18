@@ -693,23 +693,6 @@ Config = {
             vehicletype = "aircraft",
             specifiedJob = "che",
         },
-
-        Tribunal = {
-            browse = vector3(4985.499023, -5732.083496, 19.911377),
-            spawn = vector4(4987.714355, -5725.121094, 19.877686, 317.480316),
-            vehicletype = "car",
-            vehicletype2 = "motos",
-            vehicletype3 = "car2",
-            specifiedJob = "tribunal",
-        },
-        
-        TribunalHeli = {
-            browse = vector3(4907.512207, -5741.591309, 25.926758),
-            spawn = vector4(4890.685547, -5736.237305, 26.348022, 87.874016),
-            vehicletype = "aircraft",
-            specifiedJob = "tribunal",
-        },
-
         Casino = {
             browse = vector3(939.639587, 25.674726, 81.143555),
             spawn = vector4(950.690125, 25.542860, 81.143555, 150.236221),

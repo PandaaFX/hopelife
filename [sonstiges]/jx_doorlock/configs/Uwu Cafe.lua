@@ -1,5 +1,5 @@
 
-
+--[[
 -- Haupttuer
 table.insert(Config.DoorList, {
 	maxDistance = 2.5,
@@ -212,3 +212,5 @@ table.insert(Config.DoorList, {
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
 	-- autoLock = 1000
 })
+
+]]

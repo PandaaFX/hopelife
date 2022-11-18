@@ -27,7 +27,8 @@ local IndexPedAmbientfemale = {
 "Spirit",
 "Pyramidhead",
 "Sadako",
-"Plague"
+"Plague",
+"mk31"
 }
 
 local statIndexPedanimals = 1

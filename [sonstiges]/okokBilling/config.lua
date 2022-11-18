@@ -77,7 +77,6 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'sinaloa',
 	'soa',
 	'outlaws',
-	'tribunal',
 	'che',
 	'weazel',
 	'lafam'
@@ -316,9 +315,6 @@ Config.BillsList = {
 		{'Custom'}
 	},
 	['outlaws'] = {
-		{'Custom'}
-	},
-	['tribunal'] = {
 		{'Custom'}
 	},
 	['che'] = {
