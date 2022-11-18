@@ -303,7 +303,7 @@ Config.ShowVehicle = { -- Display vehicle
 		noVehicleCam = {x = 2489.037354-1.49, y = 4118.439453-7.65, z = 38.075439+1.15}, -- Camera position when there is no vehicle to be displayed
 		testDrive = {x = -1733.25, y = -2901.43, z = 13.94, h = 330.0}, -- Where to start the test drive
 		vehicleSpawn = { -- Where the vehicle spawns when bought
-			{x = 2492.004395,y= 4131.270508,z= 38.345093,h= 45.354328}
+			{x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520}
 		},
 	},
 	["car2"] = { -- ID of the vehicle shop

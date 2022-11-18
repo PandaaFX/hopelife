@@ -109,6 +109,26 @@ Config.Positions = {
     },
     actionDistance = 10.0
 },
+{ -- soa 
+pos = {x = 352.826385, y = 3403.239502, z = 36.457886},
+whitelistJobName = 'soa',
+societyName = 'society_soa', -- uncomment this to enable society account for this point (only for whitelist points)
+blip = {
+    enable = true,
+    type = 446,
+    color = 44,
+    title = 'Bennys',
+    scale = 0.8
+},
+marker = {
+    enable = true,
+    type = 30,
+    positionOffset = {x = 0.0, y = 0.0, z = 0.3},
+    scale = {x = 1.0, y = 1.0, z = 1.0},
+    color = {r = 0, g = 0, b = 0, a = 150},
+},
+actionDistance = 25.0
+},
 { -- outlaws
 pos = {x = 140.20, y = -3030.32, z = 7.04},
 whitelistJobName = 'outlaws',
