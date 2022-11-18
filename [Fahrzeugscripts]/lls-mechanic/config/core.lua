@@ -117,7 +117,7 @@ blip = {
     enable = true,
     type = 446,
     color = 44,
-    title = 'Bennys',
+    title = 'SOA',
     scale = 0.8
 },
 marker = {
