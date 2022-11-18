@@ -7,7 +7,7 @@ Config = {
     ignoreBlackMoney = false,
     StoragePositions = {
         {
-            name = "lafam", -- job name, must be the same as in your jobs table
+            name = "camorra", -- job name, must be the same as in your jobs table
             coords = vector3( -3194.650, 833.60, 7.92), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Lager", -- -- Name of the Blip
@@ -44,7 +44,7 @@ Config = {
             policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
         },
         {
-            name = "lafam", -- job name, must be the same as in your jobs table
+            name = "camorra", -- job name, must be the same as in your jobs table
             coords = vector3(-3197.248291, 836.070313, 8.925293), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
             blipLabel = "Tresor", -- -- Name of the Blip

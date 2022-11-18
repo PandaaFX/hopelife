@@ -4,7 +4,7 @@
 table.insert(Config.DoorList, {
 	locked = true,
 	slides = false,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	doors = {
 		{objHash = 1705178895, objHeading = 32.504173278809, objCoords = vector3(-3221.664, 837.3599, 8.71796)},
 		{objHash = 1705178895, objHeading = 212.41435241699, objCoords = vector3(-3219.797, 838.5515, 8.71796)}
@@ -22,7 +22,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	objHeading = 122.50891876221,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	objHash = 308207762,
 	objCoords = vector3(-3217.558, 816.7752, 9.072801),
 	audioRemote = false,
@@ -41,7 +41,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	objHeading = 122.50592803955,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	objHash = 1286535678,
 	objCoords = vector3(-3137.585, 798.9524, 16.35332),
 	audioRemote = false,
@@ -60,7 +60,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	slides = false,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	doors = {
 		{objHash = 1705178895, objHeading = 212.28471374512, objCoords = vector3(-3197.211, 764.5151, 8.71796)},
 		{objHash = 1705178895, objHeading = 32.513065338135, objCoords = vector3(-3199.076, 763.3195, 8.71796)}
@@ -78,7 +78,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	objHeading = 302.50891113281,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	objHash = 270936785,
 	objCoords = vector3(-3218.483, 777.1123, 13.06224),
 	audioRemote = false,
@@ -97,7 +97,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	slides = false,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	doors = {
 		{objHash = 1705178895, objHeading = 32.414360046387, objCoords = vector3(-3215.987, 810.5033, 13.85424)},
 		{objHash = 1705178895, objHeading = 212.41435241699, objCoords = vector3(-3214.112, 811.6936, 13.85418)}
@@ -115,7 +115,7 @@ table.insert(Config.DoorList, {
 table.insert(Config.DoorList, {
 	locked = true,
 	slides = false,
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	doors = {
 		{objHash = 1705178895, objHeading = 212.41435241699, objCoords = vector3(-3196.223, 783.6055, 13.85421)},
 		{objHash = 1705178895, objHeading = 32.414360046387, objCoords = vector3(-3198.089, 782.4204, 13.85427)}
@@ -132,7 +132,7 @@ table.insert(Config.DoorList, {
 
 -- Buero innen
 table.insert(Config.DoorList, {
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	locked = true,
 	lockpick = false,
 	audioRemote = false,
@@ -150,7 +150,7 @@ table.insert(Config.DoorList, {
 
 -- Unten aussentuer
 table.insert(Config.DoorList, {
-	authorizedJobs = { ['lafam']=0 },
+	authorizedJobs = { ['camorra']=0 },
 	locked = true,
 	fixText = false,
 	slides = true,

@@ -552,21 +552,21 @@ Config = {
             specifiedJob = "saints",
         },
 
-        -- LAFAMILIA = {
-        --     browse = vector3(-3212.822021, 822.764832, 8.925293),
-        --     spawn = vector4(-3200.980225, 811.964844, 8.925293, 212.598419),
-        --     vehicletype = "car",
-        --     vehicletype2 = "motos",
-        --     vehicletype3 = "car2",
-        --     specifiedJob = "lafam",
-        -- },
+        camorra = {
+             browse = vector3(-3212.822021, 822.764832, 8.925293),
+            spawn = vector4(-3200.980225, 811.964844, 8.925293, 212.598419),
+             vehicletype = "car",
+            vehicletype2 = "motos",
+             vehicletype3 = "car2",
+            specifiedJob = "camorra",
+         },
         
-        -- LAFAMILIAHeli = {
-        --     browse = vector3(-3251.775879, 838.127502, 2.909912),
-        --     spawn = vector4(-3258.316406, 838.984619, 2.909912, 45.354328),
-        --     vehicletype = "aircraft",
-        --     specifiedJob = "lafam",
-        -- },
+         camorraheli = {
+             browse = vector3(-3251.775879, 838.127502, 2.909912),
+             spawn = vector4(-3258.316406, 838.984619, 2.909912, 45.354328),
+             vehicletype = "aircraft",
+             specifiedJob = "camorra",
+        },
         Oblocks = {
             browse = vector3(337.542847, -2035.635132, 21.377319),
             spawn = vector4(335.696716, -2039.301147, 20.720093, 48.188972),
@@ -663,8 +663,8 @@ Config = {
         },
         
         SonsofAnarchie = {
-            browse = vector3(-1750.206543, 366.210999, 89.720093),
-            spawn = vector4(2503.542969, 4109.182617, 38.361938, 5.669291),
+            browse = vector3(305.274719, 3386.571533, 36.390503),
+            spawn = vector4(322.799988, 3404.742920, 36.744263, 286.299194),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -672,8 +672,8 @@ Config = {
         },
         
         SonsofAnarchieHeli = {
-            browse = vector3(2511.125244, 4111.490234, 38.547241),
-            spawn = vector4(2503.542969, 4109.182617, 38.361938, 5.669291),
+            browse = vector3(366.342865, 3425.076904, 35.834473),
+            spawn = vector4(389.723083, 3415.041748, 36.339966, 113.385826),
             vehicletype = "aircraft",
             specifiedJob = "soa",
         },

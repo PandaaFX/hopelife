@@ -167,14 +167,15 @@ Config.Stands = { -- Vehicle shops informations
 		licenseType = "", -- if you want to use a license system you'll need to set it up on sv_utils.lua
 		currency = "bank", -- used to buy/sell the business and buy vehicle
 		hasOwner = true, -- true = this vehicle shop can have a owner and will need maintenance to have stock | false = no owner and with vehicles all the time, price = max_price set on the database
-		coords = {x =2474.162598,y= 4114.166992,z= 38.058594}, -- Marker/Shop position
-		sellVehicleCoords = {x = 2501.353760, y = 4090.430664, z= 38.496704},
+	
+		coords = {x =371.934082,y= 3411.890137,z= 36.390503}, -- Marker/Shop position
+		sellVehicleCoords = {x = 371.934082, y = 3411.890137, z= 36.390503},
 		sellVehicleMarker = {id = 1, color = {r = 255, g = 0, b = 0, a = 90}, size = {x = 4.0, y = 4.0, z = 1.5}, radius = 2.5, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0}, -- Marker informations for the sell vehicle marker
-		ownerCoords = {x = 2519.419678,y= 4108.812988,z= 42.793457}, -- Marker/Shop position for owner/employees
-		spawnFlatbedPos = {x = 2521.701172,y= 4140.369141,z= 38.614624,h= 331.653534}, -- Where the flatbed/truck is spawned for the orders
+		ownerCoords = {x = 340.325287,y= 3395.591309,z= 33.374390}, -- Marker/Shop position for owner/employees, , 
+		spawnFlatbedPos = {x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520}, -- Where the flatbed/truck is spawned for the orders
 		towCoords = {bone = 20, xPos = -0.5, yPos = -5.0, zPos = 1.0},
 		missionsVehicleSpawn = { -- Locations where someone who accepted an order will have to go (it is random)
-			{x = 1218.013184,y= -2979.257080,z= 5.858643,h= 331.653534},
+			{x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520},
 			--{x = 218.46, y = -850.71, z = 30.16, h = 100.0},
 		},
 		radius = 1, -- Interaction radius for the markers
