@@ -62,25 +62,6 @@ ESX.RegisterUsableItem('schoko', function(source)
 	xPlayer.showNotification(_U('used_schoko'))
 end)
 
-ESX.RegisterUsableItem('baklava', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-	xPlayer.removeInventoryItem('baklava', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	xPlayer.showNotification(_U('used_baklava'))
-end)
-
-ESX.RegisterUsableItem('schwarztee', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-	xPlayer.removeInventoryItem('schwarztee', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 50000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	xPlayer.showNotification(_U('used_schwarztee'))
-end)
-
-
 
 ESX.RegisterUsableItem('burger', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
