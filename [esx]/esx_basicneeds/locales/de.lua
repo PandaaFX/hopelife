@@ -36,4 +36,6 @@ Locales['de'] = {
   ['used_cheese'] = 'du hast ~y~1x~s~ ~o~Käse~s~ gegessen',
   ['used_baklava'] = 'du hast ~y~1x~s~ ~o~Baklava~s~ gegessen',
   ['used_schwarztee'] = 'du hast ~y~1x~s~ ~o~Schwarztee~s~ getrunken',
+  ['used_schoko'] = 'du hast ~y~1x~s~ ~o~Schoko~s~ gegessen',
+  ['used_sweets'] = 'du hast ~y~1x~s~ ~o~Süßigkeiten~s~ getrunken',
 }
