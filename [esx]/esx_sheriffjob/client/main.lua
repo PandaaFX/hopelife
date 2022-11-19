@@ -1009,8 +1009,9 @@ end)
 
 AddEventHandler('esx_sheriffjob:hasEnteredEntityZone', function(entity)
 	local playerPed = PlayerPedId()
-
+	print("Job: ".. ESX.PlayerData.job.name)
 	if ESX.PlayerData.job and ESX.PlayerData.job.name == 'lssd' and IsPedOnFoot(playerPed) then
+		print("test")
 		CurrentAction     = 'remove_entity'
 		CurrentActionMsg  = _U('remove_prop')
 		CurrentActionData = {entity = entity}
@@ -1072,11 +1073,13 @@ CreateThread(function()
 		if closestDistance ~= -1 and closestDistance <= 3.0 then
 			if LastEntity ~= closestEntity then
 				TriggerEvent('esx_sheriffjob:hasEnteredEntityZone', closestEntity)
+				print('Obj gefunden: '..closestEntity)
 				LastEntity = closestEntity
 			end
 		else
 			if LastEntity then
 				TriggerEvent('esx_sheriffjob:hasExitedEntityZone', LastEntity)
+				print('Obj gefunden: '..LastEntity)
 				LastEntity = nil
 			end
 		end
@@ -1087,6 +1090,14 @@ end)
 CreateThread(function()
 	while true do
 		Wait(0)
+		if CurrentAction then
+			ESX.ShowHelpNotification(CurrentActionMsg)
+			if IsControlJustReleased(0, 38) and ESX.PlayerData.job and ESX.PlayerData.job.name == 'lssd' then
+				if CurrentAction == 'remove_entity' then
+					DeleteEntity(CurrentActionData.entity)
+				end
+			end
+		end
 
 		if IsControlJustReleased(0, 167) and not isDead and ESX.PlayerData.job and ESX.PlayerData.job.name == 'lssd' and not ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'lssd_actions') then
 			if not Config.EnableESXService then
