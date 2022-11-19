@@ -455,7 +455,45 @@ WS_FARMER.zones = {
             }
         }
     },
-
+    ["pseudoefedrine"] = {
+        coords = vector3(-248.821976, 6330.896484, 32.413940),
+        output = "pseudoefedrine", 
+        outputanzahl = 4,
+        helpmsg = "~INPUT_CONTEXT~ um zu sammeln", 
+        time = 10, -- in secs
+        zonesize = 5.0,
+        animation = {
+            animDictionary = "pickup_object", 
+	        animationName = "pickup_low"
+        },
+        disallowed_jobs = {
+            "admin",
+        },
+        blip = {
+            id = 1, 
+            color = 1, 
+            scale = 1.0,
+            shortrange = true,
+            name = "Samenfarm",
+            enabled = false,
+        },
+        marker = {
+            typ = 1,
+            move = false,
+            rotate = true,
+            z_offset = 1.8,
+            color = {
+                r = 0,
+                g = 28,
+                b = 0,
+                t = 140
+            },
+            size = {
+                x = 0.0,
+                y = 0.0,
+                z = 2.0
+            }
+        }
+    },
     -- Route Ende --
-
 }

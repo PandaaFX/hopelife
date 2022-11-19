@@ -1007,7 +1007,7 @@ CreateThread(function()
 	end
 end)
 
-AddEventHandler('esx_policejob:hasEnteredEntityZone', function(entity)
+AddEventHandler('esx_sheriffjob:hasEnteredEntityZone', function(entity)
 	local playerPed = PlayerPedId()
 
 	if ESX.PlayerData.job and ESX.PlayerData.job.name == 'lssd' and IsPedOnFoot(playerPed) then
@@ -1030,7 +1030,7 @@ AddEventHandler('esx_policejob:hasEnteredEntityZone', function(entity)
 	end
 end)
 
-AddEventHandler('esx_policejob:hasExitedEntityZone', function(entity)
+AddEventHandler('esx_sheriffjob:hasExitedEntityZone', function(entity)
 	if CurrentAction == 'remove_entity' then
 		CurrentAction = nil
 	end
