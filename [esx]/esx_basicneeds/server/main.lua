@@ -640,8 +640,8 @@ end)
 
 ESX.RegisterUsableItem('pilz', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
-	local weed = xPlayer.getInventoryItem('pilz').count
-	if weed < 1 then
+	local pilz = xPlayer.getInventoryItem('pilz').count
+	if pilz < 2 then
 		TriggerClientEvent('esx:showNotification', source,"Nicht genug Pilze")
 	else
 		xPlayer.removeInventoryItem('pilz', 2)
