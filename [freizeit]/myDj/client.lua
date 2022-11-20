@@ -4,7 +4,7 @@ xSound = exports.xsound
 
 if Config.useESX then
     Citizen.CreateThread(function()
-        while ESX == nil do
+        while true do
             TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
             Citizen.Wait(0)
         end
@@ -74,9 +74,12 @@ Citizen.CreateThread(function()
 
         isAtDJ = false
         isNearDJ = false
-
         for k, v in pairs(Config.DJPositions) do
-            if (not Config.useESX or v.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v.requiredJob) then
+  --          if (not Config.useESX or v.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and ESX.PlayerData.job.name == v.requiredJob) then
+            
+                --print("Data: "..v)
+
+            if v.requiredJob == nil or ESX ~= nil and ESX.PlayerData.job ~= nil and v.requiredJob ~= nil and ESX.PlayerData.job.name == v.requiredJob then
                 local distance = Vdist(playerCoords, v.pos.x, v.pos.y, v.pos.z)
 
                 if distance < 2.0 then
