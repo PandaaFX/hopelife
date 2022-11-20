@@ -60,9 +60,9 @@ Config = {
             vehicletype3 = "car2",
         },
         Cafe = {
-            browse = vector3(-584.914307, -1086.738403, 22.320923),
+            browse = vector3(-614.268127, -940.799988, 22.068115),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
-            spawn = vector4(-581.789001, -1100.993408, 22.169189, 90.708656),
+            spawn = vector4(-616.417603, -920.465942, 23.399292, 102.047249),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -551,7 +551,14 @@ Config = {
             vehicletype = "aircraft",
             specifiedJob = "saints",
         },
-
+        bauamt = {
+            browse = vector3(-537.098877, -886.536255, 25.202148),
+           spawn = vector4(-553.595581, -896.558228, 24.460815, 178.58267),
+            vehicletype = "car",
+           vehicletype2 = "motos",
+            vehicletype3 = "car2",
+           specifiedJob = "bauamt",
+        },
         camorra = {
              browse = vector3(-3212.822021, 822.764832, 8.925293),
             spawn = vector4(-3200.980225, 811.964844, 8.925293, 212.598419),

@@ -24,7 +24,7 @@ Config.DJPositions = {
     {
         name = 'Tequilalala',
         pos = vector3(-562.219788, 281.881317, 85.676147),
-        requiredJob = nil, 
+        requiredJob = 'soa', 
         range = 30.0, 
         volume = 0.1 --[[ do not touch the volume! --]]
     },
@@ -45,7 +45,7 @@ Config.DJPositions = {
     {
         name = 'Unicorn',
         pos = vector3(116.782417, -1281.784668, 29.246094),
-        requiredJob = nil, 
+        requiredJob = 'lafam', 
         range = 25.0, 
         volume = 0.1 --[[ do not touch the volume! --]]
     },
@@ -59,15 +59,15 @@ Config.DJPositions = {
     {
         name = 'outlaws',
         pos = vector3(134.835175, -2994.672607, 7.695190),
-        requiredJob = nil, 
+        requiredJob = 'outlaws', 
         range = 25.0, 
         volume = 0.1 --[[ do not touch the volume! --]]
     },
     {
         name = 'Pearls',
         pos = vector3(-1842.197754, -1185.863770, 19.523804),
-        requiredJob = nil, 
-        range = 15.0, 
+        requiredJob = 'saints', 
+        range = 30.0, 
         volume = 0.1 --[[ do not touch the volume! --]]
     },
     {

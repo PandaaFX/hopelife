@@ -30,9 +30,6 @@ ESX.RegisterServerCallback('decrypto:server:hasitem', function(source, cb, item1
     if xPlayer.getInventoryItem(item1).count > 0 then
         hasItem1 = true
     end
-    if xPlayer.getInventoryItem(item2).count > 0 then
-        hasItem2 = true
-    end
     if hasItem1 and hasItem2 then
         hasItems = true
     end
