@@ -158,11 +158,6 @@ Citizen.CreateThread(function()
 								drawNotification(bagErrorText)
 								SetCurrentPedWeapon(playerPed, GetHashKey("WEAPON_UNARMED"), true)
 								SetPedCurrentWeaponVisible(ped, 1, 1, 1, 1)
-								EnableControlAction(1, 25, true )
-								EnableControlAction(1, 140, true)
-								EnableControlAction(1, 141, true)
-								EnableControlAction(1, 142, true)
-								EnableControlAction(1, 23, true)
 								DisablePlayerFiring(PlayerPedId(), false)
 							end
 						else	
@@ -174,11 +169,6 @@ Citizen.CreateThread(function()
 									drawNotification(bagErrorText)
 									SetCurrentPedWeapon(playerPed, GetHashKey("WEAPON_UNARMED"), true)
 									SetPedCurrentWeaponVisible(ped, 1, 1, 1, 1)
-									EnableControlAction(1, 25, true )
-									EnableControlAction(1, 140, true)
-									EnableControlAction(1, 141, true)
-									EnableControlAction(1, 142, true)
-									EnableControlAction(1, 23, true)
 									DisablePlayerFiring(PlayerPedId(), false)
 								end
 							end
