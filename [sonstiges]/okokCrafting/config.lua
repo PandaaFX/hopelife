@@ -39,6 +39,14 @@ Config.itemNames = { -- Format: id = label
 	drug_lsd = 'LSD',
 	drug_meth = 'METH',
 	heroin = 'Heroin',
+	maische = 'Maische',
+	grapperaisin = 'Trauben',
+	winabis = 'Winabis',
+	berriesjuice = 'Traubensaft',
+	sekt = 'Sekt',
+	champagne = 'Champagner',
+	rotwein = 'Rotwein',
+	weisswein = 'Weißwein'
 
 
 	
@@ -537,7 +545,7 @@ Config.Crafting = {
 		},
 	},
 	{
-		coordinates = vector3(-1878.30, 2054.78, 140.99), -- coordinates of the table
+		coordinates = vector3(-1909.978027, 2071.358154, 140.370728), -- coordinates of the table
 		radius = 1, -- radius of the table
 		maxCraftRadius = 5, -- if you are further it will stop the craft
 		showBlipRadius = 50,
@@ -561,13 +569,92 @@ Config.Crafting = {
 			
 				},
 				job = { -- What jobs can craft this item in this workbench
-				'wein',
+					''
 				},
 			},
+			{
+				item = 'maische', -- Item id and name of the image
+				amount = 2,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'grapperaisin', 2, true},
 
 
-
-
+			
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'sekt', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'maische', 2, true},
+					{'berriesjuice', 1, true},
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'champagne', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'maische', 2, true},
+					{'berriesjuice', 1, true},
+					{'grapperaisin', 1, true},
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'weisswein', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'grapperaisin', 1, true},
+					{'maische', 3, true},
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
+			{
+				item = 'rotwein', -- Item id and name of the image
+				amount = 1,
+				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				isItem = true, -- if true = is item | if false = is weapon
+				time = 5, -- Time to craft (in seconds)
+				levelNeeded = 0, -- What level he needs to craft this item
+				xpPerCraft = 5, -- How much XP he receives after crafting this item
+				recipe = { -- Recipe to craft it
+					{'grapperaisin', 2, true},
+					{'maische', 2, true},
+				},
+				job = { -- What jobs can craft this item in this workbench
+					''
+				},
+			},
 		},
 	},
 }
