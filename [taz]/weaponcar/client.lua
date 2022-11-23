@@ -149,7 +149,6 @@ Citizen.CreateThread(function()
 						Citizen.Wait(2000)
 						SetVehicleDoorShut(vehicle, 5, false)
 					else
-						DisablePlayerFiring(PlayerPedId(), true)
 						if IsPedModel(playerPed,1885233650) and GetVehiclePedIsIn(playerPed, false) == 0 then
 							if hasBag then
 								currWeapon = weapon
@@ -181,13 +180,17 @@ Citizen.CreateThread(function()
 end) 
 
 Citizen.CreateThread(function()
+	while ESX == nil do
+		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+		Citizen.Wait(0)
+	end
 	while true do
 		Wait(500)
 		local hasBag = GetBagState()
 		playerPed = GetPlayerPed(-1)
 		local pos = GetEntityCoords(playerPed)
 		if playerPed then
-				local weapon = GetSelectedPedWeapon(playerPed, true)
+			local weapon = GetSelectedPedWeapon(playerPed, true)
 			if  currWeapon ~= weapon then
 				if not isWeaponRifle(weapon) and rifleOnSling == false then
 					--local vehicle = GetTrunkPosition()
@@ -210,16 +213,16 @@ Citizen.CreateThread(function()
 								currWeapon = weapon
 							end
 							
-						elseif hasBag then
-							Wait(1)
-							drawNotification(storedInBag)
+						--elseif hasBag then
+							--Wait(1)
+							--drawNotification(storedInBag)
 						else
 							Wait(1)
 							drawNotification(equippedOnSling)
 							rifleOnSling = true
 							for wep_name, wep_hash in pairs(SETTINGS.compatible_weapon_hashes) do
 								if currWeapon == wep_hash then
-									if not attached_weapons[wep_name] and GetSelectedPedWeapon(me) ~= wep_hash then
+									if not attached_weapons[wep_name] and GetSelectedPedWeapon(playerPed) ~= wep_hash then
 										AttachWeapon(wep_name, wep_hash, SETTINGS.back_bone, SETTINGS.x, SETTINGS.y, SETTINGS.z, SETTINGS.x_rotation, SETTINGS.y_rotation, SETTINGS.z_rotation, false)
 									end
 								end
@@ -227,14 +230,19 @@ Citizen.CreateThread(function()
 						end
 					end
 				end
-			else 
-				for name, attached_object in pairs(attached_weapons) do
-					-- equipped or not in weapon wheel -> delete it from back:
-					if GetSelectedPedWeapon(me) ==  attached_object.hash or not HasPedGotWeapon(me, attached_object.hash, false) then 
-					  DeleteObject(attached_object.handle)
-					  attached_weapons[name] = nil
-					end
-				  end
+			--else 
+				--for name, attached_object in pairs(attached_weapons) do
+					--if GetSelectedPedWeapon(me) ==  attached_object.hash or not HasPedGotWeapon(me, attached_object.hash, false) then 
+						--DeleteObject(attached_object.handle)
+						--attached_weapons[name] = nil
+					--end
+				--end
+			end
+			for name, attached_object in pairs(attached_weapons) do
+				if GetSelectedPedWeapon(playerPed) ==  attached_object.hash or not HasPedGotWeapon(playerPed, attached_object.hash, false) then 
+					DeleteObject(attached_object.handle)
+					attached_weapons[name] = nil
+				end
 			end
 		end
 
@@ -281,7 +289,14 @@ function isWeaponRifle(model)
 	end
 	return false
 end
-
+function getRifleName(model)
+	for _, rifle in pairs(rifles) do
+		if model == GetHashKey(rifle) then
+			return rifle
+		end
+	end
+	return false
+end
 function AttachWeapon(attachModel,modelHash,boneNumber,x,y,z,xR,yR,zR, isMelee)
 	local bone = GetPedBoneIndex(GetPlayerPed(-1), boneNumber)
 	RequestModel(attachModel)
@@ -303,67 +318,3 @@ function IsBackEngine(vehModel)
     return false
 end
 
-
-function doesEntityExistsAndIsNotNull(entity)
-    return entity ~= nil and DoesEntityExist(entity);
-end
- 
-function getDistanceBetweenEntities(entity1, entity2)
-    local entity1Coords = GetEntityCoords(entity1, true);
-    local entity2Coords = GetEntityCoords(entity2, true);
-    return GetDistanceBetweenCoords(entity1Coords.x, entity1Coords.y, entity1Coords.z, entity2Coords.x, entity2Coords.y, entity2Coords.z, 1);
-end
- 
-function getDistanceToGround(entity)
-    local entityCoords = GetEntityCoords(entity, true);
-    local groundZ = 0;
-    groundZ = GetGroundZFor_3dCoord(entityCoords.x, entityCoords.y, entityCoords.z, groundZ, 0);
-    return GetDistanceBetweenCoords(entityCoords.x, entityCoords.y, entityCoords.z, entityCoords.x, entityCoords.y, groundZ, 1);
-end
- 
-function getModelHash(veh)
-    return GetEntityModel(veh);
-end
- 
-function isVehicleDrivable(veh) 
-    if (isVehicleDrivable(veh, false) and 
-        (IsThisModelACar(getModelHash(veh)) or
-        IsThisModelABike(getModelHash(veh)) or
-        IsThisModelAQuadbike(getModelHash(veh)) or
-        IsThisModelHeli(getModelHash(veh)) or
-        IsThisModelAPlane(getModelHash(veh)) or
-        IsThisModelABoat(getModelHash(veh)) or
-        IsThisModelABicycle(getModelHash(veh)))) then
-			return true;
-	end
- 
-    return false;
-end
- 
-function getClosestVehicleFromPedPos(ped,maxDistance, maxHeight,canReturnVehicleInside)
-    local veh;
-    local smallestDistance = maxDistance;
-    local ARR_SIZE = 1024;
-    local vehs=worldGetAllVehicles()
-	local count = #vehs
- 
-    if vehs ~= nil then 
-        for i = 0, count do 
-            if doesEntityExistsAndIsNotNull(vehs[i]) and (canReturnVehicleInside or IsPedInVehicle(ped, vehs[i], false) == false) then
-                local distance = getDistanceBetweenEntities(ped, vehs[i]);
-                local height = getDistanceToGround(vehs[i]);
-                if (distance <= smallestDistance and height <= maxHeight and height >= 0 and isVehicleDrivable(vehs[i])) then
-                    smallestDistance = distance;
-                    veh = vehs[i];
-				end
-            end
-        end
-    end
- 
-    return veh;
-end
-function worldGetAllVehicles()
-	ESX.TriggerServerCallback('weaponcar:worldGetAllVehicles', function(result)
-		return result
-	end)
-end
