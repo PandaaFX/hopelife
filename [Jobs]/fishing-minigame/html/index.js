@@ -13,28 +13,28 @@ function StartGame() {
       veryHard: {
         forceApply: -0.075,
         instantForce: 0.065,
-        speed: 0.9,
+        speed: 0.6,
       },
       hard: {
         forceApply: -0.075,
-        instantForce: 0.065,
-        speed: 0.8,
+        instantForce: 0.055,
+        speed: 0.55,
       },
       medium: {
         forceApply: -0.08,
-        instantForce: 0.065,
-        speed: 0.7,
+        instantForce: 0.045,
+        speed: 0.5,
       },
       easy: {
 
         forceApply: -0.09,
-        instantForce: 0.065,
-        speed: 0.6,
+        instantForce: 0.035,
+        speed: 0.45,
       },
       veryEasy: {
         forceApply: -0.0875,
-        instantForce: 0.065,
-        speed: 0.5,
+        instantForce: 0.025,
+        speed: 0.3,
       },
     }
 

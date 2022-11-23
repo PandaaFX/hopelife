@@ -13,58 +13,58 @@ Config.DatabaseRewardName = "codem-fishing-rewards"
 
 Config.Fish = {
     -- COMMON CATEGORY
-    {itemname = 'fish',                  xp = 5, name = 'Alter Fisch',               sell = true, category = 'common',   price = 50},
-    {itemname = 'bluegill',              xp = 5, name = 'Bluegill',                  sell = true, category = 'common',   price = 100},
-    {itemname = 'goldentrout',           xp = 5, name = 'Golden Trout',              sell = true, category = 'common',   price = 100},
-    {itemname = 'silverymonnow',         xp = 5, name = 'Silvery Monnow',            sell = true, category = 'common',   price = 100},
-    {itemname = 'strippedbass',          xp = 5, name = 'Stripped Bass',             sell = true, category = 'common',   price = 100},
-    {itemname = 'tench',                 xp = 5, name = 'Tench',                     sell = true, category = 'common',   price = 100},
-    {itemname = 'whitefish',             xp = 5, name = 'White Fish',                sell = true, category = 'common',   price = 100},
-    {itemname = 'crappie',               xp = 5, name = 'Crappie',                   sell = true, category = 'common',   price = 100},
-    {itemname = 'cruciancarp',           xp = 5, name = 'Crucian Carp',              sell = true, category = 'common',   price = 100},
+    {itemname = 'fish',                  xp = 1000, name = 'Alter Fisch',               sell = true, category = 'common',   price = 500},
+    {itemname = 'bluegill',              xp = 1000, name = 'Bluegill',                  sell = true, category = 'common',   price = 1000},
+    {itemname = 'goldentrout',           xp = 1500, name = 'Golden Trout',              sell = true, category = 'common',   price = 1000},
+    {itemname = 'silverymonnow',         xp = 2500, name = 'Silvery Monnow',            sell = true, category = 'common',   price = 1000},
+    {itemname = 'strippedbass',          xp = 1300, name = 'Stripped Bass',             sell = true, category = 'common',   price = 1000},
+    {itemname = 'tench',                 xp = 1600, name = 'Tench',                     sell = true, category = 'common',   price = 1000},
+    {itemname = 'whitefish',             xp = 500, name = 'White Fish',                sell = true, category = 'common',   price = 1000},
+    {itemname = 'crappie',               xp = 1300, name = 'Crappie',                   sell = true, category = 'common',   price = 1000},
+    {itemname = 'cruciancarp',           xp = 1200, name = 'Crucian Carp',              sell = true, category = 'common',   price = 1000},
     -- UNCOMMON CATEGORY--------------   ------------------------------        ---------------------
-    {itemname = 'bluebackherring',       xp = 10, name = 'Blueback Herring',         sell = true, category = "uncommon", price = 250},
-    {itemname = 'bulltrout',             xp = 10, name = 'Bull Trout',               sell = true, category = "uncommon", price = 250},
-    {itemname = 'laketrout',             xp = 10, name = 'Lake Trout',               sell = true, category = "uncommon", price = 250},
-    {itemname = 'perch',                 xp = 10, name = 'Perch',                    sell = true, category = "uncommon", price = 250},
-    {itemname = 'chub',                  xp = 10, name = 'Chub',                     sell = true, category = "uncommon", price = 250},
-    {itemname = 'colorodopikeminnow',    xp = 10, name = 'Colorodo Pike Minnow',     sell = true, category = "uncommon", price = 250},
-    {itemname = 'drumfish',              xp = 10, name = 'Drum Fish',                sell = true, category = "uncommon", price = 250},
-    {itemname = 'wallaye',               xp = 10, name = 'Walleye',                  sell = true, category = "uncommon", price = 250},
+    {itemname = 'bluebackherring',       xp = 20, name = 'Blueback Herring',         sell = true, category = "uncommon", price = 2500},
+    {itemname = 'bulltrout',             xp = 30, name = 'Bull Trout',               sell = true, category = "uncommon", price = 2500},
+    {itemname = 'laketrout',             xp = 25, name = 'Lake Trout',               sell = true, category = "uncommon", price = 2500},
+    {itemname = 'perch',                 xp = 25, name = 'Perch',                    sell = true, category = "uncommon", price = 2500},
+    {itemname = 'chub',                  xp = 26, name = 'Chub',                     sell = true, category = "uncommon", price = 2500},
+    {itemname = 'colorodopikeminnow',    xp = 23, name = 'Colorodo Pike Minnow',     sell = true, category = "uncommon", price = 2500},
+    {itemname = 'drumfish',              xp = 18, name = 'Drum Fish',                sell = true, category = "uncommon", price = 2500},
+    {itemname = 'wallaye',               xp = 32, name = 'Walleye',                  sell = true, category = "uncommon", price = 2500},
     -- RARE CATEGORY------------------   ------------------------------        ----------------------
-    {itemname = 'americanshad',          xp = 20, name = 'American Shad',            sell = true, category = "rare",     price = 500},
-    {itemname = 'palidsturgeon',         xp = 20, name = 'Palid Sturgeon',           sell = true, category = "rare",     price = 500},
-    {itemname = 'pike',                  xp = 20, name = 'Pike',                     sell = true, category = "rare",     price = 500},
-    {itemname = 'blackcrappie',          xp = 20, name = 'Black Crappie',            sell = true, category = "rare",     price = 500},
-    {itemname = 'bream',                 xp = 20, name = 'Bream',                    sell = true, category = "rare",     price = 500},
-    {itemname = 'brooktrout',            xp = 20, name = 'Brook Trout',              sell = true, category = "rare",     price = 500},
-    {itemname = 'shortnosesucker',       xp = 20, name = 'Shortnose Sucker',         sell = true, category = "rare",     price = 500},
-    {itemname = 'smallmouthbass',        xp = 20, name = 'Smallmouth Bass',          sell = true, category = "rare",     price = 500},
+    {itemname = 'americanshad',          xp = 50, name = 'American Shad',            sell = true, category = "rare",     price = 5000},
+    {itemname = 'palidsturgeon',         xp = 55, name = 'Palid Sturgeon',           sell = true, category = "rare",     price = 5000},
+    {itemname = 'pike',                  xp = 48, name = 'Pike',                     sell = true, category = "rare",     price = 5000},
+    {itemname = 'blackcrappie',          xp = 42, name = 'Black Crappie',            sell = true, category = "rare",     price = 5000},
+    {itemname = 'bream',                 xp = 45, name = 'Bream',                    sell = true, category = "rare",     price = 5000},
+    {itemname = 'brooktrout',            xp = 45, name = 'Brook Trout',              sell = true, category = "rare",     price = 5000},
+    {itemname = 'shortnosesucker',       xp = 45, name = 'Shortnose Sucker',         sell = true, category = "rare",     price = 5000},
+    {itemname = 'smallmouthbass',        xp = 45, name = 'Smallmouth Bass',          sell = true, category = "rare",     price = 5000},
     --LEGENDARY CATEGORY --
-    {itemname = 'arowana',               xp = 25, name = 'Arowana',                  sell = true, category = "legendary",price = 750},
-    {itemname = 'sweetfish',             xp = 25, name = 'Sweetfish',                sell = true, category = "legendary",price = 750},
-    {itemname = 'whitebass',             xp = 25, name = 'White Bass',               sell = true, category = "legendary",price = 750},
-    {itemname = 'alabamasturgeon',       xp = 25, name = 'Alabama Sturgeon',         sell = true, category = "legendary",price = 750},
+    {itemname = 'arowana',               xp = 90, name = 'Arowana',                  sell = true, category = "legendary",price = 7500},
+    {itemname = 'sweetfish',             xp = 60, name = 'Sweetfish',                sell = true, category = "legendary",price = 7500},
+    {itemname = 'whitebass',             xp = 75, name = 'White Bass',               sell = true, category = "legendary",price = 7500},
+    {itemname = 'alabamasturgeon',       xp = 80, name = 'Alabama Sturgeon',         sell = true, category = "legendary",price = 7500},
     --EPIC CATEGORY --
-    {itemname = 'lakesturgeon',          xp = 35, name = 'Lake Sturgeon',            sell = true, category = "epic",     price = 1000},
-    {itemname = 'koicarpblack',          xp = 35, name = 'Koi Carp Black',           sell = true, category = "epic",     price = 1000},
-    {itemname = 'lahontancutthroattrout',xp = 35, name = 'Lahontan Cutthroat Trout', sell = true, category = "epic",     price = 1000},
+    {itemname = 'lakesturgeon',          xp = 100, name = 'Lake Sturgeon',            sell = true, category = "epic",     price = 10000},
+    {itemname = 'koicarpblack',          xp = 120, name = 'Koi Carp Black',           sell = true, category = "epic",     price = 10000},
+    {itemname = 'lahontancutthroattrout',xp = 110, name = 'Lahontan Cutthroat Trout', sell = true, category = "epic",     price = 10000},
 
 
     --------------------------- BAITS ------------------------                       sell = false  -- do not change
     {itemname = 'spoonlurebait',    baitLevel = 1,  fishQualityScale = {'common'},   sell = false, name = 'Spoon Lure Köder',  category = "baits", price = 5, stars = 1, baitsuse = true},
-    {itemname = 'threesidedbait',   baitLevel = 2,  fishQualityScale = {'uncommon'}, sell = false, name = 'Three Sided Köder', category = "baits", price = 5, stars = 2, baitsuse = true},
-    {itemname = 'tailfishbait',     baitLevel = 3,  fishQualityScale = {'rare'},     sell = false, name = 'Tail Fish Köder',   category = "baits", price = 5, stars = 3, baitsuse = true},
-    {itemname = 'doublehookbait',   baitLevel = 4,  fishQualityScale = {'legendary'},sell = false, name = 'Double Hook Köder', category = "baits", price = 5, stars = 4, baitsuse = true},
-    {itemname = 'triplehooksbait',  baitLevel = 5,  fishQualityScale = {'epic'},     sell = false, name = 'Triple Hook Köder', category = "baits", price = 5, stars = 5, baitsuse = true},
+    {itemname = 'threesidedbait',   baitLevel = 2,  fishQualityScale = {'uncommon'}, sell = false, name = 'Three Sided Köder', category = "baits", price = 7, stars = 2, baitsuse = true},
+    {itemname = 'tailfishbait',     baitLevel = 3,  fishQualityScale = {'rare'},     sell = false, name = 'Tail Fish Köder',   category = "baits", price = 10, stars = 3, baitsuse = true},
+    {itemname = 'doublehookbait',   baitLevel = 4,  fishQualityScale = {'legendary'},sell = false, name = 'Double Hook Köder', category = "baits", price = 20, stars = 4, baitsuse = true},
+    {itemname = 'triplehooksbait',  baitLevel = 5,  fishQualityScale = {'epic'},     sell = false, name = 'Triple Hook Köder', category = "baits", price = 50, stars = 5, baitsuse = true},
 
 
     --------------------------- RODS ------------------------                          sell = false  -- do not change
-    {itemname = 'woodenrod',       minigameDiff = 'veryEasy',  name = 'Holz Angel',        sell = false, category = "rods", price = 3000, stars = 1, minlevel = 10, use = true},
-    {itemname = 'slimmaterialrod', minigameDiff = 'easy',      name = 'Angel (Dünn)', sell = false, category = "rods", price = 4000, stars = 2, minlevel = 20, use = true},
-    {itemname = 'danishrod',       minigameDiff = 'medium',    name = 'Normale Angel',        sell = false, category = "rods", price = 8000, stars = 3, minlevel = 30, use = true},
-    {itemname = 'koidrod',         minigameDiff = 'hard',      name = 'Koiangel',           sell = false, category = "rods", price = 15000,stars = 4, minlevel = 40, use = true},
-    {itemname = 'finewood',        minigameDiff = 'veryHard',  name = 'Spezialangel',      sell = false, category = "rods", price = 25000,stars = 5, minlevel = 50, use = true},
+    {itemname = 'woodenrod',       minigameDiff = 'veryHard',  name = 'Holz Angel',        sell = false, category = "rods", price = 30000, stars = 1, minlevel = 10, use = true},
+    {itemname = 'slimmaterialrod', minigameDiff = 'hard',      name = 'Angel (Dünn)', sell = false, category = "rods", price = 80000, stars = 2, minlevel = 20, use = true},
+    {itemname = 'danishrod',       minigameDiff = 'medium',    name = 'Normale Angel',        sell = false, category = "rods", price = 150000, stars = 3, minlevel = 30, use = true},
+    {itemname = 'koidrod',         minigameDiff = 'easy',      name = 'Koiangel',           sell = false, category = "rods", price = 200000,stars = 4, minlevel = 40, use = true},
+    {itemname = 'finewood',        minigameDiff = 'veryEasy',  name = 'Spezialangel',      sell = false, category = "rods", price = 500000,stars = 5, minlevel = 50, use = true},
 }
 
 
@@ -78,47 +78,47 @@ Config.RequiredXP = {
     [7] = 4000,
     [8] = 4500,
     [9] = 5000,
-    [10] = 5000,
-    [11] = 5500,
-    [12] = 6000,
-    [13] = 6500,
-    [14] = 7000,
-    [15] = 7500,
-    [16] = 8000,
-    [17] = 8500,
-    [18] = 9000,
-    [19] = 9500,
-    [20] = 10000,
-    [21] = 10500,
-    [22] = 11000,
-    [23] = 11500,
-    [24] = 12000,
-    [25] = 12500,
-    [26] = 13000,
-    [27] = 13500,
-    [28] = 14000,
-    [29] = 14500,
-    [30] = 15000,
-    [31] = 15500,
-    [32] = 16000,
-    [33] = 16500,
-    [34] = 17000,
-    [35] = 17500,
-    [36] = 18000,
-    [37] = 18500,
-    [38] = 19000,
-    [39] = 19500,
-    [40] = 20000,
-    [41] = 20500,
-    [42] = 21000,
-    [43] = 21500,
-    [44] = 22000,
-    [45] = 22500,
-    [46] = 23000,
-    [47] = 23500,
-    [48] = 24000,
-    [49] = 24500,
-    [50] = 25000,
+    [10] = 6000,
+    [11] = 7500,
+    [12] = 9000,
+    [13] = 10000,
+    [14] = 11000,
+    [15] = 12000,
+    [16] = 13000,
+    [17] = 14000,
+    [18] = 15000,
+    [19] = 16000,
+    [20] = 17000,
+    [21] = 18500,
+    [22] = 20000,
+    [23] = 21500,
+    [24] = 23000,
+    [25] = 24500,
+    [26] = 26000,
+    [27] = 27500,
+    [28] = 29000,
+    [29] = 30500,
+    [30] = 32000,
+    [31] = 33500,
+    [32] = 35000,
+    [33] = 36500,
+    [34] = 38000,
+    [35] = 39500,
+    [36] = 41000,
+    [37] = 42500,
+    [38] = 44000,
+    [39] = 45500,
+    [40] = 47000,
+    [41] = 50000,
+    [42] = 55000,
+    [43] = 60000,
+    [44] = 65000,
+    [45] = 70000,
+    [46] = 75000,
+    [47] = 80000,
+    [48] = 85000,
+    [49] = 95000,
+    [50] = 100000,
 }
 
 Config.Draw = {
@@ -143,6 +143,7 @@ Config.Spots = {
 
     {
         id = "del_perro",
+        doBlip = true,
         blipName = "Del Perro Pier",
         spotLvlStars = 1,
         bgimage = 'delperro.png',
@@ -159,6 +160,7 @@ Config.Spots = {
 
     {
         id = "chumash",
+        doBlip = true,
         blipName = "Chumash Family Pier",
         spotLvlStars = 2,
         bgimage = 'chumash.png',
@@ -176,6 +178,7 @@ Config.Spots = {
 
     {
         id = "procopio",
+        doBlip = true,
         blipName = "Procopio Beach Pier",
         spotLvlStars = 3,
         bgimage = 'procopio.png',
@@ -192,6 +195,7 @@ Config.Spots = {
     },
     {
         id = "millars",
+        doBlip = true,
         blipName = "Millars Fishery",
         spotLvlStars = 4,
         bgimage = 'millars.png',
@@ -208,6 +212,7 @@ Config.Spots = {
 
     {
         id = "califida",
+        doBlip = true,
         blipName = "Califida Rd",
         spotLvlStars = 4.5,
         bgimage = 'califida.png',
@@ -224,6 +229,7 @@ Config.Spots = {
     },
     {
         id = "whitesea",
+        doBlip = true,
         blipName = "White Sea Fishing Spot",
         spotLvlStars = 5,
         bgimage = 'whitesea.png',
@@ -246,7 +252,7 @@ Config.Achievenments = {
         Achievenmentlvl = 5,
         Achievenmentsname = "Level 5",
         Achievenmentsimage = "xp",
-        Achievenmentmoney = 10000,
+        Achievenmentmoney = 100000,
        
 
     },
@@ -254,7 +260,7 @@ Config.Achievenments = {
         Achievenmentlvl = 10,
         Achievenmentsname = "Level 10",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 15000,
+        Achievenmentmoney = 500000,
         
 
     },
@@ -262,7 +268,7 @@ Config.Achievenments = {
         Achievenmentlvl = 15,
         Achievenmentsname = "Level 15",
         Achievenmentsimage = "xp",
-        Achievenmentmoney = 25000,
+        Achievenmentmoney = 500000,
     
 
 
@@ -271,7 +277,7 @@ Config.Achievenments = {
         Achievenmentlvl = 20,
         Achievenmentsname = "Level 20",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 25000,
+        Achievenmentmoney = 1000000,
  
     },
 
@@ -279,42 +285,42 @@ Config.Achievenments = {
         Achievenmentlvl = 25,
         Achievenmentsname = "Level 25",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 50000,
+        Achievenmentmoney = 1500000,
 
     },
     {
         Achievenmentlvl = 30,
         Achievenmentsname = "Level 30",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 50000,
+        Achievenmentmoney = 1500000,
   
     },
     {
         Achievenmentlvl = 35,
         Achievenmentsname = "Level 35",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 100000,
+        Achievenmentmoney = 1500000,
       
     },
     {
         Achievenmentlvl = 40,
         Achievenmentsname = "Level 40",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 100000,
+        Achievenmentmoney = 1500000,
     
     },
     {
         Achievenmentlvl = 45,
         Achievenmentsname = "Level 45",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 150000,
+        Achievenmentmoney = 1500000,
    
     },
     {
         Achievenmentlvl = 50,
         Achievenmentsname = "Level 50",
         Achievenmentsimage = "money",
-        Achievenmentmoney = 150000,
+        Achievenmentmoney = 1500000,
         
     },
 }
@@ -387,14 +393,16 @@ Config.Locale = {
 -- spot blip
 function spotBlip()
     for k, v in pairs(Config.Spots) do
-        local storeBlip = AddBlipForCoord(v.coords)
-        SetBlipSprite(storeBlip, 88)
-        SetBlipScale(storeBlip, 0.7)
-        SetBlipColour(storeBlip, 3)
-        SetBlipAsShortRange(storeBlip, true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(v.blipName)
-        EndTextCommandSetBlipName(storeBlip)
+        if v.doBlip then
+            local storeBlip = AddBlipForCoord(v.coords)
+            SetBlipSprite(storeBlip, 88)
+            SetBlipScale(storeBlip, 0.7)
+            SetBlipColour(storeBlip, 3)
+            SetBlipAsShortRange(storeBlip, true)
+            BeginTextCommandSetBlipName("STRING")
+            AddTextComponentString(v.blipName)
+            EndTextCommandSetBlipName(storeBlip)
+        end
     end
 end
 
