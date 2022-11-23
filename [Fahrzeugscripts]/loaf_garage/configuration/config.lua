@@ -43,14 +43,6 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
-        Crastenburg = {
-            browse = vector3(-1211.340698, -182.136261, 39.322388),
-            --location = vector4(232.2, -792.48, 29.9, 160.0),
-            spawn = vector4(-1218.843994, -185.076920, 39.170654, 107.716537),
-            vehicletype = "car",
-            vehicletype2 = "motos",
-            vehicletype3 = "car2",
-        },
         Spedition = {
             browse = vector3(-39.797802, -2553.890137, 5.993408),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
