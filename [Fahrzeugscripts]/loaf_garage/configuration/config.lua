@@ -552,7 +552,7 @@ Config = {
             specifiedJob = "saints",
         },
         bauamt = {
-            browse = vector3(-537.098877, -886.536255, 25.202148),
+            browse = vector3(-562.905518, -886.496704, 25.202148),
            spawn = vector4(-553.595581, -896.558228, 24.460815, 178.58267),
             vehicletype = "car",
            vehicletype2 = "motos",
@@ -783,15 +783,6 @@ Config = {
             spawn = vector4(-2591.802246, 1883.920898, 173.345825, 133.228333),
             vehicletype = "aircraft",
             specifiedJob = "sinaloa",
-        },
-
-        WEIN = {
-            browse = vector3(-1923.507690, 2060.848389, 140.808838),
-            spawn = vector4(-1918.061523, 2056.760498, 140.724487, 260.787415),
-            vehicletype = "car",
-            vehicletype2 = "motos",
-            vehicletype3 = "car2",
-            specifiedJob = "wein",
         },
 
         VAGOS = {

@@ -488,7 +488,9 @@ Config = {
             },
             policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
         },
+             --[[   
         {
+   
             name = "wein", -- job name, must be the same as in your jobs table
             coords = vector3(-1882.681274, 2070.712158, 140.994141), -- position of the location
             enableBlip = false, -- enable Blip on map, if true, display, sprite, scale, color and name are required
@@ -525,6 +527,7 @@ Config = {
             },
             policeCanOpenStorage = false, -- enable or disable the access for cops. If enabled only configured grades can access
         },
+        ]]
         {
             name = "police", -- job name, must be the same as in your jobs table
             coords = vector3(620.096680, -11.090107, 76.627808), -- position of the location
