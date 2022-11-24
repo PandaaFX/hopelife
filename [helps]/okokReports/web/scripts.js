@@ -133,7 +133,12 @@ window.addEventListener('message', function(event) {
 				perPage: 5,
 				searchable: false,
 			}));
-			let columns = dataTable.columns();
+			let columns;
+			if (typeof dataTable.columns === 'function') {
+				columns = dataTable.columns();
+			}else {
+				columns = dataTable.columns;
+			}
 			columns.sort(0, "asc");
 
 			if (total < 6){
