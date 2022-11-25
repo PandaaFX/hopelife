@@ -102,7 +102,13 @@ ESX.RegisterServerCallback('esx_ambulancejob:removeItemsAfterRPDeath', function(
 	local xPlayer = ESX.GetPlayerFromId(source)
 
 	if Config.OxInventory and Config.RemoveItemsAfterRPDeath then
-		exports.ox_inventory:ClearInventory(xPlayer.source)
+		if xPlayer.hasItem('ehering') then
+			exports.ox_inventory:ClearInventory(xPlayer.source)
+			xPlayer.addItem('ehering', 1)
+		else
+			exports.ox_inventory:ClearInventory(xPlayer.source)
+
+		end
 		return cb()
 	end
 

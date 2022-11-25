@@ -70,7 +70,7 @@ Config.AvailableJobs = {
         name = 'Landwirtschaft',
         truck = 'tractor2',
         trailer = 'BALETRAILER',
-        deliver_counter = 2, -- has to be lower or equal then total deliverySpots
+        deliver_counter = 1, -- has to be lower or equal then total deliverySpots
         TrailerSpawnPoints = {
             { coords = {x = 56.848351, y = -2530.232910, z = 5.993408}, heading = 328.818909, range = 3.0}
         },
@@ -93,7 +93,7 @@ Config.AvailableJobs = {
         name = 'Tankauftrag',
         truck = 'phantom',
         trailer = 'TANKER',
-        deliver_counter = 5, -- has to be lower or equal then total deliverySpots
+        deliver_counter = 3, -- has to be lower or equal then total deliverySpots
         TrailerSpawnPoints = {
             { coords = {x = -107.55, y = -2520.52, z = 6.0}, heading = 235.0, range = 3.0},
             { coords = {x = -118.69, y = -2536.04, z = 6.0}, heading = 235.0, range = 3.0},

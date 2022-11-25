@@ -445,7 +445,7 @@ Config = {
 
         --- Boote
 
-        CayoFlugzeuge = {
+        Cayoboote = {
             browse = vector3( -761.749451, -1377.507690, 1.57873),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
             spawn = vector4(-760.799988, -1391.696655, -0.409546, 141.732285),
