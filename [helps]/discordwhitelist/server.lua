@@ -1,6 +1,6 @@
 
-notWhitelisted = "Hopelife » Du bist nicht gewhitelisted. Bitte joine dafür auf unseren Discord Server » https://discord.gg/hopelife » Gehe danach in denn Whitelist Warteraum"
-noDiscord = "Hopelife » Bitte öffne Discord bevor Du dich verbindest."
+notWhitelisted = "Hopelife » Du bist nicht gewhitelisted. Bitte joine dafür auf unseren Discord Server » https://discord.gg/hopelife » Gehe danach in denn Whitelist Warteraum » FiveM Neustarten"
+noDiscord = "Hopelife » Bitte öffne Discord bevor Du dich verbindest » FiveM Neustarten"
 
 roles = {
     "Einwohner",
@@ -9,7 +9,7 @@ roles = {
 AddEventHandler("playerConnecting", function(name, setCallback, deferrals)
     local src = source
     deferrals.defer()
-    deferrals.update("Hopelife » Berechtigung werden geprüft")
+    deferrals.update("Hopelife » Berechtigung werden geprüft » FiveM Neustarten")
 
     for k, v in ipairs(GetPlayerIdentifiers(src)) do
         if string.sub(v, 1, string.len("discord:")) == "discord:" then
@@ -99,14 +99,11 @@ function IsRolePresent(user, role)
 					return true
 				end
 			end
-			print("Rolle nicht gefunden!")
 			return false
 		else
-			print("Discord api problem!")
 			return false
 		end
 	else
-		print("Keine DiscordID gefunden!")
 		return false
 	end
 end

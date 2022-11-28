@@ -17,21 +17,30 @@ ClientConfig.General = {
     AntiLagSwitch = true,
     FreeCam = false,
     ScreenshotBasicName = 'screenshot-basic',
-    AntiDrown = false,
+    AntiDrown = true,
     AntiSoundSpam = false, -- its blocks cheater to sound spam everyone. if u will use this +0.02 ms
     EulenFreecamDetection = false, -- its blocks eulen freecam cheats
     EulenSpectateDetection = false, -- its blocks eulen spectate cheats
-    EulenHealDetection = true, -- its blocks eulen heal cheats
-    AntiKillInvisible = true
+    EulenHealDetection = false, -- its blocks eulen heal cheats
+    AntiKillInvisible = false,
+    AntiKillEulen = true,
+    AntiHitBoxHack = true,
+    PickupHack = true,
+    BlockSuspensionHack = true,
+    DisableTyresBurst = false, 
 }
+
+
 ClientConfig.WLScripts = { -- if you add your script here, you will be able to start,stop or restart this script.
     "ws_farming",
     "ws_loader",
 }
+
 ClientConfig.AntiLagSwitch = {
     Detection = true,
     Max = 250
 }
+
 ClientConfig.Particle = {
     Detection = false,
     RemoveTime = 10000, -- don't change it // default 10000
@@ -74,21 +83,26 @@ ClientConfig.Blacklistkey = {
 
 ClientConfig.SpawnVehicle = { -- Anti car spawn
     Detection = false,
-    CoolDown = 7000,
+    CoolDown = 1000,
     NpcVehicle = false,
     AllowedResources = {
-        ['esx_cardealer'] = false,
+        ['esx_cardealer'] = true,
+    },
+    DonateCars = { -- its block donate car spawn -- ITS IMPORTANT
+        [GetHashKey('i8')] = true,
     }
 }
 
 ClientConfig.Weapons = {
     Detection = true, -- if true, you activate blacklisted weapon option. (we recommend you to keep it true)
     AntiExplosiveWeapons = true, -- if true, you block explosive weapons
-    RemoveBlacklistWeapon = false, -- if true, it deletes ONLY blacklisted weapon from inventory
-    RemoveAllWeapons = true, -- when it detects blacklisted weapon in player's or cheater's inventory it deletes ALL weapons on him (we recommend you to keep it true)
+    RemoveBlacklistWeapon = true, -- if true, it deletes ONLY blacklisted weapon from inventory
+    RemoveAllWeapons = false, -- when it detects blacklisted weapon in player's or cheater's inventory it deletes ALL weapons on him (we recommend you to keep it true)
     BLWeaponLog = true, -- it shows on logs(webhook on discord) use of blacklisted weapons
     InfiniteAmmoBlock = true,
     LoopTime = 10000, -- don't change it
+    DamageBoostDetection = true,
+    MaxDamageModify = 1, --
 }
 
 ClientConfig.WhitelistedWeapons = {
@@ -130,7 +144,6 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_PETROLCAN')] = true,
     [GetHashKey('WEAPON_SNOWBALL')] = true,
     [GetHashKey('WEAPON_FLASHBANG')] = true,
-    [966099533] = true,
-    [966099553] = true,
-    [0] = true,
+    [966099553] = true, -- Default Fivem weapon, not delete this.
+    [0] = true, -- Default Fivem weapon, not delete this.
 }
