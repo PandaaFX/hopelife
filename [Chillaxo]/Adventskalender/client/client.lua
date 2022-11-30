@@ -93,10 +93,8 @@ RegisterNetEvent('ChillKalender:PlayAnimation', function(day)
 	SetTimeout(5000, function ()
 		pickup = false
 		local r = math.random(1, #Config.Days[day].Items)
-		local min = Config.Days[day].Items[r].minAnzahl
-		local max = Config.Days[day].Items[r].maxAnzahl
 		local itemname = Config.Days[day].Items[r].ItemName
-		local amount = math.random(min, max) 
+		local amount = Config.Days[day].Items[r].count 
 		local isMoney = Config.Days[day].Items[r].ItemIsMoney
 		TriggerServerEvent('ChillKalender:GiveItem', itemname, amount, isMoney, day)
 
