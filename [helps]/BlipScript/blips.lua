@@ -12,8 +12,9 @@
      {title="Tequila LaLa", colour=29, id=270, x=-559.84, y = 285.76, z = 82.18},
      {title="Fishmarkt & Zubehör", colour=26, id=68, x=-1038.4545898438, y = -1397.0551757813, z = 4.5},
      {title="Bauamt", colour=64, id=566, x=-600.527466, y = -929.393433, z = 23.854248},
-
+     {title="Anwaltskanzlei Garcia", colour=60, id=269, x=-589.595581, y = -706.153870, z = 36.272583 },
 		} 
+    ---, , 
 	
 Citizen.CreateThread(function()
 

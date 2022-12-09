@@ -46,7 +46,7 @@ Config.itemNames = { -- Format: id = label
 	sekt = 'Sekt',
 	champagne = 'Champagner',
 	rotwein = 'Rotwein',
-	weisswein = 'Weißwein'
+	weisswein = 'Weißwein',
 
 
 	
@@ -545,12 +545,12 @@ Config.Crafting = {
 		},
 	},
 	{
-		coordinates = vector3(-1909.978027, 2071.358154, 140.370728), -- coordinates of the table
+		coordinates = vector3(-1889.643921,2050.562744, 140.808838), -- coordinates of the table
 		radius = 1, -- radius of the table
 		maxCraftRadius = 5, -- if you are further it will stop the craft
 		showBlipRadius = 50,
 		blip = {blipId = 89, blipColor = 3, blipScale = 0.9, blipText = "Crafting"}, -- to get blips and colors check this: https://wiki.gtanet.work/index.php?title=Blips
-		tableName = 'Cannabis', -- Title
+		tableName = 'Wein', -- Title
 		tableID = 'Wein', -- make a different one for every table with NO spaces
 		crafts = { -- What items are available for crafting and the recipe
 			{
@@ -564,9 +564,6 @@ Config.Crafting = {
 				recipe = { -- Recipe to craft it
 					{'maische', 4, true},
 					{'weed_pooch', 2, true}, -- item/amount/if the item should be removed when crafting
-
-
-			
 				},
 				job = { -- What jobs can craft this item in this workbench
 					''
@@ -582,9 +579,6 @@ Config.Crafting = {
 				xpPerCraft = 5, -- How much XP he receives after crafting this item
 				recipe = { -- Recipe to craft it
 					{'grapperaisin', 2, true},
-
-
-			
 				},
 				job = { -- What jobs can craft this item in this workbench
 					''

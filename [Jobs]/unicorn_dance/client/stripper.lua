@@ -16,7 +16,7 @@ CreateThread(function()
                                 Wait(0)
                                 DrawTxt3D(GetEntityCoords(stripping_pole) + vector3(0.0, 0.0, 1.0), "Drücke ~r~E~w~ zum Tanzen")
                                 if IsControlJustReleased(0, 51) then
-                                    local dance = GetOffsetFromEntityInWorldCoords(stripping_pole, 0.15, -0.2, 1.0)
+                                    local dance = GetOffsetFromEntityInWorldCoords(stripping_pole, 0.15, 0.3, 1.0)
                                     local randomdance = tostring(math.random(1, 3))
                                     local scene = NetworkCreateSynchronisedScene(dance, vector3(0.0, 0.0, 0.0), 2, false, true, 1065353216, 0, 1.3)
                                     NetworkAddPedToSynchronisedScene(PlayerPedId(), scene, LoadDict("mini@strip_club@pole_dance@pole_dance" .. randomdance), "pd_dance_0" .. randomdance, 1.5, -4.0, 1, 1, 1148846080, 0)
@@ -46,6 +46,42 @@ CreateThread(function()
                     Wait(1000)
 
                         local pole = GetClosestObjectOfType(GetEntityCoords(PlayerPedId()), 2.0, GetHashKey("v_19_strip3pole"), false, false, false)
+
+                        if DoesEntityExist(pole) then
+                            while #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(pole)) <= 1.5 do
+                                Wait(0)
+                                DrawTxt3D(GetEntityCoords(pole) + vector3(0.0, 0.0, 1.0), "Drücke ~r~E~w~ zum Tanzen")
+                                if IsControlJustReleased(0, 51) then
+                                    local dance = GetOffsetFromEntityInWorldCoords(pole, -0.3, -1.75, -0.7)
+                                    local randomdance = tostring(math.random(1, 3))
+                                    local scene = NetworkCreateSynchronisedScene(dance, vector3(0.0, 0.0, 0.0), 2, false, true, 1065353216, 0, 1.3)
+                                    NetworkAddPedToSynchronisedScene(PlayerPedId(), scene, LoadDict("mini@strip_club@pole_dance@pole_dance" .. randomdance), "pd_dance_0" .. randomdance, 1.5, -4.0, 1, 1, 1148846080, 0)
+                                    NetworkStartSynchronisedScene(scene)
+                
+                                    while true do
+                                        Wait(0)
+                                        
+                                        HelpText("Drücke ~r~X~w~ um Aufzuhören", true)
+                                        if IsControlJustReleased(0, 73) or IsDisabledControlJustReleased(0, 73) then
+                                            break
+                                        end
+                                    end
+                    
+                                    NetworkStopSynchronisedScene(scene)
+                                end
+                            end
+                        end
+
+                end
+            end)
+        end
+
+        if Config.Options.Stripper.PoleDancing then
+            CreateThread(function()
+                while true do
+                    Wait(1000)
+
+                        local pole = GetClosestObjectOfType(GetEntityCoords(PlayerPedId()), 2.0, GetHashKey("v_19_strpfrntpl"), false, false, false)
 
                         if DoesEntityExist(pole) then
                             while #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(pole)) <= 1.5 do

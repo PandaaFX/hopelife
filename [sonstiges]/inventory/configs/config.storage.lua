@@ -36,6 +36,7 @@ Config.StorageLocations = {
       vector3(-3198.633057, 838.496704, 8.925293),
     }
   },
+  --[[
   ["ndrang"] = {
     label = "Wein",
     jobs = {'wein'}, -- set to false to disable whitelisting
@@ -48,6 +49,7 @@ Config.StorageLocations = {
       vector3(-1882.681274, 2070.712158, 140.994141),
     }
   },
+  ]]
   ["saints"] = {
     label = "Saints",
     jobs = {'saints'}, -- set to false to disable whitelisting

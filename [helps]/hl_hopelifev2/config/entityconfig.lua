@@ -62,7 +62,6 @@ EntityConfig.BlacklistEntities = {
         {hash = GetHashKey("rcbandito"), type = "ban"},
         {hash = GetHashKey("cargoplane"), type = "ban"},
         {hash = GetHashKey("prop_xmas_tree_int"), type = "ban"},
-        {hash = GetHashKey("prop_xmas_ext"), type = "ban"},
         {hash = GetHashKey("xm_prop_x17_xmas_tree_int"), type = "ban"},
         {hash = GetHashKey("xs_propintxmas_tree_2018"), type = "ban"},
         {hash = GetHashKey("xs3_prop_int_xmas_tree_01"), type = "ban"},

@@ -47,7 +47,7 @@ AddEventHandler('msk_backpack:setDeathStatus', function(isDead)
             })
             MySQL.Sync.execute('UPDATE inventories SET data = @data WHERE type = @type AND identifier = @identifier', { 
                 ['@identifier'] = xPlayer.identifier,
-                ['@type'] = currentBag[0].bag,
+                ['@type'] = currentBag[1].bag,
                 ['@data'] = '[]',
             })
         elseif Config.BagInventory:match('secondary') then
@@ -122,7 +122,7 @@ ESX.RegisterUsableItem('nobag', function(source)
             else
                 TriggerClientEvent('msk_backpack:delBackpack', source)
                 xPlayer.removeInventoryItem('nobag', 1)
-                xPlayer.addInventoryItem(currentBag[0].bag, 1)
+                xPlayer.addInventoryItem(currentBag[1].bag, 1)
             
                 if Config.BagInventory:match('expand') then
                     debug('playerMaxWeight before remove bag:', xPlayer.source, xPlayer.getMaxWeight())

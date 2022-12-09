@@ -25,7 +25,7 @@ AddEventHandler('esx_hospital:price', function()
 	local price = 75000
 	
 	if(xPlayer.getMoney() >= price) then
-		xPlayer.removeMoney((price))
+		xPlayer.removeMoney(75000)
 		TriggerClientEvent("pNotify:SetQueueMax", -1, "lmao", 10)
         TriggerClientEvent("pNotify:SendNotification", _source, {
             text = "<b style = 'color:white'> Bezahlt: " .. "$" .. price .. "</b>",
@@ -39,7 +39,7 @@ AddEventHandler('esx_hospital:price', function()
         end)
     else 
         if(xPlayer.getAccount('bank').money >= price) then
-            xPlayer.removeAccountMoney('bank', price)
+            xPlayer.removeAccountMoney('bank', 75000)
 		    TriggerClientEvent("pNotify:SetQueueMax", -1, "lmao", 10)
             TriggerClientEvent("pNotify:SendNotification", _source, {
                 text = "<b style = 'color:white'> Bezahlt: " .. "$" .. price .. "</b>",
@@ -55,6 +55,7 @@ AddEventHandler('esx_hospital:price', function()
     end
     if(xPlayer.getAccount('bank').money <= price) then
         if(xPlayer.getMoney() <= price) then
+            xPlayer.removeAccountMoney('bank', 75000)
 		    TriggerEvent('esx_addonaccount:getSharedAccount', "society_ambulance", function(account)
 			    if account then
 				    MySQL.insert('INSERT INTO billing (identifier, sender, target_type, target, label, amount) VALUES (?, ?, ?, ?, ?, ?)', {xPlayer.identifier, xPlayer.identifier, 'society', "society_ambulance", 'Notfallmediziner', price},

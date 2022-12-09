@@ -110,7 +110,7 @@ Config.Positions = {
     actionDistance = 10.0
 },
 { -- soa 
-pos = {x = 352.826385, y = 3403.239502, z = 36.457886},
+pos = {x = 1028.136230, y = -2514.237305, z = 28.285767},
 whitelistJobName = 'soa',
 societyName = 'society_soa', -- uncomment this to enable society account for this point (only for whitelist points)
 blip = {
@@ -196,7 +196,7 @@ actionDistance = 10.0
 --        enable = true
 --    },
 --},
-{ -- paleto
+--[[{ -- paleto
     pos = {x = 110.89, y = 6626.35, z = 31.10},
     blip = {
         enable = true,
@@ -249,7 +249,7 @@ actionDistance = 10.0
         color = {r = 0, g = 0, b = 0, a = 150},
     },
     actionDistance = 7.0
-},
+},]]
 --{ -- root 68
 --    pos = {x = 1174.93, y = 2639.62, z = 37.07}
 --}

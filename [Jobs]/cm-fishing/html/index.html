@@ -51,10 +51,10 @@
                             <img src="./images/nopp.png" v-if="data.playerimage == '0'" />
                             <img v-bind:src="data.playerimage" v-else />
                         </div>
-                        <h2 @click="newPage('profile')">Mrs.{{data.playername}}</h2>
+                        <h2 @click="newPage('profile')">Mr/s.{{data.playername}}</h2>
                         <h3>Lv.{{data.level}}</h3>
                     </div>
-                    <div class="welcome-fishing">Willkommen beim angeln</div>
+                    <div class="welcome-fishing">Willkommen beim Angeln</div>
                     <div class="menu-wrapper-left-page-button">
                         <div class="menu-wrapper-left-page-button-in" @click="newPage('wiki')">
                             <div class="wiki-buton-bg"

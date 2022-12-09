@@ -1,5 +1,5 @@
 Config = {
-    webhook = "https://discord.com/api/webhooks/962271594305163264/aYBPgywSxBDTEMTU1qatJ8UJCV1kZjYmcqzs1sLYP6GEEkgYzgaiXYSQi8J3A02IqS-u", --Discord Webhook
+    webhook = "server.lua", --Discord Webhook
     cost = 500, -- How much should the Player need to pay.
     cooldown = 1.2, -- Cooldown in Minutes
     pedModel = "ig_lifeinvad_01",

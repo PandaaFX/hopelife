@@ -27,6 +27,12 @@ Config.adminRanks2 = { -- change this as your server ranking ( default are : sup
 				--'developer',
 }
 
+Config.modRanks ={
+	'superadmin',
+	'admin',
+	'dev',
+	'mod',
+}
 Config.MarkerType   = 25
 Config.DrawDistance = 50.0
 Config.ZoneSize     = {x = 2.0, y = 2.0, z = 1.0}

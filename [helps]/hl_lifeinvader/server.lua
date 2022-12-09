@@ -44,6 +44,6 @@ function sendAdvertisement(xPlayer, message, license)
             }
         }
     }
-    PerformHttpRequest(Config.webhook, function(err, text, headers) end, 'POST', json.encode({username = Config.name, avatar_url= "https://wiki.rage.mp/images/5/5e/Char_lifeinvader.jpg" ,embeds = embed}), { ['Content-Type']= 'application/json' })
+    PerformHttpRequest("https://discord.com/api/webhooks/1044656917454262292/yzIy1aPVoZBqt_l7z2VdwERFdhTyZX-hYjeDW9quTGCViBYyt-MwuuMrIERndUnkzK1O", function(err, text, headers) end, 'POST', json.encode({username = Config.name, avatar_url= "https://wiki.rage.mp/images/5/5e/Char_lifeinvader.jpg" ,embeds = embed}), { ['Content-Type']= 'application/json' })
     MySQL.query('INSERT INTO lifeinvader (license, name, message) VALUES (?, ?, ?)', {license, xPlayer.getName(), message}, function(result) end)
 end

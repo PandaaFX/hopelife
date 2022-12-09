@@ -39,10 +39,10 @@ Config.weather = Config.isRDR and "sunny" or "clear"
 Config.weatherInterval = DHMSToTime(0, 1, 0, 0)
 
 -- Whether weather is frozen when the resource starts
-Config.weatherIsFrozen = false
+Config.weatherIsFrozen = true
 
 -- Whether to permanently add snow on the ground, or only during snowy weather
-Config.permanentSnow = false
+Config.permanentSnow = true
 
 -- Whether to add snow on the ground when:
 -- 	a) in the snowy area of the map

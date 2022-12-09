@@ -455,7 +455,7 @@ WS_FARMER.zones = {
             }
         }
     },
-    ["pseudoefedrine"] = {
+    ["Pseudoefedrine"] = {
         coords = vector3(-248.821976, 6330.896484, 32.413940),
         output = "pseudoefedrine", 
         outputanzahl = 4,
@@ -474,7 +474,7 @@ WS_FARMER.zones = {
             color = 1, 
             scale = 1.0,
             shortrange = true,
-            name = "Samenfarm",
+            name = "Test",
             enabled = false,
         },
         marker = {

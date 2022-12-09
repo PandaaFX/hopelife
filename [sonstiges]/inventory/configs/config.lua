@@ -47,4 +47,4 @@ Config.WeaponWeights = { -- weapons weights for both player and secondary invent
 }
 
 Config.DiscordLogs = true -- toggle discord logs | default: false
-Config.WebhookURL = "https://discord.com/api/webhooks/971880944258674799/mta5Y6aq1kaGKkuru1ycQrpyl0H2wXCBniynJhJTiLIS3g_Ajr5WIKUkMsC3L72ROAnD" -- Discord webhook url
+Config.WebhookURL = "https://discord.com/api/webhooks/1044659002774143016/tBVNn9oS5t1Y5842PRXGabtLfrCZukpUHsbHMTiI4W-V6zBY0B0yJqbjGfKl46-LDprt" -- Discord webhook url

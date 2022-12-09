@@ -65,7 +65,6 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'hookahlounge',
 	'kurant',--Ambulance rank zu boss
 	'lssd',
-	'wein',
 	'mechanic',
 	'club',
 	'unicorn',
@@ -77,9 +76,12 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'sinaloa',
 	'soa',
 	'outlaws',
+	'tribunal',
 	'che',
 	'weazel',
-	'lafam'
+	'lafam',
+	'galaxy',
+	'anwalt'
 }
 
 Config.InspectCitizenSocieties = { -- Which societies can access the Society Invoices
@@ -95,6 +97,7 @@ Config.SocietyAccessRanks = { -- Which ranks of the society have access to Socie
 }
 
 Config.BillsList = {
+
 	['police'] = {
 		{'§2.1 Mord', 500000},
 		{'§2.1.1 Versuchter Mord', 300000},
@@ -287,9 +290,6 @@ Config.BillsList = {
 	['mechanic'] = {
 		{'Custom'}
 	},
-	['wein'] = {
-		{'Custom'}
-	},
 	['kurant'] = {
 		{'Custom'}
 	},
@@ -317,6 +317,9 @@ Config.BillsList = {
 	['outlaws'] = {
 		{'Custom'}
 	},
+	['tribunal'] = {
+		{'Custom'}
+	},
 	['che'] = {
 		{'Custom'}
 	},
@@ -328,7 +331,13 @@ Config.BillsList = {
 	},
 	['lafam'] = {
 		{'Custom'}
-	}
+	},
+	['galaxy'] = {
+		{'custom'}
+	},
+	['anwalt'] = {
+		{'Custom'}
+	},
 }
 
 Config.AdminGroups = {

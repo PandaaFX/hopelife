@@ -82,11 +82,24 @@ ClientConfig.Blacklistkey = {
 }
 
 ClientConfig.SpawnVehicle = { -- Anti car spawn
-    Detection = false,
+    Detection = true,
     CoolDown = 1000,
-    NpcVehicle = false,
+    NpcVehicle = true,
     AllowedResources = {
-        ['esx_cardealer'] = true,
+        ['es_extended'] = true,
+        ['AdvancedParking'] = true,
+        ['esx_gas_station'] = true,
+        ['monitor'] = true,
+        ['loaf_garage'] = true,
+        ['okokVehicleShop'] = true,
+        ['VehicleKeyChain'] = true,
+        ['wtf_ev'] = true,
+        ['MenuAPI'] = true,
+        ['rollericeskating'] = true,
+        ['jobs_creator'] = true,
+        ['saltyhud'] = true,
+        ['saltychat'] = true,
+        ['PlasmaKart'] = true,
     },
     DonateCars = { -- its block donate car spawn -- ITS IMPORTANT
         [GetHashKey('i8')] = true,

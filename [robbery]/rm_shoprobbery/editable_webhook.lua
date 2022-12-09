@@ -20,7 +20,7 @@ AddEventHandler('shoprobbery:server:policeAlert', function(coords)
 end)
 
 discord = {
-    ['webhook'] = 'https://discord.com/api/webhooks/987021806537957406/JS4OACG6cxJzrK_wyTUf07pauSw26uz3oIiwPjtL6ozpcjK_yRvOZu-MUXqsWKwySK0v',
+    ['webhook'] = 'https://discord.com/api/webhooks/987021808811253850/DbDWMODK3Mgr7yDM0voyR52O1MaMhQjnoh3aGqxjW9fvrXBlM0sw04z-FdOYiq5ktWBp',
     ['name'] = 'rm_shoprobbery',
     ['image'] = 'https://cdn.discordapp.com/avatars/869260464775921675/dff6a13a5361bc520ef126991405caae.png?size=1024'
 }

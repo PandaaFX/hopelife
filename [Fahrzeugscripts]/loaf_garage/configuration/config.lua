@@ -43,6 +43,22 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        Hotellifeinvader = {
+            browse = vector3(-924.013184, -463.160431, 37.232910),
+            --location = vector4(232.2, -792.48, 29.9, 160.0),
+            spawn = vector4(-933.692322, -458.136261, 37.216064, 28.346457),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+        },
+        galaxy = {
+            browse = vector3(286.773621, 189.520874, 104.413208),
+            --location = vector4(232.2, -792.48, 29.9, 160.0),
+            spawn = vector4(288.962646, 177.573624, 104.177246, 62.362206),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+        },
         Spedition = {
             browse = vector3(-39.797802, -2553.890137, 5.993408),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
@@ -386,6 +402,7 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        --[[
         Weinhandel = {
             browse = vector3(-1923.481323, 2032.364868, 140.724487),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
@@ -394,6 +411,7 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        ]]
         CasinoParkplatz = {
             browse = vector3(889.622009, -56.676918, 78.750977),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
@@ -445,7 +463,7 @@ Config = {
 
         --- Boote
 
-        Cayoboote = {
+        CayoFlugzeuge = {
             browse = vector3( -761.749451, -1377.507690, 1.57873),
             --location = vector4(232.2, -792.48, 29.9, 160.0),
             spawn = vector4(-760.799988, -1391.696655, -0.409546, 141.732285),
@@ -544,7 +562,7 @@ Config = {
             specifiedJob = "saints",
         },
         bauamt = {
-            browse = vector3(-562.905518, -886.496704, 25.202148),
+            browse = vector3(-562.760437, -886.628540, 25.202148),
            spawn = vector4(-553.595581, -896.558228, 24.460815, 178.58267),
             vehicletype = "car",
            vehicletype2 = "motos",
@@ -662,8 +680,8 @@ Config = {
         },
         
         SonsofAnarchie = {
-            browse = vector3(305.274719, 3386.571533, 36.390503),
-            spawn = vector4(322.799988, 3404.742920, 36.744263, 286.299194),
+            browse = vector3(987.520874, -2504.558350, 28.285767),
+            spawn = vector4(994.180237, -2500.931885, 28.285767, 2.834646),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -671,8 +689,8 @@ Config = {
         },
         
         SonsofAnarchieHeli = {
-            browse = vector3(366.342865, 3425.076904, 35.834473),
-            spawn = vector4(389.723083, 3415.041748, 36.339966, 113.385826),
+            browse = vector3(1019.947266, -2485.780273, 28.454224),
+            spawn = vector4(1025.986816, -2497.938477, 28.454224, 85.039368),
             vehicletype = "aircraft",
             specifiedJob = "soa",
         },
@@ -776,7 +794,32 @@ Config = {
             vehicletype = "aircraft",
             specifiedJob = "sinaloa",
         },
+        irishgang = {
+            browse = vector3(-1551.81, 882.2, 180.32),
+            spawn = vector4(-1548.62, 875.52, 180.34, 205.88),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "irish",
+        },
 
+                
+        irishgangheli = {
+            browse = vector3(-1579.490112, 812.123047, 185.983154),
+            spawn = vector4(-1589.815430, 816.487915, 185.983154, 25.511812),
+            vehicletype = "aircraft",
+            specifiedJob = "irish",
+        },
+--[[
+        WEIN = {
+            browse = vector3(-1923.507690, 2060.848389, 140.808838),
+            spawn = vector4(-1918.061523, 2056.760498, 140.724487, 260.787415),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "wein",
+        },
+]]
         VAGOS = {
             browse = vector3(-1129.714233, -1604.492310, 4.392700),
             spawn = vector4(-1126.404419, -1611.494507, 4.392700, 303.307098),

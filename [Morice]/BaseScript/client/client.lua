@@ -43,52 +43,48 @@ end)
 
 local PlayerData = {}
 
-
-Citizen.CreateThread(function()
-    local loaded = false
+-- Citizen.CreateThread(function()
+--     local loaded = false
     
-    while true do
-        if Config.Snowactiv then
-            SetWeatherTypeNowPersist('XMAS')
-        end
-        Citizen.Wait(0)
-        if IsNextWeatherType('XMAS') then
-            N_0xc54a08c85ae4d410(3.0)
-            SetForceVehicleTrails(true)
-            SetForcePedFootstepsTracks(true)
-            if not loaded then
-                RequestScriptAudioBank("ICE_FOOTSTEPS", false)
-                RequestScriptAudioBank("SNOW_FOOTSTEPS", false)
-                RequestNamedPtfxAsset("core_snow")
-                while not HasNamedPtfxAssetLoaded("core_snow") do
-                    Citizen.Wait(0)
-                end
-                UseParticleFxAssetNextCall("core_snow")
-                loaded = true
-            end
-            RequestAnimDict('anim@mp_snowball')
-            if IsControlJustReleased(0, 306) and not IsPedInAnyVehicle(GetPlayerPed(-1), true) and not IsPlayerFreeAiming(PlayerId()) and not IsPedSwimming(PlayerPedId()) and not IsPedSwimmingUnderWater(PlayerPedId()) and not IsPedRagdoll(PlayerPedId()) and not IsPedFalling(PlayerPedId()) and not IsPedRunning(PlayerPedId()) and not IsPedSprinting(PlayerPedId()) and GetInteriorFromEntity(PlayerPedId()) == 0 and not IsPedShooting(PlayerPedId()) and not IsPedUsingAnyScenario(PlayerPedId()) and not IsPedInCover(PlayerPedId(), 0) then -- check if the snowball should be picked up
-                TaskPlayAnim(PlayerPedId(), 'anim@mp_snowball', 'pickup_snowball', 8.0, -1, -1, 0, 1, 0, 0, 0)
-                Citizen.Wait(2000)
-                GiveWeaponToPed(GetPlayerPed(-1), GetHashKey('WEAPON_SNOWBALL'), 2, false, true)
-				        ESX.ShowNotification("Du hast 1x Schneeball gesammelt") -- Notify hinzugefügt finde ich schöner
-            end
-            if not IsPedInAnyVehicle(GetPlayerPed(-1), true) and not IsPlayerFreeAiming(PlayerId()) then
-            end
-        else
-            if loaded then N_0xc54a08c85ae4d410(0.0) end
-            loaded = false
-            RemoveNamedPtfxAsset("core_snow")
-            ReleaseNamedScriptAudioBank("ICE_FOOTSTEPS")
-            ReleaseNamedScriptAudioBank("SNOW_FOOTSTEPS")
-            SetForceVehicleTrails(false)
-            SetForcePedFootstepsTracks(false)
-        end
-        if GetSelectedPedWeapon(PlayerPedId()) == GetHashKey('WEAPON_SNOWBALL') then -- WEAPON_SNOWBALL im AntiCheat noch Whitelisten
-            SetPlayerWeaponDamageModifier(PlayerId(), 0.0)
-        end
-    end
-end)
+--     while true do
+--         if Config.Snowactiv then
+--             SetWeatherTypeNowPersist('XMAS')
+--         end
+--         Citizen.Wait(0)
+--         if IsNextWeatherType('XMAS') then
+--             N_0xc54a08c85ae4d410(3.0)
+--             SetForceVehicleTrails(true)
+--             SetForcePedFootstepsTracks(true)
+--             if not loaded then
+--                 RequestScriptAudioBank("ICE_FOOTSTEPS", false)
+--                 RequestScriptAudioBank("SNOW_FOOTSTEPS", false)
+--                 RequestNamedPtfxAsset("core_snow")
+--                 while not HasNamedPtfxAssetLoaded("core_snow") do
+--                     Citizen.Wait(0)
+--                 end
+--                 UseParticleFxAssetNextCall("core_snow")
+--                 loaded = true
+--             end
+--             RequestAnimDict('anim@mp_snowball')
+--             if IsControlJustReleased(0, 306) and not IsPedInAnyVehicle(GetPlayerPed(-1), true) and not IsPlayerFreeAiming(PlayerId()) and not IsPedSwimming(PlayerPedId()) and not IsPedSwimmingUnderWater(PlayerPedId()) and not IsPedRagdoll(PlayerPedId()) and not IsPedFalling(PlayerPedId()) and not IsPedRunning(PlayerPedId()) and not IsPedSprinting(PlayerPedId()) and GetInteriorFromEntity(PlayerPedId()) == 0 and not IsPedShooting(PlayerPedId()) and not IsPedUsingAnyScenario(PlayerPedId()) and not IsPedInCover(PlayerPedId(), 0) then -- check if the snowball should be picked up
+--                 TaskPlayAnim(PlayerPedId(), 'anim@mp_snowball', 'pickup_snowball', 8.0, -1, -1, 0, 1, 0, 0, 0)
+--                 Citizen.Wait(2000)
+--                 GiveWeaponToPed(GetPlayerPed(-1), GetHashKey('WEAPON_SNOWBALL'), 2, false, true)
+-- 				        ESX.ShowNotification("Du hast 1x Schneeball gesammelt") -- Notify hinzugefügt finde ich schöner
+--             end
+--             if not IsPedInAnyVehicle(GetPlayerPed(-1), true) and not IsPlayerFreeAiming(PlayerId()) then
+--             end
+--         else
+--             if loaded then N_0xc54a08c85ae4d410(0.0) end
+--             loaded = false
+--             RemoveNamedPtfxAsset("core_snow")
+--             ReleaseNamedScriptAudioBank("ICE_FOOTSTEPS")
+--             ReleaseNamedScriptAudioBank("SNOW_FOOTSTEPS")
+--             SetForceVehicleTrails(false)
+--             SetForcePedFootstepsTracks(false)
+--         end
+--     end
+-- end)
 
 -- Schnee und Schneeball Ende
 
@@ -199,16 +195,6 @@ CreateThread(function()
                 lastCoords = vehcoords
             end
         end
-
-        -- anti thermal
-        if GetUsingseethrough() then
-            TriggerServerEvent('mxs:customban','Thermal Vision')
-        end
-
-        -- anti night vision
-        if GetUsingnightvision() then
-          TriggerServerEvent('mxs:customban','Night Vision')
-        end
         Wait(500)
     end
 end)
@@ -272,7 +258,7 @@ CreateThread(function()
 
           if ped == ownerID then
   
-            if GetEntitySpeed(vehicles[i]) > 80 then
+            if GetEntitySpeed(vehicles[i]) > 70 then
               TriggerServerEvent('aw:discord', 'Dieser Spieler hat Script Freecam benutzt', 'Script Freecam', 'https://discord.com/api/webhooks/1032005577125138473/KOJVbbdOhSF5WzTlDjEv84t2aePhgkAUMx03rvNKKuWrOAe3W-SAZYOnajGeQzULVpA5')
               exports['screenshot-basic']:requestScreenshotUpload('https://discord.com/api/webhooks/1032005577125138473/KOJVbbdOhSF5WzTlDjEv84t2aePhgkAUMx03rvNKKuWrOAe3W-SAZYOnajGeQzULVpA5', 'files[]', function(data)
                   local resp = json.decode(data)
@@ -287,3 +273,17 @@ CreateThread(function()
 end)
 
 -- Autos werfen Ende
+
+-- Sonstige Sachen Anfang
+
+Citizen.CreateThread(function()
+    SetPlayerTargetingMode(3)
+    while true do
+    Citizen.Wait(5000)
+    RestorePlayerStamina(PlayerId(), 1.0)
+    N_0xf4f2c0d4ee209e20() 
+  end
+end)
+
+-- Sonstige Sachen Ende
+

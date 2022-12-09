@@ -177,6 +177,270 @@ DP.Shared = {
        EmoteDuration = 7500,
        SyncOffsetFront = 0.13
    }},
+   ["cuddle1a"] = {"tigerle@custom@couple@cuddle1a", "tigerle_couple_cuddle1a", "Cuddle1a", "cuddle1b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["cuddle1b"] = {"tigerle@custom@couple@cuddle1b", "tigerle_couple_cuddle1b", "Cuddle1b", "cuddle1a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["cuddle2a"] = {"tigerle@custom@couple@cuddle@no2a", "tigerle_couple_cuddleno2a", "Cuddle2a", "cuddle2b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["cuddle2b"] = {"tigerle@custom@couple@cuddle@no2b", "tigerle_couple_cuddleno2b", "Cuddle2b", "cuddle2a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+  ["cuddle3a"] = {"tigerle@custom@couple@cuddle@no3a", "tigerle_couple_cuddle_no3a", "Cuddle3a", "cuddle3b", AnimationOptions =
+  {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+  }},
+  ["cuddle3b"] = {"tigerle@custom@couple@cuddle@no3b", "tigerle_couple_cuddle_no3b", "Cuddle3b", "cuddle3a", AnimationOptions =
+  {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+  }},
+  ["cuddle4a"] = {"tigerle@custom@couple@cuddle@no4a", "tigerle_couple_base_a", "Cuddle4a", "cuddle4b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["cuddle4b"] = {"tigerle@custom@couple@cuddle@no4b", "tigerle_couple_base_b", "Cuddle4b", "cuddle4a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["kiss5"] = {"tigerle@custom@couple@kissing1a", "tigerle_couple_kissing1a", "Kiss5", "kiss6", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["kiss6"] = {"tigerle@custom@couple@kissing1b", "tigerle_couple_kissing1b", "Kiss6", "kiss5", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["kiss7"] = {"tigerle@custom@couple@kissing2a", "tigerle_couple_kissing2a", "Kiss7", "kiss8", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["kiss8"] = {"tigerle@custom@couple@kissing2b", "tigerle_couple_kissing2b", "Kiss8", "kiss7", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["laying1a"] = {"tigerle@custom@couple@laying1a", "tigerle_couple_laying1a", "Laying1a", "laying1b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+  ["laying1b"] = {"tigerle@custom@couple@laying1b", "tigerle_couple_laying1b", "Laying1b", "laying1a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["bench1a"] = {"tigerle@custom@couple@sittingonbench@no1a", "tigerle_couple_sittingonbench_no1a", "Bench1a", "bench1b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["bench1b"] = {"tigerle@custom@couple@sittingonbench@no1b", "tigerle_couple_sittingonbench_no1b", "Bench1b", "bench1a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.0,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["stand1a"] = {"tigerle@custom@couple@standcuddle_a", "tigerle_couple_standcuddle_a", "Stand1a", "stand1b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       Pos = 0.0,
+       yPos = 0.35,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 180.0,
+   }},
+["stand1b"] = {"tigerle@custom@couple@standcuddle_b", "tigerle_couple_standcuddle_b", "Stand1b", "stand1a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       Pos = 0.0,
+       yPos = 0.35,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 180.0,
+   }},
+   ["stand2a"] = {"tigerle@custom@couple@standing_a", "tigerle_couple_standing_a", "Stand2a", "stand2b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = -0.10,
+       yPos = -0.30,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["stand2b"] = {"tigerle@custom@couple@standing_b", "tigerle_couple_standing_b", "Stand2b", "stand2a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.10,
+       yPos = 0.30,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+   ["titanic1a"] = {"tigerle@custom@pose@titanic1a", "tigerle_pose_titanic1a", "Titanic1a", "titanic1b", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = -0.30,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
+["titanic1b"] = {"tigerle@custom@pose@titanic1b", "tigerle_pose_titanic1b", "Titanic1b", "titanic1a", AnimationOptions =
+   {
+       EmoteMoving = false,
+       EmoteLoop = true,
+       Atatchto = true,
+       xPos = 0.0,
+       yPos = 0.30,
+       zPos = 0.0,
+       xRot = 0.0,
+       yRot = 0.0,
+       zRot = 0.0,
+   }},
    ["bro"] = {"mp_ped_interaction", "hugs_guy_a", "Bro", "bro2", AnimationOptions =
    {
       SyncOffsetFront = 1.14
@@ -3548,12 +3812,12 @@ DP.Emotes = {
       EmoteLoop = true,
       EmoteMoving = true,
    }},
-   ["hump"] = {"timetable@trevor@skull_loving_bear", "skull_loving_bear", "Hump", AnimationOptions =
+   --[[["hump"] = {"timetable@trevor@skull_loving_bear", "skull_loving_bear", "Hump", AnimationOptions =
    {
       EmoteMoving = false,
       EmoteLoop = true,
 
-   }},
+   }},]]
    ["tighten"] = {"timetable@denice@ig_1", "idle_b", "Tigten (Yoga)", AnimationOptions =
    {
       EmoteMoving = false,

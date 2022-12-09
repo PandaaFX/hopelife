@@ -72,7 +72,7 @@ RegisterNUICallback('register', function(data, cb)
 		elseif theData == "height" then
 			local height = tonumber(value)
 			if height then
-				if height > 200 or height < 140 then
+				if height > 250 or height < 140 then
 					reason = "Ungültige Größe!"
 					break
 				end

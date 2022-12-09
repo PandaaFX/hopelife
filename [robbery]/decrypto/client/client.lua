@@ -256,7 +256,7 @@ function ATMHack()
 		else
 			ESX.ShowNotification('Dir fehlt etwas dafür!')
 		end
-	end, 'hackcard')
+	end,'hackcard')
 end
 
 

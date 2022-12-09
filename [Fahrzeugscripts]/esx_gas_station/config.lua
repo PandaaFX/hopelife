@@ -1,6 +1,6 @@
 Config = {}
 
-Config.webhook = "https://discord.com/api/webhooks/998959297310502912/sQRPr_PXkFv2lQB12qacJ8Pm6m06T14ww2jMbZIU7hH3cwob4nD1iaV0Ia3Ys9syuc7D"						-- Webhook to send logs to discord
+Config.webhook = "https://discord.com/api/webhooks/1044656863188357280/XDuPF9HjCYmsKI3bL0KN8wdK7f69WSw7qU3HE766jfrFusZGARDdpPyz6GlCFqA1S93m"						-- Webhook to send logs to discord
 Config.lang = "de"								-- Set the file language [en/br]
 
 Config.ESX = {									-- ESX settings, if you are using vRP just ignore

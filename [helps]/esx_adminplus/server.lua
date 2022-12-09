@@ -64,7 +64,7 @@ end, false)
 RegisterCommand("playerskin", function(source, args, rawCommand)
 	if source ~= 0 then
 		local xPlayer = ESX.GetPlayerFromId(source)
-		if havePermission(xPlayer) then
+		if havePermission3(xPlayer) then
     		if args[1] and tonumber(args[1]) then
         		local targetId = tonumber(args[1])
         		local xTarget = ESX.GetPlayerFromId(targetId)
@@ -79,7 +79,7 @@ RegisterCommand("playerskin", function(source, args, rawCommand)
 			end
 		end
     end
-end, true)
+end, false)
 ------------EINREISE------------
 local aktivepurge = "Aus"
 RegisterCommand('purge', function(source, args, showError)
@@ -245,6 +245,26 @@ function havePermission2(xPlayer, exclude)	-- you can exclude rank(s) from havin
 	return false
 end
 
+function havePermission3(xPlayer, exclude)	-- you can exclude rank(s) from having permission to specific commands 	[exclude only take tables]
+	if exclude and type(exclude) ~= 'table' then exclude = nil;print("^3[esx_admin] ^1ERROR ^0exclude argument is not table..^0") end	-- will prevent from errors if you pass wrong argument
+
+	local playerGroup = xPlayer.getGroup()
+	for k,v in pairs(Config.modRanks) do
+		if v == playerGroup then
+			if not exclude then
+				return true
+			else
+				for a,b in pairs(exclude) do
+					if b == v then
+						return false
+					end
+				end
+				return true
+			end
+		end
+	end
+	return false
+end
 RegisterServerEvent('waffen:log')
 AddEventHandler('waffen:log', function(waffe,ammo)
 	local xPlayerSender = ESX.GetPlayerFromId(source)

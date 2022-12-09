@@ -168,15 +168,15 @@ Config.Stands = { -- Vehicle shops informations
 		currency = "bank", -- used to buy/sell the business and buy vehicle
 		hasOwner = true, -- true = this vehicle shop can have a owner and will need maintenance to have stock | false = no owner and with vehicles all the time, price = max_price set on the database
 	
-		coords = {x =371.934082,y= 3411.890137,z= 36.390503}, -- Marker/Shop position
-		sellVehicleCoords = {x = 371.934082, y = 3411.890137, z= 36.390503},
+		coords = {x =960.065918,y= -2449.199951,z= 31.217529}, -- Marker/Shop position, ,  
+		sellVehicleCoords = {x = 953.208801, y = -2442.923096, z= 28.471069},
 		sellVehicleMarker = {id = 1, color = {r = 255, g = 0, b = 0, a = 90}, size = {x = 4.0, y = 4.0, z = 1.5}, radius = 2.5, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0}, -- Marker informations for the sell vehicle marker
-		ownerCoords = {x = 340.325287,y= 3395.591309,z= 33.374390}, -- Marker/Shop position for owner/employees, , 
-		spawnFlatbedPos = {x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520}, -- Where the flatbed/truck is spawned for the orders
+		ownerCoords = {x = 1035.903320,y= -2546.004395,z= 32.279175}, -- Marker/Shop position for owner/employees, , , , 
+		spawnFlatbedPos = {x = 994.180237,y= -2500.931885,z= 28.285767,h= 2.834646}, -- Where the flatbed/truck is spawned for the orders , , 28.285767, 
 		towCoords = {bone = 20, xPos = -0.5, yPos = -5.0, zPos = 1.0},
 		missionsVehicleSpawn = { -- Locations where someone who accepted an order will have to go (it is random)
-			{x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520},
-			--{x = 218.46, y = -850.71, z = 30.16, h = 100.0},
+			{x = 1255.476929,y= -3294.237305,z= 5.791260,h= 178.582672},
+			--{x = 218.46, y = -850.71, z = 30.16, h = 100.0},, , 
 		},
 		radius = 1, -- Interaction radius for the markers
 		price = 1, -- Price of the vehicle shop

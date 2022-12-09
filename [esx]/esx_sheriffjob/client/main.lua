@@ -1009,9 +1009,9 @@ end)
 
 AddEventHandler('esx_sheriffjob:hasEnteredEntityZone', function(entity)
 	local playerPed = PlayerPedId()
-	print("Job: ".. ESX.PlayerData.job.name)
+
 	if ESX.PlayerData.job and ESX.PlayerData.job.name == 'lssd' and IsPedOnFoot(playerPed) then
-		print("test")
+
 		CurrentAction     = 'remove_entity'
 		CurrentActionMsg  = _U('remove_prop')
 		CurrentActionData = {entity = entity}
@@ -1073,13 +1073,11 @@ CreateThread(function()
 		if closestDistance ~= -1 and closestDistance <= 3.0 then
 			if LastEntity ~= closestEntity then
 				TriggerEvent('esx_sheriffjob:hasEnteredEntityZone', closestEntity)
-				print('Obj gefunden: '..closestEntity)
 				LastEntity = closestEntity
 			end
 		else
 			if LastEntity then
 				TriggerEvent('esx_sheriffjob:hasExitedEntityZone', LastEntity)
-				print('Obj gefunden: '..LastEntity)
 				LastEntity = nil
 			end
 		end

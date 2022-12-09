@@ -138,6 +138,12 @@ Config.lockedRadioChannels = { --Radio lock
      { frq = 9, jobhasaccess = "fib"},
      { frq = 9, jobhasaccess = "army"},
      { frq = 9, jobhasaccess = "lssd"},
+     { frq = 10, jobhasaccess = "police"},
+     { frq = 10, jobhasaccess = "ambulance"},
+     { frq = 10, jobhasaccess = "fib"},
+     { frq = 10, jobhasaccess = "army"},
+     { frq = 10, jobhasaccess = "lssd"},
+     { frq = 10, jobhasaccess = "anwalt"},
      { frq = 9038, jobhasaccess = "mechanic"},
 
      --[[You can lock a radio for multiple jobs by doing the following:
