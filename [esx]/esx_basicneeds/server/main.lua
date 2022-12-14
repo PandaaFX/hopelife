@@ -261,6 +261,15 @@ ESX.RegisterUsableItem('sprite', function(source)
 	xPlayer.showNotification(_U('used_sprite'))
 end)
 
+ESX.RegisterUsableItem('drink_sprite', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	xPlayer.removeInventoryItem('drink_sprite', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	xPlayer.showNotification(_U('used_sprite'))
+end)
+
 ESX.RegisterUsableItem('berriesjuice', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	xPlayer.removeInventoryItem('berriesjuice', 1)

@@ -28,6 +28,10 @@ AddEventHandler('jsfour-idcard:open', function(ID, targetID, type)
 							if licenses[i].type == 'bauamt' then
 								show = true
 							end
+						elseif type =='anwalt' then
+							if licenses[i].type == 'anwalt' then
+								show = true
+							end
 						end
 					end
 				else

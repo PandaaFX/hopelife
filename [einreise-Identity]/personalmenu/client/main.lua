@@ -547,6 +547,24 @@ function RenderWalletMenu()
 					TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'bauamt')
 				end
 			end)
+
+			RageUI.Button(_U('wallet_show_anwalt_button'), nil, {}, true, function(Hovered, Active, Selected)
+				if (Selected) then
+					local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
+
+					if closestDistance ~= -1 and closestDistance <= 3.0 then
+						TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(closestPlayer), 'anwalt')
+					else
+						ESX.ShowNotification(_U('players_nearby'))
+					end
+				end
+			end)
+
+			RageUI.Button(_U('wallet_check_anwalt_button'), nil, {}, true, function(Hovered, Active, Selected)
+				if (Selected) then
+					TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'anwalt')
+				end
+			end)
 		end
 	end)
 end

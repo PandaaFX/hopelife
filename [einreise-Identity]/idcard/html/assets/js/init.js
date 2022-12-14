@@ -66,6 +66,15 @@ $(document).ready(function(){
         $('#id-card').css('background', 'url(assets/images/bauamt.png)');
       }
 
+      if (type == 'anwalt'){
+        $('img').hide();
+        $('#name').css('color', '#d9d9d9');
+        $('#name').text(userData.firstname + ' ' + userData.lastname);
+        $('#dob').text(userData.dateofbirth);
+        $('#signature').text(userData.firstname + ' ' + userData.lastname);
+
+        $('#id-card').css('background', 'url(assets/images/anwalt.png)');
+      }
       $('#id-card').show();
     } else if (event.data.action == 'close') {
       $('#name').text('');

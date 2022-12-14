@@ -83,6 +83,8 @@ Locales['de'] = {
 	['wallet_check_firearms_button'] = 'Waffenlizenz anschauen',
 	['wallet_show_bauamt_button'] = 'Bauamtlizenz zeigen',
 	['wallet_check_bauamt_button'] = 'Bauamtlizenz anschauen',
+	['wallet_show_anwalt_button'] = 'Anwaltlizenz zeigen',
+	['wallet_check_anwalt_button'] = 'Anwaltlizenz anschauen',
 
 	-- Bills Menu
 	['bills_title'] = 'Rechnungen',
