@@ -82,6 +82,7 @@ function spawnVehicle(name,x,y,z,h)
 		SetModelAsNoLongerNeeded(model)
 
         SetVehicleNumberPlateText(veh, Lang[Config.lang]['truck_plate']..tostring(math.random(1000, 9999)))
+		-- Put here your vehicle keys function
 
 		SetVehicleFuelLevel(veh,100.0)
 		DecorSetFloat(veh, "_FUEL_LEVEL", GetVehicleFuelLevel(veh))

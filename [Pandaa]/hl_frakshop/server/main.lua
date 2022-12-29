@@ -144,30 +144,30 @@ local clientcode = [[
 				for i = 1, #Config.Shops, 1 do
 
 
-							local dist = GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), Config.Shops[i].coords)
-							
-							if dist <= Config.InteractDistance then
-								ESX.Game.SpawnVehicle(data.model, Config.Shops[i].SpawnZone, Config.Shops[i].SpawnHeading, function(vehicle)
-									a=randomchar('A','Z')
-									b=randomchar('A','Z')
-									c=randomchar('A','Z')
+					local dist = GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), Config.Shops[i].coords)
 					
-									n1=randomchar('0','9')
-									n2=randomchar('0','9')
-									n3=randomchar('0','9')
-									local newPlate = a..b..c.. ' ' ..n1..n2..n3
-									local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
-									vehicleProps.plate = newPlate
-									TaskWarpPedIntoVehicle(GetPlayerPed(-1), vehicle, -1)
-									SetVehicleNumberPlateText(vehicle, newPlate)
-									TriggerServerEvent('hl_frakshop:setVehicleOwned', vehicleProps, PlayerData.job.name, vehType)
-									Citizen.Wait(500)
-									DoScreenFadeIn(800)
-									Citizen.Wait(700)
-									TriggerEvent('esx:showAdvancedNotification', 'Fraktions Autohändler', 'Information', "Du hast ein Fahrzeug gekauft.\nKennzeichen: " .. newPlate, 'CHAR_TOM', 1)
-								end)
-								
-							end
+					if dist <= Config.InteractDistance then
+						ESX.Game.SpawnVehicle(data.model, Config.Shops[i].SpawnZone, Config.Shops[i].SpawnHeading, function(vehicle)
+							a=randomchar('A','Z')
+							b=randomchar('A','Z')
+							c=randomchar('A','Z')
+			
+							n1=randomchar('0','9')
+							n2=randomchar('0','9')
+							n3=randomchar('0','9')
+							local newPlate = a..b..c.. ' ' ..n1..n2..n3
+							local vehicleProps = ESX.Game.GetVehicleProperties(vehicle)
+							vehicleProps.plate = newPlate
+							TaskWarpPedIntoVehicle(GetPlayerPed(-1), vehicle, -1)
+							SetVehicleNumberPlateText(vehicle, newPlate)
+							TriggerServerEvent('hl_frakshop:setVehicleOwned', vehicleProps, PlayerData.job.name, vehType)
+							Citizen.Wait(500)
+							DoScreenFadeIn(800)
+							Citizen.Wait(700)
+							TriggerEvent('esx:showAdvancedNotification', 'Fraktions Autohändler', 'Information', "Du hast ein Fahrzeug gekauft.\nKennzeichen: " .. newPlate, 'CHAR_TOM', 1)
+						end)
+
+					end
 
 
 				end
@@ -305,19 +305,28 @@ ESX.RegisterServerCallback('hl_frakshop:getVehicles',function(source, cb, job, g
     end)
 end)
 
-ESX.RegisterServerCallback('hl_frakshop:buyVehicle', function(source, cb, model)
+ESX.RegisterServerCallback('hl_frakshop:buyVehicle', function(source, cb, model, rev)
 	local xPlayer = ESX.GetPlayerFromId(source)
 
-    MySQL.Async.fetchAll("SELECT price, type FROM frakshop WHERE model = @model",{ ["@model"] = model},function(result)
-		local price = result[1].price
-		local vehType = result[1].type
-		if xPlayer.getMoney() >= price then
-			xPlayer.removeMoney(price)
-			cb(true, vehType)
-		else
-			cb(false)
-		end
-    end)
+	if rev == "wastofarawayanggivehisfuckingmoneyback" then
+		MySQL.Async.fetchAll("SELECT price, type FROM frakshop WHERE model = @model",{ ["@model"] = model},function(result)
+			local price = result[1].price
+			xPlayer.addAccountMoney('money', price)
+			cb(true)
+		end)
+	else
+		MySQL.Async.fetchAll("SELECT price, type FROM frakshop WHERE model = @model",{ ["@model"] = model},function(result)
+			local price = result[1].price
+			local vehType = result[1].type
+			if xPlayer.getMoney() >= price then
+				xPlayer.removeMoney(price)
+				cb(true, vehType)
+			else
+				cb(false)
+			end
+		end)
+
+	end
 end)
 
 RegisterServerEvent('hl_frakshop:setVehicleOwned')

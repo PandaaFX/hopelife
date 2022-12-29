@@ -3,7 +3,7 @@ Config = {}
 Config.webhook = "https://discord.com/api/webhooks/1044656863188357280/XDuPF9HjCYmsKI3bL0KN8wdK7f69WSw7qU3HE766jfrFusZGARDdpPyz6GlCFqA1S93m"						-- Webhook to send logs to discord
 Config.lang = "de"								-- Set the file language [en/br]
 
-Config.ESX = {									-- ESX settings, if you are using vRP just ignore
+Config.ESX = {									-- ESX settings
 	['ESXSHAREDOBJECT'] = "esx:getSharedObject",-- Change your getshared object event here, if you are using anti-cheat
 	['account_stores'] = 'bank',				-- Change here the account that should be used with gas station expenses
 }
@@ -14,6 +14,16 @@ Config.format = {
 }
 
 Config.max_stations_per_player = 3				-- Maximum number of stores that each player can have
+Config.max_jobs = 20							-- Max amount of jobs that each store can create
+Config.trucker_logistics = {					-- Settings related to the link with the Truck Logistics script
+	['enable'] = false,							-- Set this as true if you own the Truck Logistics script and want to link the jobs created in the Hire Deliveryman page with the truckers ()
+	['available_trucks'] = {					-- List of trucks that are generated in contracts
+		"actros","man","daf","vnl780"
+	},
+	['available_trailers'] = {					-- List of trailers that are generated in contracts
+		"tanker","tanker2"
+	}
+}
 
 -- Here are the places where the person can open the gas station menu
 -- You can add as many locations as you like, just use the location already created as an example
@@ -25,7 +35,9 @@ Config.gas_station_locations = {
 		['truck_coord'] = {278.33,-1243.18,29.2,185.71},		-- Garage coordinates, where trucks will spawn (coordinates made up of x, y, z, h)
 		['trailer_coord'] = {284.9,-1245.9,29.22,178.75},		-- Garage coordinates, where the truck trailers will spawn (coordinates composed of x, y, z, h)
 		['deliveryman_coord'] = {288.56,-1269.86,29.45},		-- Coordinates where the delivery person will take the jobs you created
-		['type'] = 'small_gas_station', 						-- Enter the gas station type ID here
+		['deliveryman_coord'] = {288.56,-1269.86,29.45},		      -- Coordinates where the delivery person will take the jobs you created
+		['truck_parking_location'] = {279.50,-1246.65,29.45,89.32},   -- Location that the trucks from Trucker Logistics script will park when delivering cargo for this store
+		['type'] = 'small_gas_station', 						      -- Enter the gas station type ID here
 	},
 	["gas_station_2"] = {
 		['buy_price'] = 3000000,
@@ -34,6 +46,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {827.26,-1045.28,27.25,352.23},
 		['trailer_coord'] = {825.43,-1058.54,27.95,349.77},
 		['deliveryman_coord'] = {820.73,-1040.27,26.76},
+		['truck_parking_location'] = {822.78,-1019.37,26.431,1.75},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_3"] = {
@@ -43,6 +56,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1197.71,-1403.83,35.23,174.42},
 		['trailer_coord'] = {1197.73,-1392.26,35.23,179.75},
 		['deliveryman_coord'] = {1207.58,-1389.69,35.38},
+		['truck_parking_location'] = {1200.28,-1400.05,35.49,179.26},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_4"] = {
@@ -52,6 +66,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1158.52,-339.37,68.07,195.21},
 		['trailer_coord'] = {1154.73,-340.22,67.78,182.82},
 		['deliveryman_coord'] = {1164.85,-326.2,69.25,16.22},
+		['truck_parking_location'] = {1186.96,-313.53,69.44,281.31},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_5"] = {
@@ -61,6 +76,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {640.34,275.72,103.14,148.4},
 		['trailer_coord'] = {644.27,274.14,103.14,149.89},
 		['deliveryman_coord'] = {646.51,267.58,103.26,241.78},
+		['truck_parking_location'] = {637.71,262.47,103.36,148.91},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_6"] = {
@@ -70,6 +86,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {2583.31,407.09,108.46,180.32},
 		['trailer_coord'] = {2588.93,407.35,108.46,177.83},
 		['deliveryman_coord'] = {2559.44,356.5,108.63,85.51},
+		['truck_parking_location'] = {2563.2,344.53,108.72,267.2},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_7"] = {
@@ -79,6 +96,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {181.51,-1552.6,29.18,220.92},
 		['trailer_coord'] = {184.35,-1549.41,29.19,212.39},
 		['deliveryman_coord'] = {164.66,-1556.33,29.27,43.06},
+		['truck_parking_location'] = {192.89,-1562.31,29.53,221.14},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_8"] = {
@@ -88,6 +106,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-332.91,-1486.36,30.62,12.0},
 		['trailer_coord'] = {-337.62,-1486.47,30.59,1.16},
 		['deliveryman_coord'] = {-342.61,-1485.99,30.76,89.84},
+		['truck_parking_location'] = {-338.25,-1471.53,30.84,359.55},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_9"] = {
@@ -97,6 +116,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1784.93,3322.97,41.42,317.42},
 		['trailer_coord'] = {1787.89,3318.95,41.62,301.42},
 		['deliveryman_coord'] = {1777.64,3325.0,41.44,120.45},
+		['truck_parking_location'] = {1788.75,3323.66,41.8,302.19},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_10"] = {
@@ -106,6 +126,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {61.19,2780.46,57.88,145.73},
 		['trailer_coord'] = {64.39,2777.86,57.88,145.99},
 		['deliveryman_coord'] = {56.1,2785.75,57.88,325.04},
+		['truck_parking_location'] = {31.29,2782.43,58.17,142.64},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_11"] = {
@@ -115,6 +136,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {236.38,2602.51,45.32,15.15},
 		['trailer_coord'] = {241.88,2605.24,45.15,98.1},
 		['deliveryman_coord'] = {268.28,2598.66,44.84,193.58},
+		['truck_parking_location'] = {266.76,2611.38,45.05,278.76},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_12"] = {
@@ -124,6 +146,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1028.3,2669.53,39.56,359.01},
 		['trailer_coord'] = {1022.44,2669.65,39.56,2.54},
 		['deliveryman_coord'] = {1036.28,2664.8,39.56,173.18},
+		['truck_parking_location'] = {1029.51,2674.64,39.79,0.33},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_13"] = {
@@ -133,6 +156,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1211.54,2645.8,37.83,350.83},
 		['trailer_coord'] = {1194.27,2664.12,37.81,307.48},
 		['deliveryman_coord'] = {1204.73,2653.79,37.86,130.24},
+		['truck_parking_location'] = {1197.86,2667.66,38.07,315.01},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_14"] = {
@@ -142,6 +166,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {2537.62,2614.28,37.95,284.28 },
 		['trailer_coord'] = {2539.67,2609.49,37.95,294.62},
 		['deliveryman_coord'] = {2560.25,2595.21,38.09,111.04},
+		['truck_parking_location'] = {2533.92,2604.62,38.2,1.38},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_15"] = {
@@ -151,6 +176,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {2663.11,3250.49,54.96,240.18},
 		['trailer_coord'] = {2666.79,3256.28,55.25,245.83},
 		['deliveryman_coord'] = {2677.61,3272.99,55.41,60.26},
+		['truck_parking_location'] = {2689.07,3269.91,55.5,330.48},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_16"] = {
@@ -160,6 +186,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1977.54,3769.05,32.19,208.79},
 		['trailer_coord'] = {1983.13,3771.28,32.19,205.63},
 		['deliveryman_coord'] = {2006.31,3782.1,32.19,31.42},
+		['truck_parking_location'] = {1998.47,3765.49,32.44,118.68},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_17"] = {
@@ -169,6 +196,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1685.22,4923.52,42.08,51.58},
 		['trailer_coord'] = {1682.18,4920.22,42.08,53.27},
 		['deliveryman_coord'] = {1696.73,4927.44,42.24,234.67},
+		['truck_parking_location'] = {1681.01,4925.4,42.33,54.25},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_18"] = {
@@ -178,6 +206,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {1711.78,6415.53,32.95,157.15},
 		['trailer_coord'] = {1716.57,6412.93,33.53,156.53},
 		['deliveryman_coord'] = {1698.68,6426.06,32.77,337.51},
+		['truck_parking_location'] = {1687.02,6414.8,32.53,153.12},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_19"] = {
@@ -187,6 +216,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {167.99,6602.3,31.85,182.23},
 		['trailer_coord'] = {162.8,6600.87,31.86,189.62},
 		['deliveryman_coord'] = {180.97,6600.43,32.05,99.79},
+		['truck_parking_location'] = {184.07,6576.23,32.11,291.82},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_20"] = {
@@ -196,6 +226,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-84.41,6425.86,31.5,45.22},
 		['trailer_coord'] = {-80.86,6430.33,31.5,46.0},
 		['deliveryman_coord'] = {-90.66,6414.05,31.65,221.1},
+		['truck_parking_location'] = {-90.53,6429.34,31.68,316.36},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_21"] = {
@@ -205,6 +236,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-2520.51,2338.61,33.06,208.15},
 		['trailer_coord'] = {-2524.16,2336.7,33.06,209.23},
 		['deliveryman_coord'] = {-2552.98,2315.94,33.22,172.08},
+		['truck_parking_location'] = {-2540.38,2347.83,33.32,273.64},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_22"] = {
@@ -214,6 +246,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-1819.58,774.97,136.93,208.09},
 		['trailer_coord'] = {-1816.09,777.12,137.05,215.49},
 		['deliveryman_coord'] = {-1818.08,791.34,138.12,41.34},
+		['truck_parking_location'] = {-1794.9,817.54,138.79,43.09},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_23"] = {
@@ -223,6 +256,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-1425.13,-285.27,46.22,128.54},
 		['trailer_coord'] = {-1418.41,-284.97,46.27,127.03},
 		['deliveryman_coord'] = {-1435.93,-259.56,46.27,318.99},
+		['truck_parking_location'] = {-1428.2,-291.95,46.41,131.62},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_24"] = {
@@ -232,6 +266,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-2086.82,-331.87,13.03,81.77},
 		['trailer_coord'] = {-2087.14,-335.31,13.04,79.5},
 		['deliveryman_coord'] = {-2073.57,-324.56,13.32,263.24},
+		['truck_parking_location'] = {-2110.41,-311.06,13.28,352.75},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_25"] = {
@@ -241,6 +276,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-711.72,-929.02,19.02,177.74},
 		['trailer_coord'] = {-706.4,-929.02,19.02,177.91},
 		['deliveryman_coord'] = {-706.55,-917.16,19.22,356.88},
+		['truck_parking_location'] = {-736.58,-922.53,19.48,91.01},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_26"] = {
@@ -250,6 +286,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-514.5,-1201.33,19.1,314.81},
 		['trailer_coord'] = {-511.64,-1206.39,18.75,315.84},
 		['deliveryman_coord'] = {-535.7,-1218.22,18.46,149.83},
+		['truck_parking_location'] = {-531.68,-1195.66,18.59,67.19},
 		['type'] = 'small_gas_station',
 	},
 	["gas_station_27"] = {
@@ -259,6 +296,7 @@ Config.gas_station_locations = {
 		['truck_coord'] = {-68.88,-1744.15,29.36,123.63},
 		['trailer_coord'] = {-67.02,-1748.64,29.45,108.54},
 		['deliveryman_coord'] = {-51.57,-1758.84,29.44,317.78},
+		['truck_parking_location'] = {-83.92,-1761.39,29.85,160.13},
 		['type'] = 'small_gas_station',
 	}
 }
@@ -419,7 +457,7 @@ Config.trucks = {
 		['trailer'] = 'tanker',
 	}
 }
-Config.keyToUnlockTruck = 73 	-- L key
+Config.keyToUnlockTruck = 73 	-- X key
 
 -- Fuel locations
 Config.delivery_locations = {

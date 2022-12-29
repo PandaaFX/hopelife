@@ -3,7 +3,7 @@ game 'common'
 
 name 'oxmysql'
 description 'Database wrapper for FXServer utilising node-mysql2 offering improved performance and security.'
-version '2.5.1'
+version '2.5.4'
 url 'https://github.com/overextended/oxmysql'
 author 'overextended'
 
@@ -21,7 +21,7 @@ files {
 
 ui_page 'ui/build/index.html'
 
-provide 'oxmysql'
+provide 'mysql-async'
 provide 'ghmattimysql'
 
 convar_category 'OxMySQL' {

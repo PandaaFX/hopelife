@@ -400,6 +400,13 @@
 				color: #2b2d30;
 				cursor: default;
 			}
+			.code-box {
+				background: #eee;
+				padding: 20px;
+				margin-left: -30px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -508,7 +515,31 @@
 			<h4 class="subtitle">What are the fuel exports?</h4>
 			<div class="checklist-items">
 				<input type="checkbox" disabled>
-				<label class="list-item"><span>The script uses the default LegacyFuel, see the official documentation here: <a href="https://github.com/InZidiuZ/LegacyFuel/blob/master/README.md" target="_blank">https://github.com/InZidiuZ/LegacyFuel</a></span></label>
+				<label class="list-item"><span>There are currently two (<b>client-sided</b>) exports available, which should help you control the fuel level for vehicles whenever needed</span></label>
+				<input type="checkbox" disabled>
+				<div class="code-box">
+					<span>SetFuel(vehicle <span style="color: #a1a1a1;">--[[ Vehicle ]]</span>, value <span style="color: #a1a1a1;">--[[ Number: (0-100) ]]</span>)<br><br>
+					<span>GetFuel(vehicle <span style="color: #a1a1a1;">--[[ Vehicle ]]</span>) <span style="color: #a1a1a1;">-- Returns the vehicle's fuel level.</span><br><br>
+				</div>
+				<input type="checkbox" disabled>
+				<label class="list-item"><span>Example usage</span></label>
+				<input type="checkbox" disabled>
+				<div class="code-box">
+					<span>
+					function SpawnVehicle(modelHash)<br>
+					&emsp;local vehicle = CreateVehicle(modelHash, coords.x, coords.y, coords.z, true, false)<br><br>
+					
+					&emsp;exports["LegacyFuel"]:SetFuel(vehicle, 100)<br>
+					end<br><br>
+					
+					function StoreVehicleInGarage(vehicle)<br>
+					&emsp;local plate = GetVehicleNumberPlateText(vehicle)<br>
+					&emsp;local fuelLevel = exports["LegacyFuel"]:GetFuel(vehicle)<br><br>
+					
+					&emsp;TriggerServerEvent('vehiclesStored', plate, fuelLevel)<br>
+					end
+					</span>
+				</div>
 			</div>
 			<h4 class="subtitle">How to add more gas stations?</h4>
 			<div class="checklist-items">

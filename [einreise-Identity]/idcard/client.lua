@@ -1,3 +1,6 @@
+local ESX = nil
+-- ESX
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 local open = false
 
 -- Open ID card
@@ -9,6 +12,15 @@ AddEventHandler('jsfour-idcard:open', function( data, type )
 		array  = data,
 		type   = type
 	})
+end)
+
+RegisterNetEvent('StummCmd', function()
+	local player, distance = ESX.Game.GetClosestPlayer()
+	if distance ~= -1 and distance <= 3 then
+		TriggerServerEvent('StummCMDServer', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'stumm')
+	else
+		ESX.ShowNotification('No players nearby')
+	end
 end)
 
 -- Key events

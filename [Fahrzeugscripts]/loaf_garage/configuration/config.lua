@@ -331,9 +331,9 @@ Config = {
             vehicletype3 = "car2",
         },
         Ballas = {
-            browse = vector3(393.0198, -1630.689, 28.27991),
-            --location = vector4(232.2, -792.48, 29.9, 160.0),
-            spawn = vector4(391.8593, -1623.851, 29.27991, 149.69),
+            browse = vector3(391.8593, -1623.851, 29.27991),
+            --location = vector4(232.2, -792.48, 29.9, 160.0), 
+            spawn = vector4(393.0198, -1630.689, 28.27991, 149.69),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
@@ -460,6 +460,17 @@ Config = {
             vehicletype2 = "motos",
             vehicletype3 = "car2",
         },
+        FIBGARAGE = {
+            browse = vector3(2555.512207, -413.301086, 93.157471),
+            --location = vector4(232.2, -792.48, 29.9, 160.0),
+            spawn = vector4(2555.960449, -406.035156, 92.989014, 351.496063),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            hideblip = true,
+        },
+
+        
 
         --- Boote
 
@@ -547,20 +558,29 @@ Config = {
         },
 
         SAINTS = {
-            browse = vector3(-1750.206543, 366.210999, 89.720093),
-            spawn = vector4(-1759.318726, 362.109894, 89.248291, 65.196854),
+            browse = vector3(-1825.714233, -1172.083496, 13.002930),
+            spawn = vector4(-1822.074707, -1170.421997, 13.002930, 229.606293),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
             specifiedJob = "saints",
         },
-        
+        Ballas = {
+            browse = vector3(133.687912, -1936.654907, 20.585327),
+            spawn = vector4(125.986816, -1936.641724, 20.669556, 28.346457),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "ballas",
+        },
+        --[[
         SAINTSHeli = {
             browse = vector3(-1748.914307, 371.578033, 89.720093),
             spawn = vector4(-1722.435181, 378.936249, 93.359741, 297.637787),
             vehicletype = "aircraft",
             specifiedJob = "saints",
         },
+        ]]
         bauamt = {
             browse = vector3(-562.760437, -886.628540, 25.202148),
            spawn = vector4(-553.595581, -896.558228, 24.460815, 178.58267),
@@ -575,14 +595,14 @@ Config = {
              vehicletype = "car",
             vehicletype2 = "motos",
              vehicletype3 = "car2",
-            specifiedJob = "camorra",
+            specifiedJob = "irish",
          },
         
          camorraheli = {
              browse = vector3(-3251.775879, 838.127502, 2.909912),
              spawn = vector4(-3258.316406, 838.984619, 2.909912, 45.354328),
              vehicletype = "aircraft",
-             specifiedJob = "camorra",
+             specifiedJob = "irish",
         },
         Oblocks = {
             browse = vector3(337.542847, -2035.635132, 21.377319),
@@ -735,21 +755,21 @@ Config = {
             specifiedJob = "ambulance",
         },
 
-        LSSD = {
-            browse = vector3(-459.296692, 6029.749512, 31.487183),
-            spawn = vector4(-468.606598, 6038.386719, 31.335571, 229.606293),
+        NIA = {
+            browse = vector3(39.731873, -899.696716, 29.970703),
+            spawn = vector4(23.736265, -887.327454, 30.122314, 249.448822),
             vehicletype = "car",
             vehicletype2 = "motos",
             vehicletype3 = "car2",
             specifiedJob = "lssd",
         },
         
-        LSSDHeli = {
-            browse = vector3(-495.586823, 5992.087891, 31.301880),
-            spawn = vector4(-475.318695, 5988.553711, 31.335571, 317.480316),
-            vehicletype = "aircraft",
-            specifiedJob = "lssd",
-        },
+        -- LSSDHeli = {
+        --     browse = vector3(-495.586823, 5992.087891, 31.301880),
+        --     spawn = vector4(-475.318695, 5988.553711, 31.335571, 317.480316),
+        --     vehicletype = "aircraft",
+        --     specifiedJob = "lssd",
+        -- },
 
         SNC = {
             browse = vector3(205.964828, -302.505493, 54.925293),
@@ -794,6 +814,7 @@ Config = {
             vehicletype = "aircraft",
             specifiedJob = "sinaloa",
         },
+        --[[
         irishgang = {
             browse = vector3(-1551.81, 882.2, 180.32),
             spawn = vector4(-1548.62, 875.52, 180.34, 205.88),
@@ -810,7 +831,7 @@ Config = {
             vehicletype = "aircraft",
             specifiedJob = "irish",
         },
---[[
+
         WEIN = {
             browse = vector3(-1923.507690, 2060.848389, 140.808838),
             spawn = vector4(-1918.061523, 2056.760498, 140.724487, 260.787415),
@@ -820,6 +841,14 @@ Config = {
             specifiedJob = "wein",
         },
 ]]
+        crips = {
+            browse = vector3(-345.810974, 75.191208, 49.095215),
+            spawn = vector4(-348.065918, 73.701103, 49.095215, 85.039368),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "crips",
+        },
         VAGOS = {
             browse = vector3(-1129.714233, -1604.492310, 4.392700),
             spawn = vector4(-1126.404419, -1611.494507, 4.392700, 303.307098),
@@ -835,6 +864,22 @@ Config = {
             spawn = vector4(-1111.569214, -1583.156006, 11.874023, 303.307098),
             vehicletype = "aircraft",
             specifiedJob = "vagos",
+        },
+
+        triangolo = {
+            browse = vector3(4996.008789, -5735.010742, 19.877686),
+            spawn = vector4(4992.685547, -5726.057129, 19.877686, 17.007874),
+            vehicletype = "car",
+            vehicletype2 = "motos",
+            vehicletype3 = "car2",
+            specifiedJob = "triangolo",
+        },
+
+        triangoloHeli = {
+            browse = vector3(4891.477051, -5751.652832, 26.331177),
+            spawn = vector4(4890.989258, -5736.276855, 26.348022, 354.330719),
+            vehicletype = "aircraft",
+            specifiedJob = "triangolo",
         },
 
     },

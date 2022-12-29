@@ -7,7 +7,7 @@ table.insert(Config.DoorList, {
 	objHash = 634417522,
 	maxDistance = 2.0,
 	objCoords = vector3(-444.3599, -29.66731, 41.01976),
-	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['saints']=0 },
+	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['crips']=0 },
 	lockpick = false,
 	audioRemote = false,
 	fixText = false,
@@ -21,7 +21,7 @@ table.insert(Config.DoorList, {
 
 -- Büro
 table.insert(Config.DoorList, {
-	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['saints']=0 },
+	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['crips']=0 },
 	locked = true,
 	lockpick = false,
 	doors = {
@@ -39,7 +39,7 @@ table.insert(Config.DoorList, {
 
 -- eingangstür
 table.insert(Config.DoorList, {
-	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['saints']=0 },
+	authorizedJobs = { ['hookahlounge']=0, ['bauamt']=0, ['crips']=0 },
 	locked = true,
 	lockpick = false,
 	doors = {

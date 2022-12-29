@@ -81,7 +81,9 @@ Config.AllowedSocieties = { -- Which societies can access the Society Invoices
 	'weazel',
 	'lafam',
 	'galaxy',
-	'anwalt'
+	'anwalt',
+	'triangolo',
+	'crips'
 }
 
 Config.InspectCitizenSocieties = { -- Which societies can access the Society Invoices
@@ -338,6 +340,12 @@ Config.BillsList = {
 	['anwalt'] = {
 		{'Custom'}
 	},
+	['triangolo'] = {
+		{'Custom'}
+	},
+	['crips'] = {
+		{'Custom'}
+	}
 }
 
 Config.AdminGroups = {

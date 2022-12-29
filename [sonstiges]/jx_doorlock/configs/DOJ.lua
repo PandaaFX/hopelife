@@ -1,22 +1,5 @@
 
 
--- DOJ Haupteingang
-table.insert(Config.DoorList, {
-	lockpick = false,
-	maxDistance = 2.5,
-	audioRemote = false,
-	doors = {
-		{objHash = -1094765077, objHeading = 209.99301147461, objCoords = vector3(-546.5197, -203.9119, 38.42064)},
-		{objHash = 660342567, objHeading = 29.993005752563, objCoords = vector3(-544.5583, -202.7798, 38.42064)}
- },
-	slides = false,
-	authorizedJobs = { ['doj']=0, ['police']=0, ['fib']=0, ['lssd']=0 },
-	locked = false,		
-	-- oldMethod = true,
-	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
-	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
-	-- autoLock = 1000
-})
 
 -- DOJ Lobby zu Gerichtssaal
 table.insert(Config.DoorList, {

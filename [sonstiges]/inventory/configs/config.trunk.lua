@@ -11,12 +11,18 @@ Config.TrunkIndividualWeights = {
   ["moonbeam2"] = 1000,
   ["hustler"] = 600,
   ["blazer"] = 25,
+  ["blazer2"] = 25,
+  ["blazer3"] = 25,
+  ["blazer4"] = 25,
+  ["blazer5"] = 25,
+  ["skidoo800r"] = 25,
   ["outlaw"] = 100,
   ["kuruma"] = 700,
   ["patriot"] = 1250,
   ["mule"] = 3000,
   ["bison"] = 1000,
   ["journey"] = 1750,
+  
 }
 Config.TrunkClassWeights = {
   [0] = 600, --Compact
@@ -37,7 +43,7 @@ Config.TrunkClassWeights = {
   [15] = 300, --Helicopters
   [16] = 0, --Planes
   [17] = 300, --Service
-  [18] = 300, --Emergency
+  [18] = 500, --Emergency
   [19] = 300, --Military
   [20] = 1000, --Commercial
   [21] = 0 --Trains

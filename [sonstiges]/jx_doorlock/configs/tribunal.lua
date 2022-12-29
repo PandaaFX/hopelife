@@ -9,7 +9,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5027.14, -5732.876, 18.06167),
 	maxDistance = 2.0,
@@ -23,7 +23,7 @@ table.insert(Config.DoorList, {
 
 -- tür2
 table.insert(Config.DoorList, {
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	lockpick = false,
 	audioRemote = false,
 	doors = {
@@ -50,7 +50,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5078.166, -5758.354, 16.02578),
 	maxDistance = 2.0,
@@ -71,7 +71,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5009.138, -5791.29, 18.02779),
 	maxDistance = 2.0,
@@ -92,7 +92,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5011.866, -5784.91, 18.02779),
 	maxDistance = 2.0,
@@ -113,7 +113,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(4977.377, -5765.718, 21.08308),
 	maxDistance = 2.0,
@@ -134,7 +134,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(4972.143, -5764.132, 21.08308),
 	maxDistance = 2.0,
@@ -155,7 +155,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5006.242, -5750.411, 29.04091),
 	maxDistance = 2.0,
@@ -176,7 +176,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(4996.902, -5752.953, 14.2711),
 	maxDistance = 2.0,
@@ -197,7 +197,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(5007.62, -5753.608, 15.57295),
 	maxDistance = 2.0,
@@ -218,7 +218,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	items = { 'ram' },		
 
-	authorizedJobs = { ['tribunal']=0 },
+	authorizedJobs = { ['triangolo']=0 },
 	garage = false,
 	objCoords = vector3(4989.271, -5735.335, 15.07164),
 	maxDistance = 2.0,

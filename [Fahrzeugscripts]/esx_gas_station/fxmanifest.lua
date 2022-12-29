@@ -1,7 +1,3 @@
-
-
-
-
 fx_version 'bodacious'
 game 'gta5'
 author 'Lixeiro Charmoso#1104'
@@ -49,4 +45,3 @@ dependency {
 	"LegacyFuel"
 }
 dependency '/assetpacks'
-

@@ -3,16 +3,42 @@ Config = {}
 Config.Locale = 'de'
 Config.VersionChecker = true
 ----------------------------------------------------------------
+-- If Standalone then you have to change the Notification
+Config.Framework = 'ESX' -- 'ESX' or 'Standalone'
+----------------------------------------------------------------
 -- Change 'false' to 'true' to toggle the engine automatically on when entering a vehicle
 Config.OnAtEnter = false
 ----------------------------------------------------------------
 Config.UseKey = true -- Set true if you want to use a Hotkey
-    Config.ToggleKey = 303 -- M (https://docs.fivem.net/docs/game-references/controls/)
+    Config.ToggleKey = 303 -- U (https://docs.fivem.net/docs/game-references/controls/)
 Config.UseCommand = false -- Set true if you want to use a Command
     Config.Commad = 'engine'
 ----------------------------------------------------------------
 -- Vehicle Key System - set true then only the Owner of the Vehicle or someone with a Key can start the Engine
 Config.VehicleKeyChain = false -- https://kiminazes-script-gems.tebex.io/package/4524211
+----------------------------------------------------------------
+Config.SaveSteeringAngle = false
+Config.NeonToggle = false
+
+Config.SaveAngleOnExit = 75 -- default: F - 75 (Exit Vehicle)
+Config.PerformanceVersion = false -- true = no sync but more performance
+Config.RefreshTime = 5 -- in seconds // Refreshing SteeringAngle all 5 seconds
+
+Config.NeonToggleHolding = 132 -- default: STRG - 132
+Config.NeonToggleJustPressed = 249 -- default: N - 249
+----------------------------------------------------------------
+-- With this feature you can set vehicles and plates for which you don't need a key to start the engine
+-- either exact plates or just a string that should be in the vehicles plate e.g. "ESX" will ignore te plate "ESX1234" too
+Config.Whitelist = {
+    vehicles = {
+        -- "nero2",
+        -- "zentorno",
+    },
+    plates = {
+        -- "ESX",
+        -- "ZOOM",
+    },
+}
 ----------------------------------------------------------------
 -- !!! This function is clientside AND serverside !!!
 -- Look for type == 'client' and type == 'server'
@@ -28,7 +54,10 @@ Config.progressBar = function(time, message)
     exports['pogressBar']:drawBar(time, message)
 end
 ----------------------------------------------------------------
-Config.RemoveLockpickItem = false -- Set true if you like to remove item after failing lockpicking
+-- Only possible with ESX Framework
+Config.enableLockpick = false -- Set false if you want to deactivate this feature
+
+Config.RemoveLockpickItem = true -- Set true if you like to remove item after failing lockpicking
 Config.LockpickItem = 'lockpick' -- Set the itemname what you want to use
 Config.startEngine = false -- Set true if you want to start the engine after successfull lockpicking
 Config.Probability = {

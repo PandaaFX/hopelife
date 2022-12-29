@@ -11,7 +11,7 @@ WS_VERKAUF.zones = {
             label = "weedjoint", 
             anzahl = 5, -- math.random(4, 10)
         },
-        outputprice = 8000,
+        outputprice = 6000,
         generatePrice = {
             enabled = true,
             min = 1450,
@@ -64,7 +64,7 @@ WS_VERKAUF.zones = {
             label = "Weed Päckchen", 
             anzahl = 5, -- math.random(4, 10)
         },
-        outputprice = 7500,
+        outputprice = 5000,
         generatePrice = {
             enabled = true,
             min = 1200,
@@ -117,7 +117,7 @@ WS_VERKAUF.zones = {
             label = "Lean", 
             anzahl = 5, -- math.random(4, 10)
         },
-        outputprice = 11000,
+        outputprice = 12500,
         generatePrice = {
             enabled = true,
             min = 2050,
@@ -170,7 +170,7 @@ WS_VERKAUF.zones = {
             label = "Koks Päckchen", 
             anzahl = 5, -- math.random(4, 10)
         },
-        outputprice = 8500,
+        outputprice = 11500,
         generatePrice = {
             enabled = true,
             min = 1550,
@@ -329,7 +329,7 @@ WS_VERKAUF.zones = {
             label = "Heroin", 
             anzahl = 5, -- math.random(4, 10)
         },
-        outputprice = 20000,
+        outputprice = 35000,
         generatePrice = {
             enabled = true,
             min = 3800,

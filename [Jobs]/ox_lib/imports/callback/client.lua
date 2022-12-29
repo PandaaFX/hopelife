@@ -43,14 +43,17 @@ local function triggerServerCallback(_, event, delay, cb, ...)
 	---@type promise | false
 	local promise = not cb and promise.new()
 
-	events[key] = function(response)
+	events[key] = function(response, ...)
+        response = { response, ... }
 		events[key] = nil
 
 		if promise then
-			return promise:resolve(response or {})
+			return promise:resolve(response)
 		end
 
-		return cb and cb(table.unpack(response or {}))
+        if cb then
+            cb(table.unpack(response))
+        end
 	end
 
 	if promise then
@@ -79,7 +82,7 @@ local function callbackResponse(success, result, ...)
 		return false
 	end
 
-	return { result, ... }
+	return result, ...
 end
 
 local pcall = pcall

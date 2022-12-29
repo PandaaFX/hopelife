@@ -13,7 +13,7 @@ table.insert(Config.DoorList, {
 	locked = true,
 	objCoords = vector3(307.6077, -2733.279, 7.378216),
 	fixText = false,
-	items = { 'ramm' },		
+	items = { 'ram' },		
 	-- oldMethod = true,
 	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},

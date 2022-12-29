@@ -115,3 +115,21 @@ table.insert(Config.DoorList, {
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
 	-- autoLock = 1000
 })
+
+-- schneiderei
+table.insert(Config.DoorList, {
+	slides = false,
+	maxDistance = 2.5,
+	items = { 'ram' },
+	locked = true,
+	lockpick = false,
+	doors = {
+		{objHash = 245182344, objHeading = 179.99998474121, objCoords = vector3(716.7808, -975.4207, 25.00572)},
+		{objHash = -681066206, objHeading = 0.0, objCoords = vector3(719.3818, -975.4185, 25.00572)}
+ },
+	audioRemote = false,		
+	-- oldMethod = true,
+	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+	-- autoLock = 1000
+})

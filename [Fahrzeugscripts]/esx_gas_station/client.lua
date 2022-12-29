@@ -26,42 +26,44 @@ Citizen.CreateThread(function()
 				end
 			end
 
-			local x,y,z = table.unpack(v.deliveryman_coord)
-			local distance = #(GetEntityCoords(PlayerPedId()) - vector3(x,y,z))
-			if distance <= 20.0 then
-				timer = 1
-				DrawMarker_blip(x,y,z)
-				if distance <= 1.0 then
-					if job_data[k] == nil then
-						DrawText3D2(x,y,z-0.6, Lang[Config.lang]['download_jobs'], 0.40)
-						if IsControlJustPressed(0,38) then
-							TriggerServerEvent('gas_station:getJob',k)
+			if not Config.trucker_logistics.enable then
+				local x,y,z = table.unpack(v.deliveryman_coord)
+				local distance = #(GetEntityCoords(PlayerPedId()) - vector3(x,y,z))
+				if distance <= 20.0 then
+					timer = 1
+					DrawMarker_blip(x,y,z)
+					if distance <= 1.0 then
+						if job_data[k] == nil then
+							DrawText3D2(x,y,z-0.6, Lang[Config.lang]['download_jobs'], 0.40)
+							if IsControlJustPressed(0,38) then
+								TriggerServerEvent('gas_station:getJob',k)
+							end
+						else
+							DrawText3D2(x,y,z-0.6, Lang[Config.lang]['show_jobs']:format(job_data[k].name,job_data[k].reward), 0.40)
+							if IsControlJustPressed(0,38) then
+								if truck then
+									TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['already_has_job'])
+									break
+								end
+								local x2,y2,z2,h2 = table.unpack(Config.gas_station_locations[k]['truck_coord'])
+								local checkPos = IsSpawnPointClear({['x']=x2,['y']=y2,['z']=z2},5.001)
+								if checkPos == false then
+									TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['occupied_places'])
+									break
+								end
+								local x2,y2,z2,h2 = table.unpack(Config.gas_station_locations[k]['trailer_coord'])
+								local checkPos = IsSpawnPointClear({['x']=x2,['y']=y2,['z']=z2},5.001)
+								if checkPos == false then
+									TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['occupied_places'])
+									break
+								end
+								empresaAtual = k
+								TriggerServerEvent('gas_station:startJob',k,job_data[k].id)
+							end
 						end
 					else
-						DrawText3D2(x,y,z-0.6, Lang[Config.lang]['show_jobs']:format(job_data[k].name,job_data[k].reward), 0.40)
-						if IsControlJustPressed(0,38) then
-							if truck then
-								TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['already_has_job'])
-								break
-							end
-							local x2,y2,z2,h2 = table.unpack(Config.gas_station_locations[k]['truck_coord'])
-							local checkPos = IsSpawnPointClear({['x']=x2,['y']=y2,['z']=z2},5.001)
-							if checkPos == false then
-								TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['occupied_places'])
-								break
-							end
-							local x2,y2,z2,h2 = table.unpack(Config.gas_station_locations[k]['trailer_coord'])
-							local checkPos = IsSpawnPointClear({['x']=x2,['y']=y2,['z']=z2},5.001)
-							if checkPos == false then
-								TriggerEvent("gas_station:Notify","negado",Lang[Config.lang]['occupied_places'])
-								break
-							end
-							empresaAtual = k
-							TriggerServerEvent('gas_station:startJob',k,job_data[k].id)
-						end
+						job_data[k] = nil
 					end
-				else
-					job_data[k] = nil
 				end
 			end
 		end
@@ -355,9 +357,7 @@ AddEventHandler('gas_station:startContract', function(amount,truck_level,ressupl
 					DoScreenFadeOut(500)
 					Citizen.Wait(500)
 					DeleteVehicle(truck)
-					exports["AdvancedParking"]:DeleteVehicle(truck)
 					DeleteVehicle(trailer)
-					exports["AdvancedParking"]:DeleteVehicle(trailer)
 					RemoveBlip(truck_blip)
 					RemoveBlip(trailer_blip)
 					RemoveBlip(route_blip)

@@ -3,6 +3,7 @@
 * {
   scrollbar-width: auto;
   scrollbar-color: #4b495a;
+  scroll-behavior: smooth;
 }
 
 /* Chrome, Edge, and Safari */
@@ -353,6 +354,15 @@ main {
   }
 }
 
+@media only screen and (min-aspect-ratio: 21/9) {
+  .lifeinvadercontainer {
+    width: 95%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+  }
+}
+
 .col h3 {
   color: rgb(133, 59, 179);
   /* font-size: 1.17em; */
@@ -520,7 +530,6 @@ table {
   width: 95%;
   height: 95%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow-y: auto;
@@ -634,6 +643,8 @@ table {
   margin-top: -8px;
   font-size: 18px;
   margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
 }
 
 .formusMessageBoxnotMe .formusMessageBody .formusMessageTextus {
@@ -641,6 +652,8 @@ table {
   margin-top: -8px;
   font-size: 18px;
   margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
 }
 
 .formusFooter {
@@ -911,7 +924,6 @@ input:focus {
   z-index: -1;
   display: flex; */
 
-
   width: 100%;
   height: 100%;
   position: absolute;
@@ -994,7 +1006,7 @@ input:focus {
 }
 
 .notifycontainerSmall .notifyshine.fade {
-  opacity: .5;
+  opacity: 0.5;
   animation: slide-in-top 0.75s ease-in-out both, blink-2 0.75s 0.85s 2 both;
 }
 
@@ -1010,12 +1022,137 @@ input:focus {
 
 @keyframes blink-2 {
   0% {
-    opacity: .5;
+    opacity: 0.5;
   }
   50% {
     opacity: 0.2;
   }
   100% {
-    opacity: .5;
+    opacity: 0.5;
   }
+}
+
+.lspdfile {
+  width: 600px;
+  height: 400px;
+  background-color: #8a8a8a;
+  border-radius: 5px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+.fileheader {
+  width: 100%;
+  height: 180px;
+  /* background-color: #000000; */
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  /* padding-top: 10px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+}
+
+.filebody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filelogo {
+  height: auto;
+  width: 140px;
+}
+
+hr {
+  width: 90%;
+  background-color: #000;
+  border-color: #000;
+}
+
+.filebodyheader {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  text-align: center;
+}
+
+.datacontainer {
+  width: 90%;
+  height: 120px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colFILE {
+  height: 38px;
+  background-color: #ffffff;
+  outline: 3px solid black;
+  position: relative;
+}
+
+.coltop {
+  width: 100%;
+  display: flex;
+  font-style: italic;
+  padding-left: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.colheader {
+  width: 70%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.colbbottom {
+  width: 68%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.colpad {
+  margin-left: 90px;
+}
+
+.col-100 {
+  width: 100%;
+  /* background-color: #FFFFFF; */
+  /* border : 3px solid #000; */
+}
+
+.col-50 {
+  width: 50%;
+  /* width: calc(50% - 6px); */
+  /* background-color: #FFFFFF; */
+  /* border : 3px solid #000; */
+}
+.col-33 {
+  width: 33.33%;
+  /* width: calc(33.33% - 9px); */
+  /* height: 35px; */
+  /* background-color: #FFFFFF; */
+  /* border : 3px solid #000; */
 }

@@ -1,28 +1,24 @@
 function Distance(name_, distance_)
-    if soundInfo[name_] ~= nil then
-        SendNUIMessage({
-            status = "distance",
-            name = name_,
-            distance = distance_,
-        })
-        soundInfo[name_].distance = distance_
-    end
+    SendNUIMessage({
+        status = "distance",
+        name = name_,
+        distance = distance_,
+    })
+    soundInfo[name_].distance = distance_
 end
 
 exports('Distance', Distance)
 
 function Position(name_, pos)
-    if soundInfo[name_] ~= nil then
-        SendNUIMessage({
-            status = "soundPosition",
-            name = name_,
-            x = pos.x,
-            y = pos.y,
-            z = pos.z,
-        })
-        soundInfo[name_].position = pos
-        soundInfo[name_].id = name_
-    end
+    SendNUIMessage({
+        status = "soundPosition",
+        name = name_,
+        x = pos.x,
+        y = pos.y,
+        z = pos.z,
+    })
+    soundInfo[name_].position = pos
+    soundInfo[name_].id = name_
 end
 
 exports('Position', Position)
@@ -41,6 +37,14 @@ function Destroy(name_)
     globalOptionsCache[name_] = nil
 end
 
+function DestroySilent(name)
+    SendNUIMessage({
+        status = "delete",
+        name = name
+    })
+end
+
+
 exports('Destroy', Destroy)
 
 function Resume(name_)
@@ -48,13 +52,11 @@ function Resume(name_)
         status = "resume",
         name = name_
     })
-    if soundInfo[name_] ~= nil then
-        soundInfo[name_].playing = true
-        soundInfo[name_].paused = false
-    
-        if globalOptionsCache[name_] ~= nil and globalOptionsCache[name_].onPlayResume ~= nil then
-            globalOptionsCache[name_].onPlayResume(getInfo(name_))
-        end 
+    soundInfo[name_].playing = true
+    soundInfo[name_].paused = false
+
+    if globalOptionsCache[name_] ~= nil and globalOptionsCache[name_].onPlayResume ~= nil then
+        globalOptionsCache[name_].onPlayResume(getInfo(name_))
     end
 end
 
@@ -65,13 +67,11 @@ function Pause(name_)
         status = "pause",
         name = name_
     })
-    if soundInfo[name_] ~= nil then
-        soundInfo[name_].playing = false
-        soundInfo[name_].paused = true
-    
-        if globalOptionsCache[name_] ~= nil and globalOptionsCache[name_].onPlayPause ~= nil then
-            globalOptionsCache[name_].onPlayPause(getInfo(name_))
-        end 
+    soundInfo[name_].playing = false
+    soundInfo[name_].paused = true
+
+    if globalOptionsCache[name_] ~= nil and globalOptionsCache[name_].onPlayPause ~= nil then
+        globalOptionsCache[name_].onPlayPause(getInfo(name_))
     end
 end
 
@@ -89,14 +89,12 @@ end
 exports('setVolume', setVolume)
 
 function setVolumeMax(name_, vol)
-    if soundInfo[name_] ~= nil then
-        SendNUIMessage({
-            status = "max_volume",
-            volume = vol,
-            name = name_,
-        })
-        soundInfo[name_].volume = vol
-    end
+    SendNUIMessage({
+        status = "max_volume",
+        volume = vol,
+        name = name_,
+    })
+    soundInfo[name_].volume = vol
 end
 
 exports('setVolumeMax', setVolumeMax)

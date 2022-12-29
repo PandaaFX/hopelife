@@ -120,7 +120,7 @@ Citizen.CreateThread(function()
 	end
 
 	RMenu.Add('personal', 'admin', RageUI.CreateSubMenu(RMenu.Get('rageui', 'personal'), _U('admin_title')), function()
-		if Player.group ~= nil and (Player.group == 'guide' or Player.group == 'mod' or Player.group == 'support' or Player.group == 'mod' or Player.group == 'admin' or Player.group == 'superadmin' or Player.group == 'dev') then
+		if Player.group ~= nil and (Player.group == 'guide' or Player.group == 'mod' or Player.group == 'support' or Player.group == 'mod' or Player.group == 'admin' or Player.group == 'superadmin' or Player.group == 'dev' or Player.group == 'cardev1') then
 			return true
 		end
 
@@ -981,15 +981,21 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 
-		if IsControlJustReleased(0, Config.Controls.OpenMenu.keyboard) and not Player.isDead then
+		-- if IsControlJustReleased(0, Config.Controls.OpenMenu.keyboard) and not Player.isDead then
+		if IsControlJustReleased(0, Config.Controls.OpenMenu.keyboard) then
+			-- print("if IsControlJustReleased(0, Config.Controls.OpenMenu.keyboard) and not Player.isDead is true")
+			-- print("RageUI.Visible(): ".. RageUI.Visible())
 			if not RageUI.Visible() then
-				ESX.TriggerServerCallback('krz_personalmenu:Admin_getUsergroup', function(plyGroup)
-					Player.group = plyGroup
+				-- print("Should Open1")
+					ESX.TriggerServerCallback('krz_personalmenu:Admin_getUsergroup', function(plyGroup)
+						Player.group = plyGroup
+						-- print("Should Open2")
 
 					ESX.TriggerServerCallback('krz_personalmenu:Bill_getBills', function(bills)
-						PersonalMenu.BillData = bills
-						ESX.PlayerData = ESX.GetPlayerData()
-						RageUI.Visible(RMenu.Get('rageui', 'personal'), true)
+							PersonalMenu.BillData = bills
+							ESX.PlayerData = ESX.GetPlayerData()
+							RageUI.Visible(RMenu.Get('rageui', 'personal'), true)
+							-- print("Should Open3")
 					end)
 				end)
 			end
@@ -1168,13 +1174,15 @@ function setUniform(group)
 			elseif group == "dev" then
                 TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.dev.male)		
 			elseif group == "guide" then
-                TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.guide.male)				
+                TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.guide.male)			
+			elseif group == "cardev1" then
+                TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.cardev1.male)				
             end
         else
             if group == "superadmin" then
                 TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.superadmin.female)
 			elseif group == "admin" then
-				print(GetPlayerName(PlayerId()))
+				-- print(GetPlayerName(PlayerId()))
 				if GetPlayerName(PlayerId()) == Config.Admin2.Name1 then
 						TriggerEvent("skinchanger:loadClothes", skin, Config.Admin2.superadmin.female)
 					else

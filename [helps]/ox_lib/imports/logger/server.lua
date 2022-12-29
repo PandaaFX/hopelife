@@ -100,6 +100,9 @@ if service == 'loki' then
     -- Converts a string of comma seperated kvp string to a table of kvps
     -- example `discord:blahblah,fivem:blahblah,license:blahblah` -> `{discord="blahblah",fivem="blahblah",license="blahblah"}`
     local function convertDDTagsToKVP(tags)
+        if not tags or type(tags) ~= 'string' then
+            return {}    
+        end
         local tempTable = { string.strsplit(',', tags) } -- outputs a number index table wth k:v strings as values
         local bTable = table.create(0, #tempTable) -- buffer table
 

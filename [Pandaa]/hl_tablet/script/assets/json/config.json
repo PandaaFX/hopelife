@@ -1,6 +1,8 @@
 
 {
-
+    "_comment": "roadphone or d-phone below",
+    "phone": "roadphone",
+    "dev": "false",
     "mysql": {
         "host": "localhost",
         "user": "root",
@@ -8,44 +10,123 @@
         "database": "hopelife"
     },
     "utils": {
+        "frakchat": [
+            {
+                "job": "everyone",
+                "min_grade": "0",
+                "divId": "#frakchat",
+                "boxHtml": "<h1>Fraktions Chat</h1> <button type=\"button\" onclick=\"openPopupppps('FrakChat')\" class=\"btn btn-secondary\">Öffnen</button>"
+            }
+        ],
         "smstracking": [
             {
-                "job": "-------",
-                "min_grade": "5"
+                "job": "fib",
+                "min_grade": "6",
+                "divId": "#smstrack",
+                "boxHtml": "<h1>SMS Tracing</h1> <button type='button' onclick='openPopupppps(\"Trace\")' class='btn btn-secondary'>Öffnen</button>"
             }
         ],
         "phonenumberinfo": [
             {
                 "job": "fib",
-                "min_grade": "4"
+                "min_grade": "4",
+                "divId": "#phoneinfo",
+                "boxHtml": "<h1>Telefonnummer Überprüfung</h1> <button type=\"button\" onclick=\"openPopupppps('PhoneInfo')\" class=\"btn btn-secondary\">Öffnen</button>"
             }
         ],
         "licenseinfo": [
             {
                 "job": "fib",
-                "min_grade": "1"
+                "min_grade": "1",
+                "divId": "#licenseinfo",
+                "boxHtml": "<h1>Kennzeichen Überprüfung</h1> <button type=\"button\" onclick=\"openPopupppps('License')\" class=\"btn btn-secondary\">Öffnen</button>"
             },
             {
                 "job": "police",
-                "min_grade": "1"
+                "min_grade": "1",
+                "divId": "#licenseinfo",
+                "boxHtml": "<h1>Kennzeichen Überprüfung</h1> <button type=\"button\" onclick=\"openPopupppps('License')\" class=\"btn btn-secondary\">Öffnen</button>"
             },
             {
                 "job": "lssd",
-                "min_grade": "1"
+                "min_grade": "1",
+                "divId": "#licenseinfo",
+                "boxHtml": "<h1>Kennzeichen Überprüfung</h1> <button type=\"button\" onclick=\"openPopupppps('License')\" class=\"btn btn-secondary\">Öffnen</button>"
             }
         ],
-        "frakchat": [
+        "getlicenses": [
             {
-                "job": "everyone",
-                "min_grade": "0"
+                "job": "fib",
+                "min_grade": "1",
+                "divId": "#getlicenses",
+                "boxHtml": "<h1>Lizenzen anschauen</h1> <button type='button' onclick='openPopupppps(\"GetLicense\")' class='btn btn-secondary'>Öffnen</button>"
+            },
+            {
+                "job": "police",
+                "min_grade": "1",
+                "divId": "#getlicenses",
+                "boxHtml": "<h1>Lizenzen anschauen</h1> <button type='button' onclick='openPopupppps(\"GetLicense\")' class='btn btn-secondary'>Öffnen</button>"
+            },
+            {
+                "job": "lssd",
+                "min_grade": "1",
+                "divId": "#getlicenses",
+                "boxHtml": "<h1>Lizenzen anschauen</h1> <button type='button' onclick='openPopupppps(\"GetLicense\")' class='btn btn-secondary'>Öffnen</button>"
+            }
+        ],
+        "setlicenses": [
+            {
+                "job": "fib",
+                "min_grade": "4",
+                "divId": "#setlicenses",
+                "boxHtml": "<h1>Setze eine Lizenz</h1> <button type='button' onclick='openPopupppps(\"SetLicense\")' class='btn btn-secondary'>Öffnen</button>"
+            },
+            {
+                "job": "lssd",
+                "min_grade": "10",
+                "divId": "#setlicenses",
+                "boxHtml": "<h1>Setze eine Lizenz</h1> <button type='button' onclick='openPopupppps(\"SetLicense\")' class='btn btn-secondary'>Öffnen</button>"
+            },
+            {
+                "job": "police",
+                "min_grade": "15",
+                "divId": "#setlicenses",
+                "boxHtml": "<h1>Setze eine Lizenz</h1> <button type='button' onclick='openPopupppps(\"SetLicense\")' class='btn btn-secondary'>Öffnen</button>"
             }
         ]
     },
     "utils_settings": {
-        "timeout": 90000
+        "timeout": 65000
     },
     "adminpanel": {
         "allowed": ["mod", "dev", "admin"],
-        "restarts": ["00:00", "03:00", "05:00", "12:00", "18:00"]
-    }
+        "restarts": ["00:00", "06:00", "12:00", "18:00"]
+    },
+    "licenses": [
+        {
+            "label": "Theorieprüfung",
+            "type": "dmv"
+        },
+        {
+            "label": "Fühererschein",
+            "type": "drive"
+        },
+        {
+            "label": "Motorradführerschein",
+            "type": "drive_bike"
+
+        },
+        {
+            "label": "LKW Führerschein",
+            "type": "drive_truck"
+        },
+        {
+            "label": "Waffenlizenz",
+            "type": "weapon"
+        },
+        {
+            "label": "Greencard",
+            "type": "einreise"
+        }
+    ]
 }

@@ -9,10 +9,12 @@ local input
 ---@field iconColor? string
 ---@field placeholder? string
 ---@field default? string | number
+---@field disabled? boolean
 ---@field checked? boolean
 ---@field min? number
 ---@field max? number
 ---@field step? number
+---@field description? string
 
 ---@param heading string
 ---@param rows string[] | InputDialogRowProps[]

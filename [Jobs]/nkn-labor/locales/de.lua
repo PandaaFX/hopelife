@@ -1,0 +1,47 @@
+Locales['de'] = {
+    ['scaleformTitile'] = "~r~LABOR~s~",
+    ['scaleformPoliceTitile'] = "~b~RAZZIA~s~",
+
+    ['bought_labor']                    = '~r~%s~s~ hat ein Labor für deine Fraktion gekauft',
+    ['needMoneyToBuy']                  = 'Du benötigst %s$ um den Kauf des Labors abzuschließen',
+    ['notAllowedToBuy']                 = 'Deine Fraktion darf kein Labor besitzen!',
+    ['toMuchOwned']                     = 'Deine Fraktion besitzt bereits zu viele Labore',
+    ['policeStartetRob']                = 'Deine Fraktion startet eine Razzia gegen das Labor von ~r~%s~s~!',
+    ['policeStartetRobSecond']          = 'Eine Razzia wurde an eurem Labor gemeldet! ~b~%s~s~ ist vor Ort!',
+    ['fraktionStartetRaub']             = 'Das Labor deiner Fraktion wird von ~r~%s~s~ ausgeraubt!',
+    ['fraktionStartetRaubSecond']       = 'Deine Fraktion raubt das Labor von ~r~%s~s~ aus!',
+    ['cooldownNot']                     = 'Es wurde bereits vor kurzem ein Labor ausgeraubt, versuche es Später erneut!',
+    ['currentlyRobbing']                = 'Es findet derzeit ein Laborraub statt. Warte bis dieser zu Ende ist!',
+    ['cantStartRob']                    = 'Deine Fraktion darf keine Labore ausrauben!',
+    ['notEnoughPlayer']                 = 'Es sind zu wenig Spieler aus der gegnerischen Fraktion Online um diese Funktion zu nutzen!',
+    ['cancelledRobbery']                = 'Der Laborraub wurde abgebrochen! Rückzug...',
+    ['cancelledRobberySecond']          = 'Der Laborraub wurde abgebrochen, deine Fraktion hat die Schlacht gewonnen!',
+    ['timer']                           = "Laborraub: %s Minuten verbleiben.",
+    ['finishedRobbery']                 = 'Der Laborraub war erfolgreich! Ihr habt das Labor übernommen',
+    ['finishedRobberySecond']           = 'Ihr konntet das Labor nicht verteidigen! Das Labor gehört nun ~r~%s',
+    ['finishedPoliceRaid']              = 'Die Razzia war erfolgreich! Ihr habt das Labor beschlagnahmt',
+    ['finishedPoliceRaidSecond']        = 'Ihr konntet das Labor nicht verteidigen! Das Labor wurde vom ~b~Staat~s~ überrannt',
+    ['cantCarryItem']                   = 'Soviel kannst du nicht tragen!',
+    ['invalidCount']                    = 'Ungültige Menge!',
+    ['invalidItem']                     = 'Ungültiges Item!',
+    ['allowedItems']                    = 'Ungültiges Item! Mögliche Items:\n%s',
+    ['frakNotifiProcessStartet']        = '%s hat %sx %s. Das endprodukt ist um %s abholbereit!',
+    ['NotifiProcessStartet']            = 'Du hast %sx %s reingelegt. Das endprodukt ist um %s abholbereit!',
+    ['minToProcess']                    = 'Ungültige Menge! Du benötigst mindestens %sx %s um die Verarbeitung zu beginnen!',
+    ['NotifiProcessFinished']           = 'Du hast %sx %s abgeholt.',
+    ['frakNotifiProcessFinished']       = '%s hat %sx %s abgeholt.',
+    ['pressEenter']                     = 'Drücke ~INPUT_CONTEXT~ um das Labor zu betreten',
+    ['pressEleave']                     = 'Drücke ~INPUT_CONTEXT~ um das Labor zu verlassen',
+    ['pressErob']                       = 'Drücke ~INPUT_CONTEXT~ um das Labor auszurauben',
+    ['pressEopenUI']                    = 'Drücke ~INPUT_CONTEXT~ um das Labor zu nutzen',
+    ['cantRobOwnLabor']                 = 'Du kannst nicht das Labor deiner Fraktion ausrauben',
+    ['someOneIsUsingLabor']             = 'Der Spieler %s bedient derzeit das Labor!',
+    ['cantUseOtherLabor']               = 'Du kannst nicht das Labor von einer anderen Fraktion verwalten',
+    ['buyHelpNotification']             = 'Drücke ~INPUT_FRONTEND_RDOWN~ um das Labor zu kaufen!',
+    ['cancelRobberyHelpNotification']   = 'Drücke ~INPUT_FRONTEND_DELETE~ um den Raub abzubrechen.',
+}
+
+
+
+
+

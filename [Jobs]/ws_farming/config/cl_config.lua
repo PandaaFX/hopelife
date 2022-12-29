@@ -8,7 +8,7 @@ WS.getSharedObject = "getSharedObject"
 WS.es1_2 = true
 
 -- enables "loopfarming", the player can start/stop farming
-WS.loopFarming = false
+WS.loopFarming = true
 
 WS.server = { -- edit the ui logos and headlines
     primary = "WEB",

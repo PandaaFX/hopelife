@@ -774,7 +774,7 @@ function generateWardrobeMenu(owner)
 			_menuPool:RefreshIndex()
 		end, propertyID)
 
-		local putItem = _menuPool:AddSubMenu(wardrobeMenu, Translation[Config.Locale]['store_item'])
+		--local putItem = _menuPool:AddSubMenu(wardrobeMenu, Translation[Config.Locale]['store_item'])
 
 		ESX.TriggerServerCallback('myProperties:getPlayerInventory', function(inventory)
 		
@@ -785,9 +785,9 @@ function generateWardrobeMenu(owner)
 					local invitem = NativeUI.CreateItem(itemininv.label, '~b~')
 					invitem:RightLabel(itemininv.count .. '~b~x')
 					if Config.useNativeUIReloaded then
-						putItem.SubMenu:AddItem(invitem)
+						--putItem.SubMenu:AddItem(invitem)
 					else
-						putItem:AddItem(invitem)
+						--putItem:AddItem(invitem)
 					end
 
 					table.insert(itemstoSelect, {
@@ -809,9 +809,9 @@ function generateWardrobeMenu(owner)
 					local weaponitem = NativeUI.CreateItem(weaponsininv.label, '~b~')
 					weaponitem:RightLabel(ammo .. Translation[Config.Locale]['ammo'])
 					if Config.useNativeUIReloaded then
-						putItem.SubMenu:AddItem(weaponitem)
+						--putItem.SubMenu:AddItem(weaponitem)
 					else
-						putItem:AddItem(weaponitem)
+						--putItem:AddItem(weaponitem)
 					end
 					
 
@@ -825,8 +825,8 @@ function generateWardrobeMenu(owner)
 			end
 
 			if Config.useNativeUIReloaded then
-				putItem.SubMenu.OnItemSelect = function(sender, item, index)
-				
+				--putItem.SubMenu.OnItemSelect = function(sender, item, index)
+				--[[
 					local selectedItem = itemstoSelect[index]
 					
 					if selectedItem.type == 'item_weapon' then
@@ -841,10 +841,10 @@ function generateWardrobeMenu(owner)
 							_menuPool:CloseAllMenus()
 						end
 					end
-	
-				end
+				]]
+				--end
 			else
-				putItem.OnItemSelect = function(sender, item, index)
+				--putItem.OnItemSelect = function(sender, item, index)
 				
 					local selectedItem = itemstoSelect[index]
 					
@@ -861,7 +861,7 @@ function generateWardrobeMenu(owner)
 						end
 					end
 	
-				end
+				--end
 			end
 			
 
@@ -878,6 +878,7 @@ function generateWardrobeMenu(owner)
 			end
 
 		end
+		
 		local propDeposit = _menuPool:AddSubMenu(wardrobeMenu, Translation[Config.Locale]['wallet'])
 
 		local depositBalance = NativeUI.CreateItem(Translation[Config.Locale]['credit'], Translation[Config.Locale]['current_credit'] .. currentDeposit .. Translation[Config.Locale]['currency'])

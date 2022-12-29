@@ -14,6 +14,20 @@ function MySQL_Sync_fetchAll(sql,params)
     return MySQL.Sync.fetchAll(sql, params)
 end
 
+function getOnlinePlayers()
+    local online_players = {}
+    local xPlayers = ESX.GetPlayers()
+    for i=1, #xPlayers, 1 do
+        local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
+        table.insert(online_players, {
+            source     = xPlayer.source,
+            identifier = xPlayer.identifier,
+            name       = xPlayer.name
+        })
+    end
+    return online_players
+end
+
 function getPlayerName(user_id)
 	local xPlayer = ESX.GetPlayerFromIdentifier(user_id)
 	if xPlayer then

@@ -1,0 +1,973 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(Montserrat-Medium.ttf);
+}
+@font-face {
+	font-family: Artegra Sans;
+	src: url(ArtegraSans-Medium.otf);
+}
+
+.mediaViewInfo {
+	--web-view-name: nkn;
+	--web-view-id: nkn;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	--web-center-horizontally: true;
+    --web-center-vertically: true;
+}
+
+:root {
+	--web-view-ids: nkn;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+#nkn {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	--web-view-name: nkn;
+	--web-view-id: nkn;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	--web-center-horizontally: true;
+    --web-center-vertically: true;
+	user-select: none;
+}
+#main {
+	position: absolute;
+	width: 1687px;
+	height: 797px;
+	left: 129px;
+	top: 142px;
+	overflow: visible;
+}
+#stanni {
+	position: absolute;
+	width: 763px;
+	height: 797px;
+	left: 924px;
+	top: 0px;
+	overflow: visible;
+}
+#backgroundr {
+	fill: var(--backgroundcol);
+}
+.backgroundr {
+	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 808px;
+	height: 842px;
+	left: 0px;
+	top: 0px;
+}
+#laborbtn {
+	position: absolute;
+	width: 117px;
+	height: 39px;
+	left: 441px;
+	top: 39px;
+	overflow: visible;
+}
+#LABOR {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 118px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: var(--fontcol);
+}
+#lagerbtn {
+	position: absolute;
+	width: 112px;
+	height: 39px;
+    left: 214px;
+	top: 39px;
+	overflow: visible;
+}
+#LAGER {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 113px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	color: var(--fontcol);
+}
+#move {
+	position: absolute;
+	width: 146px;
+	height: 3px;
+	left: 427px;
+	top: 82px;
+	overflow: visible;
+	transition: 0.4s;
+}
+#moveline {
+	fill: var(--maincolor);
+}
+.moveline {
+	position: absolute;
+	overflow: visible;
+	width: 146px;
+	height: 3px;
+	left: 0px;
+	top: 0px;
+}
+#playerinv {
+	position: absolute;
+	width: 763px;
+	height: 797px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#playerinv-bg {
+	fill: var(--backgroundcol);
+}
+.playerinv-bg {
+	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 808px;
+	height: 842px;
+	left: 0px;
+	top: 0px;
+}
+#playerinv-serverlogo {
+    position: absolute;
+    width: 73px;
+    height: auto;
+    left: 27px;
+    top: 21px;
+    overflow: visible;
+}
+#playerinv-header {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.49));
+	left: 122px;
+	top: 25px;
+	position: absolute;
+	overflow: visible;
+	width: 284px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: var(--fontcol);
+}
+#playerinv-headline {
+	fill: var(--maincolor);
+}
+.playerinv-headline {
+	position: absolute;
+	overflow: visible;
+	width: 763px;
+	height: 3px;
+	left: 0px;
+	top: 85px;
+}
+#playerinv-items-bg {
+	fill: var(--inventorybg);
+}
+.playerinv-items-bg {
+	position: absolute;
+	overflow: visible;
+	width: 717px;
+	height: 666px;
+	left: 23px;
+	top: 104px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+#playerinv-items {
+	position: absolute;
+	width: 717px;
+	height: 666px;
+	left: 23px;
+	top: 104px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.playerinv-item {
+	position: relative;
+	width: 148px;
+	height: 148px;
+	margin-left: 25px;
+	float: left;
+	margin-top: 25px;
+	overflow: visible;
+}
+#playerinv-item-bg {
+	fill: var(--itembg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.playerinv-item-bg {
+	position: absolute;
+	overflow: visible;
+	width: 148px;
+	height: 148px;
+	left: 0px;
+	top: 0px;
+}
+#playerinv-item-icon {
+	position: absolute;
+	width: 74px;
+	height: 74px;
+	left: 38px;
+	top: 30px;
+	overflow: visible;
+}
+#playerinv-item-name {
+    left: 6px;
+    top: 117px;
+    position: absolute;
+    overflow: hidden;
+    width: 137px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: var(--fontcol);
+}
+#playerinv-item-amount {
+	left: 6px;
+	top: 7px;
+	position: absolute;
+    overflow: hidden;
+    width: 137px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--fontcol);
+}
+#laboratoryinv {
+	position: absolute;
+	width: 717px;
+	height: 674px;
+	left: 947px;
+	top: 105px;
+	display: none;
+	overflow: visible;
+}
+#laboratoryinv-bg {
+	fill: var(--inventorybg);
+}
+.laboratoryinv-bg {
+	position: absolute;
+	overflow: visible;
+	width: 717px;
+	height: 674px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryinv-items {
+	position: absolute;
+	width: 717px;
+	height: 674px;
+	left: 0px;
+	top: 0px;
+	overflow-x: hidden;
+}
+
+#laboratoryinv-item {
+	position: relative;
+	width: 148px;
+	height: 148px;
+	margin-left: 25px;
+	margin-top: 25px;
+	float: left;
+	overflow: visible;
+}
+#laboratoryinv-item-bg {
+	fill: var(--itembg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.laboratoryinv-item-bg {
+	position: absolute;
+	overflow: visible;
+	width: 148px;
+	height: 148px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryinv-item-icon {
+	position: absolute;
+	width: 74px;
+	height: 74px;
+	left: 38px;
+	top: 30px;
+	overflow: visible;
+}
+#laboratoryinv-item-name {
+    left: 6px;
+    top: 117px;
+    position: absolute;
+    overflow: hidden;
+    width: 137px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: var(--fontcol);
+}
+#laboratoryinv-item-amount {
+	left: 6px;
+	top: 7px;
+	position: absolute;
+    overflow: hidden;
+    width: 137px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--fontcol);
+}
+
+#laboratory {
+	position: absolute;
+	width: 736px;
+	height: 639px;
+	left: 951px;
+	top: 113px;
+	overflow: visible;
+}
+#headspanlabor {
+	left: 0px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 554px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: var(--fontcol);
+}
+#input {
+	position: absolute;
+    width: 132px;
+    height: 34px;
+    left: 1559px;
+    top: 41px;
+	overflow: visible;
+}
+#input-bg_bf {
+	fill: url(#input-bg_bf);
+}
+.input-bg_bf {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	height: 52px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryitems {
+	position: absolute;
+	width: 709px;
+	height: 228px;
+	left: 0px;
+	top: 411px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#laboratoryitems-bg {
+	opacity: 0;
+	fill: var(--inventorybg);
+}
+.laboratoryitems-bg {
+	position: absolute;
+	overflow: visible;
+	width: 709px;
+	height: 228px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryitem {
+	position: relative;
+	width: 709px;
+	height: 51px;
+	left: 0px;
+	top: -10px;
+	margin-top: 10px;
+	overflow: visible;
+}
+#laboratoryitem-bg {
+	fill: var(--inventorybg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.laboratoryitem-bg {
+	position: absolute;
+	overflow: visible;
+	width: 709px;
+	height: 51px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryitem-playername {
+	left: 13px;
+	top: 18px;
+	position: absolute;
+	overflow: visible;
+	width: 123px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	color: var(--fontcol);
+}
+#laboratoryitem-putintime {
+	left: 408px;
+	top: 18px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	color: var(--fontcol);
+}
+#laboratoryitem-items-itemname {
+	left: 203px;
+	top: 18px;
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	color: var(--fontcol);
+}
+#laboratoryitem-gettime {
+	display: block;
+    left: 611px;
+    top: 15px;
+    position: absolute;
+    overflow: visible;
+    width: 80px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Artegra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: var(--fontcol);
+}
+#laboratoryitem-button {
+	position: absolute;
+	width: 124px;
+	height: 30px;
+	left: 578px;
+	top: 11px;
+	display: none;
+	overflow: visible;
+}
+#laboratoryitem-button-bg_bq {
+	fill: url(#laboratoryitem-button-bg_bq);
+}
+.laboratoryitem-button-bg_bq {
+	position: absolute;
+	overflow: visible;
+	width: 124px;
+	height: 30px;
+	left: 0px;
+	top: 0px;
+}
+#laboratoryitem-button-span {
+	left: 26px;
+	top: 9px;
+	position: absolute;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: var(--buttonfontcolor);
+}
+#header-append {
+	position: absolute;
+	width: 683px;
+	height: 21px;
+	left: 13px;
+	top: 382px;
+	overflow: visible;
+}
+#header-append-name {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 58px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: var(--fontcol);
+}
+#header-append-drugname {
+	left: 190px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: var(--fontcol);
+}
+#header-append-firsttime {
+	left: 394px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: var(--fontcol);
+}
+#header-append-lasttime {
+	left: 564px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	color: var(--fontcol);
+}
+#dropable-zones {
+	position: absolute;
+	width: 709px;
+	height: 255px;
+	left: 0px;
+	top: 91px;
+	overflow: visible;
+}
+#firstitem {
+	position: absolute;
+	width: 219px;
+	height: 255px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#firstitem-bg {
+	fill: var(--inventorybg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.firstitem-bg {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 255px;
+	left: 0px;
+	top: 0px;
+}
+#firstitem-button {
+	position: absolute;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 201px;
+	display: none;
+	overflow: visible;
+}
+#firstitem-button-bg_b {
+	fill: url(#firstitem-button-bg_b);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.firstitem-button-bg_b {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+
+.itempic {
+	display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+#firstitem-button-span {
+	left: 35px;
+	top: 19px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	color: var(--buttonfontcolor);
+}
+#drop {
+	opacity: 0.33;
+	fill: var(--fontcol);
+}
+.drop {
+	overflow: visible;
+	position: absolute;
+	width: 64.052px;
+	height: 60.969px;
+	left: 77.474px;
+	top: 97.016px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#firstitem-name {
+    display: none;
+    left: 5px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Artegra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--fontcol);
+}
+#seconditem {
+	position: absolute;
+	width: 219px;
+	height: 255px;
+	left: 245px;
+	top: 0px;
+	overflow: visible;
+}
+#seconditem-bg {
+	fill: var(--inventorybg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.seconditem-bg {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 255px;
+	left: 0px;
+	top: 0px;
+}
+#seconditem-name {
+    display: none;
+    left: 5px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Artegra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--fontcol);
+}
+#seconditem-button {
+	position: absolute;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 201px;
+	display: none;
+	overflow: visible;
+}
+#seconditem-button-bg_cb {
+	fill: url(#seconditem-button-bg_cb);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.seconditem-button-bg_cb {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#seconditem-button-span {
+	left: 35px;
+	top: 19px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	color: var(--buttonfontcolor);
+}
+#drop_cd {
+	opacity: 0.33;
+	fill: var(--fontcol);
+}
+.drop_cd {
+	overflow: visible;
+	position: absolute;
+	width: 64.052px;
+	height: 60.969px;
+	left: 77.474px;
+	top: 97.016px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#thirditem {
+	position: absolute;
+	width: 219px;
+	height: 255px;
+	left: 490px;
+	top: 0px;
+	overflow: visible;
+}
+#thirditem-bg {
+	fill: var(--inventorybg);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.thirditem-bg {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 255px;
+	left: 0px;
+	top: 0px;
+}
+#thirditem-name {
+    display: none;
+    left: 5px;
+    top: 14px;
+    position: absolute;
+    overflow: visible;
+    width: 209px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Artegra Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--fontcol);
+}
+#thirditem-button {
+	position: absolute;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 201px;
+	display: none;
+	overflow: visible;
+}
+#thirditem-button-bg_cj {
+	fill: url(#thirditem-button-bg_cj);
+	stroke: var(--maincolor);
+	stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.thirditem-button-bg_cj {
+	position: absolute;
+	overflow: visible;
+	width: 219px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#thirditem-button-span {
+	left: 35px;
+	top: 19px;
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Artegra Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	color: var(--buttonfontcolor);
+}
+#drop_cl {
+	opacity: 0.33;
+	fill: var(--fontcol);
+}
+.drop_cl {
+	overflow: visible;
+	position: absolute;
+	width: 64.052px;
+	height: 60.969px;
+	left: 77.474px;
+	top: 97.016px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.ui-draggable-dragging {
+	width: 67px;
+	pointer-events: none; 
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    position: absolute;
+    width: 96%;
+    background-color: var(--inputcolor);
+    height: 96%;
+    top: 2%;
+    white-space: initial;
+    left: 2%;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--fontcol);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#loader {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	background-color: #0e0e0e9f;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+#serverlogoloader {
+	position: absolute;
+    transform: translate(-50%, -50%);
+    top: 92%;
+    right: 2%;
+	width: 80px;
+    height: auto;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}

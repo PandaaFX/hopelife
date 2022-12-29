@@ -6,6 +6,7 @@ local points = {}
 local format = 'array'
 local displayModes = {'basic', 'walls', 'axes', 'both'}
 local displayMode = 1
+local minCheck = steps[1][1] / 2
 
 local function firstToUpper(str)
     return (str:gsub("^%l", string.upper))
@@ -135,6 +136,13 @@ local function drawLines()
 	end
 end
 
+local isFivem = cache.game == 'fivem'
+local controls = {
+    ['INPUT_LOOK_LR'] = isFivem and 1 or 0xA987235F,
+    ['INPUT_LOOK_UD'] = isFivem and 2 or 0xD2047988,
+    ['INPUT_MP_TEXT_CHAT_ALL'] = isFivem and 245 or 0x9720FCEE
+}
+
 local function startCreator(arg)
 	creatorActive = true
     controlsActive = true
@@ -171,40 +179,42 @@ local function startCreator(arg)
         if zoneType == 'poly' then
             drawLines()
         elseif zoneType == 'box' then
-            local rad = math.rad(heading)
+            local rad = math.rad(-heading)
             local sinH = math.sin(rad)
             local cosH = math.cos(rad)
-            local center = vec(xCoord, yCoord)
+            local center = vec2(xCoord, yCoord)
             ---@type vector2[]
             points = {
-                center + vec((width * cosH + length * sinH), (length * cosH - width * sinH)),
-                center + vec(-(width * cosH - length * sinH), (length * cosH + width * sinH)),
-                center + vec(-(width * cosH + length * sinH), -(length * cosH - width * sinH)),
-                center + vec((width * cosH - length * sinH), -(length * cosH + width * sinH)),
+                center + vec2((width * cosH + length * sinH), (length * cosH - width * sinH)) / 2,
+                center + vec2(-(width * cosH - length * sinH), (length * cosH + width * sinH)) / 2,
+                center + vec2(-(width * cosH + length * sinH), -(length * cosH - width * sinH)) / 2,
+                center + vec2((width * cosH - length * sinH), -(length * cosH + width * sinH)) / 2,
             }
 
             drawLines()
         elseif zoneType == 'sphere' then
-            DrawMarker(28, xCoord, yCoord, zCoord, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, height, height, height, 255, 42, 24, 100, false, false, 0, true, false, false, false)
+            DrawMarker(28, xCoord, yCoord, zCoord, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, height, height, height, 255, 42, 24, 100, false, false, 0, false, false, false, false)
         end
 
         if controlsActive then
             DisableAllControlActions()
-            EnableControlAction(0, 1, true)
-            EnableControlAction(0, 2, true)
-            EnableControlAction(0, 245, true) -- t
+            EnableControlAction(0, controls['INPUT_LOOK_LR'], true)
+            EnableControlAction(0, controls['INPUT_LOOK_UD'], true)
+            EnableControlAction(0, controls['INPUT_MP_TEXT_CHAT_ALL'], true)
             local change = false
+            local lStep = steps[1][step]
+            local rStep = steps[2][step]
 
             if IsDisabledControlJustReleased(0, 17) then -- scroll up
                 if IsDisabledControlPressed(0, 21) then -- shift held down
                     change = true
-                    height += steps[1][step]
+                    height += lStep
                 elseif IsDisabledControlPressed(0, 36) then -- ctrl held down
                     change = true
-                    width += steps[1][step]
+                    width += lStep
                 elseif IsDisabledControlPressed(0, 19) then -- alt held down
                     change = true
-                    length += steps[1][step]
+                    length += lStep
                 elseif step < 11 then
                     change = true
                     step += 1
@@ -212,18 +222,24 @@ local function startCreator(arg)
             elseif IsDisabledControlJustReleased(0, 16) then -- scroll down
                 if IsDisabledControlPressed(0, 21) then -- shift held down
                     change = true
-                    if height - steps[1][step] > 0 then
-                        height -= steps[1][step]
+                    if height - lStep > lStep then
+                        height -= lStep
+                    elseif height - lStep > 0 then
+                        height = lStep
                     end
                 elseif IsDisabledControlPressed(0, 36) then -- ctrl held down
                     change = true
-                    if width - steps[1][step] > 0 then
-                        width -= steps[1][step]
+                    if width - lStep > lStep then
+                        width -= lStep
+                    elseif width - lStep > 0 then
+                        width = lStep
                     end
                 elseif IsDisabledControlPressed(0, 19) then -- alt held down
                     change = true
-                    if length - steps[1][step] > 0 then
-                        length -= steps[1][step]
+                    if length - lStep > lStep then
+                        length -= lStep
+                    elseif length - lStep > 0 then
+                        length = lStep
                     end
                 elseif step > 1 then
                     change = true
@@ -231,33 +247,57 @@ local function startCreator(arg)
                 end
             elseif IsDisabledControlJustReleased(0, 32) then -- w
                 change = true
-                yCoord += steps[1][step]
+                local newValue = yCoord + lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                yCoord = newValue
             elseif IsDisabledControlJustReleased(0, 33) then -- s
                 change = true
-                yCoord -= steps[1][step]
+                local newValue = yCoord - lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                yCoord = newValue
             elseif IsDisabledControlJustReleased(0, 35) then -- d
                 change = true
-                xCoord += steps[1][step]
+                local newValue = xCoord + lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                xCoord = newValue
             elseif IsDisabledControlJustReleased(0, 34) then -- a
                 change = true
-                xCoord -= steps[1][step]
+                local newValue = xCoord - lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                xCoord = newValue
             elseif IsDisabledControlJustReleased(0, 45) then -- r
                 change = true
-                zCoord += steps[1][step]
+                local newValue = zCoord + lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                zCoord = newValue
             elseif IsDisabledControlJustReleased(0, 23) then -- f
                 change = true
-                zCoord -= steps[1][step]
+                local newValue = zCoord - lStep
+                if math.abs(newValue) < minCheck then
+                    newValue = 0.0
+                end
+                zCoord = newValue
             elseif IsDisabledControlJustReleased(0, 38) then -- e
                 change = true
-                heading += steps[2][step]
-                if heading >= 360 then
-                    heading -= 360
+                heading -= rStep
+                if heading < 0 then
+                    heading += 360
                 end
             elseif IsDisabledControlJustReleased(0, 44) then -- q
                 change = true
-                heading -= steps[2][step]
-                if heading < 0 then
-                    heading += 360
+                heading += rStep
+                if heading >= 360 then
+                    heading -= 360
                 end
             elseif IsDisabledControlJustReleased(0, 47) then -- g
                 change = true

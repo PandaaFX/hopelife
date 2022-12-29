@@ -249,7 +249,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 0
+            ['bproof_1'] = 85,  ['bproof_2'] = 0
         },
         female = {
 			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -281,7 +281,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 4
+            ['bproof_1'] = 85,  ['bproof_2'] = 4
         },
         female = {
 			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -313,7 +313,39 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 5
+            ['bproof_1'] = 85,  ['bproof_2'] = 5
+        },
+        female = {
+			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
+           -- ['torso_1'] = 461,   ['torso_2'] = 3,
+            --['decals_1'] = 0,   ['decals_2'] = 0,
+           -- ['arms'] = 7,
+           -- ['pants_1'] = 174,   ['pants_2'] = 3,
+           -- ['shoes_1'] = 124,   ['shoes_2'] = 3,
+            --['helmet_1'] = -1,  ['helmet_2'] = 0,
+           -- ['mask_1'] = 156,  ['mask_2'] = 3,
+            --['chain_1'] = 0,    ['chain_2'] = 0,
+            --['ears_1'] = 0,     ['ears_2'] = 0,
+            --['bags_1'] = 0,     ['bags_2'] = 0,
+            --['hair_1'] = 0,     ['hair_2'] = 0,
+            ['bproof_1'] = 92,  ['bproof_2'] = 4
+        }
+    },
+    cardev1 = {
+        male = {
+			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
+           -- ['torso_1'] = 461,   ['torso_2'] = 3,
+            --['decals_1'] = 0,   ['decals_2'] = 0,
+           -- ['arms'] = 7,
+           -- ['pants_1'] = 174,   ['pants_2'] = 3,
+           -- ['shoes_1'] = 124,   ['shoes_2'] = 3,
+            --['helmet_1'] = -1,  ['helmet_2'] = 0,
+           -- ['mask_1'] = 156,  ['mask_2'] = 3,
+            --['chain_1'] = 0,    ['chain_2'] = 0,
+            --['ears_1'] = 0,     ['ears_2'] = 0,
+            --['bags_1'] = 0,     ['bags_2'] = 0,
+            --['hair_1'] = 0,     ['hair_2'] = 0,
+            ['bproof_1'] = 85,  ['bproof_2'] = 3
         },
         female = {
 			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -345,7 +377,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 1
+            ['bproof_1'] = 85,  ['bproof_2'] = 1
         },
         female = {
 			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -377,7 +409,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 3
+            ['bproof_1'] = 85,  ['bproof_2'] = 3
         },
         female = {
 			['tshirt_1'] = 14,  ['tshirt_2'] = 0,
@@ -409,7 +441,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 2
+            ['bproof_1'] = 85,  ['bproof_2'] = 2
         },
         female = {
 			--['tshirt_1'] = 15,  ['tshirt_2'] = 0,
@@ -441,7 +473,7 @@ Config.Admin2 = {
             --['ears_1'] = 0,     ['ears_2'] = 0,
             --['bags_1'] = 0,     ['bags_2'] = 0,
             --['hair_1'] = 0,     ['hair_2'] = 0,
-            ['bproof_1'] = 79,  ['bproof_2'] = 3
+            ['bproof_1'] = 85,  ['bproof_2'] = 3
         },
         female = {
             ['tshirt_1'] = 14,  ['tshirt_2'] = 0,

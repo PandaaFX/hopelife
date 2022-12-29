@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nkn</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/colors.css"/>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/style.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script id="applicationScript" type="text/javascript" src="js/rescale.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div id="nkn">
+	<div id="main">
+		<div id="stanni">
+			<svg class="backgroundr">
+				<rect id="backgroundr" rx="11" ry="11" x="0" y="0" width="763" height="797">
+				</rect>
+			</svg>
+			<div id="laborbtn" onclick="openLabor()">
+				<div id="LABOR">
+					<span>LABOR</span>
+				</div>
+			</div>
+			<div id="lagerbtn" onclick="openLager()">
+				<div id="LAGER">
+					<span>LAGER</span>
+				</div>
+			</div>
+			<div id="move">
+				<svg class="moveline">
+					<rect id="moveline" rx="0" ry="0" x="0" y="0" width="146" height="3">
+					</rect>
+				</svg>
+			</div>
+		</div>
+		<div id="playerinv">
+			<svg class="playerinv-bg">
+				<rect id="playerinv-bg" rx="11" ry="11" x="0" y="0" width="763" height="797">
+				</rect>
+			</svg>
+			<img id="playerinv-serverlogo" src="img/playerinv-serverlogo.png" srcset="img/playerinv-serverlogo.png 1x">
+				
+			<div id="playerinv-header">
+				<span>NKN LABOR</span>
+			</div>
+			<svg class="playerinv-headline">
+				<rect id="playerinv-headline" rx="0" ry="0" x="0" y="0" width="763" height="3">
+				</rect>
+			</svg>
+			<svg class="playerinv-items-bg">
+				<rect id="playerinv-items-bg" rx="0" ry="0" x="0" y="0" width="717" height="666">
+				</rect>
+			</svg>
+	        <div id="playerinv-items"></div>
+			
+		</div>
+		<div id="laboratoryinv">
+			<svg class="laboratoryinv-bg">
+				<rect id="laboratoryinv-bg" rx="0" ry="0" x="0" y="0" width="717" height="674">
+				</rect>
+			</svg>
+			<div id="laboratoryinv-items"></div>
+		</div>
+		<div id="input">
+			<svg class="input-bg_bf">
+				<linearGradient id="input-bg_bf" spreadMethod="pad" x1="0" x2="1" y1="0.5" y2="0.5">
+					<stop offset="0" stop-color="var(--inputsecondcolor)" stop-opacity="1"></stop>
+					<stop offset="1" stop-color="var(--inputthirdcolor)" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="input-bg_bf" rx="8" ry="8" x="0" y="0" width="132" height="34">
+				</rect>
+			</svg>
+			<input id="inputs" type="number" placeholder="Anzahl..." value="1" maxlength="4">
+		</div>
+		<div id="laboratory">
+			<div id="headspanlabor">
+				<span>Hier kannst du deine Drogen weiter verarbeiten!</span>
+			</div>
+		
+			<div id="laboratoryitems"></div>
+			<div id="header-append">
+				<div id="header-append-name">
+					<span>Name</span>
+				</div>
+				<div id="header-append-drugname">
+					<span>Anzahl Droge</span>
+				</div>
+				<div id="header-append-firsttime">
+					<span>Reingelegt</span>
+				</div>
+				<div id="header-append-lasttime">
+					<span>Abholbereit</span>
+				</div>
+			</div>
+			<div id="dropable-zones">
+				<div id="firstitem">
+					<svg class="firstitem-bg">
+						<rect id="firstitem-bg" rx="8" ry="8" x="0" y="0" width="219" height="255">
+						</rect>
+					</svg>
+					<div id="firstitem-button" class="button" data-action-div="firstitem" onclick="progressDrugs(this)">
+						<svg class="firstitem-button-bg_b">
+							<linearGradient id="firstitem-button-bg_b" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+								<stop offset="0" stop-color="var(--buttoncolor)" stop-opacity="1"></stop>
+								<stop offset="1" stop-color="var(--buttonsecondcolor)" stop-opacity="1"></stop>
+							</linearGradient>
+							<rect id="firstitem-button-bg_b" rx="0" ry="0" x="0" y="0" width="219" height="54">
+							</rect>
+						</svg>
+						<div id="firstitem-button-span">
+							<span>VERARBEITEN</span>
+						</div>
+					</div>
+					<svg class="drop" viewBox="117 128 64.052 60.969">
+						<path id="drop" d="M 181.05224609375 156.9427337646484 C 181.05224609375 158.3953552246094 180.5451812744141 159.6287078857422 179.5311126708984 160.6427917480469 L 152.7673034667969 187.4477081298828 C 151.6983947753906 188.4618072509766 150.4513397216797 188.9688568115234 149.026123046875 188.9688568115234 C 147.5735015869141 188.9688568115234 146.3401641845703 188.4618072509766 145.3260650634766 187.4477081298828 L 118.562255859375 160.6427917480469 C 117.5207672119141 159.6561126708984 117 158.4227600097656 117 156.9427337646484 C 117 155.4901275634766 117.5207672119141 154.2430572509766 118.562255859375 153.2015533447266 L 121.6045379638672 150.1181640625 C 122.6734466552734 149.1040649414062 123.9205017089844 148.5970306396484 125.3457183837891 148.5970306396484 C 126.7983245849609 148.5970306396484 128.0316772460938 149.1040649414062 129.0457763671875 150.1181640625 L 141.1326599121094 162.2050628662109 L 141.1326599121094 133.2623138427734 C 141.1326599121094 131.8371124267578 141.6533966064453 130.603759765625 142.6949005126953 129.5622406005859 C 143.7364044189453 128.520751953125 144.9697723388672 128 146.3949737548828 128 L 151.6572875976562 128 C 153.0824890136719 128 154.3158416748047 128.520751953125 155.3573455810547 129.5622406005859 C 156.3988342285156 130.603759765625 156.9196014404297 131.8371124267578 156.9196014404297 133.2623138427734 L 156.9196014404297 162.2050628662109 L 169.0064849853516 150.1181640625 C 170.0205535888672 149.1040649414062 171.2539215087891 148.5970306396484 172.70654296875 148.5970306396484 C 174.1317443847656 148.5970306396484 175.3788146972656 149.1040649414062 176.4477233886719 150.1181640625 L 179.5311126708984 153.2015533447266 C 180.5451812744141 154.2704620361328 181.05224609375 155.5175323486328 181.05224609375 156.9427337646484 Z">
+						</path>
+					</svg>
+					<img data-action="" data-label="" data-name="" class="itempic" id="firstitempic" src="img/playerinv-item-icon.png" srcset="img/playerinv-item-icon.png 1x">
+					<div id="firstitem-name" class="name">
+						<span>WEED</span>
+					</div>
+				</div>
+				<div id="seconditem">
+					<svg class="seconditem-bg">
+						<rect id="seconditem-bg" rx="8" ry="8" x="0" y="0" width="219" height="255">
+						</rect>
+					</svg>
+					<div id="seconditem-name" class="name">
+						<span>KOKAIN</span>
+					</div>
+					<div id="seconditem-button" class="button" data-action-div="seconditem" onclick="progressDrugs(this)">
+						<svg class="seconditem-button-bg_cb">
+							<linearGradient id="seconditem-button-bg_cb" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+								<stop offset="0" stop-color="var(--buttoncolor)" stop-opacity="1"></stop>
+								<stop offset="1" stop-color="var(--buttonsecondcolor)" stop-opacity="1"></stop>
+							</linearGradient>
+							<rect id="seconditem-button-bg_cb" rx="0" ry="0" x="0" y="0" width="219" height="54">
+							</rect>
+						</svg>
+						<div id="seconditem-button-span">
+							<span>VERARBEITEN</span>
+						</div>
+					</div>
+					<svg class="drop_cd" viewBox="117 128 64.052 60.969">
+						<path id="drop_cd" d="M 181.05224609375 156.9427337646484 C 181.05224609375 158.3953552246094 180.5451812744141 159.6287078857422 179.5311126708984 160.6427917480469 L 152.7673034667969 187.4477081298828 C 151.6983947753906 188.4618072509766 150.4513397216797 188.9688568115234 149.026123046875 188.9688568115234 C 147.5735015869141 188.9688568115234 146.3401641845703 188.4618072509766 145.3260650634766 187.4477081298828 L 118.562255859375 160.6427917480469 C 117.5207672119141 159.6561126708984 117 158.4227600097656 117 156.9427337646484 C 117 155.4901275634766 117.5207672119141 154.2430572509766 118.562255859375 153.2015533447266 L 121.6045379638672 150.1181640625 C 122.6734466552734 149.1040649414062 123.9205017089844 148.5970306396484 125.3457183837891 148.5970306396484 C 126.7983245849609 148.5970306396484 128.0316772460938 149.1040649414062 129.0457763671875 150.1181640625 L 141.1326599121094 162.2050628662109 L 141.1326599121094 133.2623138427734 C 141.1326599121094 131.8371124267578 141.6533966064453 130.603759765625 142.6949005126953 129.5622406005859 C 143.7364044189453 128.520751953125 144.9697723388672 128 146.3949737548828 128 L 151.6572875976562 128 C 153.0824890136719 128 154.3158416748047 128.520751953125 155.3573455810547 129.5622406005859 C 156.3988342285156 130.603759765625 156.9196014404297 131.8371124267578 156.9196014404297 133.2623138427734 L 156.9196014404297 162.2050628662109 L 169.0064849853516 150.1181640625 C 170.0205535888672 149.1040649414062 171.2539215087891 148.5970306396484 172.70654296875 148.5970306396484 C 174.1317443847656 148.5970306396484 175.3788146972656 149.1040649414062 176.4477233886719 150.1181640625 L 179.5311126708984 153.2015533447266 C 180.5451812744141 154.2704620361328 181.05224609375 155.5175323486328 181.05224609375 156.9427337646484 Z">
+						</path>
+					</svg>
+					<img data-action="" data-label="" data-name="" class="itempic" id="seconditempic" src="img/playerinv-item-icon.png" srcset="img/playerinv-item-icon.png 1x">
+				</div>
+				<div id="thirditem">
+					<svg class="thirditem-bg">
+						<rect id="thirditem-bg" rx="8" ry="8" x="0" y="0" width="219" height="255">
+						</rect>
+					</svg>
+					<div id="thirditem-name" class="name">
+						<span>HEROIN</span>
+					</div>
+					<div id="thirditem-button" class="button" data-action-div="thirditem" onclick="progressDrugs(this)">
+						<svg class="thirditem-button-bg_cj">
+							<linearGradient id="thirditem-button-bg_cj" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+								<stop offset="0" stop-color="var(--buttoncolor)" stop-opacity="1"></stop>
+								<stop offset="1" stop-color="var(--buttonsecondcolor)" stop-opacity="1"></stop>
+							</linearGradient>
+							<rect id="thirditem-button-bg_cj" rx="0" ry="0" x="0" y="0" width="219" height="54">
+							</rect>
+						</svg>
+						<div id="thirditem-button-span">
+							<span>VERARBEITEN</span>
+						</div>
+					</div>
+					<svg class="drop_cl" viewBox="117 128 64.052 60.969">
+						<path id="drop_cl" d="M 181.05224609375 156.9427337646484 C 181.05224609375 158.3953552246094 180.5451812744141 159.6287078857422 179.5311126708984 160.6427917480469 L 152.7673034667969 187.4477081298828 C 151.6983947753906 188.4618072509766 150.4513397216797 188.9688568115234 149.026123046875 188.9688568115234 C 147.5735015869141 188.9688568115234 146.3401641845703 188.4618072509766 145.3260650634766 187.4477081298828 L 118.562255859375 160.6427917480469 C 117.5207672119141 159.6561126708984 117 158.4227600097656 117 156.9427337646484 C 117 155.4901275634766 117.5207672119141 154.2430572509766 118.562255859375 153.2015533447266 L 121.6045379638672 150.1181640625 C 122.6734466552734 149.1040649414062 123.9205017089844 148.5970306396484 125.3457183837891 148.5970306396484 C 126.7983245849609 148.5970306396484 128.0316772460938 149.1040649414062 129.0457763671875 150.1181640625 L 141.1326599121094 162.2050628662109 L 141.1326599121094 133.2623138427734 C 141.1326599121094 131.8371124267578 141.6533966064453 130.603759765625 142.6949005126953 129.5622406005859 C 143.7364044189453 128.520751953125 144.9697723388672 128 146.3949737548828 128 L 151.6572875976562 128 C 153.0824890136719 128 154.3158416748047 128.520751953125 155.3573455810547 129.5622406005859 C 156.3988342285156 130.603759765625 156.9196014404297 131.8371124267578 156.9196014404297 133.2623138427734 L 156.9196014404297 162.2050628662109 L 169.0064849853516 150.1181640625 C 170.0205535888672 149.1040649414062 171.2539215087891 148.5970306396484 172.70654296875 148.5970306396484 C 174.1317443847656 148.5970306396484 175.3788146972656 149.1040649414062 176.4477233886719 150.1181640625 L 179.5311126708984 153.2015533447266 C 180.5451812744141 154.2704620361328 181.05224609375 155.5175323486328 181.05224609375 156.9427337646484 Z">
+						</path>
+					</svg>
+					<img data-action="" data-label="" data-name="" class="itempic" id="thirditempic" src="img/playerinv-item-icon.png" srcset="img/playerinv-item-icon.png 1x">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="loader">
+	<img id="serverlogoloader" src="img/logo.png" class="animate__animated animate__flipOutY">
+</div>
+</body>
+</html>

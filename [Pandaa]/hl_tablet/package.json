@@ -1,6 +1,6 @@
 {
   "name": "hl_tablet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HopeLife Tablet made by PandaaFX",
   "main": "script/server.js",
   "scripts": {

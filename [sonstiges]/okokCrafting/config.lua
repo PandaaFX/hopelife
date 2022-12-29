@@ -76,16 +76,8 @@ Config.Crafting = {
 
 			
 				},
-				job = { -- What jobs can craft this item in this workbench
-				'saints',
-				'mg13',
-				'outlaws',
-				'soa',
-				'bloods',
-				'18th',
-				'hoover',
-				'vagos',
-				'oblocks',
+				job = { -- What jobs can craft this item in this w
+				''
 				},
 			},
 
@@ -105,15 +97,7 @@ Config.Crafting = {
 			
 				},
 				job = { -- What jobs can craft this item in this workbench
-				'saints',
-				'mg13',
-				'outlaws',
-				'soa',
-				'bloods',
-				'18th',
-				'hoover',
-				'vagos',
-				'oblocks',
+				''
 				},
 			},
 
@@ -132,15 +116,7 @@ Config.Crafting = {
 			
 				},
 				job = { -- What jobs can craft this item in this workbench
-					'saints',
-					'mg13',
-					'outlaws',
-					'soa',
-					'bloods',
-					'18th',
-					'hoover',
-					'vagos',
-				    'oblocks',
+					''
 				},
 			},
 
@@ -149,6 +125,7 @@ Config.Crafting = {
 		},
 	},
 
+--[[
 	{
 		coordinates = vector3(5091.969238, -4682.953613, 2.404419), -- coordinates of the table
 		radius = 1, -- radius of the table
@@ -349,11 +326,11 @@ Config.Crafting = {
 
 
 		},
-	},
-
+	},  
+]]
 	{
 		coordinates = vector3(-1363.08, -756.03, 22.31), -- coordinates of the table
-		radius = 1, -- radius of the table
+		radius = 3, -- radius of the table
 		maxCraftRadius = 5, -- if you are further it will stop the craft
 		showBlipRadius = 50,
 		blip = {blipId = 89, blipColor = 3, blipScale = 0.9, blipText = "Crafting"}, -- to get blips and colors check this: https://wiki.gtanet.work/index.php?title=Blips
@@ -399,7 +376,7 @@ Config.Crafting = {
 				amount = 3,
 				successCraftPercentage = 100, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = true, -- if true = is item | if false = is weapon
-				time = 5, -- Time to craft (in seconds)
+				time = 3, -- Time to craft (in seconds)
 				levelNeeded = 2, -- What level he needs to craft this item
 				xpPerCraft = 5, -- How much XP he receives after crafting this item
 				recipe = { -- Recipe to craft it
@@ -416,7 +393,7 @@ Config.Crafting = {
 			{
 				item = 'coke_pooch', -- Item id and name of the image
 				amount = 3,
-				successCraftPercentage = 85, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
+				successCraftPercentage = 90, -- Percentage of successful craft 0 = 0% | 50 = 50% | 100 = 100%
 				isItem = true, -- if true = is item | if false = is weapon
 				time = 5, -- Time to craft (in seconds)
 				levelNeeded = 2, -- What level he needs to craft this item

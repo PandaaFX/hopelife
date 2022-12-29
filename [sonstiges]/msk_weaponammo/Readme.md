@@ -14,8 +14,20 @@ Config.SavePlayer = {
 	version = 'legacy' -- Set this to 'legacy'
 }
 ```
-Then go to `es_extended/server/common.lua` and add `exports('getCoreObject', function() return Core end)`
-below this: `exports('getSharedObject', function() return ESX end)`
+
+Then go to `es_extended/server/common.lua` and add 
+
+```lua
+exports('getCoreObject', function() return Core end)
+```
+
+below this: 
+
+```lua
+exports('getSharedObject', function() 
+    return ESX 
+end)
+```
 
 It should look like this: https://prnt.sc/-El6-xwHQgOp
 

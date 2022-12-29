@@ -17,14 +17,14 @@ ClientConfig.General = {
     AntiLagSwitch = true,
     FreeCam = false,
     ScreenshotBasicName = 'screenshot-basic',
-    AntiDrown = true,
+    AntiDrown = false,
     AntiSoundSpam = false, -- its blocks cheater to sound spam everyone. if u will use this +0.02 ms
     EulenFreecamDetection = false, -- its blocks eulen freecam cheats
     EulenSpectateDetection = false, -- its blocks eulen spectate cheats
     EulenHealDetection = false, -- its blocks eulen heal cheats
     AntiKillInvisible = false,
     AntiKillEulen = true,
-    AntiHitBoxHack = true,
+    AntiHitBoxHack = false,
     PickupHack = true,
     BlockSuspensionHack = true,
     DisableTyresBurst = false, 
@@ -100,6 +100,10 @@ ClientConfig.SpawnVehicle = { -- Anti car spawn
         ['saltyhud'] = true,
         ['saltychat'] = true,
         ['PlasmaKart'] = true,
+        ['dnz_amenuv2'] = true,
+        ['esx_stores'] = true,
+        ['mas_carthief'] = true,
+
     },
     DonateCars = { -- its block donate car spawn -- ITS IMPORTANT
         [GetHashKey('i8')] = true,
@@ -108,7 +112,7 @@ ClientConfig.SpawnVehicle = { -- Anti car spawn
 
 ClientConfig.Weapons = {
     Detection = true, -- if true, you activate blacklisted weapon option. (we recommend you to keep it true)
-    AntiExplosiveWeapons = true, -- if true, you block explosive weapons
+    AntiExplosiveWeapons = false, -- if true, you block explosive weapons
     RemoveBlacklistWeapon = true, -- if true, it deletes ONLY blacklisted weapon from inventory
     RemoveAllWeapons = false, -- when it detects blacklisted weapon in player's or cheater's inventory it deletes ALL weapons on him (we recommend you to keep it true)
     BLWeaponLog = true, -- it shows on logs(webhook on discord) use of blacklisted weapons
@@ -143,7 +147,6 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_REVOLVER')] = true,
     [GetHashKey('WEAPON_DOUBLEACTION')] = true,
     [GetHashKey('WEAPON_NAVYREVOLVER')] = true,
-    [GetHashKey('WEAPON_MICROSMG')] = true,
     [GetHashKey('WEAPON_DBSHOTGUN')] = true,
     [GetHashKey('WEAPON_PUMPSHOTGUN')] = true,
     [GetHashKey('WEAPON_ASSAULTRIFLE')] = true,
@@ -156,7 +159,18 @@ ClientConfig.WhitelistedWeapons = {
     [GetHashKey('WEAPON_PRECISIONRIFLE')] = true,
     [GetHashKey('WEAPON_PETROLCAN')] = true,
     [GetHashKey('WEAPON_SNOWBALL')] = true,
-    [GetHashKey('WEAPON_FLASHBANG')] = true,
+    [GetHashKey('WEAPON_BZGAS')] = true,
+    [GetHashKey('WEAPON_SMOKEGRENADE')] = true,
+    [GetHashKey('WEAPON_CROWBAR')] = true,
+    [GetHashKey('WEAPON_BOTTLE')] = true,
+    [GetHashKey('WEAPON_DAGGER')] = true,
+    [GetHashKey('WEAPON_ASSAULTSMG')] = true,
+    [GetHashKey('WEAPON_MOLOTOV')] = true,
+    [GetHashKey('WEAPON_MILITARYRIFLE')] = true,
+    [GetHashKey('WEAPON_SAWNOFFSHOTGUN')] = true,
+    [GetHashKey('WEAPON_SNSPISTOL')] = true,
+
+    
     [966099553] = true, -- Default Fivem weapon, not delete this.
     [0] = true, -- Default Fivem weapon, not delete this.
 }

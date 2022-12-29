@@ -10,16 +10,19 @@ function cache:set(key, value)
 	end
 end
 
-local GetVehiclePedIsUsing = GetVehiclePedIsUsing
+local GetVehiclePedIsIn = GetVehiclePedIsIn
 local GetPedInVehicleSeat = GetPedInVehicleSeat
 local GetVehicleMaxNumberOfPassengers = GetVehicleMaxNumberOfPassengers
+local GetMount = GetMount
+local IsPedOnMount = IsPedOnMount
+local GetCurrentPedWeapon = GetCurrentPedWeapon
 
 CreateThread(function()
 	while true do
 		local ped = PlayerPedId()
 		cache:set('ped', ped)
 
-		local vehicle = GetVehiclePedIsUsing(ped)
+		local vehicle = GetVehiclePedIsIn(ped, false)
 
 		if vehicle > 0 then
 			cache:set('vehicle', vehicle)
@@ -36,6 +39,16 @@ CreateThread(function()
 			cache:set('vehicle', false)
 			cache:set('seat', false)
 		end
+
+		if cache.game == 'redm' then
+			local mount = GetMount(ped)
+			local onMount = IsPedOnMount(ped)
+			cache:set('mount', onMount and mount or false)
+		end
+
+		local hasWeapon, currentWeapon = GetCurrentPedWeapon(ped, true)
+
+		cache:set('weapon', hasWeapon and currentWeapon or false)
 
 		Wait(100)
 	end

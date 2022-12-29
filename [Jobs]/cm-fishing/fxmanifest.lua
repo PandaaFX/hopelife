@@ -55,9 +55,9 @@ server_scripts {
 	'@async/async.lua', -- MYSQL ASYNC
 	'@mysql-async/lib/MySQL.lua',  -- MYSQL ASYNC
 }
+
 dependencies {
 	'fishing-minigame',
-	
 }
 
 lua54 'yes'

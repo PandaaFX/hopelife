@@ -169,7 +169,7 @@ Config.Stands = { -- Vehicle shops informations
 		hasOwner = true, -- true = this vehicle shop can have a owner and will need maintenance to have stock | false = no owner and with vehicles all the time, price = max_price set on the database
 	
 		coords = {x =960.065918,y= -2449.199951,z= 31.217529}, -- Marker/Shop position, ,  
-		sellVehicleCoords = {x = 953.208801, y = -2442.923096, z= 28.471069},
+		sellVehicleCoords = {x = 938.413208, y = -2439.613281, z= 28.454224},
 		sellVehicleMarker = {id = 1, color = {r = 255, g = 0, b = 0, a = 90}, size = {x = 4.0, y = 4.0, z = 1.5}, radius = 2.5, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0}, -- Marker informations for the sell vehicle marker
 		ownerCoords = {x = 1035.903320,y= -2546.004395,z= 32.279175}, -- Marker/Shop position for owner/employees, , , , 
 		spawnFlatbedPos = {x = 994.180237,y= -2500.931885,z= 28.285767,h= 2.834646}, -- Where the flatbed/truck is spawned for the orders , , 28.285767, 
@@ -194,10 +194,10 @@ Config.Stands = { -- Vehicle shops informations
 		licenseType = "", -- if you want to use a license system you'll need to set it up on sv_utils.lua
 		currency = "bank", -- used to buy/sell the business and buy vehicle
 		hasOwner = false, -- true = this vehicle shop can have a owner and will need maintenance to have stock | false = no owner and with vehicles all the time, price = max_price set on the database
-		coords = {x =-755.723083,y= -1438.60217,z= 5.066650}, -- Marker/Shop position
-		sellVehicleCoords = {x = -767.920898, y = -1463.208740, z= 5.049805},
+		coords = {x =-919.991211,y= -2032.457153,z= 9.498169}, -- Marker/Shop position
+		sellVehicleCoords = {x = -884.940674, y = -2049.705566, z= 9.296021},--, , 
 		sellVehicleMarker = {id = 1, color = {r = 255, g = 0, b = 0, a = 90}, size = {x = 4.0, y = 4.0, z = 1.5}, radius = 2.5, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0}, -- Marker informations for the sell vehicle marker
-		ownerCoords = {x = -773.129639,y= -1442.769287,z= 5.049805}, -- Marker/Shop position for owner/employees
+		ownerCoords = {x = -928.575806,y= -2028.501099,z= 9.498169}, -- Marker/Shop position for owner/employees , , 
 		spawnFlatbedPos = {x = -745.529663,y= -1469.103271,z= 4.999268,h= 325.984253}, -- Where the flatbed/truck is spawned for the orders
 		towCoords = {bone = 20, xPos = -0.5, yPos = -5.0, zPos = 1.0},
 		missionsVehicleSpawn = { -- Locations where someone who accepted an order will have to go (it is random)
@@ -206,7 +206,7 @@ Config.Stands = { -- Vehicle shops informations
 		},
 		radius = 1, -- Interaction radius for the markers
 		price = 1, -- Price of the vehicle shop
-		blip = {blipId = 326, blipColor = 51, blipScale = 0.8, blipText = "Importshop"}, -- Blip informations for vehicleshop blip
+		blip = {blipId = 326, blipColor = 51, blipScale = 0.8, blipText = "Import Shop"}, -- Blip informations for vehicleshop blip
 		ownerBlip = {blipId = 225, blipColor = 2, blipScale = 0.9, blipText = "Vehicleshop Panel"}, -- Blip informations for shops you own/work for
 		buyBlip = {blipId = 225, blipColor = 1, blipScale = 0.9, blipText = "Vehicleshop to buy"}, -- Blip informations for shop on sale
 		marker = {id = 20, color = {r = 31, g = 94, b = 255, a = 90}, size = {x = 0.5, y = 0.5, z = 0.5}, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0}, -- Marker informations for the vehicle shop
@@ -298,21 +298,21 @@ Config.ShowVehicle = { -- Display vehicle
 		},
 	},
 	["motos"] = { -- ID of the vehicle shop
-		position = {x = 2489.037354,y= 4118.439453,z = 38.075439,h = 277.795288}, -- Where to spawn the display vehicles
+		position = {x = 952.523071,y= -2444.215332,z = 28.471069,h = 170.078735}, -- Where to spawn the display vehicles
 		playerOffsetVehiclePreview = {x = 0.0, y = 0.0, z = -1.0}, -- Coordinations offset of where the player will be set when opening the shop
-		noVehicleCam = {x = 2489.037354-1.49, y = 4118.439453-7.65, z = 38.075439+1.15}, -- Camera position when there is no vehicle to be displayed
-		testDrive = {x = -1733.25, y = -2901.43, z = 13.94, h = 330.0}, -- Where to start the test drive
+		noVehicleCam = {x = 952.523071,y= -2444.215332,z = 28.471069+1.15}, -- Camera position when there is no vehicle to be displayed
+		testDrive = {x = 945.56042, y = -2456.545166, z = 27.948730, h = 82.204727}, -- Where to start the test drive
 		vehicleSpawn = { -- Where the vehicle spawns when bought
-			{x = 367.200012,y= 3408.619873,z= 36.390503,h= 19.842520}
+			{x = 945.784607,y= -2442.026367,z = 28.471069,h = 170.078735}
 		},
 	},
 	["car2"] = { -- ID of the vehicle shop
-	position = {x = -761.775818,y= -1455.784668,z = 5.083496,h = 45.354328}, -- Where to spawn the display vehicles
+	position = {x = -909.718689,y= -2027.907715,z = 9.498169,h = 133.228333}, -- Where to spawn the display vehicles, , , 
 	playerOffsetVehiclePreview = {x = 0.0, y = 0.0, z = -1.0}, -- Coordinations offset of where the player will be set when opening the shop
-	noVehicleCam = {x = -761.775818-1.49, y = -1455.784668-7.65, z = 5.083496+1.15}, -- Camera position when there is no vehicle to be displayed
-	testDrive = {x = -1733.25, y = -2901.43, z = 13.94, h = 330.0}, -- Where to start the test drive
+	noVehicleCam = {x = -909.718689,y= -2027.907715,z = 9.498169+1.15}, -- Camera position when there is no vehicle to be displayed
+	testDrive = {x = -923.841736, y = -2074.918701, z = 9.296021, h = 330.0}, -- Where to start the test drive
 	vehicleSpawn = { -- Where the vehicle spawns when bought
-		{x = -745.450562,y= -1468.800049,z= 4.999268,h= 311.811035}
+		{x = -971.208801,y= -2071.991211,z=  9.397095,h= 133.228333}
 	},
 }, 
 }

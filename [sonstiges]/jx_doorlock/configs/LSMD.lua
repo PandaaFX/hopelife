@@ -207,7 +207,7 @@ table.insert(Config.DoorList, {
 
 -- untentür1
 table.insert(Config.DoorList, {
-	items = { 'ramm' },
+	items = { 'ram' },
 	lockpick = false,
 	objHeading = 174.99998474121,
 	locked = true,
@@ -228,7 +228,7 @@ table.insert(Config.DoorList, {
 
 -- untentür2
 table.insert(Config.DoorList, {
-	items = { 'ramm' },
+	items = { 'ram' },
 	maxDistance = 6.0,
 	lockpick = false,
 	slides = true,
@@ -256,7 +256,7 @@ table.insert(Config.DoorList, {
 	authorizedJobs = { ['lsmd']=0, ['fib']=0, ['lssd']=0, ['lspd']=0 },
 	maxDistance = 6.0,
 	audioRemote = false,
-	items = { 'ramm' },
+	items = { 'ram' },
 	locked = true,		
 	-- oldMethod = true,
 	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},

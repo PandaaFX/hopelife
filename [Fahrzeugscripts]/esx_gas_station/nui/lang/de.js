@@ -75,18 +75,18 @@ Lang['de'] = {
 	str_upgrades_page_title: "Upgrades",
 	str_upgrades_page_desc: "Verwende dein Geld, um deine Tankstelle zu verbessern und grössere Gewinne zu erzielen",
 
-	employees_title: 'Employees',  // Pls help me translating this xD
-	employees_desc: 'Hire employees to work on your company',
-	button_employee: 'Hire employee',
-	button_fire_employee: 'Fire employee',
-	button_give_comission: 'Give comission',
-	input_give_comission: 'Comission amount',
-	hired_date: 'Hired on:',
-	jobs_done: 'Jobs done:',
-	select_employee: 'Select a player',
-	basic_access: 'Basic Access',
-	advanced_access: 'Advanced Access',
-	full_access: 'Full Access',
+	employees_title: 'Angestellte',
+	employees_desc: 'Stellen Sie Mitarbeiter ein, die in Ihrem Unternehmen arbeiten',
+	button_employee: 'Mitarbeiter einstellen',
+	button_fire_employee: 'Mitarbeiter entlassen',
+	button_give_comission: 'Provision geben',
+	input_give_comission: 'Provisionsbetrag',
+	hired_date: 'Angestellt am: ',
+	jobs_done: 'Erledigte Arbeiten:',
+	select_employee: 'Wählen Sie einen Spieler aus',
+	basic_access: 'Basiszugriff',
+	advanced_access: 'Erweiterter Zugriff',
+	full_access: 'Voller Zugriff',
 
 	str_bank_page_title: "Kassierer",
 	str_bank_page_desc: "Hier siehst du deinen gesamten Cashflow. Du kannst Geld vom Tankstellenkonto abheben und einzahlen.",
@@ -113,7 +113,7 @@ Lang['de'] = {
 		<option color_id="30">Dunkeltürkis</option>
 		<option color_id="32">Hellblau</option>
 		<option color_id="40">Dunkelgrau</option>
-		<option color_id="41">Pink Red (Standard)</option>
+		<option color_id="41">Pink Red (Standart)</option>
 		<option color_id="46">Gold</option>
 		<option color_id="47">Orange</option>
 		<option color_id="83">Lila</option>

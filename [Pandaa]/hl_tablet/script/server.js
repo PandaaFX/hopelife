@@ -28,26 +28,78 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
-pool.query(
-  "SELECT name FROM user_identifiers WHERE discord = 'discord:492749274648543233'",
-  function (err, rows, fields) {
-    // Connection is automatically released when query resolves
-    if (err) throw err;
-    console.log("Successfully connected to database");
-  }
-);
 
-onNet("hl-tablet:getData", (data) => {
-  const playerId = data;
-  getPlayerData(playerId, GetPlayerIdentifierV2(playerId), null);
-  // console.log(GetPlayerIdentifier(playerId, 0));
+// pool.query(
+//   "SELECT name FROM user_identifiers WHERE discord = 'discord:492749274648543233'",
+//   function (err, rows, fields) {
+//     // Connection is automatically released when query resolves
+//     if (err) throw err;
+//     console.log("Successfully connected to database");
+//   }
+// );
+
+
+// onNet("hl-tablet:getData", (data) => {
+//   const playerId = data;
+//   getPlayerData(playerId, GetPlayerIdentifierV2(playerId), null);
+//   // console.log(GetPlayerIdentifier(playerId, 0));
+// });
+
+ESX.RegisterServerCallback("hl-tablet:getData", function (source, cb) {
+  const playerId = source;
+  const identifier = GetPlayerIdentifierV2(playerId);
+  let xPlayer = ESX.GetPlayerFromId(playerId);
+
+  let playerData = null;
+  (fraklistA = null), (fraklistL = null), (lifeinvader = null), (garage = null);
+
+  pool.query(
+    `SELECT firstname,lastname,job,job_grade,phone_number,\`group\` FROM users WHERE identifier = '${identifier.replace(
+      "license:",
+      ""
+    )}'`,
+    function (err, rows, fields) {
+      // Connection is automatically released when query resolves
+      if (err) throw err;
+
+      playerData = rows[0];
+      if (xPlayer.job.name != rows[0].job) {
+        if (hasTablet(playerId)) {
+          emitNet("hl-tablet:ui", playerId);
+          setTimeout(() => {
+            emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Du hast vor kurzem dein Job geändert! Bitte warte ein paar Minuten bevor du es erneut versuchst!",
+              3000,
+              "2"
+            );
+          }, 1000);
+          return;
+        }
+        return;
+      }
+      getFrakAllMember(rows[0].job, playerId),
+        getLifeinvaderPosts(),
+        getNormalGarage(playerId);
+
+      givePlayerUtilityoptions(playerId, rows[0], config);
+
+      setTimeout(() => {
+        return cb(playerData, fraklistL, fraklistA, lifeinvader, garage);
+      }, 1000);
+      return;
+    }
+  );
 });
 
 onNet("hl-tablet:checkPerms", (playerId, data, cb) => {
   const identifier = GetPlayerIdentifierV2(playerId);
+  let xPlayer = ESX.GetPlayerFromId(playerId);
   // console.log(identifier)
   pool.query(
-    `SELECT * FROM users WHERE identifier = '${identifier.replace(
+    `SELECT job,\`group\` FROM users WHERE identifier = '${identifier.replace(
       "license:",
       ""
     )}'`,
@@ -57,16 +109,54 @@ onNet("hl-tablet:checkPerms", (playerId, data, cb) => {
       // console.log("Successfully connected to database");
       // console.log(rows);
       // console.log(rows);
-
+      if (xPlayer.job.name != rows[0].job) {
+        if (hasTablet(playerId)) {
+          emitNet(
+            "hl-tablet:notify",
+            playerId,
+            "error",
+            "Du hast vor kurzem dein Job geändert!<br />Bitte warte ein paar Minuten bevor du es erneut versuchst!",
+            3000,
+            "2"
+          );
+          return;
+        }
+        return;
+      }
       if (data.type == "frak") {
         if (rows[0].job == "unemployed") {
-            if(hasTablet(playerId)) {
-                emitNet("hl-tablet:notify", playerId, "error", "Du befindest dich in keiner Fraktion!", 3000, "2");
-            }
+          if (hasTablet(playerId)) {
+            emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Du befindest dich in keiner Fraktion!",
+              3000,
+              "2"
+            );
+          }
           emitNet("hl-tablet:checkPerms", playerId, false, "fraktion");
           return;
         } else {
           emitNet("hl-tablet:checkPerms", playerId, true, "fraktion");
+          return;
+        }
+      } else if (data.type == "frakchat") {
+        if (rows[0].job == "unemployed") {
+          if (hasTablet(playerId)) {
+            emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Du befindest dich in keiner Fraktion!",
+              3000,
+              "2"
+            );
+          }
+          emitNet("hl-tablet:checkPerms", playerId, false, "fraktion_frakchat");
+          return;
+        } else {
+          emitNet("hl-tablet:checkPerms", playerId, true, "fraktion_frakchat");
           return;
         }
       } else if (data.type == "adminPanel") {
@@ -88,62 +178,212 @@ onNet("hl-tablet:checkPerms", (playerId, data, cb) => {
 onNet("hl-tablet:SMStracinggg", (playerId, data, cb) => {
   const identifier = GetPlayerIdentifierV2(playerId);
   const { formusUtil1, formusUtil2, formusUtil3 } = data;
-  let sql = "";
-  if (formusUtil1 && formusUtil2) {
-    sql = `SELECT * FROM roadphone_messages WHERE sender = '${formusUtil1}' AND receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
-  } else if (formusUtil1 && !formusUtil2) {
-    sql = `SELECT * FROM roadphone_messages WHERE sender = '${formusUtil1}' ORDER BY date DESC LIMIT 20`;
-  } else if (!formusUtil1 && formusUtil2) {
-    sql = `SELECT * FROM roadphone_messages WHERE receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
-  } else if (formusUtil3 && !formusUtil2 && !formusUtil1) {
-    sql = `SELECT * FROM roadphone_messages WHERE sender = '${formusUtil3}' OR receiver = '${formusUtil3}' ORDER BY date DESC LIMIT 20`;
-  } else {
-    if(hasTablet(playerId)) {
-        return emitNet("hl-tablet:notify", playerId, "error", "Bitte gebe eine Telefonnummer an!", 3000, "2");
+  if (
+    formusUtil1 == "69420" ||
+    formusUtil2 == "69420" ||
+    formusUtil3 == "69420"
+  ) {
+    if (hasTablet(playerId)) {
+      return emitNet(
+        "hl-tablet:notify",
+        playerId,
+        "error",
+        "Fehler!",
+        3000,
+        "2"
+      );
     }
     return;
   }
-  if (formusUtil1 == "69420" ||formusUtil2 == "69420" ||formusUtil3 == "69420") return;
-  // console.log(identifier)
-  pool.query(sql, function (err, rows, fields) {
-    // Connection is automatically released when query resolves
-    if (err) throw err;
+  let sql = "";
+  let everythingOkay = 1;
+  let msgogSender = "";
+  if (config.phone == "roadphone") {
+    if (formusUtil1 && formusUtil2) {
+      msgogSender = formusUtil1;
+      sql = `SELECT sender,receiver,message,isgps,ispicture,picture,date FROM roadphone_messages WHERE sender = '${formusUtil1}' AND receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
+    } else if (formusUtil1 && !formusUtil2) {
+      msgogSender = formusUtil1;
+      sql = `SELECT sender,receiver,message,isgps,ispicture,picture,date FROM roadphone_messages WHERE sender = '${formusUtil1}' ORDER BY date DESC LIMIT 20`;
+    } else if (!formusUtil1 && formusUtil2) {
+      msgogSender = formusUtil2;
+      sql = `SELECT sender,receiver,message,isgps,ispicture,picture,date FROM roadphone_messages WHERE receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
+    } else if (formusUtil3 && !formusUtil2 && !formusUtil1) {
+      msgogSender = formusUtil3;
+      sql = `SELECT sender,receiver,message,isgps,ispicture,picture,date FROM roadphone_messages WHERE sender = '${formusUtil3}' OR receiver = '${formusUtil3}' ORDER BY date DESC LIMIT 20`;
+    } else {
+      if (hasTablet(playerId)) {
+        return emitNet(
+          "hl-tablet:notify",
+          playerId,
+          "error",
+          "Bitte gebe eine Telefonnummer an!",
+          3000,
+          "2"
+        );
+      }
+      return;
+    }
+  } else if(config.phone == "d-phone") {
+    if (formusUtil1 && formusUtil2) {
+      sql = `SELECT * FROM phone_messages WHERE sender = '${formusUtil1}' AND receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
+    } else if (formusUtil1 && !formusUtil2) {
+      sql = `SELECT * FROM phone_messages WHERE sender = '${formusUtil1}' ORDER BY date DESC LIMIT 20`;
+    } else if (!formusUtil1 && formusUtil2) {
+      sql = `SELECT * FROM phone_messages WHERE receiver = '${formusUtil2}' ORDER BY date DESC LIMIT 20`;
+    } else if (formusUtil3 && !formusUtil2 && !formusUtil1) {
+      sql = `SELECT * FROM phone_messages WHERE sender = '${formusUtil3}' OR receiver = '${formusUtil3}' ORDER BY date DESC LIMIT 20`;
+    } else {
+      if (hasTablet(playerId)) {
+        return emitNet(
+          "hl-tablet:notify",
+          playerId,
+          "error",
+          "Bitte gebe eine Telefonnummer an!",
+          3000,
+          "2"
+        );
+      }
+      return;
+    }
+  } else {
+    return
+  }
 
-    let objArrayT = [];
-    rows.forEach((row) => {
-      objArrayT.push({
-        sender: row.sender,
-        receiver: row.receiver,
-        message: row.message,
-        timestamp: mysqlTimeStampToDate(row.date),
-      });
-    });
+  emitNet(
+    "hl-tablet:notify",
+    playerId,
+    "info",
+    "Die angegebenen Daten werden überprüft!",
+    3000,
+    "2"
+  );
 
-    // emitNet(
-    //   "hl-tablet:setUtilitys",
-    //   playerId,
-    //   objArrayT,
-    //   "SMStracinggg",
-    //   identifier
-    // );
+  if (formusUtil1) {
+    pool.query(
+      `SELECT phone_number FROM users WHERE phone_number = '${formusUtil1}'`,
+      function (err, rows, fields) {
+        if (err) throw err;
 
-
-    emitNet(
-      "hl-tablet:SMStracingggTimeout",
-      playerId,
-      config.utils_settings.timeout
+        if (!rows[0]) {
+          everythingOkay = 0;
+          if (hasTablet(playerId)) {
+            return emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Die Sender Telefonnummer existiert nicht!",
+              3000,
+              "2"
+            );
+          }
+        }
+      }
     );
-    emitNet(
-      "hl-tablet:SMStracingggTimeoutClientFunc",
-      playerId,
-      config.utils_settings.timeout,
-      objArrayT,
-      identifier
+  }
+  if (formusUtil2) {
+    pool.query(
+      `SELECT phone_number FROM users WHERE phone_number = '${formusUtil2}'`,
+      function (err, rows, fields) {
+        if (err) throw err;
+
+        if (!rows[0]) {
+          everythingOkay = 0;
+          if (hasTablet(playerId)) {
+            return emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Die Empfänger Telefonnummer existiert nicht!",
+              3000,
+              "2"
+            );
+          }
+        }
+      }
     );
+  }
+  if (!formusUtil1 && !formusUtil2 && formusUtil3) {
+    pool.query(
+      `SELECT phone_number FROM users WHERE phone_number = '${formusUtil3}'`,
+      function (err, rows, fields) {
+        if (err) throw err;
 
+        if (!rows[0]) {
+          everythingOkay = 0;
+          if (hasTablet(playerId)) {
+            return emitNet(
+              "hl-tablet:notify",
+              playerId,
+              "error",
+              "Die Telefonnummer existiert nicht!",
+              3000,
+              "2"
+            );
+          }
+        }
+      }
+    );
+  }
 
+  setTimeout(() => {
+    if (everythingOkay == 1) {
+      emitNet(
+        "hl-tablet:notify",
+        playerId,
+        "success",
+        "Das SMS Tracing startet in kürze!",
+        3000,
+        "2"
+      );
+      setTimeout(() => {
+        pool.query(sql, function (err, rows, fields) {
+          // Connection is automatically released when query resolves
+          if (err) throw err;
 
-  });
+          let objArrayT = [];
+          rows.forEach((row) => {
+            objArrayT.push({
+              sender: row.sender,
+              receiver: row.receiver,
+              message: row.message,
+              isgps: row.isgps,
+              ispicture: row.ispicture,
+              picture: row.picture,
+              myMsg: row.sender == msgogSender ? true : false,
+              timestamp: mysqlTimeStampToDate(row.date),
+            });
+          });
+
+          if (objArrayT.length == 0) {
+            if (hasTablet(playerId)) {
+              return emitNet(
+                "hl-tablet:notify",
+                playerId,
+                "error",
+                "Es wurden keine SMS gefunden!",
+                3000,
+                "2"
+              );
+            }
+          } else {
+            emitNet(
+              "hl-tablet:SMStracingggTimeout",
+              playerId,
+              config.utils_settings.timeout
+            );
+            emitNet(
+              "hl-tablet:SMStracingggTimeoutClientFunc",
+              playerId,
+              config.utils_settings.timeout,
+              objArrayT,
+              identifier
+            );
+          }
+        });
+      }, 3000);
+    }
+  }, 5000);
 });
 
 onNet("hl-tablet:LicenseInfooo", (playerId, data, cb) => {
@@ -155,8 +395,15 @@ onNet("hl-tablet:LicenseInfooo", (playerId, data, cb) => {
   if (formusUtil1) {
     sql = `SELECT * FROM owned_vehicles WHERE plate = '${formusUtil1}'`;
   } else {
-    if(hasTablet(playerId)) {
-        emitNet("hl-tablet:notify", playerId, "error", "Bitte gebe ein Kennzeichen an!", 3000, "2");
+    if (hasTablet(playerId)) {
+      emitNet(
+        "hl-tablet:notify",
+        playerId,
+        "error",
+        "Bitte gebe ein Kennzeichen an!",
+        3000,
+        "2"
+      );
     }
     return;
   }
@@ -166,14 +413,21 @@ onNet("hl-tablet:LicenseInfooo", (playerId, data, cb) => {
     if (err) throw err;
 
     if (!rows[0]) {
-    if(hasTablet(playerId)) {
-        emitNet("hl-tablet:notify", playerId, "error", "Das Kennzeichen existiert nicht!", 3000, "2");
-    }
+      if (hasTablet(playerId)) {
+        emitNet(
+          "hl-tablet:notify",
+          playerId,
+          "error",
+          "Das Kennzeichen existiert nicht!",
+          3000,
+          "2"
+        );
+      }
       return;
     }
 
     pool.query(
-      `SELECT * FROM users WHERE identifier = '${rows[0].owner}'`,
+      `SELECT firstname,lastname,dateofbirth,height,sex,phone_number FROM users WHERE identifier = '${rows[0].owner}'`,
       function (err, rows, fields) {
         // Connection is automatically released when query resolves
         if (err) throw err;
@@ -184,6 +438,8 @@ onNet("hl-tablet:LicenseInfooo", (playerId, data, cb) => {
             firstname: row.firstname,
             lastname: row.lastname,
             dateofbirth: row.dateofbirth,
+            height: row.height,
+            sex: row.sex,
             phone_number: row.phone_number,
           });
         });
@@ -207,10 +463,17 @@ onNet("hl-tablet:PhoneInfooo", (playerId, data, cb) => {
     sql2 = "";
   // console.log(formusUtil1)
   if (formusUtil1) {
-    sql = `SELECT * FROM users WHERE phone_number = '${formusUtil1}'`;
+    sql = `SELECT firstname,lastname,dateofbirth,height,sex,phone_number FROM users WHERE phone_number = '${formusUtil1}'`;
   } else {
-    if(hasTablet(playerId)) {
-        emitNet("hl-tablet:notify", playerId, "error", "Bitte gebe eine Telefonnummer ein!", 3000, "2");
+    if (hasTablet(playerId)) {
+      emitNet(
+        "hl-tablet:notify",
+        playerId,
+        "error",
+        "Bitte gebe eine Telefonnummer ein!",
+        3000,
+        "2"
+      );
     }
     return;
   }
@@ -220,11 +483,18 @@ onNet("hl-tablet:PhoneInfooo", (playerId, data, cb) => {
     if (err) throw err;
 
     if (rows.length < 1) {
-        if(hasTablet(playerId)) {
-            return emitNet("hl-tablet:notify", playerId, "error", "Die Telefonnummer existiert nicht!", 3000, "2");
-        }
-        return
-    };
+      if (hasTablet(playerId)) {
+        return emitNet(
+          "hl-tablet:notify",
+          playerId,
+          "error",
+          "Die Telefonnummer existiert nicht!",
+          3000,
+          "2"
+        );
+      }
+      return;
+    }
 
     let objArrayT = [];
     rows.forEach((row) => {
@@ -232,7 +502,9 @@ onNet("hl-tablet:PhoneInfooo", (playerId, data, cb) => {
         firstname: row.firstname,
         lastname: row.lastname,
         dateofbirth: row.dateofbirth,
-        phone_number: row.phone_number,
+        height: row.height,
+        sex: row.sex,
+        phone_number: row.phone_number
       });
     });
 
@@ -265,9 +537,9 @@ onNet("hl-tablet:PhoneInfooo", (playerId, data, cb) => {
 onNet("hl-tablet:sendWebhook", (type, identifier) => {
   const embed = new MessageBuilder()
     .setAuthor(
-      "PandaaFX",
+      config.dev == "true" ? "PandaaFX DEV MODE" : "PandaaFX",
       "https://cdn.discordapp.com/attachments/963200353124368394/998132014064611398/67377.png",
-      "https://darkbluepandaa.de:8443"
+      "https://darkbluepandaa.de"
     )
     .setColor("#303236")
     .setDescription(`License: \`${identifier}\`\nExecuted: \`${type}\``)
@@ -281,14 +553,20 @@ onNet("hl-tablet:frakChat:sendMSG", (playerId, data) => {
   const identifier = GetPlayerIdentifierV2(playerId);
   let xPlayer = ESX.GetPlayerFromId(playerId);
   const { message } = data;
-  let sql = "",
-    sql2 = "";
+  let sql = "";
   // console.log(formusUtil1)
   if (message) {
-    sql = `SELECT * FROM users WHERE identifier = '${identifier}'`;
+    sql = `SELECT identifier,job FROM users WHERE identifier = '${identifier}'`;
   } else {
-    if(hasTablet(playerId)) {
-        emitNet("hl-tablet:notify", playerId, "error", "Bitte gebe eine Nachricht ein!", 3000, "2");
+    if (hasTablet(playerId)) {
+      emitNet(
+        "hl-tablet:notify",
+        playerId,
+        "error",
+        "Bitte gebe eine Nachricht ein!",
+        3000,
+        "2"
+      );
     }
     return;
   }
@@ -315,7 +593,7 @@ onNet("hl-tablet:frakChat:sendMSG", (playerId, data) => {
           .setAuthor(
             "PandaaFX",
             "https://cdn.discordapp.com/attachments/963200353124368394/998132014064611398/67377.png",
-            "https://darkbluepandaa.de:8443"
+            "https://darkbluepandaa.de"
           )
           .setColor("#303236")
           .setTitle("FrakChat")
@@ -353,13 +631,22 @@ function frakChatRefresh(playerId, fraktion, valueeeeeee) {
       // Connection is automatically released when query resolves
       if (err) throw err;
 
-      //   frakChatRefresh(playerId, rows[0].job)
+      
 
       let objArrayT = [];
       rows.forEach((row) => {
+        let massageeeeeeeeeee = row.message;
+        try {
+          massageeeeeeeeeee = JSON.parse(row.message);
+          massageeeeeeeeeee = "<a style='text-decoration: underline;' onclick='sendPost(`setgps`, `"+ row.message +"`)'>GPS Markieren</a>";
+          // <a style='text-decoration: underline;' onclick='sendPost(`setgps`, `"+ msg.message +"`)'>GPS Markieren</a>"
+        } catch (error) {
+          massageeeeeeeeeee = row.message;
+        }
+        
         objArrayT.push({
           name: row.name,
-          message: row.message,
+          message: massageeeeeeeeeee,
           identifier: row.identifier,
           myMsg: row.identifier == identifier ? true : false,
           timestamp: mysqlTimeStampToDate(row.timestamp),
@@ -384,12 +671,19 @@ function frakChatRefresh(playerId, fraktion, valueeeeeee) {
             }
           });
           emitNet("hl-tablet:frakChat:refresh:2", xPlayer.source, objArrayT);
-          if(valueeeeeee == "newMessage") {
-            if(playerId == xPlayer.source) return
-                if(hasTablet(xPlayer.source)) {
-                    emitNet("hl-tablet:notify", xPlayer.source, "info", "Du hast via FrakChat eine neue Nachricht erhalten!", 3000, "2");
-                }
+          if (valueeeeeee == "newMessage") {
+            if (playerId == xPlayer.source) return;
+            if (hasTablet(xPlayer.source)) {
+              emitNet(
+                "hl-tablet:notify",
+                xPlayer.source,
+                "info",
+                "Du hast via FrakChat eine neue Nachricht erhalten!",
+                3000,
+                "2"
+              );
             }
+          }
         }
       });
 
@@ -451,7 +745,7 @@ function getStaff(one, two, playerId) {
             if (err) throw err;
             objArray.push({
               firstandlastname: `${first} ${lastname}`,
-              name: (rows[0] != undefined) ? rows[0].name : "NOT FOUND",
+              name: rows[0] != undefined ? rows[0].name : "NOT FOUND",
               group: group,
               status: "offline",
             });
@@ -530,11 +824,11 @@ function getOtherInfo(xPlayerGroup, playerId) {
 const getClosest = (targetTime) =>
   config.adminpanel.restarts.find((time) => time >= targetTime) || "00:00";
 
-function getFrakAllMember(job, playerData, playerId) {
+function getFrakAllMember(job, playerId) {
   // console.log(job);
   if (job != "unemployed") {
     pool.query(
-      `SELECT * FROM users WHERE job = '${job}' ORDER BY job_grade DESC`,
+      `SELECT firstname,lastname,phone_number,job,job_grade FROM users WHERE job = '${job}' ORDER BY job_grade DESC`,
       function (err, rows, fields) {
         // Connection is automatically released when query resolves
         if (err) throw err;
@@ -542,6 +836,7 @@ function getFrakAllMember(job, playerData, playerId) {
         rows.forEach((row) => {
           objArray.push({
             firstandlastname: `${row.firstname} ${row.lastname}`,
+            phonenumber: row.phone_number,
             job: row.job,
             jobGrade: row.job_grade,
             status: "offline",
@@ -568,16 +863,22 @@ function getFrakAllMember(job, playerData, playerId) {
         // setTimeout(() => {
         // console.log(JSON.stringify(objArray, null, 2));
         // console.log("iwdajdwadw")
-        getLifeinvaderPosts(playerId, playerData, rows.length, objArray);
+        // getLifeinvaderPosts(playerId, playerData, rows.length, objArray);
+
+        fraklistA = objArray;
+        fraklistL = rows.length;
         return;
       }
     );
   } else {
-    getLifeinvaderPosts(playerId, playerData, null, null);
+    fraklistA = null;
+    fraklistL = null;
+    return;
+    // getLifeinvaderPosts(playerId, playerData, null, null);
   }
 }
 
-function getLifeinvaderPosts(playerId, playerData, rowslength, objArray) {
+function getLifeinvaderPosts() {
   // console.log("kek")
   pool.query(
     `SELECT * FROM lifeinvader ORDER BY timestamp DESC LIMIT 6`,
@@ -595,18 +896,13 @@ function getLifeinvaderPosts(playerId, playerData, rowslength, objArray) {
       });
 
       // console.log(objArrayL)
-      getNormalGarage(playerId, playerData, rowslength, objArray, objArrayL);
+      lifeinvader = objArrayL;
+      return;
     }
   );
 }
 
-function getNormalGarage(
-  playerId,
-  playerData,
-  rowslength,
-  objArray,
-  objArrayL
-) {
+function getNormalGarage(playerId) {
   let license = GetPlayerIdentifierV2(playerId);
   pool.query(
     `SELECT * FROM owned_vehicles WHERE owner = '${license}' ORDER BY plate ASC`,
@@ -624,15 +920,17 @@ function getNormalGarage(
         });
       });
 
-      emitNet(
-        "hl-tablet:getData",
-        playerId,
-        playerData,
-        rowslength,
-        objArray,
-        objArrayL,
-        objArrayC
-      );
+      // emitNet(
+      //   "hl-tablet:getData",
+      //   playerId,
+      //   playerData,
+      //   rowslength,
+      //   objArray,
+      //   objArrayL,
+      //   objArrayC
+      // );
+
+      garage = objArrayC;
       return;
     }
   );
@@ -655,25 +953,286 @@ function givePlayerUtilityoptions(playerId, rows, config) {
 function mysqlTimeStampToDate(timestamp) {
   let myDate = timestamp;
 
-  return (
-    myDate.toLocaleTimeString("de-DE") +
-    " - " +
-    myDate.getDate() +
-    "/" +
-    (myDate.getMonth() + 1) +
-    "/" +
-    myDate.getFullYear()
-  );
+  if (config.phone == "roadphone") {
+    return (
+      myDate.toLocaleTimeString("de-DE") +
+      " - " +
+      myDate.getDate() +
+      "/" +
+      (myDate.getMonth() + 1) +
+      "/" +
+      myDate.getFullYear()
+    );
+  } else {
+    myDate = new Date(myDate);
+    return (
+      myDate.toLocaleTimeString("de-DE") +
+      " - " +
+      myDate.getDate() +
+      "/" +
+      (myDate.getMonth() + 1) +
+      "/" +
+      myDate.getFullYear()
+    );
+  }
 }
 
-
+ESX.RegisterServerCallback("hl-tablet:checkIfHasTablet", function (source, cb) {
+  cb(hasTablet(source));
+});
 
 function hasTablet(source) {
-    let xPlayer = ESX.GetPlayerFromId(source);
-    let items = xPlayer.getInventoryItem("tablet");
-    if (items.count > 0) {
-        return true;
-    } else {
-        return false;
-    }
+  let xPlayer = ESX.GetPlayerFromId(source);
+  let items = xPlayer.getInventoryItem("tablet");
+  if (items.count > 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+// ESX.RegisterServerCallback("hl-tablet:SetLicenseeee", (source, cb, data) => {
+onNet("hl-tablet:SetLicenseeee", (playerId, data) => {
+  const source = playerId;
+  const { formusUtil1, formusUtil2, formusUtil3, formusUtil4, dropdown } = data;
+  const Pidentifier = GetPlayerIdentifierV2(source);
+
+  if (
+    formusUtil1 == "" ||
+    formusUtil2 == "" ||
+    formusUtil3 == "" ||
+    dropdown == undefined ||
+    dropdown == ""
+  ) {
+    if (hasTablet(source)) {
+      emitNet(
+        "hl-tablet:notify",
+        source,
+        "error",
+        "Bitte fülle alle Felder aus!",
+        3000,
+        "2"
+      );
+    }
+    return;
+  }
+
+  let sql = `SELECT identifier, firstname, lastname, dateofbirth, sex, height FROM users WHERE firstname = '${formusUtil1}' AND lastname = '${formusUtil2}' AND dateofbirth = '${formusUtil3.replace(
+    /-/g,
+    "/"
+  )}'`;
+  let sql2 = `SELECT identifier, firstname, lastname, dateofbirth, sex, height FROM users WHERE firstname = '${formusUtil1}' AND lastname = '${formusUtil2}' AND dateofbirth = '${formusUtil3.replace(
+    /-/g,
+    "/"
+  )}' AND phone_number = '${formusUtil4}'`;
+
+  pool.query(formusUtil4 == "" ? sql : sql2, function (err, rows, fields) {
+    if (err) throw err;
+
+    if (!rows[0]) {
+      if (hasTablet(source)) {
+        emitNet(
+          "hl-tablet:notify",
+          source,
+          "error",
+          "Die Person existiert nicht!",
+          3000,
+          "2"
+        );
+      }
+      return;
+    } else if (rows.length > 1) {
+      if (hasTablet(source)) {
+        emitNet(
+          "hl-tablet:notify",
+          source,
+          "error",
+          "Es gibt mehrere Personen mit diesen Daten! Bitte gebe zur Identifikation die Telefonnummer an!",
+          4000,
+          "2"
+        );
+      }
+      return;
+    } else {
+      let identifier = rows[0].identifier;
+      pool.query(
+        `SELECT type FROM user_licenses WHERE owner = '${identifier}' AND type = '${dropdown}'`,
+        function (err, rows, fields) {
+          if (err) throw err;
+
+          if (!rows[0]) {
+            pool.query(
+              `INSERT INTO user_licenses (owner, type) VALUES ('${identifier}', '${dropdown}')`,
+              function (err, rows, fields) {
+                if (err) throw err;
+
+                if (hasTablet(source)) {
+                  return emitNet(
+                    "hl-tablet:notify",
+                    source,
+                    "info",
+                    "Die Person hat nun die Lizenz erhalten!",
+                    3000,
+                    "2"
+                  );
+                }
+              }
+            );
+          } else {
+            pool.query(
+              `DELETE FROM user_licenses WHERE owner = '${identifier}' AND type = '${dropdown}'`,
+              function (err, rows, fields) {
+                if (err) throw err;
+
+                if (hasTablet(source)) {
+                  return emitNet(
+                    "hl-tablet:notify",
+                    source,
+                    "info",
+                    "Der Person wurde die Lizenz entzogen!",
+                    3000,
+                    "2"
+                  );
+                }
+              }
+            );
+          }
+          emit("hl-tablet:sendWebhook", "SetLicenseeee", Pidentifier);
+        }
+      );
+    }
+  });
+});
+
+ESX.RegisterServerCallback("hl-tablet:getalllicenses", (source, cb, data) => {
+  // get all licenses from the config
+  let licenses = config.licenses;
+
+  let set = null;
+  if (data != null) {
+    set = data.set;
+  }
+
+  if (set == true) {
+    if (hasTablet(source)) {
+      emitNet(
+        "hl-tablet:notify",
+        source,
+        "info",
+        "Falls der Spieler die Lizenz bereits besitzt, wird diese beim setzen der Lizenz entfernt!",
+        5000,
+        "2"
+      );
+    }
+  }
+  cb(licenses);
+});
+
+onNet("hl-tablet:GetLicenseeee", (playerId, data) => {
+  const source = playerId;
+  const { formusUtil1, formusUtil2, formusUtil3, formusUtil4, dropdown } = data;
+  const identifier = GetPlayerIdentifierV2(source);
+
+  if (
+    formusUtil1 == "" ||
+    formusUtil2 == "" ||
+    formusUtil3 == "" ||
+    dropdown == undefined ||
+    dropdown == ""
+  ) {
+    if (hasTablet(source)) {
+      emitNet(
+        "hl-tablet:notify",
+        source,
+        "error",
+        "Bitte fülle alle Felder aus!",
+        3000,
+        "2"
+      );
+    }
+    return;
+  }
+
+  let sql = `SELECT identifier, firstname, lastname, dateofbirth, sex, height FROM users WHERE firstname = '${formusUtil1}' AND lastname = '${formusUtil2}' AND dateofbirth = '${formusUtil3.replace(
+    /-/g,
+    "/"
+  )}'`;
+  let sql2 = `SELECT identifier, firstname, lastname, dateofbirth, sex, height FROM users WHERE firstname = '${formusUtil1}' AND lastname = '${formusUtil2}' AND dateofbirth = '${formusUtil3.replace(
+    /-/g,
+    "/"
+  )}' AND phone_number = '${formusUtil4}'`;
+
+  pool.query(formusUtil4 == "" ? sql : sql2, function (err, rows, fields) {
+    if (err) throw err;
+
+    if (!rows[0]) {
+      if (hasTablet(source)) {
+        emitNet(
+          "hl-tablet:notify",
+          source,
+          "error",
+          "Die Person existiert nicht!",
+          3000,
+          "2"
+        );
+      }
+      return;
+    } else if (rows.length > 1) {
+      if (hasTablet(source)) {
+        emitNet(
+          "hl-tablet:notify",
+          source,
+          "error",
+          "Es gibt mehrere Personen mit diesen Daten! Bitte gebe zur Identifikation die Telefonnummer an!",
+          4000,
+          "2"
+        );
+      }
+      return;
+    } else {
+      let identifier = rows[0].identifier;
+      pool.query(
+        `SELECT type FROM user_licenses WHERE owner = '${identifier}' AND type = '${dropdown}'`,
+        function (err, rows, fields) {
+          if (err) throw err;
+
+          if (!rows[0]) {
+            if (hasTablet(source)) {
+              return emitNet(
+                "hl-tablet:notify",
+                source,
+                "info",
+                "Die Person besitzt <strong>NICHT</strong> die angegebene Lizenz!",
+                3000,
+                "2"
+              );
+            }
+          } else {
+            if (hasTablet(source)) {
+              return emitNet(
+                "hl-tablet:notify",
+                source,
+                "info",
+                "Die Person besitzt die angegebene Lizenz!",
+                3000,
+                "2"
+              );
+            }
+          }
+        }
+      );
+    }
+    emit("hl-tablet:sendWebhook", "GetLicenseeee", identifier);
+  });
+});
+
+
+
+ESX.RegisterServerCallback("hl-tablet:frakchatGPS", function (source, cb) {
+  const player = source;
+  const ped = GetPlayerPed(player);
+  const [playerX, playerY, playerZ] = GetEntityCoords(ped);
+
+  
+  cb({"x": playerX, "y": playerY, "z": playerZ});
+});

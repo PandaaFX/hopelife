@@ -53,7 +53,7 @@ Config.Processor = {
     {hideBlip= true, requiredJob = nil ,requiredrank = 0,ItemsId = 10, label = 'Pilze', XPType = 'psilocybin', ped = "ig_chef2", x = -1810.11,y= -1226.13,z= 13.02,rot= 303.307098},
     --{hideBlip= true, requiredJob = nil ,requiredrank = 0,ItemsId = 11, label = 'Maische', XPType = 'maische', ped = "ig_chef2", x = -1889.643921,y= 2050.562744,z= 140.808838,rot= 150.236221},
     --{hideBlip= true, requiredJob = nil ,requiredrank = 0,ItemsId = 12, label = 'Wein', XPType = 'wein', ped = "ig_chef2", x = -1909.978027,y= 2071.358154,z= 140.370728,rot= 138.897629},
-    {requiredJob = nil ,requiredrank = 0,ItemsId = 13, label = 'Stoff', XPType = 'stoff', ped = "ig_chef2", x = 5066.980469,y= -4591.279297,z= 2.842529,rot= 184.251968},  
+    {requiredJob = nil ,requiredrank = 0,ItemsId = 13, label = 'Stoff', XPType = 'stoff', ped = "ig_chef2", x = -2189.29,y= -400.42,z= 13.25,rot= 235.13},  
     {requiredJob = nil ,requiredrank = 0,ItemsId = 14, label = 'Taschen', XPType = 'taschen', ped = "ig_chef2", x= 451.424164,y=  -739.200012,z = 27.342163, rot = 257.952759},
     {requiredJob = nil ,requiredrank = 0,ItemsId = 15, label = 'Aramid', XPType = 'aramid', ped = "ig_chef2", x = 2677.67,y= 2761.35,z= 37.88,rot= 34.015747},
     {requiredJob = nil ,requiredrank = 0,ItemsId = 16, label = 'Kevlar', XPType = 'kevlar', ped = "ig_chef2", x = 719.393433,y= -960.026367,z= 30.391968,rot= 133.228333},

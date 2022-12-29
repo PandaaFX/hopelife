@@ -15,20 +15,12 @@ local IndexPedAmbientfemale = {
 "child_m",
 "babygirl02",
 "babyboy1",
-"legoblackpanter",
-"darksirenhead",
-"fatcop",
-"bumblebee",
 "hope_biene",
-"hope_halloween",
-"nurse",
-"Oni",
-"Huntress",
-"Spirit",
-"Pyramidhead",
-"Sadako",
-"Plague",
-"mk31"
+"mk47-4",
+"mk49",
+"mk66"
+
+
 }
 
 local statIndexPedanimals = 1
@@ -148,6 +140,41 @@ function pedmenu()
         end
     end
 end
+
+
+local toggle = false
+RegisterNetEvent('souki_pedmenu:pedmenu:customsetpedcommand:cl:setped')
+AddEventHandler('souki_pedmenu:pedmenu:customsetpedcommand:cl:setped', function(ped)
+    if toggle == false then
+    local j1 = PlayerId()
+    local p1 = ped
+        RequestModel(p1)
+            while not HasModelLoaded(p1) do
+                Wait(100)
+            end
+        SetPlayerModel(j1, p1)
+        SetModelAsNoLongerNeeded(p1)
+        ESX.ShowNotification("~g~You have just put yourself in ped")
+        toggle = true
+
+    elseif toggle == true then
+        ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
+            local isMale = skin.sex == 0
+            TriggerEvent('skinchanger:loadDefaultModel', isMale, function()
+                ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+                    TriggerEvent('skinchanger:loadSkin', skin)
+                    TriggerEvent('esx:restoreLoadout')
+                    ESX.ShowNotification("~g~You come to recover your appearance")
+                end)
+            end)
+        end)
+        toggle = false
+
+    end
+end)
+
+
+
 function putinped(ped)
     local j1 = PlayerId()
     local p1 = ped

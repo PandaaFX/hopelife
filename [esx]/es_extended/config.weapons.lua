@@ -982,7 +982,7 @@ Config.Weapons = {
 	{name = 'WEAPON_SNOWBALL', label = _U('weapon_snowball'), components = {}, ammo = {label = _U('ammo_snowball'), hash = GetHashKey("AMMO_SNOWBALL")}},
 	{name = 'WEAPON_STICKYBOMB', label = _U('weapon_stickybomb'), components = {}, ammo = {label = _U('ammo_stickybomb'), hash = GetHashKey("AMMO_STICKYBOMB")}},
 	{name = 'WEAPON_SMOKEGRENADE', label = _U('weapon_smokegrenade'), components = {}, ammo = {label = _U('ammo_smokebomb'), hash = GetHashKey("AMMO_SMOKEGRENADE")}},
-	{name = 'WEAPON_FLASHBANG', label = _U('weapon_flashbang'), components = {}, ammo = {label = _U('ammo_flashbang'), hash = GetHashKey("AMMO_FLASHBANG")}},
+	-- {name = 'WEAPON_FLASHBANG', label = _U('weapon_flashbang'), components = {}, ammo = {label = _U('ammo_flashbang'), hash = GetHashKey("AMMO_FLASHBANG")}},
 	-- Tools
 	{name = 'WEAPON_FIREEXTINGUISHER', label = _U('weapon_fireextinguisher'), components = {}, ammo = {label = _U('ammo_charge'), hash = GetHashKey("AMMO_FIREEXTINGUISHER")}},
 	{name = 'WEAPON_DIGISCANNER', label = _U('weapon_digiscanner'), components = {}},

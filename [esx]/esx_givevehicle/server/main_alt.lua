@@ -8,7 +8,7 @@ end)
 
 --give car with a random plate- 1: playerID 2: carModel (3: plate)
 RegisterCommand('giveplane', function(source, args)
-	givevehicle(source, args, 'airplane')
+	givevehicle(source, args, 'aircraft')
 end)
 
 --give car with a random plate- 1: playerID 2: carModel (3: plate)

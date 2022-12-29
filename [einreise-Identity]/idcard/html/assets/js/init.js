@@ -65,7 +65,10 @@ $(document).ready(function(){
 
         $('#id-card').css('background', 'url(assets/images/bauamt.png)');
       }
-
+      if (type == 'stumm'){
+        $('img').hide();
+        $('#id-card').css('background', 'url(assets/images/stumm.png)');
+      }
       if (type == 'anwalt'){
         $('img').hide();
         $('#name').css('color', '#d9d9d9');

@@ -1,0 +1,47 @@
+Locales['tr'] = {
+    ['scaleformTitile']                 = "~r~LABORATUVAR~s~",
+    ['scaleformPoliceTitile']           = "~b~Yağma~s~",
+
+    ['bought_labor']                    = '~r~%s~s~ ulusunuz için bir laboratuvar satın aldı',
+    ['needMoneyToBuy']                  = 'Laboratuvar satın alma işlemini tamamlamak için %s$ a ihtiyacınız var',
+    ['notAllowedToBuy']                 = 'Tarafınızın bir laboratuvara sahip olmasına izin verilmiyor!',
+    ['toMuchOwned']                     = 'Fraksiyonun zaten çok fazla laboratuvara sahip',
+    ['policeStartetRob']                = 'Tarafınız ~r~%s~s~ laboratuvarına bir baskın başlatıyor!',
+    ['policeStartetRobSecond']          = 'Laboratuvarınıza bir baskın rapor edildi! ~b~%s~s~ sitede!',
+    ['fraktionStartetRaub']             = 'Tarafınızın laboratuvarı ~r~%s~s~ tarafından soyuluyor!',
+    ['fraktionStartetRaubSecond']       = 'Tarafınız ~r~%s~s~ nin laboratuvarını soyuyor!',
+    ['cooldownNot']                     = 'Geçenlerde bir laboratuvar soyuldu, lütfen daha sonra tekrar deneyin!',
+    ['currentlyRobbing']                = 'Şu anda bir laboratuvar soygunu yaşanıyor. Bu bitene kadar bekle!',
+    ['cantStartRob']                    = 'Tarafınız laboratuvarları soymamalı!',
+    ['notEnoughPlayer']                 = 'Bu işlevi kullanmak için çevrimiçi olarak rakip fraksiyondan yeterli sayıda oyuncu yok!',
+    ['cancelledRobbery']                = 'Laboratuvar soygunu iptal edildi! Geri çekil...',
+    ['cancelledRobberySecond']          = 'Laboratuvar soygunu iptal edildi, ulusunuz savaşı kazandı!',
+    ['timer']                           = "Laboratuvar soygunu: %s dakika kaldı.",
+    ['finishedRobbery']                 = 'Laboratuvar soygunu başarılı oldu! laboratuvarı devraldın',
+    ['finishedRobberySecond']           = 'Laboratuvarı savunamadın! Laboratuvar artık ~r~%s ye aittir.',
+    ['finishedPoliceRaid']              = 'Baskın başarılı oldu! laboratuvara el koydun',
+    ['finishedPoliceRaidSecond']        = 'Laboratuvarı savunamadın! Laboratuar ~b~ durumu tarafından istila edildi ~s~',
+    ['cantCarryItem']                   = 'Bu kadarını taşıyamazsın!',
+    ['invalidCount']                    = 'Geçersiz miktar!',
+    ['invalidItem']                     = 'Geçersiz öğe!',
+    ['allowedItems']                    = 'Geçersiz öğe! Olası öğeler:\n%s',
+    ['frakNotifiProcessStartet']        = '%s, %sx %s ye sahiptir. Nihai ürün, %s de toplanmaya hazır!',
+    ['NotifiProcessStartet']            = '%sx %s ayarladınız. Nihai ürün, %s de toplanmaya hazır!',
+    ['minToProcess']                    = 'Geçersiz miktar! İşleme başlamak için en az %sx %s ye ihtiyacınız var!',
+    ['NotifiProcessFinished']           = '%sx %s aldınız.',
+    ['frakNotifiProcessFinished']       = '%s alındı ​​%sx %s.',
+    ['pressEenter']                     = 'Laboratuvara girmek için ~INPUT_CONTEXT~ tuşuna basın',
+    ['pressEleave']                     = 'Laboratuvardan çıkmak için ~INPUT_CONTEXT~ tuşuna basın',
+    ['pressErob']                       = 'Laboratuvarı soymak için ~INPUT_CONTEXT~ tuşuna basın',
+    ['pressEopenUI']                    = 'Laboratuvarı kullanmak için ~INPUT_CONTEXT~ tuşlarına basın',
+    ['cantRobOwnLabor']                 = 'Kendi ulusunuzun laboratuvarını soyamazsınız',
+    ['someOneIsUsingLabor']             = '%s oyuncusu şu anda laboratuvarı işletiyor!',
+    ['cantUseOtherLabor']               = 'Laboratuvarı başka bir ulustan yönetemezsiniz',
+    ['buyHelpNotification']             = 'Laboratuvarı satın almak için ~INPUT_FRONTEND_RDOWN~ tuşuna basın!',
+    ['cancelRobberyHelpNotification']   = 'Soygunu iptal etmek için ~INPUT_FRONTEND_DELETE~ tuşuna basın.',
+}
+
+
+
+
+

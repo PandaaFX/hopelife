@@ -27,7 +27,9 @@ CreateThread(function()
             Blips[k] = AddBlip(v.location, 50, 38, Strings["garage"])
         else
             if v.specifiedJob == nil then
-                Blips[k] = AddBlip(v.browse, 50, 38, Strings["garage"])
+                if v.hideblip == nil then
+                    Blips[k] = AddBlip(v.browse, 50, 38, Strings["garage"])
+                end
             end
         end
     end

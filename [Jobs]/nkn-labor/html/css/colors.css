@@ -1,0 +1,13 @@
+:root {
+	--maincolor: #1D8EB8;
+	--backgroundcol: #181818;
+	--fontcol: #d2d2d2;
+	--itembg: #d2d2d210;
+	--inventorybg: #d2d2d205;
+	--inputcolor: rgba(255, 0, 0, 0);
+	--inputsecondcolor: #171717;
+	--inputthirdcolor: #333;
+	--buttonfontcolor: rgba(0,0,0,1);
+	--buttoncolor: rgb(188, 194, 228);
+	--buttonsecondcolor:rgb(158, 159, 167);
+}

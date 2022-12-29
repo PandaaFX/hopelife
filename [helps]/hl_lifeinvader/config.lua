@@ -11,8 +11,8 @@ Config = {
     },
     locations = {
         {
-            coords = vector3(-1083.47, -245.96, 37.76), -- No need to substract the Z coordinate by 1.
-            heading = 208.65
+            coords = vector3(-1083.16, -245.78, 37.75), -- No need to substract the Z coordinate by 1.
+            heading = 206.929138
         }
     },
     locale = {

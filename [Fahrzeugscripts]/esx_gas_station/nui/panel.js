@@ -284,7 +284,7 @@ window.addEventListener('message', function (event) {
 							</select>
 						</div>
 						<div class="d-flex flex-row align-items-center">
-							<input style="width: 160px; padding: 0px 0px 0px 5px" id="input-give-comission" class="input-give-comission form-control ml-3" type="number" min="1" max="9999999" placeholder="${Lang[config.lang]['input_give_comission']}">
+							<input style="width: 160px; padding: 0px 0px 0px 5px" id="input-give-comission-${user.user_id}" class="input-give-comission form-control ml-3" type="number" min="1" max="9999999" placeholder="${Lang[config.lang]['input_give_comission']}">
 							<button onclick="giveComission('${user.user_id}')" class="btn btn-blue btn-darken-2 white ml-3">${Lang[config.lang]['button_give_comission']}</button>
 						</div>
 						<div class="d-flex flex-row align-items-center">
@@ -673,8 +673,8 @@ function firePlayer(user) {
 	post("firePlayer",{user})
 }
 function giveComission(user) {
-	let amount = document.getElementById('input-give-comission').value;
-	document.getElementById('input-give-comission').value = null;
+	let amount = document.getElementById('input-give-comission-'+user).value;
+	document.getElementById('input-give-comission-'+user).value = null;
 	post("giveComission",{user,amount})
 }
 function changeRole(user_id,role){

@@ -3,7 +3,7 @@
 -- kurant tür
 table.insert(Config.DoorList, {
 	locked = true,
-	authorizedJobs = { ['kurant']=0 },
+	authorizedJobs = { ['crips']=0 },
 	audioRemote = false,
 	doors = {
 		{objHash = 1770861563, objHeading = 270.00006103516, objCoords = vector3(381.8307, -1077.431, 29.73933)},

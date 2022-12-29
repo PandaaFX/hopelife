@@ -902,3 +902,41 @@ table.insert(Config.DoorList, {
 	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
 	-- autoLock = 1000
 })
+
+-- fibsafehousedoor
+table.insert(Config.DoorList, {
+	authorizedJobs = { ['fib']=0 },
+	objCoords = vector3(1273.816, -1720.697, 54.92143),
+	slides = false,
+	maxDistance = 2.0,
+	objHeading = 25.000045776367,
+	lockpick = false,
+	garage = false,
+	fixText = false,
+	locked = true,
+	audioRemote = false,
+	objHash = 1145337974,		
+	-- oldMethod = true,
+	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+	-- autoLock = 1000
+})
+
+-- fibstefantor
+table.insert(Config.DoorList, {
+	authorizedJobs = { ['fib']=0 },
+	objCoords = vector3(-875.4845, 18.12612, 44.4434),
+	slides = true,
+	maxDistance = 6.0,
+	objHeading = 149.99998474121,
+	lockpick = false,
+	garage = false,
+	fixText = false,
+	locked = true,
+	audioRemote = false,
+	objHash = -2125423493,		
+	-- oldMethod = true,
+	-- audioLock = {['file'] = 'metal-locker.ogg', ['volume'] = 0.6},
+	-- audioUnlock = {['file'] = 'metallic-creak.ogg', ['volume'] = 0.7},
+	-- autoLock = 1000
+})

@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'DiVouz'
 description 'Mechanic | lualua.tebex.io'
-version '1.1.4'
+version '1.1.5'
 
 lua54 'on'
 
