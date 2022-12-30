@@ -586,7 +586,7 @@ function generateWardrobeMenu(owner)
 				_menuPool:MouseEdgeEnabled (false)
 			end
 		end)
-	--else
+	else
 		ESX.TriggerServerCallback('myProperties:getPlayerDressing', function(dressing)
 			for i=1, #dressing, 1 do
 				local dress
@@ -878,7 +878,6 @@ function generateWardrobeMenu(owner)
 			end
 
 		end
-		
 		local propDeposit = _menuPool:AddSubMenu(wardrobeMenu, Translation[Config.Locale]['wallet'])
 
 		local depositBalance = NativeUI.CreateItem(Translation[Config.Locale]['credit'], Translation[Config.Locale]['current_credit'] .. currentDeposit .. Translation[Config.Locale]['currency'])
